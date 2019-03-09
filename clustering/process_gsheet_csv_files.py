@@ -51,7 +51,7 @@ def process_trials_sheets():
 
     with codecs.open(dest_file_trials, 'wb', 'utf-8') as f:
         f.write(json.dumps(trials, ensure_ascii=False, indent=True, encoding='utf-8'))
-        print('\n  *', "written", len(trials), "trials")
+        print('  *', "written", len(trials), "trials")
 
     return trials
 
@@ -80,7 +80,7 @@ def process_clusters_sheet():
 
     with codecs.open(dest_file_clusters, 'wb', 'utf-8') as f:
         f.write(json.dumps(clusters, ensure_ascii=False, indent=True, encoding='utf-8'))
-        print('\n  *', "written", len(clusters), "clusters\n")
+        print('  *', "written", len(clusters), "clusters")
 
     return clusters
 
@@ -88,4 +88,4 @@ def process_clusters_sheet():
 if __name__ == '__main__':
 
     trials = process_trials_sheets()
-    #clusters = process_clusters_sheet()
+    clusters = process_clusters_sheet()
