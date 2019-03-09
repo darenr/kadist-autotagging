@@ -1,10 +1,5 @@
 [
  {
-  "human_clusters": [
-   "Imagination", 
-   "Time", 
-   "Politics"
-  ], 
   "permalink": "https://kadist.org/work/the-tower-of-babel-independence-of-the-country/", 
   "user_tags": [
    "power.n.01", 
@@ -14,14 +9,16 @@
    "civilization.n.01", 
    "urban.a.01"
   ], 
-  "artist_name": "Du Zhenjun", 
-  "title": "The Tower of Babel: Independence of the country"
- }, 
- {
+  "title": "The Tower of Babel: Independence of the country", 
   "human_clusters": [
    "Imagination", 
-   "Land"
+   "Time", 
+   "Politics"
   ], 
+  "human_assessment_type": "tags", 
+  "artist_name": "Du Zhenjun"
+ }, 
+ {
   "permalink": "https://kadist.org/work/unregistered-city-series-1-2-7/", 
   "user_tags": [
    "fake.n.01", 
@@ -31,15 +28,15 @@
    "apocalypse.n.01", 
    "imagine.v.01"
   ], 
-  "artist_name": "Jiang Pengyi", 
-  "title": "Unregistered City series #1 #2 #7"
+  "title": "Unregistered City series #1 #2 #7", 
+  "human_clusters": [
+   "Imagination", 
+   "Land"
+  ], 
+  "human_assessment_type": "tags", 
+  "artist_name": "Jiang Pengyi"
  }, 
  {
-  "human_clusters": [
-   "Community", 
-   "Politics", 
-   "Economy"
-  ], 
   "permalink": "https://kadist.org/work/100-boots/", 
   "user_tags": [
    "hero.n.02", 
@@ -49,15 +46,16 @@
    "bypass.v.01", 
    "stand-in.n.01"
   ], 
-  "artist_name": "Eleanor Antin", 
-  "title": "100 Boots"
+  "title": "100 Boots", 
+  "human_clusters": [
+   "Community", 
+   "Politics", 
+   "Economy"
+  ], 
+  "human_assessment_type": "tags", 
+  "artist_name": "Eleanor Antin"
  }, 
  {
-  "human_clusters": [
-   "Imagination", 
-   "Time", 
-   "Mind"
-  ], 
   "permalink": "https://kadist.org/work/far-from-honolulu/", 
   "user_tags": [
    "fantastic.s.05", 
@@ -67,13 +65,16 @@
    "cinematic.a.01", 
    "nostalgia.n.01"
   ], 
-  "artist_name": "Mathilde Rosier", 
-  "title": "Far from Honolulu"
+  "title": "Far from Honolulu", 
+  "human_clusters": [
+   "Imagination", 
+   "Time", 
+   "Mind"
+  ], 
+  "human_assessment_type": "tags", 
+  "artist_name": "Mathilde Rosier"
  }, 
  {
-  "human_clusters": [
-   "Immaterial"
-  ], 
   "permalink": "https://kadist.org/work/red-door/", 
   "user_tags": [
    "ambiguous.a.02", 
@@ -83,14 +84,14 @@
    "symbolism.n.01", 
    "safety.n.02"
   ], 
-  "artist_name": "Brenna Youngblood", 
-  "title": "Red Door"
- }, 
- {
+  "title": "Red Door", 
   "human_clusters": [
-   "Body", 
    "Immaterial"
   ], 
+  "human_assessment_type": "tags", 
+  "artist_name": "Brenna Youngblood"
+ }, 
+ {
   "permalink": "https://kadist.org/work/cosmos-animiste/", 
   "user_tags": [
    "ghost.n.03", 
@@ -100,13 +101,15 @@
    "contradiction.n.01", 
    "metamorphosis.n.03"
   ], 
-  "artist_name": "Dominique Zinkpè", 
-  "title": "Cosmos animiste"
- }, 
- {
+  "title": "Cosmos animiste", 
   "human_clusters": [
+   "Body", 
    "Immaterial"
   ], 
+  "human_assessment_type": "tags", 
+  "artist_name": "Dominique Zinkpè"
+ }, 
+ {
   "permalink": "https://kadist.org/work/teapot-with-shadow/", 
   "user_tags": [
    "irreverent.a.01", 
@@ -116,13 +119,14 @@
    "shadow.n.01", 
    "gather.v.01"
   ], 
-  "artist_name": "Hans Peter Feldmann", 
-  "title": "Teapot with shadow"
+  "title": "Teapot with shadow", 
+  "human_clusters": [
+   "Immaterial"
+  ], 
+  "human_assessment_type": "tags", 
+  "artist_name": "Hans Peter Feldmann"
  }, 
  {
-  "human_clusters": [
-   "Materiality"
-  ], 
   "permalink": "https://kadist.org/work/black-curl-cmyfive-magnet-irvine-california-march-25-2010-fujicolor-cyrstal-archive-super-type-c-em-no-165-021-05910/", 
   "user_tags": [
    "materiality.n.02", 
@@ -132,15 +136,14 @@
    "geometric.s.01", 
    "rhythm.n.02"
   ], 
-  "artist_name": "Walead Beshty", 
-  "title": "Black Curl (CMY/Five Magnet: Irvine, California, March 25, 2010, Fujicolor Cyrstal Archive Super Type C, EM No 165-021, 05910)"
+  "title": "Black Curl (CMY/Five Magnet: Irvine, California, March 25, 2010, Fujicolor Cyrstal Archive Super Type C, EM No 165-021, 05910)", 
+  "human_clusters": [
+   "Materiality"
+  ], 
+  "human_assessment_type": "tags", 
+  "artist_name": "Walead Beshty"
  }, 
  {
-  "human_clusters": [
-   "Technology", 
-   "Body", 
-   "Mind"
-  ], 
   "permalink": "https://kadist.org/work/brb-be-right-back/", 
   "user_tags": [
    "closeness.n.01", 
@@ -150,14 +153,16 @@
    "conversation.n.01", 
    "subconscious.s.01"
   ], 
-  "artist_name": "Miri Segal", 
-  "title": "BRB (\"be right back\")"
+  "title": "BRB (\"be right back\")", 
+  "human_clusters": [
+   "Technology", 
+   "Body", 
+   "Mind"
+  ], 
+  "human_assessment_type": "tags", 
+  "artist_name": "Miri Segal"
  }, 
  {
-  "human_clusters": [
-   "Environment", 
-   "Body"
-  ], 
   "permalink": "https://kadist.org/work/perpetual-motion-two/", 
   "user_tags": [
    "accelerate.v.01", 
@@ -167,14 +172,15 @@
    "setting.n.02", 
    "motion.n.06"
   ], 
-  "artist_name": "Diana Thater", 
-  "title": "Perpetual Motion Two"
+  "title": "Perpetual Motion Two", 
+  "human_clusters": [
+   "Environment", 
+   "Body"
+  ], 
+  "human_assessment_type": "tags", 
+  "artist_name": "Diana Thater"
  }, 
  {
-  "human_clusters": [
-   "Time", 
-   "Imagination"
-  ], 
   "permalink": "https://kadist.org/work/untitled-waiters-dancing-with-itinerants-onomatopoeia/", 
   "user_tags": [
    "credible.a.01", 
@@ -184,14 +190,15 @@
    "reality.n.02", 
    "documentation.n.01"
   ], 
-  "artist_name": "Charles Avery", 
-  "title": "Untitled (Waiters dancing with Itinerants, Onomatopoeia)"
+  "title": "Untitled (Waiters dancing with Itinerants, Onomatopoeia)", 
+  "human_clusters": [
+   "Time", 
+   "Imagination"
+  ], 
+  "human_assessment_type": "tags", 
+  "artist_name": "Charles Avery"
  }, 
  {
-  "human_clusters": [
-   "Technology", 
-   "Economy"
-  ], 
   "permalink": "https://kadist.org/work/soft-staycation-gaze-track-edit/", 
   "user_tags": [
    "marketing.n.02", 
@@ -201,15 +208,15 @@
    "data.n.01", 
    "gaze.n.01"
   ], 
-  "artist_name": "Daniel Keller", 
-  "title": "Soft Staycation (Gaze Track Edit)"
+  "title": "Soft Staycation (Gaze Track Edit)", 
+  "human_clusters": [
+   "Technology", 
+   "Economy"
+  ], 
+  "human_assessment_type": "tags", 
+  "artist_name": "Daniel Keller"
  }, 
  {
-  "human_clusters": [
-   "Body", 
-   "Identity", 
-   "Community"
-  ], 
   "permalink": "https://kadist.org/work/strangely-familiar-angelina-with-her-father/", 
   "user_tags": [
    "voyeurism.n.01", 
@@ -219,15 +226,16 @@
    "pose.n.02", 
    "stagy.s.01"
   ], 
-  "artist_name": "Michal Chelbin", 
-  "title": "Strangely familiar: Angelina with her father"
- }, 
- {
+  "title": "Strangely familiar: Angelina with her father", 
   "human_clusters": [
    "Body", 
    "Identity", 
    "Community"
   ], 
+  "human_assessment_type": "tags", 
+  "artist_name": "Michal Chelbin"
+ }, 
+ {
   "permalink": "https://kadist.org/work/wild-boy/", 
   "user_tags": [
    "socialization.n.03", 
@@ -237,14 +245,16 @@
    "domestic.a.03", 
    "child.n.01"
   ], 
-  "artist_name": "Guy Ben-Ner", 
-  "title": "Wild Boy"
+  "title": "Wild Boy", 
+  "human_clusters": [
+   "Body", 
+   "Identity", 
+   "Community"
+  ], 
+  "human_assessment_type": "tags", 
+  "artist_name": "Guy Ben-Ner"
  }, 
  {
-  "human_clusters": [
-   "Time", 
-   "Culture"
-  ], 
   "permalink": "https://kadist.org/work/diane-arbus-a-printed-retrospective-1960-1971/", 
   "user_tags": [
    "magazine.n.01", 
@@ -254,14 +264,15 @@
    "rediscovery.n.01", 
    "archive.n.01"
   ], 
-  "artist_name": "Pierre Leguillon", 
-  "title": "Diane Arbus: A printed retrospective, 1960-1971"
+  "title": "Diane Arbus: A printed retrospective, 1960-1971", 
+  "human_clusters": [
+   "Time", 
+   "Culture"
+  ], 
+  "human_assessment_type": "tags", 
+  "artist_name": "Pierre Leguillon"
  }, 
  {
-  "human_clusters": [
-   "Body", 
-   "Materiality"
-  ], 
   "permalink": "https://kadist.org/work/decomposing-eternally/", 
   "user_tags": [
    "texture.n.01", 
@@ -271,13 +282,15 @@
    "human_body.n.01", 
    "thereness.n.01"
   ], 
-  "artist_name": "George Pfau", 
-  "title": "Decomposing Eternally"
- }, 
- {
+  "title": "Decomposing Eternally", 
   "human_clusters": [
+   "Body", 
    "Materiality"
   ], 
+  "human_assessment_type": "tags", 
+  "artist_name": "George Pfau"
+ }, 
+ {
   "permalink": "https://kadist.org/work/man-with-blue-tie/", 
   "user_tags": [
    "san_francisco.n.01", 
@@ -287,13 +300,14 @@
    "matisse.n.01", 
    "blue.n.02"
   ], 
-  "artist_name": "James Weeks", 
-  "title": "Man with Blue Tie"
+  "title": "Man with Blue Tie", 
+  "human_clusters": [
+   "Materiality"
+  ], 
+  "human_assessment_type": "tags", 
+  "artist_name": "James Weeks"
  }, 
  {
-  "human_clusters": [
-   "Economy"
-  ], 
   "permalink": "https://kadist.org/work/island/", 
   "user_tags": [
    "commodity.n.01", 
@@ -303,15 +317,14 @@
    "spectacle.n.02", 
    "aesthetics.n.01"
   ], 
-  "artist_name": "Kan Xuan", 
-  "title": "Island"
+  "title": "Island", 
+  "human_clusters": [
+   "Economy"
+  ], 
+  "human_assessment_type": "tags", 
+  "artist_name": "Kan Xuan"
  }, 
  {
-  "human_clusters": [
-   "Nature", 
-   "Time", 
-   "Immaterial"
-  ], 
   "permalink": "https://kadist.org/work/if-i-dig-a-very-deep-hole/", 
   "user_tags": [
    "full_moon.n.01", 
@@ -321,14 +334,16 @@
    "poetic.s.04", 
    "gesture.n.03"
   ], 
-  "artist_name": "Pratchaya Phinthong", 
-  "title": "If I dig a very deep hole"
+  "title": "If I dig a very deep hole", 
+  "human_clusters": [
+   "Nature", 
+   "Time", 
+   "Immaterial"
+  ], 
+  "human_assessment_type": "tags", 
+  "artist_name": "Pratchaya Phinthong"
  }, 
  {
-  "human_clusters": [
-   "Identity", 
-   "Materiality"
-  ], 
   "permalink": "https://kadist.org/work/untitled-rolled-up/", 
   "user_tags": [
    "abstraction.n.04", 
@@ -338,14 +353,15 @@
    "humor.n.04", 
    "sign.n.01"
   ], 
-  "artist_name": "Jonathan Monk", 
-  "title": "Untitled (Rolled up)"
+  "title": "Untitled (Rolled up)", 
+  "human_clusters": [
+   "Identity", 
+   "Materiality"
+  ], 
+  "human_assessment_type": "tags", 
+  "artist_name": "Jonathan Monk"
  }, 
  {
-  "human_clusters": [
-   "Materiality", 
-   "Language"
-  ], 
   "permalink": "https://kadist.org/work/onde-quer-voce-esteja-wherever-you-may-be/", 
   "user_tags": [
    "materiality.n.02", 
@@ -355,14 +371,15 @@
    "metaphor.n.01", 
    "cardboard.n.01"
   ], 
-  "artist_name": "Pablo Accinelli", 
-  "title": "Onde quer voce esteja (Wherever you may be)"
+  "title": "Onde quer voce esteja (Wherever you may be)", 
+  "human_clusters": [
+   "Materiality", 
+   "Language"
+  ], 
+  "human_assessment_type": "tags", 
+  "artist_name": "Pablo Accinelli"
  }, 
  {
-  "human_clusters": [
-   "Body", 
-   "Conflict"
-  ], 
   "permalink": "https://kadist.org/work/choke/", 
   "user_tags": [
    "sex.n.04", 
@@ -372,13 +389,15 @@
    "gaze.n.01", 
    "film.v.01"
   ], 
-  "artist_name": "Jennifer Locke", 
-  "title": "Choke"
+  "title": "Choke", 
+  "human_clusters": [
+   "Body", 
+   "Conflict"
+  ], 
+  "human_assessment_type": "tags", 
+  "artist_name": "Jennifer Locke"
  }, 
  {
-  "human_clusters": [
-   "Environment"
-  ], 
   "permalink": "https://kadist.org/work/expedition-46-from-the-series-the-glacier-study-group-2/", 
   "user_tags": [
    "landscape.n.03", 
@@ -388,15 +407,14 @@
    "glacier.n.01", 
    "documentary.a.01"
   ], 
-  "artist_name": "Robert Zhao Renhui", 
-  "title": "Expedition #46"
- }, 
- {
+  "title": "Expedition #46", 
   "human_clusters": [
-   "Body", 
-   "Mind", 
    "Environment"
   ], 
+  "human_assessment_type": "tags", 
+  "artist_name": "Robert Zhao Renhui"
+ }, 
+ {
   "permalink": "https://kadist.org/work/untitled-14/", 
   "user_tags": [
    "humanness.n.01", 
@@ -406,15 +424,16 @@
    "constructivist.n.01", 
    "self-sufficient.s.01"
   ], 
-  "artist_name": "Fernanda Gomes", 
-  "title": "Untitled"
+  "title": "Untitled", 
+  "human_clusters": [
+   "Body", 
+   "Mind", 
+   "Environment"
+  ], 
+  "human_assessment_type": "tags", 
+  "artist_name": "Fernanda Gomes"
  }, 
  {
-  "human_clusters": [
-   "Economy", 
-   "Politics", 
-   "Time"
-  ], 
   "permalink": "https://kadist.org/work/stone-deaf/", 
   "user_tags": [
    "monument.n.02", 
@@ -424,14 +443,16 @@
    "prominence.n.01", 
    "politics.n.01"
   ], 
-  "artist_name": "Milena Bonilla", 
-  "title": "Stone Deaf"
+  "title": "Stone Deaf", 
+  "human_clusters": [
+   "Economy", 
+   "Politics", 
+   "Time"
+  ], 
+  "human_assessment_type": "description", 
+  "artist_name": "Milena Bonilla"
  }, 
  {
-  "human_clusters": [
-   "Technology", 
-   "Economy"
-  ], 
   "permalink": "https://kadist.org/work/collectors-favorites/", 
   "user_tags": [
    "throwaway.s.02", 
@@ -441,14 +462,15 @@
    "value.n.03", 
    "merchandise.n.01"
   ], 
-  "artist_name": "Jennifer Bornstein", 
-  "title": "Collectors’ Favorites"
+  "title": "Collectors’ Favorites", 
+  "human_clusters": [
+   "Technology", 
+   "Economy"
+  ], 
+  "human_assessment_type": "description", 
+  "artist_name": "Jennifer Bornstein"
  }, 
  {
-  "human_clusters": [
-   "Culture", 
-   "Time"
-  ], 
   "permalink": "https://kadist.org/work/from-the-series-the-old-and-the-new-xi/", 
   "user_tags": [
    "architecture.n.01", 
@@ -457,14 +479,15 @@
    "three-dimensional.s.01", 
    "delicate.s.03"
   ], 
-  "artist_name": "Carlos Garaicoa", 
-  "title": "From the series the Old and the New (XI)"
+  "title": "From the series the Old and the New (XI)", 
+  "human_clusters": [
+   "Culture", 
+   "Time"
+  ], 
+  "human_assessment_type": "description", 
+  "artist_name": "Carlos Garaicoa"
  }, 
  {
-  "human_clusters": [
-   "Politics", 
-   "Mind"
-  ], 
   "permalink": "https://kadist.org/work/3600-besos-por-hora/", 
   "user_tags": [
    "universal.n.03", 
@@ -474,15 +497,15 @@
    "isolation.n.01", 
    "surveillance.n.01"
   ], 
-  "artist_name": "Humberto Diaz", 
-  "title": "3600 besos por hora"
+  "title": "3600 besos por hora", 
+  "human_clusters": [
+   "Politics", 
+   "Mind"
+  ], 
+  "human_assessment_type": "description", 
+  "artist_name": "Humberto Diaz"
  }, 
  {
-  "human_clusters": [
-   "Economy", 
-   "Politics", 
-   "Environment"
-  ], 
   "permalink": "https://kadist.org/work/the-nature-of-conflict/", 
   "user_tags": [
    "turf_war.n.01", 
@@ -492,14 +515,16 @@
    "water.n.01", 
    "natural_resource.n.01"
   ], 
-  "artist_name": "Jennifer Allora, Guillermo Calzadilla", 
-  "title": "The Nature of Conflict"
+  "title": "The Nature of Conflict", 
+  "human_clusters": [
+   "Economy", 
+   "Politics", 
+   "Environment"
+  ], 
+  "human_assessment_type": "description", 
+  "artist_name": "Jennifer Allora, Guillermo Calzadilla"
  }, 
  {
-  "human_clusters": [
-   "Language", 
-   "Imagination"
-  ], 
   "permalink": "https://kadist.org/work/a-rising-tide-lifts-all-boats/", 
   "user_tags": [
    "rigmarole.n.01", 
@@ -509,14 +534,15 @@
    "farfetched.s.01", 
    "contradiction.n.01"
   ], 
-  "artist_name": "Anthony Discenza", 
-  "title": "A Rising Tide Lifts All Boats"
- }, 
- {
+  "title": "A Rising Tide Lifts All Boats", 
   "human_clusters": [
    "Language", 
-   "Immaterial"
+   "Imagination"
   ], 
+  "human_assessment_type": "description", 
+  "artist_name": "Anthony Discenza"
+ }, 
+ {
   "permalink": "https://kadist.org/work/one-must/", 
   "user_tags": [
    "caption.n.03", 
@@ -526,14 +552,15 @@
    "riddle.n.01", 
    "scissors.n.01"
   ], 
-  "artist_name": "John Baldessari", 
-  "title": "One Must"
+  "title": "One Must", 
+  "human_clusters": [
+   "Language", 
+   "Immaterial"
+  ], 
+  "human_assessment_type": "description", 
+  "artist_name": "John Baldessari"
  }, 
  {
-  "human_clusters": [
-   "Identity", 
-   "Culture"
-  ], 
   "permalink": "https://kadist.org/work/untitled-29/", 
   "user_tags": [
    "architecture.n.02", 
@@ -543,11 +570,15 @@
    "braid.n.01", 
    "west.n.01"
   ], 
-  "artist_name": "Meschac Gaba", 
-  "title": "Hubert Maga (perruque MAVA-musée d'art de la vie active)"
+  "title": "Hubert Maga (perruque MAVA-musée d'art de la vie active)", 
+  "human_clusters": [
+   "Identity", 
+   "Culture"
+  ], 
+  "human_assessment_type": "description", 
+  "artist_name": "Meschac Gaba"
  }, 
  {
-  "human_clusters": [], 
   "permalink": "https://kadist.org/work/pink-man-walking-on-boats-with-woman-following/", 
   "user_tags": [
    "concept.n.01", 
@@ -557,14 +588,12 @@
    "procedure.n.01", 
    "shadow.v.01"
   ], 
-  "artist_name": "Francis Alÿs", 
-  "title": "Pink Man Walking on Boats with Woman Following"
+  "title": "Pink Man Walking on Boats with Woman Following", 
+  "human_clusters": [], 
+  "human_assessment_type": "description", 
+  "artist_name": "Francis Alÿs"
  }, 
  {
-  "human_clusters": [
-   "Time", 
-   "Materiality"
-  ], 
   "permalink": "https://kadist.org/work/after-the-archive/", 
   "user_tags": [
    "documentation.n.01", 
@@ -574,13 +603,15 @@
    "subsequently.r.01", 
    "naturalistic.s.01"
   ], 
-  "artist_name": "Andrew Grassie", 
-  "title": "After the Archive Collections Room"
- }, 
- {
+  "title": "After the Archive Collections Room", 
   "human_clusters": [
+   "Time", 
    "Materiality"
   ], 
+  "human_assessment_type": "description", 
+  "artist_name": "Andrew Grassie"
+ }, 
+ {
   "permalink": "https://kadist.org/work/you-see-with-no-lights/", 
   "user_tags": [
    "collection.n.01", 
@@ -590,13 +621,14 @@
    "playful.a.01", 
    "collage.n.01"
   ], 
-  "artist_name": "Ryan Gander", 
-  "title": "You see with no lights"
- }, 
- {
+  "title": "You see with no lights", 
   "human_clusters": [
    "Materiality"
   ], 
+  "human_assessment_type": "description", 
+  "artist_name": "Ryan Gander"
+ }, 
+ {
   "permalink": "https://kadist.org/work/spring-line/", 
   "user_tags": [
    "adaptation.n.02", 
@@ -606,14 +638,14 @@
    "flower.n.01", 
    "variation.n.07"
   ], 
-  "artist_name": "Joe Scanlan", 
-  "title": "Spring Line"
+  "title": "Spring Line", 
+  "human_clusters": [
+   "Materiality"
+  ], 
+  "human_assessment_type": "description", 
+  "artist_name": "Joe Scanlan"
  }, 
  {
-  "human_clusters": [
-   "Materiality", 
-   "Identity"
-  ], 
   "permalink": "https://kadist.org/work/domes-1/", 
   "user_tags": [
    "femininity.n.01", 
@@ -623,15 +655,15 @@
    "hue.n.01", 
    "feminism.n.01"
   ], 
-  "artist_name": "Judy Chicago", 
-  "title": "Domes, #1"
+  "title": "Domes, #1", 
+  "human_clusters": [
+   "Materiality", 
+   "Identity"
+  ], 
+  "human_assessment_type": "description", 
+  "artist_name": "Judy Chicago"
  }, 
  {
-  "human_clusters": [
-   "Language", 
-   "Culture", 
-   "Land"
-  ], 
   "permalink": "https://kadist.org/work/primero-estaba-el-mar/", 
   "user_tags": [
    "genesis.n.01", 
@@ -641,14 +673,16 @@
    "concrete.n.01", 
    "beginning.n.01"
   ], 
-  "artist_name": "Felipe Arturo", 
-  "title": "Primero Estaba el Mar"
+  "title": "Primero Estaba el Mar", 
+  "human_clusters": [
+   "Language", 
+   "Culture", 
+   "Land"
+  ], 
+  "human_assessment_type": "description", 
+  "artist_name": "Felipe Arturo"
  }, 
  {
-  "human_clusters": [
-   "Time", 
-   "Imagination"
-  ], 
   "permalink": "https://kadist.org/work/what-remains-is-future/", 
   "user_tags": [
    "disaster.n.03", 
@@ -658,14 +692,15 @@
    "zeppelin.n.02", 
    "transportation_system.n.01"
   ], 
-  "artist_name": "Laurent Montaron", 
-  "title": "What remains is future"
+  "title": "What remains is future", 
+  "human_clusters": [
+   "Time", 
+   "Imagination"
+  ], 
+  "human_assessment_type": "description", 
+  "artist_name": "Laurent Montaron"
  }, 
  {
-  "human_clusters": [
-   "Identity", 
-   "Culture"
-  ], 
   "permalink": "https://kadist.org/work/untitled-27/", 
   "user_tags": [
    "tourism.n.01", 
@@ -675,14 +710,15 @@
    "north_korea.n.01", 
    "footfall.n.01"
   ], 
-  "artist_name": "Marie Voignier", 
-  "title": "Tourisme international"
+  "title": "Tourisme international", 
+  "human_clusters": [
+   "Identity", 
+   "Culture"
+  ], 
+  "human_assessment_type": "description", 
+  "artist_name": "Marie Voignier"
  }, 
  {
-  "human_clusters": [
-   "Mind", 
-   "Identity"
-  ], 
   "permalink": "https://kadist.org/work/good-hand-bad-hand/", 
   "user_tags": [
    "alter_ego.n.01", 
@@ -692,14 +728,15 @@
    "performance.n.03", 
    "poker.n.02"
   ], 
-  "artist_name": "Rodney Graham", 
-  "title": "Good Hand Bad Hand"
+  "title": "Good Hand Bad Hand", 
+  "human_clusters": [
+   "Mind", 
+   "Identity"
+  ], 
+  "human_assessment_type": "description", 
+  "artist_name": "Rodney Graham"
  }, 
  {
-  "human_clusters": [
-   "Identity", 
-   "Politics"
-  ], 
   "permalink": "https://kadist.org/work/character-witness/", 
   "user_tags": [
    "autobiography.n.01", 
@@ -709,14 +746,15 @@
    "perception.n.03", 
    "reenactment.n.01"
   ], 
-  "artist_name": "Nicoline van Harskamp", 
-  "title": "Character Witness"
+  "title": "Character Witness", 
+  "human_clusters": [
+   "Identity", 
+   "Politics"
+  ], 
+  "human_assessment_type": "description", 
+  "artist_name": "Nicoline van Harskamp"
  }, 
  {
-  "human_clusters": [
-   "Immaterial", 
-   "Body"
-  ], 
   "permalink": "https://kadist.org/work/anti-happening/", 
   "user_tags": [
    "practice.n.04", 
@@ -726,14 +764,15 @@
    "happening.n.01", 
    "imagination.n.02"
   ], 
-  "artist_name": "Julius Koller", 
-  "title": "Anti-Happening"
+  "title": "Anti-Happening", 
+  "human_clusters": [
+   "Immaterial", 
+   "Body"
+  ], 
+  "human_assessment_type": "description", 
+  "artist_name": "Julius Koller"
  }, 
  {
-  "human_clusters": [
-   "Politics", 
-   "Immaterial"
-  ], 
   "permalink": "https://kadist.org/work/report-from-the-legal-subcommittee/", 
   "user_tags": [
    "outer_space.n.01", 
@@ -743,14 +782,15 @@
    "frustration.n.01", 
    "futility.n.01"
   ], 
-  "artist_name": "Carey Young", 
-  "title": "Report from the legal subcommittee"
+  "title": "Report from the legal subcommittee", 
+  "human_clusters": [
+   "Politics", 
+   "Immaterial"
+  ], 
+  "human_assessment_type": "description", 
+  "artist_name": "Carey Young"
  }, 
  {
-  "human_clusters": [
-   "Mind", 
-   "Politics"
-  ], 
   "permalink": "https://kadist.org/work/destinos-posibles-possible-destinations/", 
   "user_tags": [
    "interconnection.n.01", 
@@ -760,14 +800,15 @@
    "community.n.01", 
    "interaction.n.01"
   ], 
-  "artist_name": "Luis Garciga", 
-  "title": "Destinos Posibles (Possible Destinations)"
- }, 
- {
+  "title": "Destinos Posibles (Possible Destinations)", 
   "human_clusters": [
-   "Conflict", 
+   "Mind", 
    "Politics"
   ], 
+  "human_assessment_type": "description", 
+  "artist_name": "Luis Garciga"
+ }, 
+ {
   "permalink": "https://kadist.org/work/bunnys-sofa/", 
   "user_tags": [
    "fake.n.01", 
@@ -777,11 +818,15 @@
    "labor.n.02", 
    "labor.n.01"
   ], 
-  "artist_name": "Gimhongsok", 
-  "title": "Bunny’s Sofa"
+  "title": "Bunny’s Sofa", 
+  "human_clusters": [
+   "Conflict", 
+   "Politics"
+  ], 
+  "human_assessment_type": "description", 
+  "artist_name": "Gimhongsok"
  }, 
  {
-  "human_clusters": [], 
   "permalink": "https://kadist.org/work/boat-with-legs/", 
   "user_tags": [
    "concept.n.01", 
@@ -791,13 +836,12 @@
    "procedure.n.01", 
    "strange.a.01"
   ], 
-  "artist_name": "Francis Alÿs", 
-  "title": "Boat with Legs"
+  "title": "Boat with Legs", 
+  "human_clusters": [], 
+  "human_assessment_type": "description", 
+  "artist_name": "Francis Alÿs"
  }, 
  {
-  "human_clusters": [
-   "Conflict"
-  ], 
   "permalink": "https://kadist.org/work/nadie-sabe-con-la-sed-que-otro-bebe/", 
   "user_tags": [
    "relational.s.01", 
@@ -807,14 +851,14 @@
    "imperceptibility.n.01", 
    "occlusion.n.01"
   ], 
-  "artist_name": "Nicolás Consuegra", 
-  "title": "Nadie sabe de la sed con que otro bebe (No one knows the thirst with which another drinks)"
+  "title": "Nadie sabe de la sed con que otro bebe (No one knows the thirst with which another drinks)", 
+  "human_clusters": [
+   "Conflict"
+  ], 
+  "human_assessment_type": "description", 
+  "artist_name": "Nicolás Consuegra"
  }, 
  {
-  "human_clusters": [
-   "Identity", 
-   "Imagination"
-  ], 
   "permalink": "https://kadist.org/work/tropical-vulture/", 
   "user_tags": [
    "cinematic.a.01", 
@@ -824,7 +868,12 @@
    "actuality.n.01", 
    "narrative.n.01"
   ], 
-  "artist_name": "Miguel Calderon", 
-  "title": "Tropical Vulture"
+  "title": "Tropical Vulture", 
+  "human_clusters": [
+   "Identity", 
+   "Imagination"
+  ], 
+  "human_assessment_type": "description", 
+  "artist_name": "Miguel Calderon"
  }
 ]

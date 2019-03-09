@@ -46,6 +46,7 @@ def process_trials_sheets():
             trials.append({
                 "artist_name": row['artist_name'].decode('utf-8'),
                 "permalink": row['permalink'].decode('utf-8'),
+                "human_assessment_type": "tags" if filename == source_file_trials_tags else "description",
                 "title": row['title'].decode('utf-8'),
                 "human_clusters": [x.strip() for x in row['clusters'].split(',')] if isinstance(row['clusters'], str) else [],
                 "user_tags": [x.decode('utf-8').strip() for x in row['user_tags'].split(',')]

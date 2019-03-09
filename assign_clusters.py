@@ -8,13 +8,14 @@ import sys
 import pandas as pd
 import numpy as np
 from nltk.corpus import wordnet
-
+from collections import defaultdict
 from tqdm import tqdm
+import operator
+from copy import deepcopy
 
 #
 # helper functions to turn words into synsets and vice versa
 #
-
 
 def _mk_synset(w):
     #
@@ -59,20 +60,40 @@ def path(w1, w2, t):
     return 0
 
 def preprocess_clusters(clusters):
-    d = {}
+    #
+    # convert cluster tags to synsets
+    #
 
-    for k in clusters.keys():
-        d[k] = [_mk_synset(x) for x in clusters[k]]
+    return {k: [_mk_synset(x) for x in clusters[k]] for k in clusters}
 
-    return d
+def preprocess_trials(trials):
+    #
+    # convert works user_tags to synsets
+    #
 
-def find_clusters(user_tags):
-    pass
+    for work in trials:
+        work['user_tags'] = [_mk_synset(x) for x in work['user_tags']]
 
-def tag_trials(clusters, trials):
-    for work in tqdm(trials):
-        #print(' *', 'tagging', '[%s]' % (work['artist_name']))
-        auto_tags = find_clusters(work['user_tags'])
+    return trials
+
+def find_clusters(clusters, user_tags, t, similarity, top_n=3):
+    scores = defaultdict(int)
+    for cluster in clusters:
+        for cluster_tag in clusters[cluster]:
+            scores[cluster] += sum([similarity(cluster_tag, works_tag, t) for works_tag in user_tags])
+
+    scores = {k: v for k, v in scores.items() if v}
+
+    sorted_scores = sorted(scores.items(), reverse=True, key=operator.itemgetter(1))[:top_n]
+
+    #print(["%s/%.2f" % (c, s) for c,s in sorted_scores])
+    return [c for c,s in sorted_scores]
+
+def tag_trials(clusters, trials, t, similarity):
+    results = trials
+    for work in tqdm(results):
+        #print(' *', 'tagging', '[%s]' % (work['title']))
+        work['machine_clusters'] = find_clusters(clusters, work['user_tags'], t, similarity)
 
 if __name__ == '__main__':
 
@@ -83,6 +104,29 @@ if __name__ == '__main__':
 
         file_trials = 'data/trials.json'
         with codecs.open(file_trials, 'rb', 'utf-8') as f_trials:
-            trials = json.loads(f_trials.read())
+            original_trials = json.loads(f_trials.read())
 
-            tag_trials(clusters, trials)
+            #
+            # try two types of similarity
+            #
+            for similarity in [wup, path]:
+                trials = preprocess_trials(deepcopy(original_trials))
+                tag_trials(clusters, trials, t=0.7, similarity=similarity)
+
+                data_df = []
+                total_hits = 0
+                for work in trials:
+                    hits = set(work['human_clusters']).intersection(set(work['machine_clusters']))
+                    total_hits += len(hits)
+                    data_df.append([
+                        similarity.__name__,
+                        work['human_assessment_type'],
+                        ','.join(work['human_clusters']),
+                        ','.join(work['machine_clusters']),
+                        len(hits),
+                        work['title'],
+                        work['artist_name']
+                    ])
+
+                df = pd.DataFrame(data_df, columns=["metric", "human_assessment_type", "human_clusters", "machine_clusters", "hits", "title", "artist_name"])
+                print(similarity.__name__, total_hits)
