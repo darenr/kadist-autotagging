@@ -20,10 +20,13 @@ def _mk_synset(w):
     #
     # turn cat.n.01 into the Synset object form
     #
-    print('-->',w)
-    word = w.strip()
+    word = w.strip().replace(' ', '_')
     if '.' in word:
-        return wordnet.synset(word)
+        try:
+            return wordnet.synset(word)
+        except Exception as ex:
+            print(' * Error, invalid synset name', w)
+
     else:
         print(' * Error, invalid synset name', w, 'skipping...')
         return None
@@ -68,11 +71,12 @@ def find_clusters(user_tags):
 
 def tag_trials(clusters, trials):
     for work in tqdm(trials):
-        print(' *', 'tagging', '[%s]' % (work['artist_name']))
+        #print(' *', 'tagging', '[%s]' % (work['artist_name']))
         auto_tags = find_clusters(work['user_tags'])
 
 if __name__ == '__main__':
 
+    print(' *', 'using WordNet version:', wordnet.get_version())
     file_clusters = 'data/clusters.json'
     with codecs.open(file_clusters, 'rb', 'utf-8') as f_clusters:
         clusters = preprocess_clusters(json.loads(f_clusters.read()))
