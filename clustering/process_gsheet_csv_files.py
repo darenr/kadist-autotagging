@@ -78,7 +78,8 @@ def process_clusters_sheet():
         s = df[col]
         s = s[~s.isnull()]
         header, terms = str(col).strip(), list(s)
-        clusters[header] = [[y.strip() for y in x.split(',')[1:]] for x in terms]
+        L = [[y.strip() for y in x.split(',')[1:]] for x in terms]
+        clusters[header] = [item for sublist in L for item in sublist]
 
     with codecs.open(dest_file_clusters, 'wb', 'utf-8') as f:
         f.write(json.dumps(clusters, ensure_ascii=False, indent=True, encoding='utf-8'))

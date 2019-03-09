@@ -20,11 +20,12 @@ def _mk_synset(w):
     #
     # turn cat.n.01 into the Synset object form
     #
+    print('-->',w)
     word = w.strip()
     if '.' in word:
         return wordnet.synset(word)
     else:
-        print ' * Error, invalid synset name', w, 'skipping...'
+        print(' * Error, invalid synset name', w, 'skipping...')
         return None
 
 
@@ -54,18 +55,30 @@ def path(w1, w2, t):
             return distance
     return 0
 
+def preprocess_clusters(clusters):
+    d = {}
+
+    for k in clusters.keys():
+        d[k] = [_mk_synset(x) for x in clusters[k]]
+
+    return d
 
 def find_clusters(user_tags):
     pass
 
-
-def main():
-    file_trials = 'data/trials.json'
-    with codecs.open(file_trials, 'rb', 'utf-8') as f:
-        trials = json.loads(f.read())
-        for work in tqdm(trials):
-            clusters = find_clusters(work['user_tags'])
-
+def tag_trials(clusters, trials):
+    for work in tqdm(trials):
+        print(' *', 'tagging', '[%s]' % (work['artist_name']))
+        auto_tags = find_clusters(work['user_tags'])
 
 if __name__ == '__main__':
-    main()
+
+    file_clusters = 'data/clusters.json'
+    with codecs.open(file_clusters, 'rb', 'utf-8') as f_clusters:
+        clusters = preprocess_clusters(json.loads(f_clusters.read()))
+
+        file_trials = 'data/trials.json'
+        with codecs.open(file_trials, 'rb', 'utf-8') as f_trials:
+            trials = json.loads(f_trials.read())
+
+            tag_trials(clusters, trials)
