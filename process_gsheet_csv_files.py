@@ -44,16 +44,16 @@ def process_trials_sheets():
 
         for index, row in df.iterrows():
             trials.append({
-                "artist_name": row['artist_name'].decode('utf-8'),
-                "permalink": row['permalink'].decode('utf-8'),
+                "artist_name": row['artist_name'],
+                "permalink": row['permalink'],
                 "human_assessment_type": "tags" if filename == source_file_trials_tags else "description",
-                "title": row['title'].decode('utf-8'),
+                "title": row['title'],
                 "human_clusters": [x.strip() for x in row['clusters'].split(',')] if isinstance(row['clusters'], str) else [],
-                "user_tags": [x.decode('utf-8').strip() for x in row['user_tags'].split(',')]
+                "user_tags": [x.strip() for x in row['user_tags'].split(',')]
             })
 
     with codecs.open(dest_file_trials, 'wb', 'utf-8') as f:
-        f.write(json.dumps(trials, ensure_ascii=False, indent=True, encoding='utf-8'))
+        f.write(json.dumps(trials, indent=True))
         print('  *', "written", len(trials), "trials")
 
     return trials
@@ -83,7 +83,7 @@ def process_clusters_sheet():
         clusters[header] = [item for sublist in L for item in sublist]
 
     with codecs.open(dest_file_clusters, 'wb', 'utf-8') as f:
-        f.write(json.dumps(clusters, ensure_ascii=False, indent=True, encoding='utf-8'))
+        f.write(json.dumps(clusters, indent=True))
         print('  *', "written", len(clusters), "clusters")
 
     return clusters

@@ -17,6 +17,7 @@ from copy import deepcopy
 # helper functions to turn words into synsets and vice versa
 #
 
+
 def _mk_synset(w):
     #
     # turn cat.n.01 into the Synset object form
@@ -44,6 +45,7 @@ def _mk_wv_word(s):
 # two distance methods, wup and path
 #
 
+
 def wup(w1, w2, t):
     distance = w1.wup_similarity(w2)
     if distance:
@@ -59,12 +61,14 @@ def path(w1, w2, t):
             return distance
     return 0
 
+
 def preprocess_clusters(clusters):
     #
     # convert cluster tags to synsets
     #
 
     return {k: [_mk_synset(x) for x in clusters[k]] for k in clusters}
+
 
 def preprocess_trials(trials):
     #
@@ -76,6 +80,7 @@ def preprocess_trials(trials):
 
     return trials
 
+
 def find_clusters(clusters, user_tags, t, similarity, top_n=3):
     scores = defaultdict(int)
     for cluster in clusters:
@@ -84,16 +89,17 @@ def find_clusters(clusters, user_tags, t, similarity, top_n=3):
 
     scores = {k: v for k, v in scores.items() if v}
 
-
     sorted_scores = sorted(scores.items(), reverse=True, key=operator.itemgetter(1))[:top_n]
     #print(["%s/%.2f" % (c, s) for c,s in sorted_scores])
-    return [c for c,s in sorted_scores]
+    return [c for c, s in sorted_scores]
+
 
 def tag_trials(clusters, trials, t, similarity):
     results = trials
     for work in tqdm(results):
         #print(' *', 'tagging', '[%s]' % (work['title']))
         work['machine_clusters'] = find_clusters(clusters, work['user_tags'], t, similarity)
+
 
 if __name__ == '__main__':
 
@@ -104,7 +110,7 @@ if __name__ == '__main__':
 
         file_trials = 'data/trials.json'
         with codecs.open(file_trials, 'rb', 'utf-8') as f_trials:
-            
+
             similarity = wup
             T = 0.8
 
@@ -122,9 +128,14 @@ if __name__ == '__main__':
                     ','.join(work['human_clusters']),
                     ','.join(work['machine_clusters']),
                     len(hits),
+                    work['artist_name'],
                     work['title'],
-                    work['artist_name']
+                    work['permalink']
                 ])
 
-            df = pd.DataFrame(data_df, columns=["metric", "human_assessment_type", "human_clusters", "machine_clusters", "hits", "title", "artist_name"])
+            df = pd.DataFrame(data_df, columns=["metric", "human_assessment_type", "human_clusters", \
+                "machine_clusters", "hits", "artist_name", "title", "permalink"])
             print(T, similarity.__name__, total_hits)
+            output_filename = 'results_%s_%.1f.csv' % (similarity.__name__, T)
+            df.to_csv(output_filename, index=False)
+            print(' *', 'written results to', output_filename)
