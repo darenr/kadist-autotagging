@@ -84,8 +84,8 @@ def find_clusters(clusters, user_tags, t, similarity, top_n=3):
 
     scores = {k: v for k, v in scores.items() if v}
 
-    sorted_scores = sorted(scores.items(), reverse=True, key=operator.itemgetter(1))[:top_n]
 
+    sorted_scores = sorted(scores.items(), reverse=True, key=operator.itemgetter(1))[:top_n]
     #print(["%s/%.2f" % (c, s) for c,s in sorted_scores])
     return [c for c,s in sorted_scores]
 
@@ -104,29 +104,27 @@ if __name__ == '__main__':
 
         file_trials = 'data/trials.json'
         with codecs.open(file_trials, 'rb', 'utf-8') as f_trials:
-            original_trials = json.loads(f_trials.read())
+            
+            similarity = wup
+            T = 0.8
 
-            #
-            # try two types of similarity
-            #
-            for similarity in [wup, path]:
-                trials = preprocess_trials(deepcopy(original_trials))
-                tag_trials(clusters, trials, t=0.7, similarity=similarity)
+            trials = preprocess_trials(json.loads(f_trials.read()))
+            tag_trials(clusters, trials, t=T, similarity=similarity)
 
-                data_df = []
-                total_hits = 0
-                for work in trials:
-                    hits = set(work['human_clusters']).intersection(set(work['machine_clusters']))
-                    total_hits += len(hits)
-                    data_df.append([
-                        similarity.__name__,
-                        work['human_assessment_type'],
-                        ','.join(work['human_clusters']),
-                        ','.join(work['machine_clusters']),
-                        len(hits),
-                        work['title'],
-                        work['artist_name']
-                    ])
+            data_df = []
+            total_hits = 0
+            for work in trials:
+                hits = set(work['human_clusters']).intersection(set(work['machine_clusters']))
+                total_hits += len(hits)
+                data_df.append([
+                    similarity.__name__,
+                    work['human_assessment_type'],
+                    ','.join(work['human_clusters']),
+                    ','.join(work['machine_clusters']),
+                    len(hits),
+                    work['title'],
+                    work['artist_name']
+                ])
 
-                df = pd.DataFrame(data_df, columns=["metric", "human_assessment_type", "human_clusters", "machine_clusters", "hits", "title", "artist_name"])
-                print(similarity.__name__, total_hits)
+            df = pd.DataFrame(data_df, columns=["metric", "human_assessment_type", "human_clusters", "machine_clusters", "hits", "title", "artist_name"])
+            print(T, similarity.__name__, total_hits)
