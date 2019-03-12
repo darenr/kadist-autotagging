@@ -119,9 +119,12 @@ if __name__ == '__main__':
 
             data_df = []
             total_hits = 0
+            clusters_when_success = []
             for work in trials:
                 hits = set(work['human_clusters']).intersection(set(work['machine_clusters']))
                 total_hits += len(hits)
+                if len(hits):
+                    clusters_when_success.extend(work['human_clusters'])
                 data_df.append([
                     similarity.__name__,
                     work['human_assessment_type'],
@@ -133,9 +136,18 @@ if __name__ == '__main__':
                     work['permalink']
                 ])
 
+            #
+            # make a results dataframe for easy visualization
+            #
+
             df = pd.DataFrame(data_df, columns=["metric", "human_assessment_type", "human_clusters", \
                 "machine_clusters", "hits", "artist_name", "title", "permalink"])
             print(T, similarity.__name__, total_hits)
             output_filename = 'results_%s_%.1f.csv' % (similarity.__name__, T)
             df.to_csv(output_filename, index=False)
             print(' *', 'written results to', output_filename)
+
+            #
+            # for all the times there's intersection between man & machine
+            # we keep track of the tag counts so we can plot them
+            #
