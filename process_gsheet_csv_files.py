@@ -43,14 +43,15 @@ def process_trials_sheets():
         df = pd.read_csv(filename)
 
         for index, row in df.iterrows():
-            trials.append({
-                "artist_name": row['artist_name'],
-                "permalink": row['permalink'],
-                "human_assessment_type": "tags" if filename == source_file_trials_tags else "description",
-                "title": row['title'],
-                "human_clusters": [x.strip() for x in row['clusters'].split(',')] if isinstance(row['clusters'], str) else [],
-                "user_tags": [x.strip() for x in row['user_tags'].split(',')]
-            })
+            if isinstance(row['clusters'], str):
+                trials.append({
+                    "artist_name": row['artist_name'],
+                    "permalink": row['permalink'],
+                    "human_assessment_type": "tags" if filename == source_file_trials_tags else "description",
+                    "title": row['title'],
+                    "human_clusters": [x.strip() for x in row['clusters'].split(',')],
+                    "user_tags": [x.strip() for x in row['user_tags'].split(',')]
+                })
 
     with codecs.open(dest_file_trials, 'wb', 'utf-8') as f:
         f.write(json.dumps(trials, indent=True))
