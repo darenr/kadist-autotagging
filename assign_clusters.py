@@ -167,12 +167,18 @@ if __name__ == '__main__':
             data_df = []
             total_hits = 0
             clusters_when_success = []
-            y_true = []
-            y_pred = []
+            y_true_tags = []
+            y_pred_tags = []
+            y_true_desc = []
+            y_pred_desc = []
             for work in trials:
 
-                y_true.append(work['human_clusters'])
-                y_pred.append(work['machine_clusters'])
+                if work['human_assessment_type'] == 'tags':
+                    y_true_tags.append(work['human_clusters'])
+                    y_pred_tags.append(work['machine_clusters'])
+                else:
+                    y_true_desc.append(work['human_clusters'])
+                    y_pred_desc.append(work['machine_clusters'])
 
                 hits = set(work['human_clusters']).intersection(set(work['machine_clusters']))
                 total_hits += len(hits)
@@ -204,4 +210,5 @@ if __name__ == '__main__':
             # standard multi-label metrics
             #
 
-            print('Hamming score (label-based accuracy): {0}'.format(*hamming_score(y_true, y_pred)))
+            print('[tags group] Hamming score (label-based accuracy): {0}'.format(*hamming_score(y_true_tags, y_pred_tags)))
+            print('[desc group] Hamming score (label-based accuracy): {0}'.format(*hamming_score(y_true_desc, y_pred_desc)))
