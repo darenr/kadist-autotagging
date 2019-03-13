@@ -172,7 +172,6 @@ if __name__ == '__main__':
             y_true_desc = []
             y_pred_desc = []
             for work in trials:
-
                 if work['human_assessment_type'] == 'tags':
                     y_true_tags.append(work['human_clusters'])
                     y_pred_tags.append(work['machine_clusters'])
