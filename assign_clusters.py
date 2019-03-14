@@ -67,8 +67,8 @@ def hamming_score(y_true, y_pred, normalize=True, sample_weight=None, label_enco
     hamming_score = np.mean(acc_list)
 
     #subset_accuracy = metrics.accuracy_score(_y_true, _y_pred, normalize=True, sample_weight=None)
-    subset_accuracy=0
-    return (hamming_score, subset_accuracy)
+
+    return hamming_score
 
 
 #
@@ -189,15 +189,14 @@ if __name__ == '__main__':
         file_trials = 'data/trials.json'
         with codecs.open(file_trials, 'rb', 'utf-8') as f_trials:
 
-            similarity = wv
-            T = 0.1
+            similarity = wup
+            T = 0.75
 
             trials = preprocess_trials(json.loads(f_trials.read()))
             tag_trials(clusters, trials, t=T, similarity=similarity)
 
             data_df = []
             total_hits = 0
-            f1 = 0
             clusters_when_success = []
             y_true = []
             y_pred = []
@@ -207,9 +206,6 @@ if __name__ == '__main__':
 
                 hits = set(work['human_clusters']).intersection(set(work['machine_clusters']))
                 total_hits += len(hits)
-
-                if work['human_clusters'][0] in work['machine_clusters']:
-                    f1+=1
 
                 if len(hits):
                     clusters_when_success.extend(work['human_clusters'])
@@ -239,4 +235,4 @@ if __name__ == '__main__':
             # standard multi-label metrics
             #
 
-            print('(f1 {0:.3f}), hamming score (label-based accuracy): {1}'.format(f1/len(trials), *hamming_score(y_true, y_pred)))
+            print('[T={}], [sim={}], hamming score (label-based accuracy): {}'.format(T, similarity.__name__, hamming_score(y_true, y_pred)))
