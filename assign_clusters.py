@@ -8,14 +8,13 @@ import sys
 import pandas as pd
 import numpy as np
 
-from sklearn import preprocessing
-from sklearn import metrics
-
 from nltk.corpus import wordnet
 from collections import defaultdict
 from tqdm import tqdm
 import operator
 from copy import deepcopy
+
+from metrics import hamming_score
 
 # begin word vectors
 import os
@@ -28,47 +27,6 @@ model_file = os.environ['HOME'] + "/models/" + glove_file
 glove_model = None
 
 # end word vectors
-
-#
-# metrics
-#
-
-def hamming_score(y_true, y_pred, normalize=True, sample_weight=None, label_encode=True):
-    '''
-    Compute the Hamming score (label-based accuracy) for multi-label predictions
-    takes an array of array of strings
-    '''
-
-    if label_encode:
-        arr = []
-        for t in y_true + y_pred:
-            arr.extend(t)
-
-        e = preprocessing.LabelEncoder()
-        e.fit(arr)
-
-        _y_true = np.array([e.transform(x) for x in y_true])
-        _y_pred = np.array([e.transform(x) for x in y_pred])
-    else:
-        _y_true = y_true
-        _y_pred = y_pred
-
-    acc_list = []
-    for i in range(_y_true.shape[0]):
-        set_true = set(np.where(_y_true[i])[0])
-        set_pred = set(np.where(_y_pred[i])[0])
-        tmp_a = None
-        if len(set_true) == 0 and len(set_pred) == 0:
-            tmp_a = 1
-        else:
-            tmp_a = len(set_true.intersection(set_pred)) / float(len(set_true.union(set_pred)))
-        acc_list.append(tmp_a)
-
-    hamming_score = np.mean(acc_list)
-
-    #subset_accuracy = metrics.accuracy_score(_y_true, _y_pred, normalize=True, sample_weight=None)
-
-    return hamming_score
 
 
 #
