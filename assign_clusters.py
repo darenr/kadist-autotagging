@@ -137,8 +137,12 @@ def tag_trials(clusters, trials, t, similarity):
 
 if __name__ == '__main__':
 
+    similarity = wup
+    T = 0.75
+
     print(' *', 'using WordNet version:', wordnet.get_version())
     print(' *', 'using WordVector Glove Model:', glove_file)
+    print(' *', 'using', 'similarity', similarity, 'T', T)
 
     file_clusters = 'data/clusters.json'
     with codecs.open(file_clusters, 'rb', 'utf-8') as f_clusters:
@@ -146,9 +150,6 @@ if __name__ == '__main__':
 
         file_trials = 'data/trials.json'
         with codecs.open(file_trials, 'rb', 'utf-8') as f_trials:
-
-            similarity = wup
-            T = 0.75
 
             trials = preprocess_trials(json.loads(f_trials.read()))
             tag_trials(clusters, trials, t=T, similarity=similarity)
@@ -186,7 +187,7 @@ if __name__ == '__main__':
                                                 "machine_clusters", "hits", "artist_name", "title", "permalink"])
 
             print(T, similarity.__name__, total_hits)
-            output_filename = 'results_%s_%.1f.csv' % (similarity.__name__, T)
+            output_filename = 'results_%s_%.2f.csv' % (similarity.__name__, T)
             df.to_csv(output_filename, index=False)
 
             print(' *', 'written file results to', output_filename)

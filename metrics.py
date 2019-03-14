@@ -44,8 +44,4 @@ def hamming_score(y_true, y_pred, normalize=True, sample_weight=None, label_enco
             tmp_a = len(set_true.intersection(set_pred)) / float(len(set_true.union(set_pred)))
         acc_list.append(tmp_a)
 
-    hamming_score = np.mean(acc_list)
-
-    #subset_accuracy = metrics.accuracy_score(_y_true, _y_pred, normalize=True, sample_weight=None)
-
-    return hamming_score
+    return np.mean(acc_list)
