@@ -17,6 +17,17 @@ from tqdm import tqdm
 import operator
 from copy import deepcopy
 
+# begin word vectors
+import os
+import json
+from gensim.models import KeyedVectors
+
+glove_file = "glove.6B.300d_word2vec.txt"
+model_file = os.environ['HOME'] + "/models/" + glove_file
+
+glove_model = None
+
+# end word vectors
 
 #
 # metrics
@@ -92,14 +103,12 @@ def _mk_wv_word(s):
 # two distance methods, wup and path
 #
 
-
 def wup(w1, w2, t):
     distance = w1.wup_similarity(w2)
     if distance:
         if distance >= t:
             return distance
     return 0
-
 
 def path(w1, w2, t):
     distance = w1.path_similarity(w2)
@@ -108,6 +117,26 @@ def path(w1, w2, t):
             return distance
     return 0
 
+def wv(w1, w2, t):
+    global glove_model
+
+    if not glove_model:
+        #
+        # lazy load the model
+        #
+        print(' *', 'loading model, please wait...')
+        glove_model = KeyedVectors.load_word2vec_format(model_file, binary=False)
+
+    word1 = _mk_wv_word(w1).lower().replace('_', '-')
+    word2 = _mk_wv_word(w2).lower().replace('_', '-')
+    if word1 in glove_model and word2 in glove_model:
+        distance = glove_model.similarity(word1, word2)
+        if distance > t:
+            return distance
+    else:
+        print(' *', word1, word1 in glove_model, word2, word2 in glove_model)
+
+    return 0
 
 def preprocess_clusters(clusters):
     #
@@ -151,6 +180,8 @@ def tag_trials(clusters, trials, t, similarity):
 if __name__ == '__main__':
 
     print(' *', 'using WordNet version:', wordnet.get_version())
+    print(' *', 'using WordVector Glove Model:', glove_file)
+
     file_clusters = 'data/clusters.json'
     with codecs.open(file_clusters, 'rb', 'utf-8') as f_clusters:
         clusters = preprocess_clusters(json.loads(f_clusters.read()))
@@ -158,29 +189,28 @@ if __name__ == '__main__':
         file_trials = 'data/trials.json'
         with codecs.open(file_trials, 'rb', 'utf-8') as f_trials:
 
-            similarity = wup
-            T = 0.8
+            similarity = wv
+            T = 0.1
 
             trials = preprocess_trials(json.loads(f_trials.read()))
             tag_trials(clusters, trials, t=T, similarity=similarity)
 
             data_df = []
             total_hits = 0
+            f1 = 0
             clusters_when_success = []
-            y_true_tags = []
-            y_pred_tags = []
-            y_true_desc = []
-            y_pred_desc = []
+            y_true = []
+            y_pred = []
             for work in trials:
-                if work['human_assessment_type'] == 'tags':
-                    y_true_tags.append(work['human_clusters'])
-                    y_pred_tags.append(work['machine_clusters'])
-                else:
-                    y_true_desc.append(work['human_clusters'])
-                    y_pred_desc.append(work['machine_clusters'])
+                y_true.append(work['human_clusters'])
+                y_pred.append(work['machine_clusters'])
 
                 hits = set(work['human_clusters']).intersection(set(work['machine_clusters']))
                 total_hits += len(hits)
+
+                if work['human_clusters'][0] in work['machine_clusters']:
+                    f1+=1
+
                 if len(hits):
                     clusters_when_success.extend(work['human_clusters'])
                 data_df.append([
@@ -209,5 +239,4 @@ if __name__ == '__main__':
             # standard multi-label metrics
             #
 
-            print('[tags group] Hamming score (label-based accuracy): {0}'.format(*hamming_score(y_true_tags, y_pred_tags)))
-            print('[desc group] Hamming score (label-based accuracy): {0}'.format(*hamming_score(y_true_desc, y_pred_desc)))
+            print('(f1 {0:.3f}), hamming score (label-based accuracy): {1}'.format(f1/len(trials), *hamming_score(y_true, y_pred)))
