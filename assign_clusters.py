@@ -226,10 +226,12 @@ if __name__ == '__main__':
 
             df = pd.DataFrame(data_df, columns=["metric", "human_assessment_type", "human_clusters",
                                                 "machine_clusters", "hits", "artist_name", "title", "permalink"])
+
             print(T, similarity.__name__, total_hits)
             output_filename = 'results_%s_%.1f.csv' % (similarity.__name__, T)
             df.to_csv(output_filename, index=False)
-            print(' *', 'written results to', output_filename)
+
+            print(' *', 'written file results to', output_filename)
 
             #
             # standard multi-label metrics
