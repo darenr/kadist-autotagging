@@ -2,17 +2,12 @@
 # -*- coding: utf-8 -*-
 from __future__ import print_function
 
-import json
 import codecs
 import os
 import sys
-import pandas as pd
-import numpy as np
-import requests
-from textblob import TextBlob
 
-from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.feature_extraction.text import TfidfTransformer
+from textblob import TextBlob
+from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
 
 
 def get_stop_words(stop_file_path="resources/stopwords.txt"):
@@ -69,7 +64,7 @@ def extract_topn_from_vector(feature_names, sorted_items, topn=15):
         score_vals.append(round(score, 3))
         feature_vals.append(feature_names[idx])
 
-    return list(zip(feature_vals,score_vals))
+    return list(zip(feature_vals, score_vals))
 
 
 def load_docs(folder='docs'):
@@ -86,7 +81,7 @@ def load_docs(folder='docs'):
 
 if __name__ == '__main__':
     stopwords = get_stop_words()
-    stopwords += set(['contemporary'])
+    stopwords.update(['contemporary'])
     docs = load_docs()
 
     process_documents(docs)
