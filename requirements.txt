@@ -6,3 +6,5 @@ jupyter
 requests
 matplotlib
 sklearn
+lxml
+textblob
