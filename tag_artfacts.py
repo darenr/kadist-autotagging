@@ -5,15 +5,24 @@ from __future__ import print_function
 import codecs
 import os
 import sys
+import re
+import json
+import string
 
 from textblob import TextBlob
-from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import TfidfTransformer
 
 
-def get_stop_words(stop_file_path="resources/stopwords.txt"):
-    with codecs.open(stop_file_path, 'r', 'utf-8') as f:
-        stopwords = f.readlines()
-        return set(m.strip().lower() for m in stopwords)
+def get_stop_words(language='english'):
+    """stopwords can be just words or regex patterns,
+    eg artist.* would match artist, artists, artistic"""
+    file_path = 'resources/{}.txt'.format(language)
+    if os.path.isfile(file_path):
+        with codecs.open(file_path, 'r', 'utf-8') as f:
+            stopwords = f.readlines()
+            return set(m.strip().lower() for m in stopwords)
+    return []
 
 
 def features_to_doc(features):
@@ -21,30 +30,51 @@ def features_to_doc(features):
     return ' '.join(features)
 
 
-def doc_to_features(doc):
+def doc_to_features(doc, min_word_length=2):
     """Simple featurizer is to use all the words"""
     tb = TextBlob(doc)
-    return [x.lower() for x in tb.words if x.lower() not in stopwords]
+    pat = re.compile('|'.join(stopwords), re.I)
+
+    clean_features = [x.lower() for x in tb.words \
+        if len(x) > min_word_length \
+            and x[0] not in string.ascii_uppercase
+            and not pat.match(x)]
+
+    #clean_features.extend([x.strip().replace(' ', '_') for x in tb.noun_phrases])
+    print([x.strip().replace(' ', '_') for x in tb.noun_phrases])
+
+    return clean_features
 
 
-def process_documents(docs):
+def pprint_keywords(r):
+    for doc in r.keys():
+        print(u'[{}]: {}'.format(doc, ', '.join([u"{}/{}".format(t[0], t[1]) for t in r[doc]])))
+
+
+def process_documents(docs, vocab_size=1000):
     """The docs are tuples: (name, [features]), features is a list of 'words'"""
-    cv = CountVectorizer(max_df=0.85, max_features=1000)
+
+    cv = CountVectorizer(
+        max_df=0.85,
+        stop_words=None,
+        strip_accents='unicode',
+        max_features=vocab_size)
     word_count_vector = cv.fit_transform([features_to_doc(features) for name, features in docs])
 
     feature_names = cv.get_feature_names()
 
-    # print(list(cv.get_feature_names()))
-
     tfidf_transformer = TfidfTransformer(smooth_idf=True, use_idf=True)
     tfidf_transformer.fit(word_count_vector)
 
+    result = {}
     for name, features in docs:
         doc = features_to_doc(features)
         tf_idf_vector = tfidf_transformer.transform(cv.transform([doc]))
         sorted_items = _sort_coo(tf_idf_vector.tocoo())
         keyword_scores = extract_topn_from_vector(feature_names, sorted_items, 10)
-        print(name, keyword_scores)
+        result[name] = keyword_scores
+
+    return result
 
 
 def _sort_coo(coo_matrix):
@@ -80,8 +110,9 @@ def load_docs(folder='docs'):
 
 
 if __name__ == '__main__':
-    stopwords = get_stop_words()
-    stopwords.update(['contemporary'])
+    stopwords = get_stop_words(language='english')
+    stopwords.update(['paintings?', 'exhibition', 'projects', 'art', 'artist.*', 'years?'])
     docs = load_docs()
 
-    process_documents(docs)
+    result = process_documents(docs, vocab_size=500)
+    pprint_keywords(result)
