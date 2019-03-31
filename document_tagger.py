@@ -40,18 +40,24 @@ class DocumentTagger():
 
     def _features_to_doc(self, features):
         """convert list of features into a doc"""
-        return ' '.join(features)
+        return u' '.join(features)
+
 
     def _clean_tokens(self, token_sequence):
         """returns a new sequence with the input token sequence cleaned"""
-        return [re.sub(r'\s+', '-', x).lower() for x in token_sequence]
+        return [re.sub(r'\s+', '_', x).lower() for x in token_sequence]
 
     def _contains_number(self, s):
         """returns True iff string:s contains a digit"""
         return any(i.isdigit() for i in s)
 
-    def _doc_to_features(self, doc, include_noun_phrases=True, min_word_length=3):
+    def _doc_to_features(self, raw_doc, include_noun_phrases=True, min_word_length=3):
         """Simple featurizer is to use all the words"""
+
+        # clean up the doc
+        doc = re.sub(u"['’]s", 's', raw_doc)
+        doc = re.sub(u"[‘’–]", "", doc)
+
         tb = TextBlob(doc)
 
         # https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html
@@ -65,7 +71,6 @@ class DocumentTagger():
                     and not self._contains_number(token)
                     and not token.lower() in self.stopwords]
 
-        print(self._clean_tokens(tokens))
         return self._clean_tokens(tokens)
 
     @staticmethod
@@ -74,13 +79,14 @@ class DocumentTagger():
         for doc in r.keys():
             print(u'[{}]: {}'.format(doc, ', '.join([u"{}/{}".format(t[0], t[1]) for t in r[doc]])))
 
-    def process_documents(self, vocab_size=1000):
+    def process_documents(self, vocab_size=5000, topn=15):
         """The docs are tuples: (name, [features]), features is a list of 'words'"""
 
         cv = CountVectorizer(
-            min_df=0.02,       # ignore terms that appear in less than x% of the documents
-            max_df=0.80,       # ignore terms that appear in more than x% of the corpus
+#            min_df=0.03,       # ignore terms that appear in less than x% of the documents
+#            max_df=0.80,       # ignore terms that appear in more than x% of the corpus
             stop_words=None,
+            tokenizer=unicode.split,
             strip_accents='unicode',
             max_features=vocab_size)
         word_count_vector = cv.fit_transform([self._features_to_doc(features) for name, features in self.docs])
@@ -95,7 +101,7 @@ class DocumentTagger():
             doc = self._features_to_doc(features)
             tf_idf_vector = tfidf_transformer.transform(cv.transform([doc]))
             sorted_items = self._sort_coo(tf_idf_vector.tocoo())
-            keyword_scores = self._extract_topn_from_vector(feature_names, sorted_items, 10)
+            keyword_scores = self._extract_topn_from_vector(feature_names, sorted_items, topn)
             result[name] = keyword_scores
 
         return result
