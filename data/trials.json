@@ -4,18 +4,32 @@
   "permalink": "https://kadist.org/work/the-tower-of-babel-independence-of-the-country/",
   "human_assessment_type": "tags",
   "title": "The Tower of Babel: Independence of the country",
-  "human_clusters": [
-   "Urbanization",
-   "Geopolitics",
-   "Language"
-  ],
   "user_tags": [
-   "power.n.01",
-   "urban.a.01",
    "catastrophe.n.02",
+   "urban.a.01",
    "civilization.n.01",
-   "future.n.01",
-   "tower_of_babel.n.01"
+   "tower_of_babel.n.01",
+   "power.n.01",
+   "future.n.01"
+  ],
+  "ivan": [
+   "Time",
+   "Power"
+  ],
+  "vincent": [
+   "Urbanization",
+   "History",
+   "Power"
+  ],
+  "marie": [
+   "Time",
+   "Politics",
+   "Environmental"
+  ],
+  "kathleen": [
+   "Language",
+   "Urbanization",
+   "Geopolitics"
   ]
  },
  {
@@ -23,18 +37,30 @@
   "permalink": "https://kadist.org/work/unregistered-city-series-1-2-7/",
   "human_assessment_type": "tags",
   "title": "Unregistered City series #1 #2 #7",
-  "human_clusters": [
+  "user_tags": [
+   "apocalypse.n.01",
+   "dystopia.n.02",
+   "city.n.01",
+   "fake.n.01",
+   "imagine.v.01",
+   "ruin.n.02"
+  ],
+  "ivan": [
+   "Fantasy"
+  ],
+  "vincent": [
+   "War",
+   "Urbanization",
+   "Fantasy"
+  ],
+  "marie": [
+   "Fantasy",
+   "Politics"
+  ],
+  "kathleen": [
    "War",
    "Fantasy",
    "Power"
-  ],
-  "user_tags": [
-   "imagine.v.01",
-   "fake.n.01",
-   "apocalypse.n.01",
-   "city.n.01",
-   "ruin.n.02",
-   "dystopia.n.02"
   ]
  },
  {
@@ -42,18 +68,31 @@
   "permalink": "https://kadist.org/work/100-boots/",
   "human_assessment_type": "tags",
   "title": "100 Boots",
-  "human_clusters": [
+  "user_tags": [
+   "stand-in.n.01",
+   "journey.n.01",
+   "distribution.n.03",
+   "hero.n.02",
+   "materiality.n.02",
+   "bypass.v.01"
+  ],
+  "ivan": [
+   "Inequality"
+  ],
+  "vincent": [
    "Time",
    "Materiality",
-   "Identity"
+   "Space"
   ],
-  "user_tags": [
-   "materiality.n.02",
-   "hero.n.02",
-   "journey.n.01",
-   "bypass.v.01",
-   "distribution.n.03",
-   "stand-in.n.01"
+  "marie": [
+   "Materiality",
+   "Economy",
+   "Fantasy"
+  ],
+  "kathleen": [
+   "Time",
+   "Identity",
+   "Materiality"
   ]
  },
  {
@@ -61,18 +100,32 @@
   "permalink": "https://kadist.org/work/far-from-honolulu/",
   "human_assessment_type": "tags",
   "title": "Far from Honolulu",
-  "human_clusters": [
+  "user_tags": [
+   "cinematic.a.01",
+   "fantastic.s.05",
+   "water_travel.n.01",
+   "nostalgia.n.01",
+   "repetition.n.02",
+   "immobility.n.02"
+  ],
+  "ivan": [
+   "Emotion",
+   "Fantasy"
+  ],
+  "vincent": [
+   "History",
+   "Physics",
+   "Fantasy"
+  ],
+  "marie": [
+   "Time",
+   "Economy",
+   "Emotion"
+  ],
+  "kathleen": [
    "Time",
    "Emotion",
    "Mind"
-  ],
-  "user_tags": [
-   "water_travel.n.01",
-   "cinematic.a.01",
-   "repetition.n.02",
-   "fantastic.s.05",
-   "nostalgia.n.01",
-   "immobility.n.02"
   ]
  },
  {
@@ -80,18 +133,27 @@
   "permalink": "https://kadist.org/work/red-door/",
   "human_assessment_type": "tags",
   "title": "Red Door",
-  "human_clusters": [
-   "Immaterial",
-   "Time",
-   "Mind"
-  ],
   "user_tags": [
-   "meaning.s.01",
-   "ambiguous.a.02",
    "symbolism.n.01",
-   "welcome.n.01",
    "everyday.s.03",
-   "safety.n.02"
+   "meaning.s.01",
+   "welcome.n.01",
+   "safety.n.02",
+   "ambiguous.a.02"
+  ],
+  "ivan": [
+   "Immaterial"
+  ],
+  "vincent": [
+   "Culture",
+   "Familial",
+   "Fantasy"
+  ],
+  "marie": [],
+  "kathleen": [
+   "Time",
+   "Immaterial",
+   "Mind"
   ]
  },
  {
@@ -99,18 +161,32 @@
   "permalink": "https://kadist.org/work/cosmos-animiste/",
   "human_assessment_type": "tags",
   "title": "Cosmos animiste",
-  "human_clusters": [
-   "Spirituality",
-   "Body",
-   "Identity"
-  ],
   "user_tags": [
+   "metamorphosis.n.03",
+   "contradiction.n.01",
    "fusion.n.01",
    "ghost.n.03",
    "latent_hostility.n.01",
-   "metamorphosis.n.03",
-   "sex.n.04",
-   "contradiction.n.01"
+   "sex.n.04"
+  ],
+  "ivan": [
+   "Body",
+   "Spirituality"
+  ],
+  "vincent": [
+   "Violence",
+   "Fantasy",
+   "Body"
+  ],
+  "marie": [
+   "Body",
+   "Physics",
+   "Fantasy"
+  ],
+  "kathleen": [
+   "Body",
+   "Spirituality",
+   "Identity"
   ]
  },
  {
@@ -118,18 +194,31 @@
   "permalink": "https://kadist.org/work/teapot-with-shadow/",
   "human_assessment_type": "tags",
   "title": "Teapot with shadow",
-  "human_clusters": [
-   "Immaterial",
-   "Design",
-   "Culture"
-  ],
   "user_tags": [
-   "shadow.n.01",
    "irreverent.a.01",
-   "plain.a.02",
    "gather.v.01",
+   "dateless.s.03",
    "kitchenware.n.01",
-   "dateless.s.03"
+   "shadow.n.01",
+   "plain.a.02"
+  ],
+  "ivan": [
+   "Materiality"
+  ],
+  "vincent": [
+   "Time",
+   "Community",
+   "Familial"
+  ],
+  "marie": [
+   "Time",
+   "Inequality",
+   "Community"
+  ],
+  "kathleen": [
+   "Culture",
+   "Immaterial",
+   "Design"
   ]
  },
  {
@@ -137,18 +226,31 @@
   "permalink": "https://kadist.org/work/black-curl-cmyfive-magnet-irvine-california-march-25-2010-fujicolor-cyrstal-archive-super-type-c-em-no-165-021-05910/",
   "human_assessment_type": "tags",
   "title": "Black Curl (CMY/Five Magnet: Irvine, California, March 25, 2010, Fujicolor Cyrstal Archive Super Type C, EM No 165-021, 05910)",
-  "human_clusters": [
-   "Arts",
-   "Urbanization",
-   "Design"
-  ],
   "user_tags": [
-   "materiality.n.02",
+   "color.n.08",
+   "geometric.s.01",
    "abstraction.n.04",
    "development.n.08",
-   "geometric.s.01",
-   "rhythm.n.02",
-   "color.n.08"
+   "materiality.n.02",
+   "rhythm.n.02"
+  ],
+  "ivan": [
+   "Materiality"
+  ],
+  "vincent": [
+   "Design",
+   "Materiality",
+   "Fantasy"
+  ],
+  "marie": [
+   "Materiality",
+   "Economy",
+   "Physics"
+  ],
+  "kathleen": [
+   "Arts",
+   "Design",
+   "Urbanization"
   ]
  },
  {
@@ -156,18 +258,32 @@
   "permalink": "https://kadist.org/work/brb-be-right-back/",
   "human_assessment_type": "tags",
   "title": "BRB (\"be right back\")",
-  "human_clusters": [
-   "Body",
-   "Community",
-   "Language"
-  ],
   "user_tags": [
-   "closeness.n.01",
-   "human_body.n.01",
-   "virtual_reality.n.01",
+   "subconscious.s.01",
    "communication.n.01",
    "conversation.n.01",
-   "subconscious.s.01"
+   "human_body.n.01",
+   "virtual_reality.n.01",
+   "closeness.n.01"
+  ],
+  "ivan": [
+   "Technology",
+   "Body"
+  ],
+  "vincent": [
+   "Culture",
+   "Body",
+   "Community"
+  ],
+  "marie": [
+   "Technology",
+   "Body",
+   "Community"
+  ],
+  "kathleen": [
+   "Language",
+   "Body",
+   "Community"
   ]
  },
  {
@@ -175,18 +291,32 @@
   "permalink": "https://kadist.org/work/perpetual-motion-two/",
   "human_assessment_type": "tags",
   "title": "Perpetual Motion Two",
-  "human_clusters": [
-   "Environmental",
-   "Physics",
-   "Time"
-  ],
   "user_tags": [
-   "motion.n.06",
+   "nature.n.03",
    "flit.n.01",
    "setting.n.02",
+   "motion.n.06",
    "perception.n.03",
-   "accelerate.v.01",
-   "nature.n.03"
+   "accelerate.v.01"
+  ],
+  "ivan": [
+   "Mind",
+   "Physics"
+  ],
+  "vincent": [
+   "Physics",
+   "Fantasy",
+   "Environmental"
+  ],
+  "marie": [
+   "Emotion",
+   "Physics",
+   "Environmental"
+  ],
+  "kathleen": [
+   "Time",
+   "Physics",
+   "Environmental"
   ]
  },
  {
@@ -194,18 +324,31 @@
   "permalink": "https://kadist.org/work/untitled-waiters-dancing-with-itinerants-onomatopoeia/",
   "human_assessment_type": "tags",
   "title": "Untitled (Waiters dancing with Itinerants, Onomatopoeia)",
-  "human_clusters": [
-   "Environmental",
-   "Land",
-   "History"
-  ],
   "user_tags": [
-   "documentation.n.01",
    "island.n.01",
    "reality.n.02",
+   "event.n.01",
    "credible.a.01",
    "fabricated.s.01",
-   "event.n.01"
+   "documentation.n.01"
+  ],
+  "ivan": [
+   "Fantasy"
+  ],
+  "vincent": [
+   "Land",
+   "Fantasy",
+   "History"
+  ],
+  "marie": [
+   "Technology",
+   "Mass media",
+   "Politics"
+  ],
+  "kathleen": [
+   "Land",
+   "History",
+   "Environmental"
   ]
  },
  {
@@ -213,18 +356,32 @@
   "permalink": "https://kadist.org/work/soft-staycation-gaze-track-edit/",
   "human_assessment_type": "tags",
   "title": "Soft Staycation (Gaze Track Edit)",
-  "human_clusters": [
-   "Mass media",
-   "Technology",
-   "Culture"
-  ],
   "user_tags": [
-   "data.n.01",
-   "track.v.02",
-   "gaze.n.01",
-   "tourism.n.01",
    "marketing.n.02",
-   "technology.n.01"
+   "data.n.01",
+   "gaze.n.01",
+   "technology.n.01",
+   "tourism.n.01",
+   "track.v.02"
+  ],
+  "ivan": [
+   "Technology",
+   "Economy"
+  ],
+  "vincent": [
+   "Technology",
+   "Culture",
+   "Economy"
+  ],
+  "marie": [
+   "Technology",
+   "Body",
+   "Economy"
+  ],
+  "kathleen": [
+   "Technology",
+   "Culture",
+   "Mass media"
   ]
  },
  {
@@ -232,18 +389,31 @@
   "permalink": "https://kadist.org/work/strangely-familiar-angelina-with-her-father/",
   "human_assessment_type": "tags",
   "title": "Strangely familiar: Angelina with her father",
-  "human_clusters": [
-   "Familial",
-   "Body",
-   "Identity"
-  ],
   "user_tags": [
+   "pose.n.02",
+   "stagy.s.01",
    "gaze.n.01",
    "voyeurism.n.01",
-   "stagy.s.01",
-   "adolescent.n.01",
    "fatherhood.n.01",
-   "pose.n.02"
+   "adolescent.n.01"
+  ],
+  "ivan": [
+   "Familial"
+  ],
+  "vincent": [
+   "Arts",
+   "Culture",
+   "Familial"
+  ],
+  "marie": [
+   "Inequality",
+   "Familial",
+   "Fantasy"
+  ],
+  "kathleen": [
+   "Body",
+   "Familial",
+   "Identity"
   ]
  },
  {
@@ -251,18 +421,32 @@
   "permalink": "https://kadist.org/work/wild-boy/",
   "human_assessment_type": "tags",
   "title": "Wild Boy",
-  "human_clusters": [
-   "Familial",
-   "Community",
-   "Identity"
-  ],
   "user_tags": [
+   "education.n.02",
+   "domestic.a.03",
+   "family.n.04",
    "child.n.01",
    "socialization.n.03",
-   "education.n.02",
-   "adolescent.n.01",
-   "family.n.04",
-   "domestic.a.03"
+   "adolescent.n.01"
+  ],
+  "ivan": [
+   "Community",
+   "Familial"
+  ],
+  "vincent": [
+   "Culture",
+   "Community",
+   "Familial"
+  ],
+  "marie": [
+   "Community",
+   "Familial",
+   "Politics"
+  ],
+  "kathleen": [
+   "Identity",
+   "Community",
+   "Familial"
   ]
  },
  {
@@ -270,18 +454,32 @@
   "permalink": "https://kadist.org/work/diane-arbus-a-printed-retrospective-1960-1971/",
   "human_assessment_type": "tags",
   "title": "Diane Arbus: A printed retrospective, 1960-1971",
-  "human_clusters": [
+  "user_tags": [
+   "rediscovery.n.01",
+   "archive.n.01",
+   "magazine.n.01",
+   "art_exhibition.n.01",
+   "retrospective.n.01",
+   "art_history.n.01"
+  ],
+  "ivan": [
+   "Arts",
+   "Mass media"
+  ],
+  "vincent": [
+   "Culture",
+   "Mass media",
+   "History"
+  ],
+  "marie": [
    "Arts",
    "Mass media",
    "History"
   ],
-  "user_tags": [
-   "art_exhibition.n.01",
-   "art_history.n.01",
-   "archive.n.01",
-   "magazine.n.01",
-   "retrospective.n.01",
-   "rediscovery.n.01"
+  "kathleen": [
+   "Arts",
+   "Mass media",
+   "History"
   ]
  },
  {
@@ -289,18 +487,32 @@
   "permalink": "https://kadist.org/work/decomposing-eternally/",
   "human_assessment_type": "tags",
   "title": "Decomposing Eternally",
-  "human_clusters": [
+  "user_tags": [
+   "human_body.n.01",
+   "thereness.n.01",
+   "decay.n.03",
+   "disembody.v.01",
+   "texture.n.01",
+   "diffuse.s.01"
+  ],
+  "ivan": [
+   "Body",
+   "Immaterial"
+  ],
+  "vincent": [
+   "Time",
+   "Body",
+   "Materiality"
+  ],
+  "marie": [
+   "Time",
+   "Body",
+   "Materiality"
+  ],
+  "kathleen": [
    "Body",
    "Mind",
    "Identity"
-  ],
-  "user_tags": [
-   "decay.n.03",
-   "disembody.v.01",
-   "human_body.n.01",
-   "thereness.n.01",
-   "diffuse.s.01",
-   "texture.n.01"
   ]
  },
  {
@@ -308,18 +520,32 @@
   "permalink": "https://kadist.org/work/man-with-blue-tie/",
   "human_assessment_type": "tags",
   "title": "Man with Blue Tie",
-  "human_clusters": [
-   "Arts",
-   "Design",
-   "Culture"
-  ],
   "user_tags": [
-   "shallow.a.01",
-   "san_francisco.n.01",
-   "matisse.n.01",
    "blue.n.02",
+   "shallow.a.01",
+   "deadpan.s.01",
+   "matisse.n.01",
    "figural.s.01",
-   "deadpan.s.01"
+   "san_francisco.n.01"
+  ],
+  "ivan": [
+   "Design",
+   "Materiality"
+  ],
+  "vincent": [
+   "Arts",
+   "Land",
+   "Urbanization"
+  ],
+  "marie": [
+   "Arts",
+   "Emotion",
+   "Urbanization"
+  ],
+  "kathleen": [
+   "Arts",
+   "Culture",
+   "Design"
   ]
  },
  {
@@ -327,18 +553,32 @@
   "permalink": "https://kadist.org/work/island/",
   "human_assessment_type": "tags",
   "title": "Island",
-  "human_clusters": [
-   "Familial",
-   "Materiality",
-   "Design"
-  ],
   "user_tags": [
-   "aesthetics.n.01",
-   "commodity.n.01",
    "mass_production.n.01",
+   "superficial.s.03",
    "domesticity.n.02",
+   "commodity.n.01",
    "spectacle.n.02",
-   "superficial.s.03"
+   "aesthetics.n.01"
+  ],
+  "ivan": [
+   "Mass media",
+   "Economy"
+  ],
+  "vincent": [
+   "Culture",
+   "Economy",
+   "Familial"
+  ],
+  "marie": [
+   "Familial",
+   "Economy",
+   "Fantasy"
+  ],
+  "kathleen": [
+   "Design",
+   "Materiality",
+   "Familial"
   ]
  },
  {
@@ -346,18 +586,33 @@
   "permalink": "https://kadist.org/work/if-i-dig-a-very-deep-hole/",
   "human_assessment_type": "tags",
   "title": "If I dig a very deep hole",
-  "human_clusters": [
-   "Space",
-   "Inequality",
-   "War"
-  ],
   "user_tags": [
+   "poetic.s.04",
+   "polarity.n.02",
+   "full_moon.n.01",
    "opposition.n.02",
    "gesture.n.03",
-   "moment.n.01",
-   "polarity.n.02",
-   "poetic.s.04",
-   "full_moon.n.01"
+   "moment.n.01"
+  ],
+  "ivan": [
+   "Immaterial",
+   "Emotion",
+   "Space"
+  ],
+  "vincent": [
+   "Culture",
+   "Time",
+   "Physics"
+  ],
+  "marie": [
+   "Time",
+   "Emotion",
+   "Physics"
+  ],
+  "kathleen": [
+   "War",
+   "Inequality",
+   "Space"
   ]
  },
  {
@@ -365,18 +620,32 @@
   "permalink": "https://kadist.org/work/untitled-rolled-up/",
   "human_assessment_type": "tags",
   "title": "Untitled (Rolled up)",
-  "human_clusters": [
-   "Familial",
-   "Materiality",
-   "Emotion"
-  ],
   "user_tags": [
-   "materiality.n.02",
-   "sign.n.01",
+   "portrait.n.02",
    "humor.n.04",
    "abstraction.n.04",
-   "portrait.n.02",
-   "fatherhood.n.01"
+   "fatherhood.n.01",
+   "sign.n.01",
+   "materiality.n.02"
+  ],
+  "ivan": [
+   "Materiality",
+   "Familial"
+  ],
+  "vincent": [
+   "Culture",
+   "Materiality",
+   "Fantasy"
+  ],
+  "marie": [
+   "Materiality",
+   "Emotion",
+   "Familial"
+  ],
+  "kathleen": [
+   "Materiality",
+   "Emotion",
+   "Familial"
   ]
  },
  {
@@ -384,18 +653,32 @@
   "permalink": "https://kadist.org/work/onde-quer-voce-esteja-wherever-you-may-be/",
   "human_assessment_type": "tags",
   "title": "Onde quer voce esteja (Wherever you may be)",
-  "human_clusters": [
-   "Technology",
-   "Materiality",
-   "Language"
-  ],
   "user_tags": [
-   "materiality.n.02",
-   "language.n.01",
-   "metaphor.n.01",
-   "cardboard.n.01",
+   "text.n.01",
    "disconnected.s.02",
-   "text.n.01"
+   "language.n.01",
+   "cardboard.n.01",
+   "metaphor.n.01",
+   "materiality.n.02"
+  ],
+  "ivan": [
+   "Language",
+   "Materiality"
+  ],
+  "vincent": [
+   "Language",
+   "Materiality",
+   "Fantasy"
+  ],
+  "marie": [
+   "Language",
+   "Identity",
+   "Materiality"
+  ],
+  "kathleen": [
+   "Language",
+   "Materiality",
+   "Technology"
   ]
  },
  {
@@ -403,18 +686,32 @@
   "permalink": "https://kadist.org/work/choke/",
   "human_assessment_type": "tags",
   "title": "Choke",
-  "human_clusters": [
+  "user_tags": [
+   "film.v.01",
+   "gaze.n.01",
+   "violence.n.01",
+   "voyeurism.n.01",
+   "wrestling.n.02",
+   "sex.n.04"
+  ],
+  "ivan": [
+   "Body",
+   "Violence"
+  ],
+  "vincent": [
    "Arts",
    "Violence",
    "Body"
   ],
-  "user_tags": [
-   "gaze.n.01",
-   "voyeurism.n.01",
-   "violence.n.01",
-   "wrestling.n.02",
-   "sex.n.04",
-   "film.v.01"
+  "marie": [
+   "Body",
+   "Inequality",
+   "Violence"
+  ],
+  "kathleen": [
+   "Arts",
+   "Body",
+   "Violence"
   ]
  },
  {
@@ -422,18 +719,31 @@
   "permalink": "https://kadist.org/work/expedition-46-from-the-series-the-glacier-study-group-2/",
   "human_assessment_type": "tags",
   "title": "Expedition #46",
-  "human_clusters": [
-   "Environmental",
-   "Technology",
-   "Land"
-  ],
   "user_tags": [
    "climate_change.n.01",
-   "landscape.n.03",
    "glacier.n.01",
-   "scientific_method.n.01",
+   "documentary.a.01",
    "exploration.n.01",
-   "documentary.a.01"
+   "scientific_method.n.01",
+   "landscape.n.03"
+  ],
+  "ivan": [
+   "Environmental"
+  ],
+  "vincent": [
+   "Technology",
+   "Land",
+   "Environmental"
+  ],
+  "marie": [
+   "Arts",
+   "Land",
+   "Physics"
+  ],
+  "kathleen": [
+   "Technology",
+   "Land",
+   "Environmental"
   ]
  },
  {
@@ -441,18 +751,33 @@
   "permalink": "https://kadist.org/work/untitled-14/",
   "human_assessment_type": "tags",
   "title": "Untitled",
-  "human_clusters": [
-   "Activism",
-   "Environmental",
-   "Values"
-  ],
   "user_tags": [
    "self-sufficient.s.01",
-   "site.n.02",
    "humanness.n.01",
-   "constructivist.n.01",
    "vulnerability.n.01",
+   "constructivist.n.01",
+   "site.n.02",
    "nature.n.01"
+  ],
+  "ivan": [
+   "Body",
+   "Immaterial",
+   "Mind"
+  ],
+  "vincent": [
+   "Mind",
+   "Power",
+   "Environmental"
+  ],
+  "marie": [
+   "Body",
+   "Economy",
+   "Land"
+  ],
+  "kathleen": [
+   "Values",
+   "Activism",
+   "Environmental"
   ]
  },
  {
@@ -460,18 +785,33 @@
   "permalink": "https://kadist.org/work/stone-deaf/",
   "human_assessment_type": "description",
   "title": "Stone Deaf",
-  "human_clusters": [
-   "Activism",
-   "Politics",
-   "History"
-  ],
   "user_tags": [
+   "intervention.n.01",
    "politics.n.01",
-   "prominence.n.01",
+   "displacement.n.06",
    "monument.n.02",
    "marxism.n.01",
-   "intervention.n.01",
-   "displacement.n.06"
+   "prominence.n.01"
+  ],
+  "ivan": [
+   "Economy",
+   "History",
+   "Politics"
+  ],
+  "vincent": [
+   "Politics",
+   "Arts",
+   "History"
+  ],
+  "marie": [
+   "Economy",
+   "History",
+   "Politics"
+  ],
+  "kathleen": [
+   "Politics",
+   "Activism",
+   "History"
   ]
  },
  {
@@ -479,18 +819,32 @@
   "permalink": "https://kadist.org/work/collectors-favorites/",
   "human_assessment_type": "description",
   "title": "Collectors\u2019 Favorites",
-  "human_clusters": [
+  "user_tags": [
+   "throwaway.s.02",
+   "value.n.03",
+   "television_program.n.01",
+   "merchandise.n.01",
+   "everyday.s.01",
+   "collection.n.01"
+  ],
+  "ivan": [
+   "Economy",
+   "Mass media"
+  ],
+  "vincent": [
+   "Values",
+   "Economy",
+   "Environmental"
+  ],
+  "marie": [
+   "Inequality",
+   "Economy",
+   "Mass media"
+  ],
+  "kathleen": [
    "Arts",
    "Mass media",
    "Technology"
-  ],
-  "user_tags": [
-   "value.n.03",
-   "television_program.n.01",
-   "collection.n.01",
-   "merchandise.n.01",
-   "everyday.s.01",
-   "throwaway.s.02"
   ]
  },
  {
@@ -498,17 +852,32 @@
   "permalink": "https://kadist.org/work/from-the-series-the-old-and-the-new-xi/",
   "human_assessment_type": "description",
   "title": "From the series the Old and the New (XI)",
-  "human_clusters": [
-   "Arts",
-   "Materiality",
-   "Design"
-  ],
   "user_tags": [
    "three-dimensional.s.01",
    "architecture.n.01",
    "re-formation.n.01",
    "replace.v.01",
    "delicate.s.03"
+  ],
+  "ivan": [
+   "Arts",
+   "Materiality",
+   "History"
+  ],
+  "vincent": [
+   "Arts",
+   "Urbanization",
+   "Colonization"
+  ],
+  "marie": [
+   "Arts",
+   "Design",
+   "History"
+  ],
+  "kathleen": [
+   "Arts",
+   "Design",
+   "Materiality"
   ]
  },
  {
@@ -516,18 +885,32 @@
   "permalink": "https://kadist.org/work/3600-besos-por-hora/",
   "human_assessment_type": "description",
   "title": "3600 besos por hora",
-  "human_clusters": [
+  "user_tags": [
+   "island.n.01",
+   "universal.n.03",
+   "isolation.n.01",
+   "kiss.n.01",
+   "cuba.n.01",
+   "surveillance.n.01"
+  ],
+  "ivan": [
+   "Mind",
+   "Politics"
+  ],
+  "vincent": [
+   "Technology",
+   "Community",
+   "Politics"
+  ],
+  "marie": [
+   "Emotion",
+   "Mass media",
+   "Politics"
+  ],
+  "kathleen": [
    "Technology",
    "Body",
    "Mind"
-  ],
-  "user_tags": [
-   "isolation.n.01",
-   "universal.n.03",
-   "surveillance.n.01",
-   "kiss.n.01",
-   "island.n.01",
-   "cuba.n.01"
   ]
  },
  {
@@ -535,18 +918,33 @@
   "permalink": "https://kadist.org/work/the-nature-of-conflict/",
   "human_assessment_type": "description",
   "title": "The Nature of Conflict",
-  "human_clusters": [
-   "Environmental",
-   "Activism",
-   "War"
-  ],
   "user_tags": [
-   "commodity.n.01",
-   "natural_resource.n.01",
-   "turf_war.n.01",
    "globalization.n.01",
+   "water.n.01",
+   "commodity.n.01",
    "pollution.n.01",
-   "water.n.01"
+   "turf_war.n.01",
+   "natural_resource.n.01"
+  ],
+  "ivan": [
+   "Economy",
+   "Politics",
+   "Environmental"
+  ],
+  "vincent": [
+   "War",
+   "Geopolitics",
+   "Environmental"
+  ],
+  "marie": [
+   "Violence",
+   "Fantasy",
+   "Environmental"
+  ],
+  "kathleen": [
+   "War",
+   "Activism",
+   "Environmental"
   ]
  },
  {
@@ -554,18 +952,32 @@
   "permalink": "https://kadist.org/work/a-rising-tide-lifts-all-boats/",
   "human_assessment_type": "description",
   "title": "A Rising Tide Lifts All Boats",
-  "human_clusters": [
-   "Identity",
-   "Language",
-   "Culture"
-  ],
   "user_tags": [
-   "rigmarole.n.01",
-   "farfetched.s.01",
-   "nonsense.n.01",
-   "sales_talk.n.01",
    "idea.n.01",
-   "contradiction.n.01"
+   "nonsense.n.01",
+   "contradiction.n.01",
+   "sales_talk.n.01",
+   "rigmarole.n.01",
+   "farfetched.s.01"
+  ],
+  "ivan": [
+   "Language",
+   "Mind"
+  ],
+  "vincent": [
+   "Language",
+   "Mass media",
+   "Emotion"
+  ],
+  "marie": [
+   "Language",
+   "Culture",
+   "Mass media"
+  ],
+  "kathleen": [
+   "Culture",
+   "Identity",
+   "Language"
   ]
  },
  {
@@ -573,18 +985,32 @@
   "permalink": "https://kadist.org/work/one-must/",
   "human_assessment_type": "description",
   "title": "One Must",
-  "human_clusters": [
-   "Immaterial",
-   "Mind",
-   "Identity"
-  ],
   "user_tags": [
+   "text.n.01",
    "scissors.n.01",
-   "violence.n.01",
    "suggestion.n.04",
    "riddle.n.01",
-   "caption.n.03",
-   "text.n.01"
+   "violence.n.01",
+   "caption.n.03"
+  ],
+  "ivan": [
+   "Language",
+   "Mind"
+  ],
+  "vincent": [
+   "War",
+   "Materiality",
+   "Language"
+  ],
+  "marie": [
+   "Arts",
+   "Violence",
+   "Technology"
+  ],
+  "kathleen": [
+   "Identity",
+   "Immaterial",
+   "Mind"
   ]
  },
  {
@@ -592,37 +1018,91 @@
   "permalink": "https://kadist.org/work/untitled-29/",
   "human_assessment_type": "description",
   "title": "Hubert Maga (perruque MAVA-mus\u00e9e d'art de la vie active)",
-  "human_clusters": [
-   "Colonization",
-   "History",
-   "Culture"
-  ],
   "user_tags": [
-   "improvisation.n.01",
+   "hair.n.01",
    "west.n.01",
    "braid.n.01",
-   "hair.n.01",
    "architecture.n.02",
-   "cross-cultural.a.01"
+   "cross-cultural.a.01",
+   "improvisation.n.01"
+  ],
+  "ivan": [
+   "Culture",
+   "Identity"
+  ],
+  "vincent": [
+   "Body",
+   "Economy",
+   "Colonization"
+  ],
+  "marie": [
+   "Culture",
+   "Power",
+   "Politics"
+  ],
+  "kathleen": [
+   "Culture",
+   "Colonization",
+   "History"
   ]
+ },
+ {
+  "artist_name": "Francis Al\u00ffs",
+  "permalink": "https://kadist.org/work/pink-man-walking-on-boats-with-woman-following/",
+  "human_assessment_type": "description",
+  "title": "Pink Man Walking on Boats with Woman Following",
+  "user_tags": [
+   "shadow.v.01",
+   "raw.s.04",
+   "concept.n.01",
+   "motion.n.06",
+   "sketch.n.01",
+   "procedure.n.01"
+  ],
+  "ivan": [],
+  "vincent": [
+   "Body",
+   "Land",
+   "Geopolitics"
+  ],
+  "marie": [
+   "Land",
+   "Economy",
+   "Politics"
+  ],
+  "kathleen": []
  },
  {
   "artist_name": "Andrew Grassie",
   "permalink": "https://kadist.org/work/after-the-archive/",
   "human_assessment_type": "description",
   "title": "After the Archive Collections Room",
-  "human_clusters": [
-   "Space",
-   "Time",
-   "Arts"
-  ],
   "user_tags": [
+   "subsequently.r.01",
    "transformation.n.05",
-   "documentation.n.01",
-   "space.n.03",
-   "exhibition.n.01",
    "naturalistic.s.01",
-   "subsequently.r.01"
+   "exhibition.n.01",
+   "documentation.n.01",
+   "space.n.03"
+  ],
+  "ivan": [
+   "Time",
+   "Materiality"
+  ],
+  "vincent": [
+   "Arts",
+   "Culture",
+   "Materiality"
+  ],
+  "marie": [
+   "Time",
+   "Arts",
+   "Materiality"
+  ],
+  "kathleen": [
+   "Time",
+   "Arts",
+   "Space"
   ]
  },
  {
@@ -630,18 +1110,33 @@
   "permalink": "https://kadist.org/work/you-see-with-no-lights/",
   "human_assessment_type": "description",
   "title": "You see with no lights",
-  "human_clusters": [
-   "Arts",
-   "History",
-   "Design"
-  ],
   "user_tags": [
    "bauhaus.n.01",
-   "collection.n.01",
-   "art_history.n.01",
-   "playful.a.01",
    "collage.n.01",
-   "idealization.n.01"
+   "playful.a.01",
+   "idealization.n.01",
+   "collection.n.01",
+   "art_history.n.01"
+  ],
+  "ivan": [
+   "Design",
+   "Materiality",
+   "Mind"
+  ],
+  "vincent": [
+   "Arts",
+   "Culture",
+   "Politics"
+  ],
+  "marie": [
+   "Arts",
+   "Culture",
+   "Design"
+  ],
+  "kathleen": [
+   "Arts",
+   "Design",
+   "History"
   ]
  },
  {
@@ -649,18 +1144,32 @@
   "permalink": "https://kadist.org/work/spring-line/",
   "human_assessment_type": "description",
   "title": "Spring Line",
-  "human_clusters": [
-   "Time",
-   "Materiality",
-   "Identity"
-  ],
   "user_tags": [
-   "influence.n.04",
-   "variation.n.07",
+   "stalk.n.02",
    "flower.n.01",
-   "adaptation.n.02",
    "idea.n.01",
-   "stalk.n.02"
+   "adaptation.n.02",
+   "variation.n.07",
+   "influence.n.04"
+  ],
+  "ivan": [
+   "Materiality",
+   "Mind"
+  ],
+  "vincent": [
+   "Arts",
+   "Materiality",
+   "Language"
+  ],
+  "marie": [
+   "Arts",
+   "Time",
+   "Environmental"
+  ],
+  "kathleen": [
+   "Time",
+   "Identity",
+   "Materiality"
   ]
  },
  {
@@ -668,18 +1177,33 @@
   "permalink": "https://kadist.org/work/domes-1/",
   "human_assessment_type": "description",
   "title": "Domes, #1",
-  "human_clusters": [
-   "Design",
-   "Economy",
-   "Culture"
-  ],
   "user_tags": [
-   "femininity.n.01",
-   "closeness.n.01",
-   "fabrication.n.04",
    "hue.n.01",
+   "feminism.n.01",
    "polish.n.02",
-   "feminism.n.01"
+   "femininity.n.01",
+   "fabrication.n.04",
+   "closeness.n.01"
+  ],
+  "ivan": [
+   "Identity",
+   "Design",
+   "Materiality"
+  ],
+  "vincent": [
+   "Technology",
+   "Identity",
+   "Materiality"
+  ],
+  "marie": [
+   "Identity",
+   "Design",
+   "Economy"
+  ],
+  "kathleen": [
+   "Culture",
+   "Design",
+   "Economy"
   ]
  },
  {
@@ -687,18 +1211,33 @@
   "permalink": "https://kadist.org/work/primero-estaba-el-mar/",
   "human_assessment_type": "description",
   "title": "Primero Estaba el Mar",
-  "human_clusters": [
-   "Environmental",
+  "user_tags": [
+   "ocean.n.01",
+   "concrete.n.01",
+   "genesis.n.01",
+   "civilization.n.01",
+   "everyday.s.01",
+   "beginning.n.01"
+  ],
+  "ivan": [
+   "Language",
+   "Culture",
+   "Land"
+  ],
+  "vincent": [
+   "Language",
    "Colonization",
    "Land"
   ],
-  "user_tags": [
-   "civilization.n.01",
-   "everyday.s.01",
-   "genesis.n.01",
-   "beginning.n.01",
-   "concrete.n.01",
-   "ocean.n.01"
+  "marie": [
+   "Identity",
+   "Colonization",
+   "Land"
+  ],
+  "kathleen": [
+   "Colonization",
+   "Land",
+   "Environmental"
   ]
  },
  {
@@ -706,18 +1245,32 @@
   "permalink": "https://kadist.org/work/what-remains-is-future/",
   "human_assessment_type": "description",
   "title": "What remains is future",
-  "human_clusters": [
-   "Physics",
-   "Technology",
-   "Mind"
-  ],
   "user_tags": [
+   "zeppelin.n.02",
+   "mass_culture.n.01",
    "anaglyph.n.01",
    "explosion.n.02",
    "transportation_system.n.01",
-   "mass_culture.n.01",
-   "disaster.n.03",
-   "zeppelin.n.02"
+   "disaster.n.03"
+  ],
+  "ivan": [
+   "Fantasy",
+   "History"
+  ],
+  "vincent": [
+   "Arts",
+   "Materiality",
+   "History"
+  ],
+  "marie": [
+   "Mass media",
+   "Economy",
+   "Fantasy"
+  ],
+  "kathleen": [
+   "Technology",
+   "Mind",
+   "Physics"
   ]
  },
  {
@@ -725,18 +1278,32 @@
   "permalink": "https://kadist.org/work/untitled-27/",
   "human_assessment_type": "description",
   "title": "Tourisme international",
-  "human_clusters": [
-   "Geopolitics",
-   "Language",
-   "Culture"
-  ],
   "user_tags": [
-   "rustle.n.01",
-   "tourism.n.01",
-   "disconnect.v.02",
    "north_korea.n.01",
+   "propaganda.n.01",
+   "rustle.n.01",
+   "disconnect.v.02",
    "footfall.n.01",
-   "propaganda.n.01"
+   "tourism.n.01"
+  ],
+  "ivan": [
+   "Culture",
+   "Identity"
+  ],
+  "vincent": [
+   "Land",
+   "Fantasy",
+   "Politics"
+  ],
+  "marie": [
+   "Culture",
+   "Arts",
+   "Politics"
+  ],
+  "kathleen": [
+   "Culture",
+   "Language",
+   "Geopolitics"
   ]
  },
  {
@@ -744,18 +1311,33 @@
   "permalink": "https://kadist.org/work/good-hand-bad-hand/",
   "human_assessment_type": "description",
   "title": "Good Hand Bad Hand",
-  "human_clusters": [
-   "Body",
-   "Language",
-   "Identity"
-  ],
   "user_tags": [
-   "gesture.n.03",
    "poker.n.02",
-   "alter_ego.n.01",
    "performance.n.03",
    "artificial.a.01",
+   "gesture.n.03",
+   "alter_ego.n.01",
    "self-portrait.n.01"
+  ],
+  "ivan": [
+   "Language",
+   "Body",
+   "Mind"
+  ],
+  "vincent": [
+   "Emotion",
+   "Fantasy",
+   "Power"
+  ],
+  "marie": [
+   "Body",
+   "Mass media",
+   "Fantasy"
+  ],
+  "kathleen": [
+   "Language",
+   "Body",
+   "Identity"
   ]
  },
  {
@@ -763,18 +1345,32 @@
   "permalink": "https://kadist.org/work/character-witness/",
   "human_assessment_type": "description",
   "title": "Character Witness",
-  "human_clusters": [
-   "History",
-   "Politics",
-   "Language"
-  ],
   "user_tags": [
    "reenactment.n.01",
-   "autobiography.n.01",
-   "combine.v.04",
-   "fragment.n.01",
    "speech.n.03",
-   "perception.n.03"
+   "fragment.n.01",
+   "perception.n.03",
+   "autobiography.n.01",
+   "combine.v.04"
+  ],
+  "ivan": [
+   "History",
+   "Politics"
+  ],
+  "vincent": [
+   "Language",
+   "History",
+   "Politics"
+  ],
+  "marie": [
+   "Mass media",
+   "History",
+   "Politics"
+  ],
+  "kathleen": [
+   "Language",
+   "History",
+   "Politics"
   ]
  },
  {
@@ -782,18 +1378,32 @@
   "permalink": "https://kadist.org/work/anti-happening/",
   "human_assessment_type": "description",
   "title": "Anti-Happening",
-  "human_clusters": [
-   "Arts",
-   "Values",
-   "Culture"
-  ],
   "user_tags": [
-   "openness.n.01",
-   "manifesto.n.01",
    "humor.n.04",
-   "practice.n.04",
+   "manifesto.n.01",
+   "imagination.n.02",
    "happening.n.01",
-   "imagination.n.02"
+   "practice.n.04",
+   "openness.n.01"
+  ],
+  "ivan": [
+   "Identity",
+   "Mind"
+  ],
+  "vincent": [
+   "Language",
+   "Arts",
+   "Emotion"
+  ],
+  "marie": [
+   "Culture",
+   "Arts",
+   "Emotion"
+  ],
+  "kathleen": [
+   "Culture",
+   "Values",
+   "Arts"
   ]
  },
  {
@@ -801,18 +1411,32 @@
   "permalink": "https://kadist.org/work/report-from-the-legal-subcommittee/",
   "human_assessment_type": "description",
   "title": "Report from the legal subcommittee",
-  "human_clusters": [
-   "Space",
-   "Politics",
-   "Power"
-  ],
   "user_tags": [
-   "systematize.v.01",
-   "constellation.n.02",
-   "futility.n.01",
-   "frustration.n.01",
    "outer_space.n.01",
-   "capitalism.n.01"
+   "systematize.v.01",
+   "capitalism.n.01",
+   "frustration.n.01",
+   "futility.n.01",
+   "constellation.n.02"
+  ],
+  "ivan": [
+   "Politics",
+   "Space"
+  ],
+  "vincent": [
+   "Power",
+   "Geopolitics",
+   "Space"
+  ],
+  "marie": [
+   "Power",
+   "Politics",
+   "Space"
+  ],
+  "kathleen": [
+   "Power",
+   "Politics",
+   "Space"
   ]
  },
  {
@@ -820,18 +1444,33 @@
   "permalink": "https://kadist.org/work/destinos-posibles-possible-destinations/",
   "human_assessment_type": "description",
   "title": "Destinos Posibles (Possible Destinations)",
-  "human_clusters": [
-   "Fantasy",
-   "Community",
-   "Identity"
-  ],
   "user_tags": [
-   "desire.n.01",
-   "communism.n.01",
-   "community.n.01",
-   "interaction.n.01",
    "interconnection.n.01",
-   "regionalism.n.01"
+   "communism.n.01",
+   "desire.n.01",
+   "interaction.n.01",
+   "regionalism.n.01",
+   "community.n.01"
+  ],
+  "ivan": [
+   "Emotion",
+   "Economy",
+   "Politics"
+  ],
+  "vincent": [
+   "Economy",
+   "Emotion",
+   "Politics"
+  ],
+  "marie": [
+   "Body",
+   "Mind",
+   "Fantasy"
+  ],
+  "kathleen": [
+   "Identity",
+   "Community",
+   "Fantasy"
   ]
  },
  {
@@ -839,37 +1478,89 @@
   "permalink": "https://kadist.org/work/bunnys-sofa/",
   "human_assessment_type": "description",
   "title": "Bunny\u2019s Sofa",
-  "human_clusters": [
-   "Values",
-   "Politics",
-   "Emotion"
-  ],
   "user_tags": [
+   "costume.n.01",
+   "labor.n.02",
    "ethic.n.01",
    "labor.n.01",
-   "costume.n.01",
-   "fake.n.01",
-   "labor.n.02",
-   "korea.n.01"
+   "korea.n.01",
+   "fake.n.01"
+  ],
+  "ivan": [
+   "Inequality",
+   "Economy",
+   "Politics"
+  ],
+  "vincent": [
+   "Materiality",
+   "Fantasy",
+   "Politics"
+  ],
+  "marie": [
+   "Economy",
+   "Emotion",
+   "Fantasy"
+  ],
+  "kathleen": [
+   "Values",
+   "Emotion",
+   "Politics"
   ]
+ },
+ {
+  "artist_name": "Francis Al\u00ffs",
+  "permalink": "https://kadist.org/work/boat-with-legs/",
+  "human_assessment_type": "description",
+  "title": "Boat with Legs",
+  "user_tags": [
+   "raw.s.04",
+   "concept.n.01",
+   "motion.n.06",
+   "strange.a.01",
+   "sketch.n.01",
+   "procedure.n.01"
+  ],
+  "ivan": [],
+  "vincent": [
+   "Body",
+   "Urbanization",
+   "Land"
+  ],
+  "marie": [
+   "Economy"
+  ],
+  "kathleen": []
  },
  {
   "artist_name": "Nicol\u00e1s Consuegra",
   "permalink": "https://kadist.org/work/nadie-sabe-con-la-sed-que-otro-bebe/",
   "human_assessment_type": "description",
   "title": "Nadie sabe de la sed con que otro bebe (No one knows the thirst with which another drinks)",
-  "human_clusters": [
-   "Community",
-   "Economy",
-   "Inequality"
-  ],
   "user_tags": [
    "relational.s.01",
-   "occlusion.n.01",
-   "imperceptibility.n.01",
-   "transparency.n.02",
    "disjunction.n.01",
-   "thirst.n.01"
+   "transparency.n.02",
+   "thirst.n.01",
+   "imperceptibility.n.01",
+   "occlusion.n.01"
+  ],
+  "ivan": [
+   "Inequality"
+  ],
+  "vincent": [
+   "Inequality",
+   "Colonization",
+   "Emotion"
+  ],
+  "marie": [
+   "Colonization",
+   "Fantasy",
+   "Politics"
+  ],
+  "kathleen": [
+   "Inequality",
+   "Community",
+   "Economy"
   ]
  },
  {
@@ -877,18 +1568,33 @@
   "permalink": "https://kadist.org/work/tropical-vulture/",
   "human_assessment_type": "description",
   "title": "Tropical Vulture",
-  "human_clusters": [
-   "Fantasy",
-   "Design",
-   "Culture"
-  ],
   "user_tags": [
-   "actuality.n.01",
+   "narrative.n.01",
    "cinematic.a.01",
    "everyday.s.01",
    "desire.n.01",
-   "narrative.n.01",
-   "mundane.s.02"
+   "mundane.s.02",
+   "actuality.n.01"
+  ],
+  "ivan": [
+   "Arts",
+   "Identity",
+   "Fantasy"
+  ],
+  "vincent": [
+   "Arts",
+   "Land",
+   "Geopolitics"
+  ],
+  "marie": [
+   "Culture",
+   "Identity",
+   "Mass media"
+  ],
+  "kathleen": [
+   "Culture",
+   "Design",
+   "Fantasy"
   ]
  }
 ]

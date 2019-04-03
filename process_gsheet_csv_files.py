@@ -32,8 +32,8 @@ def _resolve_topic_to_wordnet(term):
 
 
 def process_trials_sheets():
-    source_file_trials_tags = 'data/KB Clusters trial v.2 - A - tags only.csv'
-    source_file_trials_desc = 'data/KB Clusters trial v.2 - B - description only.csv'
+    source_file_trials_tags = 'data/MASTER Clusters trial v.2 - A - tags only.csv'
+    source_file_trials_desc = 'data/MASTER Clusters trial v.2 - B - description only.csv'
     dest_file_trials = 'data/trials.json'
 
     trials = []
@@ -43,20 +43,27 @@ def process_trials_sheets():
         df = pd.read_csv(filename)
 
         for index, row in df.iterrows():
-            human_cluster_assignments = []
-            for col in ['Cluster 1', 'Cluster 2', 'Cluster 3']:
-                if col in df.columns and not pd.isnull(row[col]):
-                    human_cluster_assignments.append(row[col])
+            human_cluster_assignments = {}
+            people=['Ivan', 'Vincent', 'Marie', 'Kathleen']
+            for person in people:
+                human_cluster_assignments[person] = []
+                for col in ['%s Cluster 1' % (person), '%s Cluster 2' % (person), '%s Cluster 3' % (person)]:
+                    if col in df.columns and not pd.isnull(row[col]):
+                        human_cluster_assignments[person].append(row[col])
 
             if human_cluster_assignments:
-                trials.append({
+                trial = {
                     "artist_name": row['artist_name'],
                     "permalink": row['permalink'],
                     "human_assessment_type": "tags" if filename == source_file_trials_tags else "description",
                     "title": row['title'],
-                    "human_clusters": list(set([x.strip() for x in human_cluster_assignments])),
                     "user_tags": list(set([x.strip() for x in row['user_tags'].split(',')]))
-                })
+                }
+                for person in people:
+                    trial[person.lower()] = list(set([x.strip() for x in human_cluster_assignments[person]]))
+
+                trials.append(trial)
+
 
     with codecs.open(dest_file_trials, 'wb', 'utf-8') as f:
         f.write(json.dumps(trials, indent=True))
@@ -68,7 +75,7 @@ def validated_tags(cluster_name, tags):
     return [x for x in tags if x]
 
 def process_clusters_sheet():
-    source_file_clusters = 'data/KB Clusters trial v.2 - Clusters v.2.csv'
+    source_file_clusters = 'data/MASTER Clusters trial v.2 - Clusters v.2.csv'
     dest_file_clusters = 'data/clusters.json'
 
     clusters = {}
