@@ -5,17 +5,17 @@
   "human_assessment_type": "tags",
   "title": "The Tower of Babel: Independence of the country",
   "human_clusters": [
-   "Imagination",
-   "Time",
-   "Politics"
+   "Urbanization",
+   "Geopolitics",
+   "Language"
   ],
   "user_tags": [
    "power.n.01",
-   "tower_of_babel.n.01",
+   "urban.a.01",
    "catastrophe.n.02",
-   "future.n.01",
    "civilization.n.01",
-   "urban.a.01"
+   "future.n.01",
+   "tower_of_babel.n.01"
   ]
  },
  {
@@ -24,16 +24,17 @@
   "human_assessment_type": "tags",
   "title": "Unregistered City series #1 #2 #7",
   "human_clusters": [
-   "Imagination",
-   "Land"
+   "War",
+   "Fantasy",
+   "Power"
   ],
   "user_tags": [
+   "imagine.v.01",
    "fake.n.01",
-   "dystopia.n.02",
-   "ruin.n.02",
-   "city.n.01",
    "apocalypse.n.01",
-   "imagine.v.01"
+   "city.n.01",
+   "ruin.n.02",
+   "dystopia.n.02"
   ]
  },
  {
@@ -42,16 +43,16 @@
   "human_assessment_type": "tags",
   "title": "100 Boots",
   "human_clusters": [
-   "Community",
-   "Politics",
-   "Economy"
+   "Time",
+   "Materiality",
+   "Identity"
   ],
   "user_tags": [
-   "hero.n.02",
-   "distribution.n.03",
-   "journey.n.01",
    "materiality.n.02",
+   "hero.n.02",
+   "journey.n.01",
    "bypass.v.01",
+   "distribution.n.03",
    "stand-in.n.01"
   ]
  },
@@ -61,17 +62,17 @@
   "human_assessment_type": "tags",
   "title": "Far from Honolulu",
   "human_clusters": [
-   "Imagination",
    "Time",
+   "Emotion",
    "Mind"
   ],
   "user_tags": [
-   "fantastic.s.05",
    "water_travel.n.01",
-   "immobility.n.02",
-   "repetition.n.02",
    "cinematic.a.01",
-   "nostalgia.n.01"
+   "repetition.n.02",
+   "fantastic.s.05",
+   "nostalgia.n.01",
+   "immobility.n.02"
   ]
  },
  {
@@ -80,14 +81,16 @@
   "human_assessment_type": "tags",
   "title": "Red Door",
   "human_clusters": [
-   "Immaterial"
+   "Immaterial",
+   "Time",
+   "Mind"
   ],
   "user_tags": [
-   "ambiguous.a.02",
    "meaning.s.01",
-   "everyday.s.03",
-   "welcome.n.01",
+   "ambiguous.a.02",
    "symbolism.n.01",
+   "welcome.n.01",
+   "everyday.s.03",
    "safety.n.02"
   ]
  },
@@ -97,16 +100,17 @@
   "human_assessment_type": "tags",
   "title": "Cosmos animiste",
   "human_clusters": [
+   "Spirituality",
    "Body",
-   "Immaterial"
+   "Identity"
   ],
   "user_tags": [
+   "fusion.n.01",
    "ghost.n.03",
    "latent_hostility.n.01",
-   "fusion.n.01",
+   "metamorphosis.n.03",
    "sex.n.04",
-   "contradiction.n.01",
-   "metamorphosis.n.03"
+   "contradiction.n.01"
   ]
  },
  {
@@ -115,15 +119,17 @@
   "human_assessment_type": "tags",
   "title": "Teapot with shadow",
   "human_clusters": [
-   "Immaterial"
+   "Immaterial",
+   "Design",
+   "Culture"
   ],
   "user_tags": [
-   "irreverent.a.01",
-   "kitchenware.n.01",
-   "plain.a.02",
-   "dateless.s.03",
    "shadow.n.01",
-   "gather.v.01"
+   "irreverent.a.01",
+   "plain.a.02",
+   "gather.v.01",
+   "kitchenware.n.01",
+   "dateless.s.03"
   ]
  },
  {
@@ -132,15 +138,17 @@
   "human_assessment_type": "tags",
   "title": "Black Curl (CMY/Five Magnet: Irvine, California, March 25, 2010, Fujicolor Cyrstal Archive Super Type C, EM No 165-021, 05910)",
   "human_clusters": [
-   "Materiality"
+   "Arts",
+   "Urbanization",
+   "Design"
   ],
   "user_tags": [
    "materiality.n.02",
-   "development.n.08",
    "abstraction.n.04",
-   "color.n.08",
+   "development.n.08",
    "geometric.s.01",
-   "rhythm.n.02"
+   "rhythm.n.02",
+   "color.n.08"
   ]
  },
  {
@@ -149,14 +157,14 @@
   "human_assessment_type": "tags",
   "title": "BRB (\"be right back\")",
   "human_clusters": [
-   "Technology",
    "Body",
-   "Mind"
+   "Community",
+   "Language"
   ],
   "user_tags": [
    "closeness.n.01",
-   "virtual_reality.n.01",
    "human_body.n.01",
+   "virtual_reality.n.01",
    "communication.n.01",
    "conversation.n.01",
    "subconscious.s.01"
@@ -168,16 +176,17 @@
   "human_assessment_type": "tags",
   "title": "Perpetual Motion Two",
   "human_clusters": [
-   "Environment",
-   "Body"
+   "Environmental",
+   "Physics",
+   "Time"
   ],
   "user_tags": [
-   "accelerate.v.01",
-   "nature.n.03",
-   "perception.n.03",
+   "motion.n.06",
    "flit.n.01",
    "setting.n.02",
-   "motion.n.06"
+   "perception.n.03",
+   "accelerate.v.01",
+   "nature.n.03"
   ]
  },
  {
@@ -186,16 +195,17 @@
   "human_assessment_type": "tags",
   "title": "Untitled (Waiters dancing with Itinerants, Onomatopoeia)",
   "human_clusters": [
-   "Time",
-   "Imagination"
+   "Environmental",
+   "Land",
+   "History"
   ],
   "user_tags": [
-   "credible.a.01",
-   "event.n.01",
-   "fabricated.s.01",
+   "documentation.n.01",
    "island.n.01",
    "reality.n.02",
-   "documentation.n.01"
+   "credible.a.01",
+   "fabricated.s.01",
+   "event.n.01"
   ]
  },
  {
@@ -204,16 +214,17 @@
   "human_assessment_type": "tags",
   "title": "Soft Staycation (Gaze Track Edit)",
   "human_clusters": [
+   "Mass media",
    "Technology",
-   "Economy"
+   "Culture"
   ],
   "user_tags": [
-   "marketing.n.02",
-   "technology.n.01",
-   "track.v.02",
-   "tourism.n.01",
    "data.n.01",
-   "gaze.n.01"
+   "track.v.02",
+   "gaze.n.01",
+   "tourism.n.01",
+   "marketing.n.02",
+   "technology.n.01"
   ]
  },
  {
@@ -222,17 +233,17 @@
   "human_assessment_type": "tags",
   "title": "Strangely familiar: Angelina with her father",
   "human_clusters": [
+   "Familial",
    "Body",
-   "Identity",
-   "Community"
+   "Identity"
   ],
   "user_tags": [
-   "voyeurism.n.01",
    "gaze.n.01",
+   "voyeurism.n.01",
+   "stagy.s.01",
    "adolescent.n.01",
    "fatherhood.n.01",
-   "pose.n.02",
-   "stagy.s.01"
+   "pose.n.02"
   ]
  },
  {
@@ -241,17 +252,17 @@
   "human_assessment_type": "tags",
   "title": "Wild Boy",
   "human_clusters": [
-   "Body",
-   "Identity",
-   "Community"
+   "Familial",
+   "Community",
+   "Identity"
   ],
   "user_tags": [
+   "child.n.01",
    "socialization.n.03",
    "education.n.02",
    "adolescent.n.01",
    "family.n.04",
-   "domestic.a.03",
-   "child.n.01"
+   "domestic.a.03"
   ]
  },
  {
@@ -260,16 +271,17 @@
   "human_assessment_type": "tags",
   "title": "Diane Arbus: A printed retrospective, 1960-1971",
   "human_clusters": [
-   "Time",
-   "Culture"
+   "Arts",
+   "Mass media",
+   "History"
   ],
   "user_tags": [
+   "art_exhibition.n.01",
+   "art_history.n.01",
+   "archive.n.01",
    "magazine.n.01",
    "retrospective.n.01",
-   "art_history.n.01",
-   "art_exhibition.n.01",
-   "rediscovery.n.01",
-   "archive.n.01"
+   "rediscovery.n.01"
   ]
  },
  {
@@ -279,15 +291,16 @@
   "title": "Decomposing Eternally",
   "human_clusters": [
    "Body",
-   "Materiality"
+   "Mind",
+   "Identity"
   ],
   "user_tags": [
-   "texture.n.01",
-   "disembody.v.01",
    "decay.n.03",
-   "diffuse.s.01",
+   "disembody.v.01",
    "human_body.n.01",
-   "thereness.n.01"
+   "thereness.n.01",
+   "diffuse.s.01",
+   "texture.n.01"
   ]
  },
  {
@@ -296,15 +309,17 @@
   "human_assessment_type": "tags",
   "title": "Man with Blue Tie",
   "human_clusters": [
-   "Materiality"
+   "Arts",
+   "Design",
+   "Culture"
   ],
   "user_tags": [
-   "san_francisco.n.01",
-   "deadpan.s.01",
    "shallow.a.01",
-   "figural.s.01",
+   "san_francisco.n.01",
    "matisse.n.01",
-   "blue.n.02"
+   "blue.n.02",
+   "figural.s.01",
+   "deadpan.s.01"
   ]
  },
  {
@@ -313,15 +328,17 @@
   "human_assessment_type": "tags",
   "title": "Island",
   "human_clusters": [
-   "Economy"
+   "Familial",
+   "Materiality",
+   "Design"
   ],
   "user_tags": [
+   "aesthetics.n.01",
    "commodity.n.01",
    "mass_production.n.01",
    "domesticity.n.02",
-   "superficial.s.03",
    "spectacle.n.02",
-   "aesthetics.n.01"
+   "superficial.s.03"
   ]
  },
  {
@@ -330,17 +347,17 @@
   "human_assessment_type": "tags",
   "title": "If I dig a very deep hole",
   "human_clusters": [
-   "Nature",
-   "Time",
-   "Immaterial"
+   "Space",
+   "Inequality",
+   "War"
   ],
   "user_tags": [
-   "full_moon.n.01",
+   "opposition.n.02",
+   "gesture.n.03",
    "moment.n.01",
    "polarity.n.02",
-   "opposition.n.02",
    "poetic.s.04",
-   "gesture.n.03"
+   "full_moon.n.01"
   ]
  },
  {
@@ -349,16 +366,17 @@
   "human_assessment_type": "tags",
   "title": "Untitled (Rolled up)",
   "human_clusters": [
-   "Identity",
-   "Materiality"
+   "Familial",
+   "Materiality",
+   "Emotion"
   ],
   "user_tags": [
+   "materiality.n.02",
+   "sign.n.01",
+   "humor.n.04",
    "abstraction.n.04",
    "portrait.n.02",
-   "fatherhood.n.01",
-   "materiality.n.02",
-   "humor.n.04",
-   "sign.n.01"
+   "fatherhood.n.01"
   ]
  },
  {
@@ -367,16 +385,17 @@
   "human_assessment_type": "tags",
   "title": "Onde quer voce esteja (Wherever you may be)",
   "human_clusters": [
+   "Technology",
    "Materiality",
    "Language"
   ],
   "user_tags": [
    "materiality.n.02",
-   "text.n.01",
-   "disconnected.s.02",
    "language.n.01",
    "metaphor.n.01",
-   "cardboard.n.01"
+   "cardboard.n.01",
+   "disconnected.s.02",
+   "text.n.01"
   ]
  },
  {
@@ -385,15 +404,16 @@
   "human_assessment_type": "tags",
   "title": "Choke",
   "human_clusters": [
-   "Body",
-   "Conflict"
+   "Arts",
+   "Violence",
+   "Body"
   ],
   "user_tags": [
-   "sex.n.04",
-   "wrestling.n.02",
+   "gaze.n.01",
    "voyeurism.n.01",
    "violence.n.01",
-   "gaze.n.01",
+   "wrestling.n.02",
+   "sex.n.04",
    "film.v.01"
   ]
  },
@@ -403,14 +423,16 @@
   "human_assessment_type": "tags",
   "title": "Expedition #46",
   "human_clusters": [
-   "Environment"
+   "Environmental",
+   "Technology",
+   "Land"
   ],
   "user_tags": [
-   "landscape.n.03",
    "climate_change.n.01",
-   "exploration.n.01",
-   "scientific_method.n.01",
+   "landscape.n.03",
    "glacier.n.01",
+   "scientific_method.n.01",
+   "exploration.n.01",
    "documentary.a.01"
   ]
  },
@@ -420,17 +442,17 @@
   "human_assessment_type": "tags",
   "title": "Untitled",
   "human_clusters": [
-   "Body",
-   "Mind",
-   "Environment"
+   "Activism",
+   "Environmental",
+   "Values"
   ],
   "user_tags": [
-   "humanness.n.01",
-   "nature.n.01",
-   "vulnerability.n.01",
+   "self-sufficient.s.01",
    "site.n.02",
+   "humanness.n.01",
    "constructivist.n.01",
-   "self-sufficient.s.01"
+   "vulnerability.n.01",
+   "nature.n.01"
   ]
  },
  {
@@ -439,17 +461,17 @@
   "human_assessment_type": "description",
   "title": "Stone Deaf",
   "human_clusters": [
-   "Economy",
+   "Activism",
    "Politics",
-   "Time"
+   "History"
   ],
   "user_tags": [
+   "politics.n.01",
+   "prominence.n.01",
    "monument.n.02",
    "marxism.n.01",
-   "displacement.n.06",
    "intervention.n.01",
-   "prominence.n.01",
-   "politics.n.01"
+   "displacement.n.06"
   ]
  },
  {
@@ -458,16 +480,17 @@
   "human_assessment_type": "description",
   "title": "Collectors\u2019 Favorites",
   "human_clusters": [
-   "Technology",
-   "Economy"
+   "Arts",
+   "Mass media",
+   "Technology"
   ],
   "user_tags": [
-   "throwaway.s.02",
+   "value.n.03",
    "television_program.n.01",
    "collection.n.01",
+   "merchandise.n.01",
    "everyday.s.01",
-   "value.n.03",
-   "merchandise.n.01"
+   "throwaway.s.02"
   ]
  },
  {
@@ -476,14 +499,15 @@
   "human_assessment_type": "description",
   "title": "From the series the Old and the New (XI)",
   "human_clusters": [
-   "Culture",
-   "Time"
+   "Arts",
+   "Materiality",
+   "Design"
   ],
   "user_tags": [
+   "three-dimensional.s.01",
    "architecture.n.01",
    "re-formation.n.01",
    "replace.v.01",
-   "three-dimensional.s.01",
    "delicate.s.03"
   ]
  },
@@ -493,16 +517,17 @@
   "human_assessment_type": "description",
   "title": "3600 besos por hora",
   "human_clusters": [
-   "Politics",
+   "Technology",
+   "Body",
    "Mind"
   ],
   "user_tags": [
+   "isolation.n.01",
    "universal.n.03",
-   "cuba.n.01",
+   "surveillance.n.01",
    "kiss.n.01",
    "island.n.01",
-   "isolation.n.01",
-   "surveillance.n.01"
+   "cuba.n.01"
   ]
  },
  {
@@ -511,17 +536,17 @@
   "human_assessment_type": "description",
   "title": "The Nature of Conflict",
   "human_clusters": [
-   "Economy",
-   "Politics",
-   "Environment"
+   "Environmental",
+   "Activism",
+   "War"
   ],
   "user_tags": [
-   "turf_war.n.01",
-   "pollution.n.01",
    "commodity.n.01",
+   "natural_resource.n.01",
+   "turf_war.n.01",
    "globalization.n.01",
-   "water.n.01",
-   "natural_resource.n.01"
+   "pollution.n.01",
+   "water.n.01"
   ]
  },
  {
@@ -530,15 +555,16 @@
   "human_assessment_type": "description",
   "title": "A Rising Tide Lifts All Boats",
   "human_clusters": [
+   "Identity",
    "Language",
-   "Imagination"
+   "Culture"
   ],
   "user_tags": [
    "rigmarole.n.01",
+   "farfetched.s.01",
+   "nonsense.n.01",
    "sales_talk.n.01",
    "idea.n.01",
-   "nonsense.n.01",
-   "farfetched.s.01",
    "contradiction.n.01"
   ]
  },
@@ -548,16 +574,17 @@
   "human_assessment_type": "description",
   "title": "One Must",
   "human_clusters": [
-   "Language",
-   "Immaterial"
+   "Immaterial",
+   "Mind",
+   "Identity"
   ],
   "user_tags": [
-   "caption.n.03",
-   "suggestion.n.04",
+   "scissors.n.01",
    "violence.n.01",
-   "text.n.01",
+   "suggestion.n.04",
    "riddle.n.01",
-   "scissors.n.01"
+   "caption.n.03",
+   "text.n.01"
   ]
  },
  {
@@ -566,16 +593,17 @@
   "human_assessment_type": "description",
   "title": "Hubert Maga (perruque MAVA-mus\u00e9e d'art de la vie active)",
   "human_clusters": [
-   "Identity",
+   "Colonization",
+   "History",
    "Culture"
   ],
   "user_tags": [
-   "architecture.n.02",
    "improvisation.n.01",
-   "hair.n.01",
-   "cross-cultural.a.01",
+   "west.n.01",
    "braid.n.01",
-   "west.n.01"
+   "hair.n.01",
+   "architecture.n.02",
+   "cross-cultural.a.01"
   ]
  },
  {
@@ -584,16 +612,17 @@
   "human_assessment_type": "description",
   "title": "After the Archive Collections Room",
   "human_clusters": [
+   "Space",
    "Time",
-   "Materiality"
+   "Arts"
   ],
   "user_tags": [
+   "transformation.n.05",
    "documentation.n.01",
    "space.n.03",
-   "transformation.n.05",
    "exhibition.n.01",
-   "subsequently.r.01",
-   "naturalistic.s.01"
+   "naturalistic.s.01",
+   "subsequently.r.01"
   ]
  },
  {
@@ -602,15 +631,17 @@
   "human_assessment_type": "description",
   "title": "You see with no lights",
   "human_clusters": [
-   "Materiality"
+   "Arts",
+   "History",
+   "Design"
   ],
   "user_tags": [
-   "collection.n.01",
    "bauhaus.n.01",
-   "idealization.n.01",
+   "collection.n.01",
    "art_history.n.01",
    "playful.a.01",
-   "collage.n.01"
+   "collage.n.01",
+   "idealization.n.01"
   ]
  },
  {
@@ -619,15 +650,17 @@
   "human_assessment_type": "description",
   "title": "Spring Line",
   "human_clusters": [
-   "Materiality"
+   "Time",
+   "Materiality",
+   "Identity"
   ],
   "user_tags": [
-   "adaptation.n.02",
    "influence.n.04",
-   "idea.n.01",
-   "stalk.n.02",
+   "variation.n.07",
    "flower.n.01",
-   "variation.n.07"
+   "adaptation.n.02",
+   "idea.n.01",
+   "stalk.n.02"
   ]
  },
  {
@@ -636,15 +669,16 @@
   "human_assessment_type": "description",
   "title": "Domes, #1",
   "human_clusters": [
-   "Materiality",
-   "Identity"
+   "Design",
+   "Economy",
+   "Culture"
   ],
   "user_tags": [
    "femininity.n.01",
-   "fabrication.n.04",
-   "polish.n.02",
    "closeness.n.01",
+   "fabrication.n.04",
    "hue.n.01",
+   "polish.n.02",
    "feminism.n.01"
   ]
  },
@@ -654,17 +688,17 @@
   "human_assessment_type": "description",
   "title": "Primero Estaba el Mar",
   "human_clusters": [
-   "Language",
-   "Culture",
+   "Environmental",
+   "Colonization",
    "Land"
   ],
   "user_tags": [
-   "genesis.n.01",
    "civilization.n.01",
-   "ocean.n.01",
    "everyday.s.01",
+   "genesis.n.01",
+   "beginning.n.01",
    "concrete.n.01",
-   "beginning.n.01"
+   "ocean.n.01"
   ]
  },
  {
@@ -673,16 +707,17 @@
   "human_assessment_type": "description",
   "title": "What remains is future",
   "human_clusters": [
-   "Time",
-   "Imagination"
+   "Physics",
+   "Technology",
+   "Mind"
   ],
   "user_tags": [
-   "disaster.n.03",
    "anaglyph.n.01",
-   "mass_culture.n.01",
    "explosion.n.02",
-   "zeppelin.n.02",
-   "transportation_system.n.01"
+   "transportation_system.n.01",
+   "mass_culture.n.01",
+   "disaster.n.03",
+   "zeppelin.n.02"
   ]
  },
  {
@@ -691,16 +726,17 @@
   "human_assessment_type": "description",
   "title": "Tourisme international",
   "human_clusters": [
-   "Identity",
+   "Geopolitics",
+   "Language",
    "Culture"
   ],
   "user_tags": [
-   "tourism.n.01",
-   "propaganda.n.01",
-   "disconnect.v.02",
    "rustle.n.01",
+   "tourism.n.01",
+   "disconnect.v.02",
    "north_korea.n.01",
-   "footfall.n.01"
+   "footfall.n.01",
+   "propaganda.n.01"
   ]
  },
  {
@@ -709,16 +745,17 @@
   "human_assessment_type": "description",
   "title": "Good Hand Bad Hand",
   "human_clusters": [
-   "Mind",
+   "Body",
+   "Language",
    "Identity"
   ],
   "user_tags": [
-   "alter_ego.n.01",
-   "artificial.a.01",
    "gesture.n.03",
-   "self-portrait.n.01",
+   "poker.n.02",
+   "alter_ego.n.01",
    "performance.n.03",
-   "poker.n.02"
+   "artificial.a.01",
+   "self-portrait.n.01"
   ]
  },
  {
@@ -727,16 +764,17 @@
   "human_assessment_type": "description",
   "title": "Character Witness",
   "human_clusters": [
-   "Identity",
-   "Politics"
+   "History",
+   "Politics",
+   "Language"
   ],
   "user_tags": [
+   "reenactment.n.01",
    "autobiography.n.01",
-   "speech.n.03",
    "combine.v.04",
    "fragment.n.01",
-   "perception.n.03",
-   "reenactment.n.01"
+   "speech.n.03",
+   "perception.n.03"
   ]
  },
  {
@@ -745,14 +783,15 @@
   "human_assessment_type": "description",
   "title": "Anti-Happening",
   "human_clusters": [
-   "Immaterial",
-   "Body"
+   "Arts",
+   "Values",
+   "Culture"
   ],
   "user_tags": [
-   "practice.n.04",
-   "manifesto.n.01",
    "openness.n.01",
+   "manifesto.n.01",
    "humor.n.04",
+   "practice.n.04",
    "happening.n.01",
    "imagination.n.02"
   ]
@@ -763,16 +802,17 @@
   "human_assessment_type": "description",
   "title": "Report from the legal subcommittee",
   "human_clusters": [
+   "Space",
    "Politics",
-   "Immaterial"
+   "Power"
   ],
   "user_tags": [
-   "outer_space.n.01",
-   "constellation.n.02",
    "systematize.v.01",
-   "capitalism.n.01",
+   "constellation.n.02",
+   "futility.n.01",
    "frustration.n.01",
-   "futility.n.01"
+   "outer_space.n.01",
+   "capitalism.n.01"
   ]
  },
  {
@@ -781,16 +821,17 @@
   "human_assessment_type": "description",
   "title": "Destinos Posibles (Possible Destinations)",
   "human_clusters": [
-   "Mind",
-   "Politics"
+   "Fantasy",
+   "Community",
+   "Identity"
   ],
   "user_tags": [
-   "interconnection.n.01",
-   "regionalism.n.01",
    "desire.n.01",
    "communism.n.01",
    "community.n.01",
-   "interaction.n.01"
+   "interaction.n.01",
+   "interconnection.n.01",
+   "regionalism.n.01"
   ]
  },
  {
@@ -799,16 +840,17 @@
   "human_assessment_type": "description",
   "title": "Bunny\u2019s Sofa",
   "human_clusters": [
-   "Conflict",
-   "Politics"
+   "Values",
+   "Politics",
+   "Emotion"
   ],
   "user_tags": [
-   "fake.n.01",
-   "costume.n.01",
    "ethic.n.01",
-   "korea.n.01",
+   "labor.n.01",
+   "costume.n.01",
+   "fake.n.01",
    "labor.n.02",
-   "labor.n.01"
+   "korea.n.01"
   ]
  },
  {
@@ -817,15 +859,17 @@
   "human_assessment_type": "description",
   "title": "Nadie sabe de la sed con que otro bebe (No one knows the thirst with which another drinks)",
   "human_clusters": [
-   "Conflict"
+   "Community",
+   "Economy",
+   "Inequality"
   ],
   "user_tags": [
    "relational.s.01",
-   "thirst.n.01",
+   "occlusion.n.01",
+   "imperceptibility.n.01",
    "transparency.n.02",
    "disjunction.n.01",
-   "imperceptibility.n.01",
-   "occlusion.n.01"
+   "thirst.n.01"
   ]
  },
  {
@@ -834,16 +878,17 @@
   "human_assessment_type": "description",
   "title": "Tropical Vulture",
   "human_clusters": [
-   "Identity",
-   "Imagination"
+   "Fantasy",
+   "Design",
+   "Culture"
   ],
   "user_tags": [
-   "cinematic.a.01",
-   "mundane.s.02",
-   "desire.n.01",
-   "everyday.s.01",
    "actuality.n.01",
-   "narrative.n.01"
+   "cinematic.a.01",
+   "everyday.s.01",
+   "desire.n.01",
+   "narrative.n.01",
+   "mundane.s.02"
   ]
  }
 ]

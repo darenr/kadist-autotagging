@@ -43,7 +43,12 @@ def _mk_synset(w):
         try:
             return wordnet.synset(word)
         except Exception as ex:
-            print(' * Error, invalid synset name', w)
+            try:
+                # try the first for the stem word
+                print('trying alternatives to [%s]...' % (word))
+                return wordnet.synsets(word.split('.')[0])[0]
+            except Exception as ex:
+                return None
 
     else:
         print(' * Error, invalid synset name', w, 'skipping...')
@@ -61,6 +66,7 @@ def _mk_wv_word(s):
 # two distance methods, wup and path
 #
 
+
 def wup(w1, w2, t):
     distance = w1.wup_similarity(w2)
     if distance:
@@ -68,12 +74,14 @@ def wup(w1, w2, t):
             return distance
     return 0
 
+
 def path(w1, w2, t):
     distance = w1.path_similarity(w2)
     if distance:
         if distance >= t:
             return distance
     return 0
+
 
 def wv(w1, w2, t):
     global glove_model
@@ -96,12 +104,23 @@ def wv(w1, w2, t):
 
     return 0
 
+
 def preprocess_clusters(clusters):
     #
     # convert cluster tags to synsets
     #
+    d = defaultdict(list)
 
-    return {k: [_mk_synset(x) for x in clusters[k]] for k in clusters}
+    for k in clusters:
+        for tag in clusters[k]:
+            ss = _mk_synset(tag)
+            if ss:
+                d[k].append(ss)
+            else:
+                print('skipping tag: [%s] does not have a valid sysnset' % (tag))
+
+        clusters[k] = frozenset(clusters[k])
+    return dict(d)
 
 
 def preprocess_trials(trials):
@@ -142,7 +161,7 @@ if __name__ == '__main__':
 
     print(' *', 'using WordNet version:', wordnet.get_version())
     print(' *', 'using WordVector Glove Model:', glove_file)
-    print(' *', 'using', 'similarity', similarity, 'T', T)
+    print(' *', 'using', 'similarity fn', similarity.__name__, 'T', T)
 
     file_clusters = 'data/clusters.json'
     with codecs.open(file_clusters, 'rb', 'utf-8') as f_clusters:

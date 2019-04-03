@@ -13,7 +13,9 @@ from textblob import TextBlob
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
 
-
+if sys.version_info[0] >= 3:
+    unicode = str
+    
 class DocumentTagger():
 
     def __init__(self, stopword_languages='english', stopword_folder='resources'):
