@@ -16,6 +16,8 @@ from copy import deepcopy
 
 from metrics import hamming_score
 
+from people import people
+
 # begin word vectors
 import os
 import json
@@ -36,18 +38,26 @@ glove_model = None
 
 def _mk_synset(w):
     #
-    # turn cat.n.01 into the Synset object form
+    # (synset form) cat.n.01 into the Synset object form
+    # (lemma form) syndicate.n.01.crime_syndicate
     #
+
     word = w.strip().replace(' ', '_')
-    if '.' in word:
+    
+    if word.count('.') == 2:
         try:
             return wordnet.synset(word)
         except Exception as ex:
             try:
                 # try the first for the stem word
-                print('trying alternatives to [%s]...' % (word))
                 return wordnet.synsets(word.split('.')[0])[0]
             except Exception as ex:
+                return None
+
+    elif word.count('.') == 3:
+        try:
+            return wordnet.lemma(word).synset()
+        except Exception as ex:
                 return None
 
     else:
@@ -134,16 +144,22 @@ def preprocess_trials(trials):
     return trials
 
 
-def find_clusters(clusters, user_tags, t, similarity, top_n=3):
+def find_clusters(clusters, user_tags, t, similarity, top_n=3, debug=False):
     scores = defaultdict(int)
     for cluster in clusters:
         for cluster_tag in clusters[cluster]:
+            if debug:
+                for works_tag in user_tags:
+                    sim = similarity(cluster_tag, works_tag, t)
+                    print('DEBUG', cluster, sim, cluster_tag.name(), works_tag.name())
+
             scores[cluster] += sum([similarity(cluster_tag, works_tag, t) for works_tag in user_tags])
 
     scores = {k: v for k, v in scores.items() if v}
 
     sorted_scores = sorted(scores.items(), reverse=True, key=operator.itemgetter(1))[:top_n]
-    #print(["%s/%.2f" % (c, s) for c,s in sorted_scores])
+    if debug:
+        print(["%s/%.2f" % (c, s) for c, s in sorted_scores])
     return [c for c, s in sorted_scores]
 
 
@@ -157,7 +173,7 @@ def tag_trials(clusters, trials, t, similarity):
 if __name__ == '__main__':
 
     similarity = wup
-    T = 0.75
+    T = 0.76
 
     print(' *', 'using WordNet version:', wordnet.get_version())
     print(' *', 'using WordVector Glove Model:', glove_file)
@@ -173,46 +189,52 @@ if __name__ == '__main__':
             trials = preprocess_trials(json.loads(f_trials.read()))
             tag_trials(clusters, trials, t=T, similarity=similarity)
 
-            data_df = []
-            total_hits = 0
-            clusters_when_success = []
-            y_true = []
-            y_pred = []
-            for work in trials:
-                y_true.append(work['human_clusters'])
-                y_pred.append(work['machine_clusters'])
+            for person in people:
 
-                hits = set(work['human_clusters']).intersection(set(work['machine_clusters']))
-                total_hits += len(hits)
+                data_df = []
+                total_hits = 0
+                clusters_when_success = []
+                y_true = []
+                y_pred = []
+                for work in trials:
 
-                if len(hits):
-                    clusters_when_success.extend(work['human_clusters'])
-                data_df.append([
-                    similarity.__name__,
-                    work['human_assessment_type'],
-                    ','.join(work['human_clusters']),
-                    ','.join(work['machine_clusters']),
-                    len(hits),
-                    work['artist_name'],
-                    work['title'],
-                    work['permalink']
-                ])
+                    human = "%s_assignments" % (person.lower())
 
-            #
-            # make a results dataframe for easy visualization
-            #
+                    y_true.append(work[human])
+                    y_pred.append(work['machine_clusters'])
 
-            df = pd.DataFrame(data_df, columns=["metric", "human_assessment_type", "human_clusters",
-                                                "machine_clusters", "hits", "artist_name", "title", "permalink"])
+                    hits = set(work[human]).intersection(set(work['machine_clusters']))
+                    total_hits += len(hits)
 
-            print(T, similarity.__name__, total_hits)
-            output_filename = 'results_%s_%.2f.csv' % (similarity.__name__, T)
-            df.to_csv(output_filename, index=False)
+                    if len(hits):
+                        clusters_when_success.extend(work[human])
 
-            print(' *', 'written file results to', output_filename)
+                    data_df.append([
+                        similarity.__name__,
+                        work['human_assessment_type'],
+                        ','.join(work[human]),
+                        ','.join(work['machine_clusters']),
+                        len(hits),
+                        work['artist_name'],
+                        work['title'],
+                        work['permalink']
+                    ])
 
-            #
-            # standard multi-label metrics
-            #
+                #
+                # make a results dataframe for easy visualization
+                #
 
-            print('[T={}], [sim={}], hamming score (label-based accuracy): {}'.format(T, similarity.__name__, hamming_score(y_true, y_pred)))
+                df = pd.DataFrame(data_df, columns=["metric", "human_assessment_type", "human_clusters",
+                                                    "machine_clusters", "hits", "artist_name", "title", "permalink"])
+
+                print(T, similarity.__name__, total_hits)
+                output_filename = '%s_results_%s_%.2f.csv' % (person.lower(), similarity.__name__, T)
+                df.to_csv(output_filename, index=False)
+
+                print(' *', 'written file results to', output_filename)
+
+                #
+                # standard multi-label metrics
+                #
+
+                print('[T={}], [sim={}], hamming score (label-based accuracy): {}'.format(T, similarity.__name__, hamming_score(y_true, y_pred)))

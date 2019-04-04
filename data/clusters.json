@@ -59,6 +59,7 @@
  "Emotion": [
   "emotion.n.01",
   "love.n.01",
+  "nostalgia.n.01",
   "feeling.n.01",
   "happiness.n.01",
   "happiness.n.02",
@@ -248,6 +249,8 @@
  "Fantasy": [
   "fantasy.n.01",
   "fantasy.n.02",
+  "fantasy.v.01",
+  "fantastic.s.02",
   "dreamlike.s.01",
   "phantasmagoric.s.01",
   "utopia.n.02",

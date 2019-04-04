@@ -1,4 +1,3 @@
-titlecase
 pandas
 numpy
 tqdm

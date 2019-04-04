@@ -11,6 +11,7 @@ import requests
 from tqdm import tqdm
 import random
 
+from people import people
 
 def _resolve_topic_to_wordnet(term):
     wordnet_lookup_url = 'http://arpedia.herokuapp.com:80/arpedia/v1/wordsense_lookup'
@@ -44,7 +45,6 @@ def process_trials_sheets():
 
         for index, row in df.iterrows():
             human_cluster_assignments = {}
-            people=['Ivan', 'Vincent', 'Marie', 'Kathleen']
             for person in people:
                 human_cluster_assignments[person] = []
                 for col in ['%s Cluster 1' % (person), '%s Cluster 2' % (person), '%s Cluster 3' % (person)]:
@@ -60,7 +60,8 @@ def process_trials_sheets():
                     "user_tags": list(set([x.strip() for x in row['user_tags'].split(',')]))
                 }
                 for person in people:
-                    trial[person.lower()] = list(set([x.strip() for x in human_cluster_assignments[person]]))
+                    human_assignment = "%s_assignments" % (person.lower())
+                    trial[human_assignment] = list(set([x.strip() for x in human_cluster_assignments[person]]))
 
                 trials.append(trial)
 
