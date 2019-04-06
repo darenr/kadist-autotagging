@@ -15,7 +15,8 @@ from sklearn.feature_extraction.text import TfidfTransformer
 
 if sys.version_info[0] >= 3:
     unicode = str
-    
+
+
 class DocumentTagger():
 
     def __init__(self, stopword_languages='english', stopword_folder='resources'):
@@ -44,7 +45,6 @@ class DocumentTagger():
         """convert list of features into a doc"""
         return u' '.join(features)
 
-
     def _clean_tokens(self, token_sequence):
         """returns a new sequence with the input token sequence cleaned"""
         return [re.sub(r'\s+', '_', x).lower() for x in token_sequence]
@@ -65,13 +65,13 @@ class DocumentTagger():
         # https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html
         candidate_features = [x[0] for x in tb.tags if x[1] in ['NNS', 'JJ', 'VBN', 'NN']]
 
-        if include_noun_phrases:
-            candidate_features.extend(tb.noun_phrases)
+        # if include_noun_phrases:
+        #     candidate_features.extend(tb.noun_phrases)
 
         tokens = [token for token in candidate_features
                   if len(token) >= min_word_length
                     and not self._contains_number(token)
-                    and not token.lower() in self.stopwords]
+                  and not token.lower() in self.stopwords]
 
         return self._clean_tokens(tokens)
 
@@ -80,22 +80,25 @@ class DocumentTagger():
         """print out the document->keywords"""
         for doc in r.keys():
             print(u'[{}]: {}'.format(doc, ', '.join([u"{}/{}".format(t[0], t[1]) for t in r[doc]])))
-
+            print('-'*80)
+            
     def process_documents(self, vocab_size=5000, topn=15):
         """The docs are tuples: (name, [features]), features is a list of 'words'"""
 
         cv = CountVectorizer(
-#            min_df=0.03,       # ignore terms that appear in less than x% of the documents
-#            max_df=0.80,       # ignore terms that appear in more than x% of the corpus
+            ngram_range=(1, 3),
+            min_df=0.03,       # ignore terms that appear in less than x% of the documents
+            max_df=0.80,       # ignore terms that appear in more than x% of the corpus
             stop_words=None,
             tokenizer=unicode.split,
             strip_accents='unicode',
             max_features=vocab_size)
+
         word_count_vector = cv.fit_transform([self._features_to_doc(features) for name, features in self.docs])
 
         feature_names = cv.get_feature_names()
 
-        tfidf_transformer = TfidfTransformer(smooth_idf=True, use_idf=True)
+        tfidf_transformer = TfidfTransformer(smooth_idf=True, use_idf=True, sublinear_tf=True)
         tfidf_transformer.fit(word_count_vector)
 
         result = {}
@@ -121,23 +124,24 @@ class DocumentTagger():
 
         for idx, score in sorted_items[:topn]:
             fname = feature_names[idx]
-            score_vals.append(round(score, 3))
-            feature_vals.append(feature_names[idx])
-
-        #print(zip(feature_vals, score_vals))
+            if score> 0.1:
+                score_vals.append(round(score, 3))
+                feature_vals.append(feature_names[idx])
 
         return list(zip(feature_vals, score_vals))
 
     def load_docs(self, folder):
+        """Load a set of document from the `folder` with .txt extensions"""
+
         if not os.path.isdir(folder):
             raise ValueError("{} does not exist".format(folder))
-        """Load a set of document from the `folder` with .txt extensions"""
+
         for (dirpath, dirnames, filenames) in os.walk(folder):
+            filenames.sort()
             for filename in filenames:
                 if filename.endswith('.txt'):
                     with codecs.open(os.path.join(dirpath, filename), 'rb', 'utf-8') as f:
-                        features = self._doc_to_features(f.read())
-                        self.docs.append((filename, features))
+                        self.docs.append((filename, self._doc_to_features(f.read())))
             return self
 
 
@@ -147,4 +151,5 @@ if __name__ == '__main__':
     dt.load_docs('docs')
 
     result = dt.process_documents(vocab_size=500)
+
     DocumentTagger.pprint_keywords(result)

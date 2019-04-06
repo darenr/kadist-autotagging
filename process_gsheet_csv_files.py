@@ -38,10 +38,14 @@ def process_trials_sheets():
     dest_file_trials = 'data/trials.json'
 
     trials = []
+    docs = []
 
     for filename in [source_file_trials_tags, source_file_trials_desc]:
 
         df = pd.read_csv(filename)
+
+        if 'description' in df.columns:
+            docs.extend(list(df.description.dropna()))
 
         for index, row in df.iterrows():
             human_cluster_assignments = {}
@@ -69,6 +73,12 @@ def process_trials_sheets():
     with codecs.open(dest_file_trials, 'wb', 'utf-8') as f:
         f.write(json.dumps(trials, indent=True))
         print('  *', "written", len(trials), "trials")
+
+    for i, doc in enumerate(docs):
+        with codecs.open("docs/%d.txt" % (i), 'wb', 'utf-8') as f:
+            f.write(doc)
+
+    print('  *', "written", len(docs), "documents")
 
     return trials
 
