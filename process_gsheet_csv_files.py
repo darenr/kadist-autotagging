@@ -3,15 +3,21 @@
 from __future__ import print_function
 
 import json
-import codecs
 import sys
 import pandas as pd
 import numpy as np
 import requests
 from tqdm import tqdm
 import random
+import unidecode
 
 from people import people
+
+
+def safe_filename(accented_string):
+    """ make a safe filename with no non-ascii chars """
+    return "".join([c for c in unidecode.unidecode(accented_string) \
+        if c.isascii() or c.isdigit() or c == ' ']).rstrip()
 
 def _resolve_topic_to_wordnet(term):
     wordnet_lookup_url = 'http://arpedia.herokuapp.com:80/arpedia/v1/wordsense_lookup'
@@ -44,10 +50,10 @@ def process_trials_sheets():
 
         df = pd.read_csv(filename)
 
-        if 'description' in df.columns:
-            docs.extend(list(df.description.dropna()))
-
         for index, row in df.iterrows():
+            if 'description' in row and row['description']:
+                docs.append((row['artist_name'], row['description']))
+
             human_cluster_assignments = {}
             for person in people:
                 human_cluster_assignments[person] = []
@@ -69,21 +75,23 @@ def process_trials_sheets():
 
                 trials.append(trial)
 
-
-    with codecs.open(dest_file_trials, 'wb', 'utf-8') as f:
-        f.write(json.dumps(trials, indent=True))
+    with open(dest_file_trials,  mode="w", encoding="utf8") as f:
+        print(json.dumps(trials, indent=True), file=f)
         print('  *', "written", len(trials), "trials")
 
-    for i, doc in enumerate(docs):
-        with codecs.open("docs/%d.txt" % (i), 'wb', 'utf-8') as f:
-            f.write(doc)
+    for artist, doc in docs:
+        with open("docs/%s.txt" % (safe_filename(artist)), mode="w", encoding="utf8") as f:
+            print(doc, file=f)
+
 
     print('  *', "written", len(docs), "documents")
 
     return trials
 
+
 def validated_tags(cluster_name, tags):
     return [x for x in tags if x]
+
 
 def process_clusters_sheet():
     source_file_clusters = 'data/MASTER Clusters trial v.2 - Clusters v.2.csv'
@@ -108,8 +116,8 @@ def process_clusters_sheet():
         L = [[y.strip() for y in x.split(',')[1:]] for x in terms]
         clusters[header] = validated_tags(header, [item for sublist in L for item in sublist])
 
-    with codecs.open(dest_file_clusters, 'wb', 'utf-8') as f:
-        f.write(json.dumps(clusters, indent=True))
+    with open(dest_file_clusters,  mode="w", encoding="utf8") as f:
+        print(json.dumps(clusters, indent=True), file=f)
         print('  *', "written", len(clusters), "clusters")
 
     return clusters
