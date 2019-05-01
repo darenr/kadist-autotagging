@@ -15,12 +15,11 @@ import csv
 from html_processor import strip_tags
 
 
-def select_random_tagged_works(n=75):
-    random.seed(42)
+def select_all_tagged_works():
 
     source_file_trials = 'data/kadist.json'
-    dest_file_trials = 'data/trials.json'
-    gsheet_csv_trials = 'data/trials.csv'
+    dest_file_trials = 'data/all_trials.json'
+    gsheet_csv_trials = 'data/all_trials.csv'
     trials = []
 
     with codecs.open(source_file_trials, 'rb', 'utf-8') as f:
@@ -34,40 +33,36 @@ def select_random_tagged_works(n=75):
                         tags = work['user_tags']
                         description = strip_tags(work['description'])
                         thumbnail_url = work['_thumbnails']['medium']['url']
+                        region = work['_region'][0] if '_region' in work and work['_region'] else 'Unspecified'
                         trials.append({
                             "artist_name": artist_name,
                             "title": title,
                             "description": description,
+                            "region": region,
                             "user_tags": tags,
                             "thumbnail": thumbnail_url,
                             "permalink": permalink,
                         })
 
     #
-    # select sample
-    #
-    random.shuffle(trials)
-    sample = trials[:n]
-
-    #
     # write json output
     #
 
     with codecs.open(dest_file_trials, 'wb', 'utf-8') as f:
-        f.write(json.dumps(sample, ensure_ascii=False, indent=True))
-        print('\n  *', "written", len(sample), "trials", "\n" )
+        f.write(json.dumps(trials, ensure_ascii=False, indent=True))
+        print('\n  *', "written", len(trials), "trials", "\n" )
 
     #
     # now write a csv for gsheet import
     #
-    df = pd.DataFrame(sample)
+    df = pd.DataFrame(trials)
     df['user_tags'] = df['user_tags'].str.join(',')
     df['thumbnail'] = df['thumbnail'].apply(lambda url: '=IMAGE("%s", 1)' % (url))
     df.to_csv(gsheet_csv_trials, sep=',', encoding='utf-8', index=False)
 
-    return sample
+    return trials
 
 
 if __name__ == '__main__':
 
-    samples = select_random_tagged_works()
+    select_all_tagged_works()

@@ -1,1600 +1,1122 @@
 [
  {
-  "artist_name": "Du Zhenjun",
-  "permalink": "https://kadist.org/work/the-tower-of-babel-independence-of-the-country/",
-  "human_assessment_type": "tags",
-  "title": "The Tower of Babel: Independence of the country",
+  "artist_name": "Jeffry Mitchell",
+  "title": "The Carpenter",
+  "description": "Poised with tool in hand, Jeffry Mitchell’s The Carpenter (2012) reaches forward, toward his workbench. It is difficult to tell whether the work represents just any carpenter or Christ, the most famous member of the profession and the subject of innumerable parables and artworks. His stilted pose is not too Messianic; drips of ochre glaze render his handiwork and hammer equally soft. Woodshop, table, man, and floor are lacquered together, spilling into one another and freezing the protagonist vulnerably in place.\n",
   "user_tags": [
-   "power.n.01",
-   "future.n.01",
-   "urban.a.01",
-   "catastrophe.n.02",
-   "tower_of_babel.n.01",
-   "civilization.n.01"
+   "freeze.v.01",
+   "carpenter.n.01",
+   "earthenware.n.01",
+   "glaze.n.03",
+   "jesus.n.01"
   ],
-  "ivan_assignments": [
-   "Power",
-   "Time"
-  ],
-  "vincent_assignments": [
-   "Power",
-   "History",
-   "Urbanization"
-  ],
-  "marie_assignments": [
-   "Environmental",
-   "Time",
-   "Politics"
-  ],
-  "kathleen_assignments": [
-   "Geopolitics",
-   "Urbanization",
-   "Language"
-  ]
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/jeffry_mitchell_the_carpenter-300x235.jpg",
+  "permalink": "https://kadist.org/work/the-carpenter/"
  },
  {
-  "artist_name": "Jiang Pengyi",
-  "permalink": "https://kadist.org/work/unregistered-city-series-1-2-7/",
-  "human_assessment_type": "tags",
-  "title": "Unregistered City series #1 #2 #7",
+  "artist_name": "Fernanda Gomes",
+  "title": "Untitled",
+  "description": "For this floor based work, Gomes has taken two lengths of bamboo and tied them together using linen thread. The work is self-supporting and stands in a crack or a hole in the floor. The work suggests precariousness, frailty as well as humanity through its verticality, and its gentle sinuous form, referencing perhaps the work of Giacometti. Other works in the exhibition recalled the work of Mondrian with an emphasis on horizontal and vertical lines. The fact that this work deviates from an emphasis on the rectilinear should be seen within the context of Gomes’s constructivist routes and her interest in Arte Povera. Allowing the material to express its own inner nature is fundamental to her work. The modest nature of her art suggests a poetics of the immaterial. The standing sculpture, modest though it may be, articulates the space of the room, suggesting a near and a far. Gomes generally makes her work in situ, responding to the space the exhibition will occupy, the gallery thus becoming an extension of her studio.\n",
   "user_tags": [
-   "city.n.01",
-   "apocalypse.n.01",
-   "imagine.v.01",
-   "dystopia.n.02",
-   "fake.n.01",
-   "ruin.n.02"
+   "humanness.n.01",
+   "nature.n.01",
+   "vulnerability.n.01",
+   "site.n.02",
+   "constructivist.n.01",
+   "self-sufficient.s.01"
   ],
-  "ivan_assignments": [
-   "Fantasy"
-  ],
-  "vincent_assignments": [
-   "Urbanization",
-   "War",
-   "Fantasy"
-  ],
-  "marie_assignments": [
-   "Politics",
-   "Fantasy"
-  ],
-  "kathleen_assignments": [
-   "Power",
-   "War",
-   "Fantasy"
-  ]
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/AJG-FG-00045a-site-200x300.jpg",
+  "permalink": "https://kadist.org/work/untitled-14/"
  },
  {
-  "artist_name": "Eleanor Antin",
-  "permalink": "https://kadist.org/work/100-boots/",
-  "human_assessment_type": "tags",
-  "title": "100 Boots",
+  "artist_name": "Asier Mendizabal",
+  "title": "Rotation (Moiré, Rome)",
+  "description": "Rotation presents the image of a crowd, a re-appropriation of 19th or beginning of 20th century photographs published in newspapers and magazines. This artwork is composed of the same image repeated four times with different resolutions. The last image in Rotation is less focused than the original one.\nThese pictures are low-angle shots, in a way that the subject is seen as part of a group rather than as an isolated person. This work denies the individual subject but also highlights the symbolic force of the masses.\nThe representation of crowds is a good means to highlight the way ideology creates forms. The photographic montage strategy &#8211; which is a process introduced by modernity &#8211; reveals an aspect of accumulation as well as fragmentation and destruction. Going from the top right to the bottom right, the image fades into becoming almost illegible and only the outline of the impression remains; as if identity whether it is national, political or ethnic was too difficult or impossible to represent.\nThis is a reference to popular culture and a reflection on collective gestures, the survival of rituals and the creation of a social landscape.\n",
   "user_tags": [
-   "journey.n.01",
-   "distribution.n.03",
-   "bypass.v.01",
-   "materiality.n.02",
-   "stand-in.n.01",
-   "hero.n.02"
-  ],
-  "ivan_assignments": [
-   "Inequality"
-  ],
-  "vincent_assignments": [
-   "Time",
-   "Materiality",
-   "Space"
-  ],
-  "marie_assignments": [
-   "Materiality",
-   "Economy",
-   "Fantasy"
-  ],
-  "kathleen_assignments": [
-   "Time",
-   "Materiality",
-   "Identity"
-  ]
- },
- {
-  "artist_name": "Mathilde Rosier",
-  "permalink": "https://kadist.org/work/far-from-honolulu/",
-  "human_assessment_type": "tags",
-  "title": "Far from Honolulu",
-  "user_tags": [
-   "cinematic.a.01",
-   "water_travel.n.01",
-   "nostalgia.n.01",
-   "fantastic.s.05",
+   "popular.s.04",
+   "disintegrate.v.01",
+   "social_group.n.01",
    "repetition.n.02",
-   "immobility.n.02"
+   "crowd.n.01",
+   "ritual.n.01"
   ],
-  "ivan_assignments": [
-   "Emotion",
-   "Fantasy"
-  ],
-  "vincent_assignments": [
-   "History",
-   "Physics",
-   "Fantasy"
-  ],
-  "marie_assignments": [
-   "Time",
-   "Emotion",
-   "Economy"
-  ],
-  "kathleen_assignments": [
-   "Time",
-   "Emotion",
-   "Mind"
-  ]
- },
- {
-  "artist_name": "Brenna Youngblood",
-  "permalink": "https://kadist.org/work/red-door/",
-  "human_assessment_type": "tags",
-  "title": "Red Door",
-  "user_tags": [
-   "welcome.n.01",
-   "meaning.s.01",
-   "safety.n.02",
-   "ambiguous.a.02",
-   "symbolism.n.01",
-   "everyday.s.03"
-  ],
-  "ivan_assignments": [
-   "Immaterial"
-  ],
-  "vincent_assignments": [
-   "Familial",
-   "Culture",
-   "Fantasy"
-  ],
-  "marie_assignments": [],
-  "kathleen_assignments": [
-   "Time",
-   "Mind",
-   "Immaterial"
-  ]
- },
- {
-  "artist_name": "Dominique Zinkp\u00e8",
-  "permalink": "https://kadist.org/work/cosmos-animiste/",
-  "human_assessment_type": "tags",
-  "title": "Cosmos animiste",
-  "user_tags": [
-   "metamorphosis.n.03",
-   "latent_hostility.n.01",
-   "fusion.n.01",
-   "contradiction.n.01",
-   "sex.n.04",
-   "ghost.n.03"
-  ],
-  "ivan_assignments": [
-   "Spirituality",
-   "Body"
-  ],
-  "vincent_assignments": [
-   "Body",
-   "Violence",
-   "Fantasy"
-  ],
-  "marie_assignments": [
-   "Body",
-   "Physics",
-   "Fantasy"
-  ],
-  "kathleen_assignments": [
-   "Spirituality",
-   "Body",
-   "Identity"
-  ]
- },
- {
-  "artist_name": "Hans Peter Feldmann",
-  "permalink": "https://kadist.org/work/teapot-with-shadow/",
-  "human_assessment_type": "tags",
-  "title": "Teapot with shadow",
-  "user_tags": [
-   "plain.a.02",
-   "kitchenware.n.01",
-   "shadow.n.01",
-   "gather.v.01",
-   "dateless.s.03",
-   "irreverent.a.01"
-  ],
-  "ivan_assignments": [
-   "Materiality"
-  ],
-  "vincent_assignments": [
-   "Time",
-   "Familial",
-   "Community"
-  ],
-  "marie_assignments": [
-   "Time",
-   "Inequality",
-   "Community"
-  ],
-  "kathleen_assignments": [
-   "Design",
-   "Culture",
-   "Immaterial"
-  ]
- },
- {
-  "artist_name": "Walead Beshty",
-  "permalink": "https://kadist.org/work/black-curl-cmyfive-magnet-irvine-california-march-25-2010-fujicolor-cyrstal-archive-super-type-c-em-no-165-021-05910/",
-  "human_assessment_type": "tags",
-  "title": "Black Curl (CMY/Five Magnet: Irvine, California, March 25, 2010, Fujicolor Cyrstal Archive Super Type C, EM No 165-021, 05910)",
-  "user_tags": [
-   "color.n.08",
-   "development.n.08",
-   "materiality.n.02",
-   "rhythm.n.02",
-   "abstraction.n.04",
-   "geometric.s.01"
-  ],
-  "ivan_assignments": [
-   "Materiality"
-  ],
-  "vincent_assignments": [
-   "Design",
-   "Materiality",
-   "Fantasy"
-  ],
-  "marie_assignments": [
-   "Physics",
-   "Materiality",
-   "Economy"
-  ],
-  "kathleen_assignments": [
-   "Arts",
-   "Urbanization",
-   "Design"
-  ]
- },
- {
-  "artist_name": "Miri Segal",
-  "permalink": "https://kadist.org/work/brb-be-right-back/",
-  "human_assessment_type": "tags",
-  "title": "BRB (\"be right back\")",
-  "user_tags": [
-   "human_body.n.01",
-   "closeness.n.01",
-   "communication.n.01",
-   "subconscious.s.01",
-   "virtual_reality.n.01",
-   "conversation.n.01"
-  ],
-  "ivan_assignments": [
-   "Body",
-   "Technology"
-  ],
-  "vincent_assignments": [
-   "Body",
-   "Culture",
-   "Community"
-  ],
-  "marie_assignments": [
-   "Technology",
-   "Body",
-   "Community"
-  ],
-  "kathleen_assignments": [
-   "Language",
-   "Body",
-   "Community"
-  ]
- },
- {
-  "artist_name": "Diana Thater",
-  "permalink": "https://kadist.org/work/perpetual-motion-two/",
-  "human_assessment_type": "tags",
-  "title": "Perpetual Motion Two",
-  "user_tags": [
-   "accelerate.v.01",
-   "flit.n.01",
-   "nature.n.03",
-   "motion.n.06",
-   "setting.n.02",
-   "perception.n.03"
-  ],
-  "ivan_assignments": [
-   "Mind",
-   "Physics"
-  ],
-  "vincent_assignments": [
-   "Environmental",
-   "Physics",
-   "Fantasy"
-  ],
-  "marie_assignments": [
-   "Environmental",
-   "Emotion",
-   "Physics"
-  ],
-  "kathleen_assignments": [
-   "Environmental",
-   "Time",
-   "Physics"
-  ]
- },
- {
-  "artist_name": "Charles Avery",
-  "permalink": "https://kadist.org/work/untitled-waiters-dancing-with-itinerants-onomatopoeia/",
-  "human_assessment_type": "tags",
-  "title": "Untitled (Waiters dancing with Itinerants, Onomatopoeia)",
-  "user_tags": [
-   "island.n.01",
-   "reality.n.02",
-   "credible.a.01",
-   "documentation.n.01",
-   "fabricated.s.01",
-   "event.n.01"
-  ],
-  "ivan_assignments": [
-   "Fantasy"
-  ],
-  "vincent_assignments": [
-   "History",
-   "Land",
-   "Fantasy"
-  ],
-  "marie_assignments": [
-   "Mass media",
-   "Politics",
-   "Technology"
-  ],
-  "kathleen_assignments": [
-   "Environmental",
-   "History",
-   "Land"
-  ]
- },
- {
-  "artist_name": "Daniel Keller",
-  "permalink": "https://kadist.org/work/soft-staycation-gaze-track-edit/",
-  "human_assessment_type": "tags",
-  "title": "Soft Staycation (Gaze Track Edit)",
-  "user_tags": [
-   "technology.n.01",
-   "tourism.n.01",
-   "gaze.n.01",
-   "track.v.02",
-   "marketing.n.02",
-   "data.n.01"
-  ],
-  "ivan_assignments": [
-   "Technology",
-   "Economy"
-  ],
-  "vincent_assignments": [
-   "Culture",
-   "Technology",
-   "Economy"
-  ],
-  "marie_assignments": [
-   "Body",
-   "Technology",
-   "Economy"
-  ],
-  "kathleen_assignments": [
-   "Mass media",
-   "Technology",
-   "Culture"
-  ]
- },
- {
-  "artist_name": "Michal Chelbin",
-  "permalink": "https://kadist.org/work/strangely-familiar-angelina-with-her-father/",
-  "human_assessment_type": "tags",
-  "title": "Strangely familiar: Angelina with her father",
-  "user_tags": [
-   "stagy.s.01",
-   "fatherhood.n.01",
-   "gaze.n.01",
-   "adolescent.n.01",
-   "pose.n.02",
-   "voyeurism.n.01"
-  ],
-  "ivan_assignments": [
-   "Familial"
-  ],
-  "vincent_assignments": [
-   "Arts",
-   "Familial",
-   "Culture"
-  ],
-  "marie_assignments": [
-   "Inequality",
-   "Familial",
-   "Fantasy"
-  ],
-  "kathleen_assignments": [
-   "Body",
-   "Familial",
-   "Identity"
-  ]
- },
- {
-  "artist_name": "Guy Ben-Ner",
-  "permalink": "https://kadist.org/work/wild-boy/",
-  "human_assessment_type": "tags",
-  "title": "Wild Boy",
-  "user_tags": [
-   "domestic.a.03",
-   "socialization.n.03",
-   "family.n.04",
-   "education.n.02",
-   "adolescent.n.01",
-   "child.n.01"
-  ],
-  "ivan_assignments": [
-   "Familial",
-   "Community"
-  ],
-  "vincent_assignments": [
-   "Familial",
-   "Culture",
-   "Community"
-  ],
-  "marie_assignments": [
-   "Politics",
-   "Familial",
-   "Community"
-  ],
-  "kathleen_assignments": [
-   "Identity",
-   "Familial",
-   "Community"
-  ]
- },
- {
-  "artist_name": "Pierre Leguillon",
-  "permalink": "https://kadist.org/work/diane-arbus-a-printed-retrospective-1960-1971/",
-  "human_assessment_type": "tags",
-  "title": "Diane Arbus: A printed retrospective, 1960-1971",
-  "user_tags": [
-   "retrospective.n.01",
-   "magazine.n.01",
-   "rediscovery.n.01",
-   "art_history.n.01",
-   "archive.n.01",
-   "art_exhibition.n.01"
-  ],
-  "ivan_assignments": [
-   "Mass media",
-   "Arts"
-  ],
-  "vincent_assignments": [
-   "Mass media",
-   "History",
-   "Culture"
-  ],
-  "marie_assignments": [
-   "Mass media",
-   "History",
-   "Arts"
-  ],
-  "kathleen_assignments": [
-   "Mass media",
-   "History",
-   "Arts"
-  ]
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/mendizabal1-300x200.jpg",
+  "permalink": "https://kadist.org/work/rotation-moire-rome/"
  },
  {
   "artist_name": "George Pfau",
-  "permalink": "https://kadist.org/work/decomposing-eternally/",
-  "human_assessment_type": "tags",
   "title": "Decomposing Eternally",
+  "description": "This work exemplifies George Pfau&#8217;s interest in zombies and liminal embodiment. In different ways, zombies are present here as an icon of coming apart, yet they retain a persistent thereness.\n",
   "user_tags": [
-   "human_body.n.01",
    "texture.n.01",
    "disembody.v.01",
    "decay.n.03",
    "diffuse.s.01",
+   "human_body.n.01",
    "thereness.n.01"
   ],
-  "ivan_assignments": [
-   "Body",
-   "Immaterial"
-  ],
-  "vincent_assignments": [
-   "Time",
-   "Materiality",
-   "Body"
-  ],
-  "marie_assignments": [
-   "Time",
-   "Materiality",
-   "Body"
-  ],
-  "kathleen_assignments": [
-   "Mind",
-   "Body",
-   "Identity"
-  ]
- },
- {
-  "artist_name": "James Weeks",
-  "permalink": "https://kadist.org/work/man-with-blue-tie/",
-  "human_assessment_type": "tags",
-  "title": "Man with Blue Tie",
-  "user_tags": [
-   "shallow.a.01",
-   "figural.s.01",
-   "deadpan.s.01",
-   "san_francisco.n.01",
-   "blue.n.02",
-   "matisse.n.01"
-  ],
-  "ivan_assignments": [
-   "Materiality",
-   "Design"
-  ],
-  "vincent_assignments": [
-   "Land",
-   "Arts",
-   "Urbanization"
-  ],
-  "marie_assignments": [
-   "Arts",
-   "Urbanization",
-   "Emotion"
-  ],
-  "kathleen_assignments": [
-   "Arts",
-   "Culture",
-   "Design"
-  ]
- },
- {
-  "artist_name": "Kan Xuan",
-  "permalink": "https://kadist.org/work/island/",
-  "human_assessment_type": "tags",
-  "title": "Island",
-  "user_tags": [
-   "aesthetics.n.01",
-   "spectacle.n.02",
-   "domesticity.n.02",
-   "superficial.s.03",
-   "mass_production.n.01",
-   "commodity.n.01"
-  ],
-  "ivan_assignments": [
-   "Mass media",
-   "Economy"
-  ],
-  "vincent_assignments": [
-   "Culture",
-   "Familial",
-   "Economy"
-  ],
-  "marie_assignments": [
-   "Familial",
-   "Economy",
-   "Fantasy"
-  ],
-  "kathleen_assignments": [
-   "Familial",
-   "Materiality",
-   "Design"
-  ]
- },
- {
-  "artist_name": "Pratchaya Phinthong",
-  "permalink": "https://kadist.org/work/if-i-dig-a-very-deep-hole/",
-  "human_assessment_type": "tags",
-  "title": "If I dig a very deep hole",
-  "user_tags": [
-   "moment.n.01",
-   "opposition.n.02",
-   "poetic.s.04",
-   "polarity.n.02",
-   "gesture.n.03",
-   "full_moon.n.01"
-  ],
-  "ivan_assignments": [
-   "Space",
-   "Emotion",
-   "Immaterial"
-  ],
-  "vincent_assignments": [
-   "Time",
-   "Physics",
-   "Culture"
-  ],
-  "marie_assignments": [
-   "Time",
-   "Emotion",
-   "Physics"
-  ],
-  "kathleen_assignments": [
-   "Inequality",
-   "War",
-   "Space"
-  ]
- },
- {
-  "artist_name": "Jonathan Monk",
-  "permalink": "https://kadist.org/work/untitled-rolled-up/",
-  "human_assessment_type": "tags",
-  "title": "Untitled (Rolled up)",
-  "user_tags": [
-   "sign.n.01",
-   "materiality.n.02",
-   "abstraction.n.04",
-   "portrait.n.02",
-   "fatherhood.n.01",
-   "humor.n.04"
-  ],
-  "ivan_assignments": [
-   "Materiality",
-   "Familial"
-  ],
-  "vincent_assignments": [
-   "Materiality",
-   "Culture",
-   "Fantasy"
-  ],
-  "marie_assignments": [
-   "Materiality",
-   "Emotion",
-   "Familial"
-  ],
-  "kathleen_assignments": [
-   "Materiality",
-   "Familial",
-   "Emotion"
-  ]
- },
- {
-  "artist_name": "Pablo Accinelli",
-  "permalink": "https://kadist.org/work/onde-quer-voce-esteja-wherever-you-may-be/",
-  "human_assessment_type": "tags",
-  "title": "Onde quer voce esteja (Wherever you may be)",
-  "user_tags": [
-   "metaphor.n.01",
-   "language.n.01",
-   "text.n.01",
-   "materiality.n.02",
-   "cardboard.n.01",
-   "disconnected.s.02"
-  ],
-  "ivan_assignments": [
-   "Materiality",
-   "Language"
-  ],
-  "vincent_assignments": [
-   "Fantasy",
-   "Materiality",
-   "Language"
-  ],
-  "marie_assignments": [
-   "Language",
-   "Materiality",
-   "Identity"
-  ],
-  "kathleen_assignments": [
-   "Technology",
-   "Materiality",
-   "Language"
-  ]
- },
- {
-  "artist_name": "Jennifer Locke",
-  "permalink": "https://kadist.org/work/choke/",
-  "human_assessment_type": "tags",
-  "title": "Choke",
-  "user_tags": [
-   "violence.n.01",
-   "film.v.01",
-   "gaze.n.01",
-   "wrestling.n.02",
-   "sex.n.04",
-   "voyeurism.n.01"
-  ],
-  "ivan_assignments": [
-   "Body",
-   "Violence"
-  ],
-  "vincent_assignments": [
-   "Arts",
-   "Body",
-   "Violence"
-  ],
-  "marie_assignments": [
-   "Inequality",
-   "Body",
-   "Violence"
-  ],
-  "kathleen_assignments": [
-   "Arts",
-   "Body",
-   "Violence"
-  ]
- },
- {
-  "artist_name": "Robert Zhao Renhui",
-  "permalink": "https://kadist.org/work/expedition-46-from-the-series-the-glacier-study-group-2/",
-  "human_assessment_type": "tags",
-  "title": "Expedition #46",
-  "user_tags": [
-   "scientific_method.n.01",
-   "landscape.n.03",
-   "climate_change.n.01",
-   "documentary.a.01",
-   "exploration.n.01",
-   "glacier.n.01"
-  ],
-  "ivan_assignments": [
-   "Environmental"
-  ],
-  "vincent_assignments": [
-   "Environmental",
-   "Land",
-   "Technology"
-  ],
-  "marie_assignments": [
-   "Land",
-   "Arts",
-   "Physics"
-  ],
-  "kathleen_assignments": [
-   "Environmental",
-   "Land",
-   "Technology"
-  ]
- },
- {
-  "artist_name": "Fernanda Gomes",
-  "permalink": "https://kadist.org/work/untitled-14/",
-  "human_assessment_type": "tags",
-  "title": "Untitled",
-  "user_tags": [
-   "vulnerability.n.01",
-   "constructivist.n.01",
-   "nature.n.01",
-   "site.n.02",
-   "humanness.n.01",
-   "self-sufficient.s.01"
-  ],
-  "ivan_assignments": [
-   "Mind",
-   "Body",
-   "Immaterial"
-  ],
-  "vincent_assignments": [
-   "Environmental",
-   "Mind",
-   "Power"
-  ],
-  "marie_assignments": [
-   "Land",
-   "Body",
-   "Economy"
-  ],
-  "kathleen_assignments": [
-   "Environmental",
-   "Activism",
-   "Values"
-  ]
- },
- {
-  "artist_name": "Milena Bonilla",
-  "permalink": "https://kadist.org/work/stone-deaf/",
-  "human_assessment_type": "description",
-  "title": "Stone Deaf",
-  "user_tags": [
-   "prominence.n.01",
-   "intervention.n.01",
-   "monument.n.02",
-   "marxism.n.01",
-   "displacement.n.06",
-   "politics.n.01"
-  ],
-  "ivan_assignments": [
-   "History",
-   "Politics",
-   "Economy"
-  ],
-  "vincent_assignments": [
-   "History",
-   "Arts",
-   "Politics"
-  ],
-  "marie_assignments": [
-   "History",
-   "Politics",
-   "Economy"
-  ],
-  "kathleen_assignments": [
-   "History",
-   "Activism",
-   "Politics"
-  ]
- },
- {
-  "artist_name": "Jennifer Bornstein",
-  "permalink": "https://kadist.org/work/collectors-favorites/",
-  "human_assessment_type": "description",
-  "title": "Collectors\u2019 Favorites",
-  "user_tags": [
-   "television_program.n.01",
-   "throwaway.s.02",
-   "merchandise.n.01",
-   "value.n.03",
-   "everyday.s.01",
-   "collection.n.01"
-  ],
-  "ivan_assignments": [
-   "Mass media",
-   "Economy"
-  ],
-  "vincent_assignments": [
-   "Environmental",
-   "Economy",
-   "Values"
-  ],
-  "marie_assignments": [
-   "Mass media",
-   "Inequality",
-   "Economy"
-  ],
-  "kathleen_assignments": [
-   "Mass media",
-   "Arts",
-   "Technology"
-  ]
- },
- {
-  "artist_name": "Carlos Garaicoa",
-  "permalink": "https://kadist.org/work/from-the-series-the-old-and-the-new-xi/",
-  "human_assessment_type": "description",
-  "title": "From the series the Old and the New (XI)",
-  "user_tags": [
-   "architecture.n.01",
-   "replace.v.01",
-   "three-dimensional.s.01",
-   "re-formation.n.01",
-   "delicate.s.03"
-  ],
-  "ivan_assignments": [
-   "History",
-   "Arts",
-   "Materiality"
-  ],
-  "vincent_assignments": [
-   "Colonization",
-   "Arts",
-   "Urbanization"
-  ],
-  "marie_assignments": [
-   "History",
-   "Arts",
-   "Design"
-  ],
-  "kathleen_assignments": [
-   "Arts",
-   "Materiality",
-   "Design"
-  ]
- },
- {
-  "artist_name": "Humberto Diaz",
-  "permalink": "https://kadist.org/work/3600-besos-por-hora/",
-  "human_assessment_type": "description",
-  "title": "3600 besos por hora",
-  "user_tags": [
-   "island.n.01",
-   "isolation.n.01",
-   "surveillance.n.01",
-   "cuba.n.01",
-   "universal.n.03",
-   "kiss.n.01"
-  ],
-  "ivan_assignments": [
-   "Politics",
-   "Mind"
-  ],
-  "vincent_assignments": [
-   "Politics",
-   "Technology",
-   "Community"
-  ],
-  "marie_assignments": [
-   "Mass media",
-   "Politics",
-   "Emotion"
-  ],
-  "kathleen_assignments": [
-   "Mind",
-   "Technology",
-   "Body"
-  ]
- },
- {
-  "artist_name": "Jennifer Allora, Guillermo Calzadilla",
-  "permalink": "https://kadist.org/work/the-nature-of-conflict/",
-  "human_assessment_type": "description",
-  "title": "The Nature of Conflict",
-  "user_tags": [
-   "natural_resource.n.01",
-   "water.n.01",
-   "globalization.n.01",
-   "turf_war.n.01",
-   "pollution.n.01",
-   "commodity.n.01"
-  ],
-  "ivan_assignments": [
-   "Environmental",
-   "Politics",
-   "Economy"
-  ],
-  "vincent_assignments": [
-   "Environmental",
-   "Geopolitics",
-   "War"
-  ],
-  "marie_assignments": [
-   "Environmental",
-   "Violence",
-   "Fantasy"
-  ],
-  "kathleen_assignments": [
-   "Environmental",
-   "Activism",
-   "War"
-  ]
- },
- {
-  "artist_name": "Anthony Discenza",
-  "permalink": "https://kadist.org/work/a-rising-tide-lifts-all-boats/",
-  "human_assessment_type": "description",
-  "title": "A Rising Tide Lifts All Boats",
-  "user_tags": [
-   "sales_talk.n.01",
-   "idea.n.01",
-   "farfetched.s.01",
-   "rigmarole.n.01",
-   "contradiction.n.01",
-   "nonsense.n.01"
-  ],
-  "ivan_assignments": [
-   "Mind",
-   "Language"
-  ],
-  "vincent_assignments": [
-   "Mass media",
-   "Emotion",
-   "Language"
-  ],
-  "marie_assignments": [
-   "Mass media",
-   "Culture",
-   "Language"
-  ],
-  "kathleen_assignments": [
-   "Language",
-   "Culture",
-   "Identity"
-  ]
- },
- {
-  "artist_name": "John Baldessari",
-  "permalink": "https://kadist.org/work/one-must/",
-  "human_assessment_type": "description",
-  "title": "One Must",
-  "user_tags": [
-   "violence.n.01",
-   "text.n.01",
-   "riddle.n.01",
-   "caption.n.03",
-   "scissors.n.01",
-   "suggestion.n.04"
-  ],
-  "ivan_assignments": [
-   "Mind",
-   "Language"
-  ],
-  "vincent_assignments": [
-   "Language",
-   "Materiality",
-   "War"
-  ],
-  "marie_assignments": [
-   "Arts",
-   "Technology",
-   "Violence"
-  ],
-  "kathleen_assignments": [
-   "Identity",
-   "Mind",
-   "Immaterial"
-  ]
- },
- {
-  "artist_name": "Meschac Gaba",
-  "permalink": "https://kadist.org/work/untitled-29/",
-  "human_assessment_type": "description",
-  "title": "Hubert Maga (perruque MAVA-mus\u00e9e d'art de la vie active)",
-  "user_tags": [
-   "cross-cultural.a.01",
-   "west.n.01",
-   "architecture.n.02",
-   "hair.n.01",
-   "improvisation.n.01",
-   "braid.n.01"
-  ],
-  "ivan_assignments": [
-   "Culture",
-   "Identity"
-  ],
-  "vincent_assignments": [
-   "Colonization",
-   "Body",
-   "Economy"
-  ],
-  "marie_assignments": [
-   "Power",
-   "Politics",
-   "Culture"
-  ],
-  "kathleen_assignments": [
-   "Colonization",
-   "History",
-   "Culture"
-  ]
- },
- {
-  "artist_name": "Francis Al\u00ffs",
-  "permalink": "https://kadist.org/work/pink-man-walking-on-boats-with-woman-following/",
-  "human_assessment_type": "description",
-  "title": "Pink Man Walking on Boats with Woman Following",
-  "user_tags": [
-   "raw.s.04",
-   "concept.n.01",
-   "procedure.n.01",
-   "motion.n.06",
-   "sketch.n.01",
-   "shadow.v.01"
-  ],
-  "ivan_assignments": [],
-  "vincent_assignments": [
-   "Land",
-   "Body",
-   "Geopolitics"
-  ],
-  "marie_assignments": [
-   "Land",
-   "Politics",
-   "Economy"
-  ],
-  "kathleen_assignments": []
- },
- {
-  "artist_name": "Andrew Grassie",
-  "permalink": "https://kadist.org/work/after-the-archive/",
-  "human_assessment_type": "description",
-  "title": "After the Archive Collections Room",
-  "user_tags": [
-   "transformation.n.05",
-   "subsequently.r.01",
-   "documentation.n.01",
-   "space.n.03",
-   "exhibition.n.01",
-   "naturalistic.s.01"
-  ],
-  "ivan_assignments": [
-   "Time",
-   "Materiality"
-  ],
-  "vincent_assignments": [
-   "Arts",
-   "Materiality",
-   "Culture"
-  ],
-  "marie_assignments": [
-   "Time",
-   "Arts",
-   "Materiality"
-  ],
-  "kathleen_assignments": [
-   "Time",
-   "Arts",
-   "Space"
-  ]
- },
- {
-  "artist_name": "Ryan Gander",
-  "permalink": "https://kadist.org/work/you-see-with-no-lights/",
-  "human_assessment_type": "description",
-  "title": "You see with no lights",
-  "user_tags": [
-   "idealization.n.01",
-   "collage.n.01",
-   "playful.a.01",
-   "bauhaus.n.01",
-   "art_history.n.01",
-   "collection.n.01"
-  ],
-  "ivan_assignments": [
-   "Materiality",
-   "Mind",
-   "Design"
-  ],
-  "vincent_assignments": [
-   "Arts",
-   "Politics",
-   "Culture"
-  ],
-  "marie_assignments": [
-   "Arts",
-   "Culture",
-   "Design"
-  ],
-  "kathleen_assignments": [
-   "History",
-   "Arts",
-   "Design"
-  ]
- },
- {
-  "artist_name": "Joe Scanlan",
-  "permalink": "https://kadist.org/work/spring-line/",
-  "human_assessment_type": "description",
-  "title": "Spring Line",
-  "user_tags": [
-   "idea.n.01",
-   "stalk.n.02",
-   "variation.n.07",
-   "flower.n.01",
-   "influence.n.04",
-   "adaptation.n.02"
-  ],
-  "ivan_assignments": [
-   "Materiality",
-   "Mind"
-  ],
-  "vincent_assignments": [
-   "Arts",
-   "Materiality",
-   "Language"
-  ],
-  "marie_assignments": [
-   "Environmental",
-   "Time",
-   "Arts"
-  ],
-  "kathleen_assignments": [
-   "Time",
-   "Materiality",
-   "Identity"
-  ]
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/george_pfau_deccomposing_installation_web-236x300.jpg",
+  "permalink": "https://kadist.org/work/decomposing-eternally/"
  },
  {
   "artist_name": "Judy Chicago",
-  "permalink": "https://kadist.org/work/domes-1/",
-  "human_assessment_type": "description",
   "title": "Domes, #1",
+  "description": "Domes #1 represents a significant moment in Chicago’s career when her art began to change from a New York-influenced Abstract Expressionist style to one that reflected the pop-inflected art being made in Los Angeles. By 1968, the year she began creating Domes, the twenty-nine-year-old artist had moved from Chicago to Los Angeles, graduated from UCLA, and was part of a generation of artists whose work was characterized by of the masculine overtones of Southern California’s flourishing car culture. Inspired by new technologies in the auto manufacturing, these “Finish Fetish” artists appropriated industrial materials such as car paint or lacquer to create artwork with pristine finishes. Chicago too was interested in using industrial technologies and enrolled in auto body and boat building school. While the geometric forms, meticulously applied finish, and luminous, gradated hues of color in Domes speak to Chicago’s interest in the prevailing artistic themes of 1960s Southern California, its intimate scale, round shape, and triangular formation belie her career-long interest in using “feminine” forms to promote feminist issues.\n&nbsp;\n",
   "user_tags": [
    "femininity.n.01",
-   "hue.n.01",
-   "closeness.n.01",
    "fabrication.n.04",
    "polish.n.02",
+   "closeness.n.01",
+   "hue.n.01",
    "feminism.n.01"
   ],
-  "ivan_assignments": [
-   "Identity",
-   "Materiality",
-   "Design"
-  ],
-  "vincent_assignments": [
-   "Technology",
-   "Materiality",
-   "Identity"
-  ],
-  "marie_assignments": [
-   "Design",
-   "Economy",
-   "Identity"
-  ],
-  "kathleen_assignments": [
-   "Economy",
-   "Culture",
-   "Design"
-  ]
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/judy_chicago_domes-300x267.jpg",
+  "permalink": "https://kadist.org/work/domes-1/"
  },
  {
-  "artist_name": "Felipe Arturo",
-  "permalink": "https://kadist.org/work/primero-estaba-el-mar/",
-  "human_assessment_type": "description",
-  "title": "Primero Estaba el Mar",
+  "artist_name": "Anna Molska",
+  "title": "Perspective",
+  "description": "Perspective was filmed during a residence in northern Poland. The film is preceded by a series of photographs made ??in her studio. In a snowy landscape, the artist walks towards the horizon secured by ropes. The film records the appearance of a geometric construction that unfolds in space, but also the physical effort of the artist to create it. Finally, she reaches a climax when the strings form a perspective on the landscape. At the same time, freed from the studio, but still a prisoner of the ropes, the more she walks, the space extends further.  The piece features a physical struggle to reach the horizon, and the ideal point where the hypothetical perspective lines meet. The film reveals the impossibility of art to reflect both dimensions in a two-dimensional space as if the perspective tools developed in the Renaissance are no longer allowed to read the world.\n",
   "user_tags": [
-   "concrete.n.01",
-   "beginning.n.01",
-   "everyday.s.01",
-   "genesis.n.01",
-   "ocean.n.01",
-   "civilization.n.01"
+   "dimensionality.n.01",
+   "horizon.n.01",
+   "confinement.n.03",
+   "struggle.n.03",
+   "space.n.03",
+   "poland.n.01"
   ],
-  "ivan_assignments": [
-   "Land",
-   "Culture",
-   "Language"
-  ],
-  "vincent_assignments": [
-   "Colonization",
-   "Land",
-   "Language"
-  ],
-  "marie_assignments": [
-   "Colonization",
-   "Land",
-   "Identity"
-  ],
-  "kathleen_assignments": [
-   "Colonization",
-   "Land",
-   "Environmental"
-  ]
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/img-559-300x240.jpg",
+  "permalink": "https://kadist.org/work/perspective/"
  },
  {
-  "artist_name": "Laurent Montaron",
-  "permalink": "https://kadist.org/work/what-remains-is-future/",
-  "human_assessment_type": "description",
-  "title": "What remains is future",
+  "artist_name": "Walead Beshty",
+  "title": "Black Curl (CMY/Five Magnet: Irvine, California, March 25, 2010, Fujicolor Cyrstal Archive Super Type C, EM No 165-021, 05910)",
+  "description": "Black Curl (CMY/Five Magnet: Irvine, California, March 25, 2010, Fujicolor Cyrstal Archive Super Type C, EM No 165-021, 05910) is a visually compelling photogram. Bold shapes, and the breaks between them, create a rhythm and compose an engaging abstract image. At the same time, the work deals with the conditions of the photograph’s manufacture. The literal production of a photograph—the process of photo developing and printing—is the work’s subject, and Beshty slyly points to the ways in which these material processes possess their own aesthetic appeal and content.\n&nbsp;\n",
   "user_tags": [
-   "explosion.n.02",
-   "anaglyph.n.01",
-   "transportation_system.n.01",
-   "disaster.n.03",
-   "mass_culture.n.01",
-   "zeppelin.n.02"
+   "materiality.n.02",
+   "development.n.08",
+   "abstraction.n.04",
+   "color.n.08",
+   "geometric.s.01",
+   "rhythm.n.02"
   ],
-  "ivan_assignments": [
-   "History",
-   "Fantasy"
-  ],
-  "vincent_assignments": [
-   "History",
-   "Arts",
-   "Materiality"
-  ],
-  "marie_assignments": [
-   "Mass media",
-   "Economy",
-   "Fantasy"
-  ],
-  "kathleen_assignments": [
-   "Mind",
-   "Technology",
-   "Physics"
-  ]
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/walead_besthy_black_curl-155x300.jpg",
+  "permalink": "https://kadist.org/work/black-curl-cmyfive-magnet-irvine-california-march-25-2010-fujicolor-cyrstal-archive-super-type-c-em-no-165-021-05910/"
  },
  {
-  "artist_name": "Marie Voignier",
-  "permalink": "https://kadist.org/work/untitled-27/",
-  "human_assessment_type": "description",
-  "title": "Tourisme international",
+  "artist_name": "Pia Camil",
+  "title": "Espectacular cortina",
+  "description": "Camil has made numerous paintings and photographs of halted projects along Mexico’s highways (she calls them “highway follies”), and of abandoned billboards that look like theater curtains dramatizing failed capitalist strategies. (Espectacular, the colloquial Spanish term for “billboard,” also translates more literally as “spectacle,” and of course recalls Guy Debord’s famous 1967 book The Society of the Spectacle.) In Mexico, the urban landscape has been taken over by billboards; they are totally integrated into the landscape. With overuse and reuse, they get scrapped, reshuffled, and recycled. In Espectacular (cortina) (Spectacular [Curtain], 2012), Camil abstracts such billboards into a multicolored fabric curtain to probe the multiple meanings of espectacular. The curtain is intended to work not only as a three-dimensional painting, but also as a screen that obstructs or conceals another space, causing the viewer to wonder: if nothing is on the other side of the curtain, who is the audience and who are the actors?\n",
   "user_tags": [
-   "disconnect.v.02",
-   "tourism.n.01",
-   "propaganda.n.01",
-   "north_korea.n.01",
-   "footfall.n.01",
-   "rustle.n.01"
+   "abstraction.n.04",
+   "handicraft.n.01",
+   "commercialization.n.01",
+   "space.n.03",
+   "craft.n.04",
+   "digit.n.01"
   ],
-  "ivan_assignments": [
-   "Culture",
-   "Identity"
-  ],
-  "vincent_assignments": [
-   "Land",
-   "Politics",
-   "Fantasy"
-  ],
-  "marie_assignments": [
-   "Arts",
-   "Politics",
-   "Culture"
-  ],
-  "kathleen_assignments": [
-   "Language",
-   "Culture",
-   "Geopolitics"
-  ]
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/pia_camil_espectacular_cortina_web-300x223.jpg",
+  "permalink": "https://kadist.org/work/espectacular-cortina/"
  },
  {
-  "artist_name": "Rodney Graham",
-  "permalink": "https://kadist.org/work/good-hand-bad-hand/",
-  "human_assessment_type": "description",
-  "title": "Good Hand Bad Hand",
+  "artist_name": "Sheung-Chuen",
+  "title": "New York Public Library Projects (NYPLP)",
+  "description": "Pak created New York Public Library Projects (NYPLP) (2008) during a residency in New York, using public libraries as exhibition spaces and the books they house as raw materials. One of the nine parts of this work is Page 22 (Half Folded Library), a site-specific installation for which Pak covertly folded dog-ears on page 22 of every second book (a total of approximately 15,500 books) in the 58th Street Branch Library in Manhattan. By claiming it as a “solo exhibition,” Pak intentionally turned a public institution into a private and personal museum where his works are more or less a “permanent collection.” Being open-ended as far as further interpretation (or not) by readers who encounter the folded pages, the project tests the political and social potential of personal gestures in the public realm. It is also an ironic commentary on the increasingly self-estranged yet narcissistic art world.\n",
   "user_tags": [
-   "performance.n.03",
-   "self-portrait.n.01",
+   "eisegesis.n.01",
+   "institution.n.01",
+   "appropriation.n.03",
+   "commodity.n.01",
    "gesture.n.03",
-   "artificial.a.01",
-   "alter_ego.n.01",
-   "poker.n.02"
+   "library.n.05"
   ],
-  "ivan_assignments": [
-   "Body",
-   "Mind",
-   "Language"
-  ],
-  "vincent_assignments": [
-   "Power",
-   "Emotion",
-   "Fantasy"
-  ],
-  "marie_assignments": [
-   "Mass media",
-   "Body",
-   "Fantasy"
-  ],
-  "kathleen_assignments": [
-   "Identity",
-   "Body",
-   "Language"
-  ]
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/pak_sheung-chuen_page_22_half_folded_library-300x74.jpg",
+  "permalink": "https://kadist.org/work/new-york-public-library-projects-nyplp/"
  },
  {
-  "artist_name": "Nicoline van Harskamp",
-  "permalink": "https://kadist.org/work/character-witness/",
-  "human_assessment_type": "description",
-  "title": "Character Witness",
+  "artist_name": "Sun Xun",
+  "title": "21 Ke (21 Grams)",
+  "description": "Sun’s animated film 21 Ke (21 Grams) is based on the 1907 research by the American physician Dr. Duncan MacDougall who claimed the measured weight of the human soul to be twenty-one grams. Sun used this episode—which was not fully recognized by the scientific community—as a point of departure for his depiction of a dystopian world in which the narration of history and notion of time are interrupted. Because each frame was drawn by hand with crayon, it took Sun and his animation studio team a few years to complete this thirty-minute film of a surreal journey through mysterious cities, plagues of mosquitoes, broken statues, cawing ravens, waving flags, and flooded graveyards. Here, an ever-present man in a top hat makes obscure, cryptic references in scenarios that include the national anthem, factories belching soot into the threatening sky, and soaring planes dropping leaflets to earth. Rather than encouraging specific interpretations, 21 Ke is a visual commentary that asks essential questions of human existence: Who we are? What have we done? Where are we heading?\n&nbsp;\n",
+  "user_tags": [
+   "ontology.n.02",
+   "narrative.n.01",
+   "dystopia.n.01",
+   "industrialization.n.01",
+   "animation.n.05",
+   "apocalyptic.s.01"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/sun_xun_21_ke_1_of_4-300x215.jpg",
+  "permalink": "https://kadist.org/work/21-ke-21-grams/"
+ },
+ {
+  "artist_name": "Matt Lipps",
+  "title": "Untitled (Men)",
+  "description": "In the series Horizons (2010), Lipps uses appropriation to riff on Modernism’s fascination with abstract form. For Untitled (Men) (2011), he snipped from magazines and textbooks pictures of handsome or famous men, from the ancient Greek to the modern. Arranged in a tableau, lit theatrically, and rephotographed, the two-dimensional figures have an embodied presence. While orange and blue lights transform them into a cohesive community, their ordered arrangement also draws out their smallness and flatness, deflating any hypothesis of a great empire or platonic ideal with one carefully calculated swipe.\n",
+  "user_tags": [
+   "masculinity.n.02",
+   "tableau.n.01",
+   "appropriation.n.03",
+   "cutout.n.02",
+   "two-dimensionality.n.01",
+   "embodiment.n.01"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/matt_lipps_untitled_men-300x129.jpg",
+  "permalink": "https://kadist.org/work/untitled-men/"
+ },
+ {
+  "artist_name": "Erick Beltran",
+  "title": "The Individual Is a Mirage",
+  "description": "In his posters, prints, and installations, Erick Beltrán employs the language and tools of graphic design, linguistics, typography, and variations in alphabetical forms across cultures; he is specifically interested in how language and meaning form structures that can be misconstrued as universal. In The Individual Is a Mirage (2010), Beltrán offers up a graphic chart mapping the myth of individual identity.\n",
+  "user_tags": [
+   "linguistic_process.n.02",
+   "myth.n.01",
+   "individuality.n.01",
+   "chart.n.01",
+   "misinterpretation.n.01",
+   "identity.n.01"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/IMG_Erick-Beltran_The-Individual-is-a-Mirage-300x150.png",
+  "permalink": "https://kadist.org/work/the-individual-is-a-mirage/"
+ },
+ {
+  "artist_name": "Marwa Arsanios",
+  "title": "I heard stories",
+  "description": "I’ve heard stories (2008) is one of Marwa Arsanios early works. It is a short animated film staging a story that took place at the Carlton hotel in Beirut. This work is the first part of a longer project on this iconic building.\nIn I&#8217;ve heard stories, Marwa Arsanios attempts to piece together rumors surrounding the now demolished Hotel Carlton. The hotel was a popular meeting place for gay men living in Beirut, Lebanon, where homosexual acts are considered illegal. At that time (1973 to 1993), the hotel was also the setting of three murders that might or might not have been related to these sexual encounters. Among the victim of these (probably) passionate crimes was the Lebanese politician and businessman Henri Pharaoun. Known as a collector and the richest man in Lebanon during most of his lifetime, Pharaoun was stabbed multiple times by an unknown assailant (his lover, driver or cook). Nora was the only witness to this murder. The nature of the murders went unreported. The animation explores different ways of narrating Arsanios&#8217; reconstruction of the event through drawings and videos, gossip and facts, in an effort to give these crimes their place in the history of the city.\n",
+  "user_tags": [
+   "reconstruction.n.03",
+   "bayrut.n.01",
+   "crime.n.01",
+   "hotel.n.01",
+   "feminism.n.01",
+   "homosexual.n.01"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/marwa_-_ive_heard_sotries-300x240.jpg",
+  "permalink": "https://kadist.org/work/i-heard-stories/"
+ },
+ {
+  "artist_name": "Gabriel Orozco",
+  "title": "Columpio",
+  "description": "",
+  "user_tags": [
+   "diversion.n.02",
+   "cemetery.n.01",
+   "travelogue.n.01",
+   "landscape.n.01",
+   "research.n.01",
+   "mali.n.01"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/columpio-300x198.jpg",
+  "permalink": "https://kadist.org/work/columpio/"
+ },
+ {
+  "artist_name": "Robert Therrien",
+  "title": "Untitled (Blue Chapel)",
+  "description": "In No Title (Blue Chapel) Therrien has reduced the image of a chapel to a polygon. The object and its ground both glow, but the chapel-shape is crisp and simple, reminiscent of a piece of cut paper. Like many of Therrien’s early pieces, this abstraction slips into representation and the visual and spiritual power of the image is emphasized by the strong central placement of the chapel.\n",
+  "user_tags": [
+   "minimalism.n.01",
+   "spiritual.s.02",
+   "geometric.s.01",
+   "chapel.n.01",
+   "meditation.n.02",
+   "polygon.n.01"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/robert_therrien__blue_chapel_1947_2-225x300.jpg",
+  "permalink": "https://kadist.org/work/untitled-blue-chapel/"
+ },
+ {
+  "artist_name": "Jeremy Deller",
+  "title": "Beyond the White Walls",
+  "description": "Beyond the White Walls, with a commentary written and spoken by Jeremy Deller, is often wryly amusing. The artist narrates the many projects he has completed or which are in progress beyond the gallery walls. It is beyond the gallery where Deller is at his most effective and where his art reaches out to and into people&#8217;s lives. The tape slide presentation shows the extensive range of Deller&#8217;s work. On one level it is documentation, on another level it is a work that investigates the nature of a work of art &#8211; is a social project a work of art? When does documentation become art? Can we accept the artist&#8217;s commentary at face value?\nThe artist acts as a historian or archivist of his own work but presents it in such a way that the archive is the work of art itself. Deller is at one and the same time artist, curator and cultural historian interested in the way popular culture and fine art abut each other. His art has the capacity to affect directly people&#8217;s lives by inserting it into the community and requiring the community&#8217;s participation.\n\n",
+  "user_tags": [
+   "gallery.n.03",
+   "elsewhere.r.01",
+   "archive.n.01",
+   "community.n.01",
+   "documentation.n.01",
+   "testimony.n.02"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/www.weheart.co_.uk-5d6feeef80742fab543b00ffc360cbff749cd34c_copie_bd-300x195.jpg",
+  "permalink": "https://kadist.org/work/beyond-the-white-walls/"
+ },
+ {
+  "artist_name": "Larry Bell",
+  "title": "VFGY9",
+  "description": "Like many of Larry Bell’s works, VFGY9 deals primarily with the viewer’s experience of sight. The blocks resemble a stone carving, or slabs of wood shaped into a simple organic composition whose overall sheen is varied through a thin layer of aluminum vapor. Yet, the real material of Bell’s piece is actually light, formed within the viewer’s eye into masses as present as stone.\n",
+  "user_tags": [
+   "refraction.n.01",
+   "vision.n.03",
+   "resemblance.n.01",
+   "vapor.n.01",
+   "aluminum.n.01",
+   "nature.n.03"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/larry_bell_vfgy9_1979-206x300.jpg",
+  "permalink": "https://kadist.org/work/vfgy9/"
+ },
+ {
+  "artist_name": "Barry McGee",
+  "title": "Untitled",
+  "description": "Barry McGee’s Untitled is a collection of roughly fifty, framed photographs, paintings, and text pieces clustered together in corner. Its tiled effect can perhaps be seen as a vertical Carl Andre work and also bears some resemblance to another work in the Kadist Collection, Jedediah Caesar’s JCA-25-SC. McGee’s installation also echoes the votive altars in the chapels he visited during his residency in Brazil in 1993. One almost expects to see candles lit below the work honoring the dead or loved ones in crisis. This is appropriate since the individual elements in Untitled depict and honor the disenfranchised, outcasts, and sometimes ghosts of San Francisco street life.\n",
+  "user_tags": [
+   "outcast.n.01",
+   "mischief.n.01"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2017/01/IMG_Barry-McGee_Untitled_Various-Panels-300x226.jpg",
+  "permalink": "https://kadist.org/work/untitled-barry-mcgee/"
+ },
+ {
+  "artist_name": "Melvin Moti",
+  "title": "The Prisoner’s Cinema",
+  "description": "&#8220;The Prisoner&#8217;s Cinema&#8221; is a phenomenon described in neurology as a hallucination, that appears after a prolonged absence of visual sensations. A blind screen of hallucinations forms itself on the eyes cut off from visual stimuli. The subject can see this projection, but fails to register these mental images, transforming it into an intimate and personal experience. In 1954, a scientist studied the syndrome of prisoners locked up in dark cells. This phenomenon is also common to truck drivers caught in a snowstorm. Melvin Moti is interested in the relationship between hallucination and formalism. Constant forms and geometric shapes appear on a recurring basis. A constant form is a form whose interpretation is not based on a cultural contingency, but that appears at different times and in different cultures, and forms no history and no future. The Prisoner&#8217;s Cinema consists of abstract images, rays of light through a window, and explanations of a scientist describing his vision after undergoing sensory deprivation for several days. This is about the origins of the film, creating an image of the power image of the subject, the unconscious, history of abstraction and formalism.\n",
+  "user_tags": [
+   "formalism.n.01",
+   "hallucination.n.01",
+   "sensory_deprivation.n.01",
+   "sight.n.03",
+   "darkness.n.02",
+   "unconscious_mind.n.01"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/img-500_0-300x204.jpg",
+  "permalink": "https://kadist.org/work/the-prisoners-cinema/"
+ },
+ {
+  "artist_name": "Julio Cesar Morales",
+  "title": "Interrupted Passage",
+  "description": "The video Interrupted Passage presents a performance Morales staged in the former home of Mariano Guadalupe Vallejo, a mid-nineteenth-century Mexican general serving in California. Reenacted here is Vallejo’s acquiescence to Americans who were attempting to overthrow Mexican governance of the region. When a small militia arrived at Vallejo’s house to arrest him, he invited them in and shared a meal. The emphasis on the role of food in Morales’s version connects this historic event to the current proliferation of food-based culture and social interaction in California.\n&nbsp;\n",
   "user_tags": [
    "reenactment.n.01",
-   "autobiography.n.01",
-   "speech.n.03",
-   "fragment.n.01",
-   "combine.v.04",
+   "chicano.n.01",
+   "surrender.n.03",
+   "food.n.02",
+   "meal.n.02",
+   "apprehension.n.04"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/julio_cesar_morales__interrupted_passage_2008-300x224.jpg",
+  "permalink": "https://kadist.org/work/interrupted-passage/"
+ },
+ {
+  "artist_name": "Tacita Dean",
+  "title": "Baobab",
+  "description": "The photographic quality of the film Baobab is not only the result of a highly sophisticated use of black and white and light, but also of the way in which each tree is characterized as an individual, creating in the end a series of portraits. The monumental and unnatural aspect of the baobabs turns them into strange and anthropomorphic personalities. Adding to the descriptive aspect of the film, the sound is a recording of the environment, of sounds made by animals, and participates in this peaceful contemplation. The still, almost fossilized aspect of the landscape makes it look majestic and eternal.\n« The camera, which examines in Baobab the ancestral and imposing trees of Madagascar, tries to capture the shadow and light effects, specific to photography. »\n(Essay by Julia Garimorth, in « Tacita Dean: Seven Books », published by Steidl / ARC/ Musée d&#8217;Art Moderne de la Ville de Paris, 2003).\n&nbsp;\n",
+  "user_tags": [
+   "monument.n.02",
+   "landscape.n.03",
+   "anthropomorphize.v.01",
+   "environment.n.01",
+   "portrait.n.02",
+   "black_and_white.n.02"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/img-60-300x192.jpg",
+  "permalink": "https://kadist.org/work/baobab/"
+ },
+ {
+  "artist_name": "Mohamed Bourouissa",
+  "title": "Temps mort",
+  "description": "The film called Temps Mort (Dead Time or Time Out) presents an exchange of short video footage assembled into one final edit. Remotely driven footage of daily life in prison, the banality of a sink, of a plant or a plate of pasta are offtset against scenes of life outside, in the streets of Paris, a night of love or seascapes. The dialogue between the inmate and the artist occurs by text messages and captures this exceptional situation of exchange, sharing et perhaps dependence. As the tie between the two men develops, the confrontation between life inside and out of those walls intensifies. Like his previous work, it is interesting to compare this with the documentaries screened in the general media about violence in the suburbs or in prisons.\n",
+  "user_tags": [
+   "freedom.n.01",
+   "prison.n.01",
+   "dialogue.n.01",
+   "platitude.n.01",
+   "reality.n.02",
+   "bind.v.02"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/img-746-300x240.jpg",
+  "permalink": "https://kadist.org/work/temps-mort/"
+ },
+ {
+  "artist_name": "Trevor Yeung",
+  "title": "We both died at the same moment Siliquaria armata",
+  "description": "“We both died at the same moment” is a humorous observation of anthropomorphism, the attribution of human emotions to nature and animals. A siliquaria armata is a slitworm that loosley-coiles a shell. Growing inside a sea-bed, a siliquaria armata will grow vertically until it touches another siliquaria armata, at which point they will knot together. Once caught by fishermen, the two worms die at the same time. Yeung undermines this romanticized phenomenon by emphasizing the emotionless in the process from the life to death of a slitworm. Yet while Yeung’s theoretical interrogation of life and death in nature and humankinds tendency to romanticize the unknown and the unknowable, “We both died at the same moment” simultaneously connotes a mythologisation of the slitworms. The vitrine, a showcase usually hosting Buddhist sculptures, common in Hong Kong, which houses the slitworm aggrandizes the phenomenon of dying at the same time of knotted siliquaria armata’s. “We both died at the same moment” puts into question the desire and tendency to romanticize nature, turning to a slitworm as a metaphor for beauty, life and death.\n",
+  "user_tags": [
+   "romanticize.v.01",
+   "snail.n.01",
+   "intertwine.v.01",
+   "organic.a.02",
+   "biology.n.01",
+   "containment.n.03"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/10/shell-2-200x300.jpg",
+  "permalink": "https://kadist.org/work/we-both-died/"
+ },
+ {
+  "artist_name": "Koki Tanaka",
+  "title": "Process of Blowing Flour",
+  "description": "Tanaka’s unique understanding of objects and materials is reflected in the four photographs that document his Process of Blowing Flour. The images depict the gradual blowing away of a plate of flour held by Tanaka. Because his pose is static throughout the images, his presence is deemphasized and instead the viewer’s attention is drawn to the motion of the flour. The subtle contrast between the fixed and the flowing generates a sense of time and ephemerality, suggesting the infinite possibilities of chance to alter our inflexible perceptions. The aesthetic quality of the flowing flour also evidences the ability of the simplest gesture to generate spectacle.\n",
+  "user_tags": [
+   "ephemera.n.01",
+   "possibility.n.01",
+   "gesture.n.03",
+   "flow.n.04",
+   "chance.n.03",
+   "flour.n.01"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/koki_tanaka_process_of_blowing_flour-300x109.jpg",
+  "permalink": "https://kadist.org/work/process-of-blowing-flour/"
+ },
+ {
+  "artist_name": "Jiang Zhi",
+  "title": "Tremble",
+  "description": "In the video installation Tremble, Jiang projected the life-size images of seven naked men and women onto seven individual screens. Each person displays a different facial expression and body position such as reading a book, arms open for a hug, holding a knife, raising a fist to take an oath. Each gesture reflects some essential social aspect of everyday life: hugging is about caring, taking oath has to do with politics, reading relates to acquiring knowledge, and raising a knife indicates violence. As a result of a hidden vibration machine, the images’ projection screens oscillate vigorously and the contradiction between the shaking screens and the static human figures creates an absurd effect. Through this imposed trembling, Jiang suggests the invisible power that controls modern human behavior. These seemly “out-of-control” actions are often ironically conceived as the most adaptable and mutually-agreed upon tenets of social activity.\n",
+  "user_tags": [
+   "behavior.n.04",
+   "human.a.01",
+   "vibrate.v.01",
+   "humanness.n.01",
+   "world.n.08",
+   "uncontrollable.s.03"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/jiang_zhi_tremble-300x130.jpg",
+  "permalink": "https://kadist.org/work/tremble/"
+ },
+ {
+  "artist_name": "Leonardogillesfleur",
+  "title": "Action 26:15",
+  "description": "Of Action 26:15 leonardogillesfleur notes: “There is almost an ice-cream store in every corner of\nBuenos Aires. The family [in the video] is having an ice-cream in the hot summer afternoon. Small tics appear on people’s faces from a fly or the attempt to hold still while the ice-cream top melts or drops off its sugar-cone.”\n&nbsp;\n",
+  "user_tags": [
+   "failure.n.02",
+   "immobility.n.02",
+   "absurdity.n.02",
+   "melt.v.01",
+   "dripping.n.01",
+   "humor.n.04"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/leonardgillesfleur_2615-300x200.jpg",
+  "permalink": "https://kadist.org/work/action-2615/"
+ },
+ {
+  "artist_name": "John Houck",
+  "title": "Stamp -X, Stamp -Y",
+  "description": "John Houck’s multi-layered photographic compositions immortalize nostalgic objects from the artist’s childhood, manipulated in the studio and in post-production into unreal still-life arrangements. Stamp -X, Stamp -Y consists of a careful collage of uneven scraps of paper. On their versos, these fragments of blue, white, and manila papers hold the artist’s childhood stamp collection; turned as they are, these shards of envelope become planes of colors that Houck manipulates in a vaguely grid-like fashion.\n",
+  "user_tags": [
+   "scrap.n.03",
+   "childhood.n.01",
+   "collection.n.01",
+   "unreal.a.02",
+   "postage.n.02",
+   "layered.s.01"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/john_houck_stampx_stampy_web-217x300.jpg",
+  "permalink": "https://kadist.org/work/stamp-x-stamp-y/"
+ },
+ {
+  "artist_name": "Peter Friedl",
+  "title": "New Kurdish Flag",
+  "description": "Peter Friedl&#8217;s projects place aesthetic questions within an expanded field that takes into account the social, political and philosophical context. This textile piece quotes and diverts a flag with a red background and the central star of the Kurdistan National Liberation Front (ERNK, a military organization linked to PKK, founded in 1985 and disbanded in 2000), and not the national flag of Kurdistan. The artist became interested as from 1994, when the town of Lice was destroyed by the Turkish army and the PKK was expelled from Germany. This flag got a lot of visibility in the media at the time.\nThe artist has lightened the red and emptied the central circle to question the role of the emblem as a representative sign for a group. Lightening and cutting out are ways of reclaiming all the complexities. New Kurdish Flag 01 considers the status of the flag as an object of propaganda which was activated in the streets during different performances, before being &#8216;museified&#8217; and placed in a frame in 2005, in a semantic slip. The fabric acquires a political dimension. Is it still possible to reactivate it in the real world?\n",
+  "user_tags": [
+   "erasure.n.02",
+   "propaganda.n.01",
+   "flag.n.01",
+   "protest.n.02",
+   "absence.n.01",
+   "kurdistan.n.01"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/img-101-300x187.jpg",
+  "permalink": "https://kadist.org/work/new-kurdish-flag/"
+ },
+ {
+  "artist_name": "Dennis Adams",
+  "title": "Make Down",
+  "description": "The video Make down is a 34 minute sequence shot that shows the artist removing make-up in front of a mirror. The peculiarity of the scene consists in two symbolic details: first, the make-up itself, covering his face, hair and torso &#8211; a thick kaki layer, reminding of military camouflage &#8211; and second, the paper used to remove the make-up &#8211; black and white prints of stills taken from Gillo Pontecorvo&#8217;s 1965 film, &#8220;La bataille d&#8217;Alger&#8221;\n( The Battle of Algiers). These still images put together recreate a sequence in which a young Algerian woman takes off her veil and puts on Western make-up. This disguise will help her pass the border and place a bomb in the French area of Algiers. Censured in France when it came out, the movie combines history and feminist activism; it may also be reinterpreted today in relation to the recent history of terrorism. The video goes with an installation: a vitrine enclosing the 96 prints soiled by the make-up, the remains of the artist&#8217;s performance, as if it were a reliquary. Compared to the terrorist&#8217;s gesture, the action is performed backwards by the artist, which could suggest the impossibility of having a unique reading of history.\n",
+  "user_tags": [
+   "reenactment.n.01",
+   "reliquary.n.01",
+   "terrorism.n.01",
+   "makeup.n.01",
+   "camouflage.n.03",
+   "film.n.02"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/img-15-300x212.jpg",
+  "permalink": "https://kadist.org/work/make-down/"
+ },
+ {
+  "artist_name": "Andrew Grassie",
+  "title": "After the Archive Collections Room",
+  "description": "In 2008, Grassie was invited by the Whitechapel Gallery to document the transformation of some of its spaces. The artist chose to depict the space before and after, thus creating the series titled &#8220;After the Archive Collections Room.&#8221; This group of paintings displays a space locked into time with its scaffolding and broom exposed, depicted just before an exhibition on a collection of archives.\n",
+  "user_tags": [
+   "documentation.n.01",
+   "space.n.03",
+   "transformation.n.05",
+   "exhibition.n.01",
+   "subsequently.r.01",
+   "naturalistic.s.01"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/MP-GRASA-00086-A-300-300x246.jpg",
+  "permalink": "https://kadist.org/work/after-the-archive/"
+ },
+ {
+  "artist_name": "Jordan Kantor",
+  "title": "Eclipse",
+  "description": "Eclipse is a series of screenprints from Kantor’s larger vitrine installation that included reworkings of a single image of a small group viewing an eclipse through shielding cut-outs. Printed on a clear surface, the work plays with ideas of obstruction and viewing, connecting spectacular natural phenomena with contemporary art making.\n&nbsp;\n",
+  "user_tags": [
+   "obstruction.n.02",
+   "view.n.03",
+   "natural_phenomenon.n.01",
+   "spectator.n.01",
+   "eclipse.n.01",
+   "diaphanous.s.01"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/jordan_kantor_eclipsea-300x260.jpg",
+  "permalink": "https://kadist.org/work/eclipse/"
+ },
+ {
+  "artist_name": "Humberto Diaz",
+  "title": "3600 besos por hora",
+  "description": "The two works in the Kadist collection, Observador Pasivo and 3600 besos por hora by Diaz are culled from a vast compilation of videos and performances for the camera. These are very successful in transcending the local into the global and/or universal. Memory, surveillance, and the routine and/or familiar, life in terms of both the political life and the social collective life shared by the constant reminder of the shut-off island psychological landscape.\n",
+  "user_tags": [
+   "universal.n.03",
+   "cuba.n.01",
+   "kiss.n.01",
+   "island.n.01",
+   "isolation.n.01",
+   "surveillance.n.01"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/humberto_diaz_analia_maya_3600_besos_por_hora-300x201.jpg",
+  "permalink": "https://kadist.org/work/3600-besos-por-hora/"
+ },
+ {
+  "artist_name": "Jennifer Allora, Guillermo Calzadilla",
+  "title": "The Nature of Conflict",
+  "description": "This installation combines the display of real objects with the deceptively painterly  amalgamation of their content as the subject of a photograph. Here Allora &amp; Calzadilla condemn the worldwide threat of violence caused by the high desirability of oil and water. Caught in the light, the patterning of the two liquids in the print creates attractive rainbow-like pools, a distanced comment on pollution. This trace on the ground is an aestheticized piece of evidence of a real heavily loaded problem for nature and society. The artist&#8217;s critical stance is poetically and precisely rendered to encourage debate about politics, power and ecology through art.\nPure, life-enhancing natural resources are presented as potentially explosive substances in metal or plastic containers. Such absurdity is made visible in the direct dialogue of cause and effect in this presentation which is then amplified by the title, The Nature of Conflict, which adds to the imagination of extended dangerousness. Allora &amp; Calzadilla have created a meaningful and at the same time subtle visual formula for the summary of their alarmed analysis of a current global issue.\n&nbsp;\n&nbsp;\n",
+  "user_tags": [
+   "turf_war.n.01",
+   "pollution.n.01",
+   "commodity.n.01",
+   "globalization.n.01",
+   "water.n.01",
+   "natural_resource.n.01"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/img-35-300x201.jpg",
+  "permalink": "https://kadist.org/work/the-nature-of-conflict/"
+ },
+ {
+  "artist_name": "Guillaume Leblon",
+  "title": "Puits",
+  "description": "Puits (&#8220;Wells&#8221;) is a circle made ??of raw earth elements, at the scale of Leblon&#8217;s hands. In this work, Guillaume Leblon reclaims the tactility of clay, as a classical material of sculpture, which we can also see in his other works like Raum (2006), National Monument (2006), and Notes (2007). Puits (&#8220;Wells&#8221;) suggests a universe of the past, like the 700 wells of Mohenjo-daro, the thriving Indus city from the second millennium BC (Pakistan, cf. Link). In the case of Guillaume Leblon, this form is a reminiscencence, as developed by Aby Warburg, whose forms survive and reappear through the ages and places. This work points toward the idea of wells, mimicking their shapes, while questioning their use. This well is not functional and resists to water. Its hole is replaced by a space enclosed with brick. Maybe the well is a metaphor of the opening artist&#8217;s studio to the world? The artist introduces a sense of fragility between unstable equilibrium and the threat of collapse.\n",
+  "user_tags": [
+   "obsoleteness.n.01",
+   "well.n.01",
+   "resemblance.n.01",
+   "utility.n.02",
+   "antiquity.n.03",
+   "functionality.n.01"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/img-363-195x300.jpg",
+  "permalink": "https://kadist.org/work/puits/"
+ },
+ {
+  "artist_name": "Edgar Arceneaux",
+  "title": "Untitled (Wheelchair drawing)",
+  "description": "Untitled (Wheelchair Drawing) is a ten-foot photo transfer of the image of a wheelchair with burning embers in its seat. In 2006, it was included in the exhibition, Alchemy of Comedy…Stupid at Artpace in San Antonio where Arceneaux explored the links between the medieval practice of alchemy and contemporary comedy. However, his particular image of the wheelchair is tragic, since it refers specifically to the comedian Richard Pryor, who became temporarily wheelchair-bound after being severely burned from drug use, and died prematurely of a heart attack in 2005.\n",
+  "user_tags": [
+   "memorial.n.03",
+   "dark_comedy.n.01",
+   "invalid.n.01",
+   "wheelchair.n.01",
+   "tragic.s.01",
+   "history.n.02"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/edgar_arceneaux_wheelchair-300x261.jpg",
+  "permalink": "https://kadist.org/work/untitled-wheelchair-drawing/"
+ },
+ {
+  "artist_name": "Anthony Discenza",
+  "title": "A Rising Tide Lifts All Boats",
+  "description": "In Anthony Discenza’s 23-minute audio loop that makes up A Rising Tide Lifts All Boats (2012), a nondescript male voice narrates a series of unlikely pairings: “think Dune meets South Pacific;” “think dubstep meets the Magna Carta;” “think the Food Network meets Igmar Bergman.” Given without inflection or emotion, this recitation uses the structure of a Hollywood elevator pitch to sketch out an unknown project, idea, or structure, conflating and collapsing cultural referents into an implausible mass of contradictions.\n",
+  "user_tags": [
+   "rigmarole.n.01",
+   "sales_talk.n.01",
+   "idea.n.01",
+   "nonsense.n.01",
+   "farfetched.s.01",
+   "contradiction.n.01"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/anthony_discenza_a_rising_tide_lifts_all_boats-178x300.jpg",
+  "permalink": "https://kadist.org/work/a-rising-tide-lifts-all-boats/"
+ },
+ {
+  "artist_name": "Akram Zaatari",
+  "title": "A girl and her brother. Studio Sherazade. 1960s",
+  "description": "&#8220;When you position your hand on someone&#8217;s shoulder, your shoulders become straight and horizontal. Placing one&#8217;s hand on a stable surface helps position the shoulders and the general posture of the body.&#8221; Hashem El Madani.\nHashem El Madani, a studio photographer in Saida, began working in 1948. Like all studio photographers his subjects came to him. The studio was a constant flux of visitors. It was perceived as a safe haven, where the subjects of his photographs could act out their fantasies within the conventional format of portrait photography.\nMadani records the poses, clothes and behaviour of his clients reflecting the social and political context in which they lived as well as the norms and the taboos. He portrays anonymous personages, people who normally fall below the radar of public interest.\n",
+  "user_tags": [
+   "pose.n.02",
+   "portraiture.n.02",
+   "sibling.n.01",
+   "stability.n.01",
+   "documentation.n.01",
+   "individuality.n.01"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/img-383-300x240.jpg",
+  "permalink": "https://kadist.org/work/a-girl-and-her-brother-studio-sherazade-1960s/"
+ },
+ {
+  "artist_name": "Kiran Subbaiah",
+  "title": "Flight Rehearsals",
+  "description": "Flight Rehearsals focuses on Subbaiah’s desire to fly as a means to highlight the relationship between human ambition and limitations of the physical world. The video presents philosophical explorations of the human desire to defy gravity and time. The minimalist set of a table highlights the intention and persistence of the protagonist rather than technological innovation. The video manipulates the camera angle to distort the appearance of space so that Subbaiah’s repeated attempts at beating gravity can achieve momentary flights. As the flight attempts move into the bedroom, what first appears to be a close up of an alarm clock turns out to be an oversized ringing alarm clock further back to create a distortion of space through manipulations in scale. Such effects highlight both the proximity and distance between apparent success and distorted perception.\n",
+  "user_tags": [
+   "ambition.n.01",
+   "distortion.n.05",
+   "repetition.n.02",
+   "gravity.n.01",
+   "minimalism.n.01",
    "perception.n.03"
   ],
-  "ivan_assignments": [
-   "History",
-   "Politics"
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/kiran_subbaiah_flight_rehearsals_web-260x300.jpg",
+  "permalink": "https://kadist.org/work/flight-rehearsals/"
+ },
+ {
+  "artist_name": "Bruce Conner",
+  "title": "27 Punk Photos: 11. Dim Wanker: F Word, May, 1978",
+  "description": "In 1977, as an already-established artist best known for his films, Bruce Conner began to photograph punk rock shows at Mabuhay Gardens, a San Francisco club and music venue. 27 Punk Photos: 11. Dim Wanker: F Word, May, 1978 (1978) is representative of a series of photographs by Conner, whose subject became a fascination for the artist. The photographs depict the revival of British punk rock groups in the late 1970s, and the importance of this movement in San Francisco. Some of Conner’s photographs from this period were published in the punk magazine Search and Destroy and depicted such significant figures from the scene as Frankie Fix of Crime, the Mutants, Penelope Houston of the Avengers, and Will Shatter of Negative Trend.\n",
+  "user_tags": [
+   "san_francisco.n.01",
+   "punk_rock.n.01",
+   "documentary.n.01",
+   "music.n.01",
+   "seventies.n.01"
   ],
-  "vincent_assignments": [
-   "History",
-   "Politics",
-   "Language"
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/bruce_conner_27_punk_photos_11_dim_wanker_f_word-207x300.jpg",
+  "permalink": "https://kadist.org/work/27-punk-photos-11-dim-wanker-f-word-may-1978/"
+ },
+ {
+  "artist_name": "Julian Hoeber",
+  "title": "Execution Changes #22",
+  "description": "Every work in Hoeber’s 2011 series Execution Changes is titled in alphanumeric code. The geometric pattern that composes each acrylic-on-panel painting is determined by a preordained ratio of 2 to 3. But even though a formulaic system determines the image’s structure, its surface is full of painterly effects. While the minimalist appearance of these works references similarly striped paintings by Frank Stella, Hoeber does not emphasize the painting’s underlying structure but instead tugs it apart and obscures it. Layers of paint betray the image not as surface-and-support, but as presence with depth.\n",
+  "user_tags": [
+   "dimensionality.n.01",
+   "painterly.s.01",
+   "formulaic.s.01",
+   "materiality.n.02",
+   "stella.n.01",
+   "minimalism.n.01"
   ],
-  "marie_assignments": [
-   "Mass media",
-   "History",
-   "Politics"
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/julian_hoeber_execution_changes-200x300.jpg",
+  "permalink": "https://kadist.org/work/execution-changes-22/"
+ },
+ {
+  "artist_name": "Walid Raad",
+  "title": "Appendix XVIII: Plates",
+  "description": "&#8220;The Lebanese wars of the past three decades affected Lebanon&#8217;s residents physically and psychologically: from the hundred thousand plus who were killed; to the two hundred thousand plus who were wounded; to the million plus who were displaced; to the even more who were psychologically traumatized. Needless to say, the wars also affected Lebanese cities, buildings and institutions. It is clear to me today that these wars also affected colours, lines, shapes and forms. Some of these were affected in a material way and, like burned books or razed monuments, are physically destroyed and lost forever. Others, like looted treasure or politically compromised artworks, remain physically intact but are removed from view, possibly never to be seen again. And yet other colours, lines, shapes and forms, sensing the forthcoming danger, deploy defensive measures: they hide, take refuge, hibernate, camouflage and dissimulate. I expected them to do so in the artworks of past artists. I thought their paintings, sculptures, films, photographs, and drawings would be their most hospitable hosts. I was wrong. Instead, colours, lines, shapes and forms took refuge in unexpected places. They hid in Roman and Arabic letters and numbers; in circles, rectangles and squares; in yellow, blue and green. They dissimulated as typefaces, covers, titles and indexes; as the graphi  lines and footnotes of books; they camouflaged as letters, price lists, dissertations and catalogues; as diagrams and budgets. They hibernated not in, but around artworks.&#8221; Walid Raad in &#8220;Miraculous Beginnings&#8221;, Whitechapel Gallery, London, 2010, p.94.\n",
+  "user_tags": [
+   "war.n.01",
+   "lebanon.n.01",
+   "color.n.01",
+   "adaptation.n.02",
+   "destruction.n.01",
+   "survival.n.01"
   ],
-  "kathleen_assignments": [
-   "History",
-   "Politics",
-   "Language"
-  ]
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/img-697-300x199.jpg",
+  "permalink": "https://kadist.org/work/appendix-xviii-plates/"
+ },
+ {
+  "artist_name": "Lydia Gifford",
+  "title": "Warder",
+  "description": "Lydia Gifford composes her work between pictorial expression and its inscription within an exhibition space. This particular approach implies the performative aspect of her in situ painting. The artist takes the entire environment into consideration from the canvas to the exhibition walls. Time and attention are required to allow the subtleties of the work to reveal themselves in all their complexities in order to find a focal distance which is appropriate to experience the composition. A white wall, a vibrant canvas, disparate elements as  punctuation, and the pictorial gesture that continue on the wall on which it becomes inscribed in an echo with the canvas. She explains that: “There is a subtle balance between impulse and action. Actions leave traces, painting always initially carries the mark of the body, of an explosive gesture.” Intimate and played out in the exhibition space, the artist&#8217;s work endangers its own apparatus on the occasion of every presentation and thus renews the viewpoints in a perpetual dialogue between the work, the place and the audience.\nWarder is on the limit of achievement and creates a tension with the exhibition space that fundamentally participates in its evolution. The artist proposes an intimate sensory experience by drawing attention to the vibratile nature of the context and the marking of her gesture. She states that in her work: “Painting allows me to transpose boundaries”. In the painting tradition that Gifford responds to Turner&#8217;s works are haunted by fog which diffuses light: she brings this up to date with her incisive question of defining a territory to cultivate. Her work alludes to landscape, questions the appearing of a work of art and its existence, the trace of its emergence, the vitality of the initial thrust.\n",
+  "user_tags": [
+   "spectator.n.01",
+   "site.n.02",
+   "human_body.n.01",
+   "mark.n.04",
+   "context.n.02",
+   "punctuation.n.01"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/lydiagifford1_-300x225.jpg",
+  "permalink": "https://kadist.org/work/warder/"
+ },
+ {
+  "artist_name": "Abraham Cruzvillegas",
+  "title": "Tres cadencias",
+  "description": "A cadence is a configuration of notes that indicates the continuation or resolution of a melody or song. In speech, a cadence has a similar function but is generally associated with a falling inflection. The triad is the most common construction of a chord. Tres cadencias in English is “three cadences.” This 2005 work is an installation comprised of three strings of small felt flags that can be hung in variable configurations. Whereas these kinds of flags often represent professional or amateur sports affiliations, here Cruzvillegas turns such signs of team loyalty into a visual metaphor for a linguistic or musical structure by combining two simple, common objects. As the banners sag from the chords they create a visual harmony that represents falling inflections, musical chords, and individual notes that comprise a piece of music or a spoken phrase.\n",
+  "user_tags": [
+   "chord.v.01",
+   "reclaim.v.02",
+   "flag.n.01",
+   "linguistic.a.01",
+   "felt.n.01",
+   "harmony.n.05"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/Tres_cadencias-300x200.jpg",
+  "permalink": "https://kadist.org/work/tres-cadencias/"
+ },
+ {
+  "artist_name": "Jason Dodge",
+  "title": "Above the Weather",
+  "description": "In Algeria, Djidjiga Meffre has woven a fabric with a string, a length equal to the distance from the earth to troposphere. Several works by Dodge, with the same title, follow this principle of measurement.  The work, like a synecdoche, is synthesized by its material and its implementation, both of which are fully part of the meaning. The work functions like as a concentrate. Shades of color and texture relate to multiple sensory and visual sensations, evoking a sky-colored night. It is by its concentration in the weaving that the distance can be represented in a concrete way and visible in one glance. To describe the work amounts to producing a story that echoes the myths surrounding the process of weaving. Above the weather opens up multiple narratives; in the etymological sense, the text is a fabric. We can see the work as a magic carpet that allows a moving &#8220;imaginary&#8221; of the spirit in the atmosphere. The weaving technique used in the work is frequently used by the artist, contributing to Dodge&#8217;s overall poetic aesthetics.\n",
+  "user_tags": [
+   "synecdoche.n.01",
+   "atmosphere.n.03",
+   "weaving.n.01",
+   "measurement.n.01",
+   "language.n.01",
+   "distance.n.01"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/img-328-300x205.jpg",
+  "permalink": "https://kadist.org/work/above-the-weather/"
+ },
+ {
+  "artist_name": "Nicolás Paris",
+  "title": "Metaphors of the presence or conversations at the speed of light",
+  "description": "Nicolas Paris studied architecture and worked as an elementary school teacher before he decided to become an artist. Both of those interests feed deeply into his artistic practice, which ranges from workshops, dialogues, and exchanges to environments, drawings, and sculpture. Metaphors of the presence or conversations at the speed of light (2012) is a sculpture of a lightbulb that the artist altered. The bulb itself has been removed and replaced with three overlapping circles of paper. The circles represent a Venn diagram color chart, a common teaching tool that shows how the primary colors can be combined to yield the rest of the spectrum. Paris reveals in this delicate sculpture the powerful potential for a rainbow of possibility.\n",
+  "user_tags": [
+   "light_bulb.n.01",
+   "venn_diagram.n.01",
+   "possibility.n.01",
+   "spectrum.n.02",
+   "altered.a.01",
+   "malleability.n.01"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/nicolas_paris_metaphors_of_the_presence_or_conversations_at_the_speed_of_light3-201x300.jpg",
+  "permalink": "https://kadist.org/work/metaphors-of-the-presence-or-conversations-at-the-speed-of-light/"
+ },
+ {
+  "artist_name": "Renee Rhodes",
+  "title": "Moving Clocks Change Rhythm",
+  "description": "The artist writes about her work: &#8220;There is an endless desire to know what we look like from outer space and many of us have evolved into a species that exists across the disorienting spaces and timeframes of virtuality. Within my current work, dance and simple movement scores act as a language for simultaneously collecting, mapping and producing volumes of information and knowledge. Moving makes a map and performing is observation. Digital mediations translate bodies into uncanny organisms and minimal dances become distant accumulations of pixelated information. Entanglements between human physicality, technology and natural systems are imagined through a playful aesthetics of information. As every last body and landscape is mapped and measured, through rigorous technologies of ever increasing distance, I look for the newly emerging territories that mineralize at the intersections of the virtual and the physical. These are the territories that we live in, archived in the memory drives of muscles, or through endlessly shifting choreographies of information.&#8221;\n",
+  "user_tags": [
+   "map.v.02",
+   "choreography.n.02",
+   "perspective.n.02",
+   "information.n.02",
+   "video_recording.n.01",
+   "performance.n.03"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/renee_rhodes_moving_clocks-200x300.jpg",
+  "permalink": "https://kadist.org/work/moving-clocks-change-rhythm/"
+ },
+ {
+  "artist_name": "Kan Xuan",
+  "title": "Island",
+  "description": "In four-channel video Island, a series of objects such as nail clippers, hairbrush, toothpaste, and house decorations are displayed with close-up shoots. Images are rendered in a highly polished and aesthetic manner, creating poetic visual ?ows. In front of each object, however, lies a coin, ranging from 2 Yuan, to 1 Pound, to 1 Euro or 1 Dollar, silently revealing the material value of these household supplies. Underneath elegant surface there is a deep sense of critical irony, elaborating by the contradictory nature of the cheap plastic items and their sophistic visual interpretation. Kan poignantly and metaphorically comments on the economic and production structure of today’s global market. The most in?uential visual spectacles can be generated by the most basic elements in the everyday.\n",
+  "user_tags": [
+   "commodity.n.01",
+   "mass_production.n.01",
+   "domesticity.n.02",
+   "superficial.s.03",
+   "spectacle.n.02",
+   "aesthetics.n.01"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/xuan_kan_island_2006-2009-100x300.jpg",
+  "permalink": "https://kadist.org/work/island/"
+ },
+ {
+  "artist_name": "Du Zhenjun",
+  "title": "The Tower of Babel: The Carnaval",
+  "description": "The Tower of Babel is an installation of large-format photographs that forces the audience to occupy a central position through its monumental scale. These photographs present a series of urban landscapes and assembled Foucauldian structures of the present. Du sees the Tower of Babel as a continually reinvented narrative that warns people of “dangerous tendencies in the present time.” Du’s Babylonian towers resurrect from fallen rubbles of religious history in grand scale to focus on modern crises of civilization. Though the theme began with the struggle of monotheism over linguistic and geographic diversity in early human history, Babel in Du’s work has become a contemporary vision of catastrophic threat to the future of humanity.\n",
+  "user_tags": [
+   "power.n.01",
+   "tower_of_babel.n.01",
+   "catastrophe.n.02",
+   "future.n.01",
+   "civilization.n.01",
+   "urban.a.01"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/du_zhenjun_the_tower_of_babel_the_carnaval_web-300x225.jpg",
+  "permalink": "https://kadist.org/work/the-tower-of-babel-the-carnaval/"
+ },
+ {
+  "artist_name": "Tony Oursler",
+  "title": "Absentia",
+  "description": "Continuing Oursler’s broader exploration of the moving image, Absentia is one of three micro-scale installations that incorporate small objects and tiny video projections within a miniature active proscenium. Mounted on platforms suspended in space on metal stands, the video sculpture contemplates human relationships, expressed here by shouts and murmurs, the strange and the familiar.\n",
+  "user_tags": [
+   "interconnection.n.01",
+   "phantasmagoric.s.01",
+   "utterance.n.01",
+   "video_recording.n.01",
+   "proscenium.n.01",
+   "projection.n.02"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/IMG_Tony-Oursler_Absentia_01-WEB-199x300.jpg",
+  "permalink": "https://kadist.org/work/absentia/"
+ },
+ {
+  "artist_name": "Mladen Stilinovic",
+  "title": "Exploitation of the Dead",
+  "description": "The Exploitation of the Dead cycle is composed of a very large number of elements which the artist reorganizes differently every time. The installation is presented like a “parade of objects”, with images whose historical role has been suspended or their meaning has changed. The references have become lost, through repetition the works have become banal. One can find copies of Suprematist or Social Realist paintings, collages, photographs of political meetings, cemeteries or other memorials. We are confronted with the obsolescence of signs. Colors like red and black have also lost their meaning.\nExploitation of the Dead concerns today&#8217;s religious or ideological ideas which are only extensions of religions and ideologies of the past and definitively dead. Mladen Stilinovic insists that: “If death has to be exploited, this is a violent act and we need to weigh up the consequences.” Collective rituals are central since they evoke a certain collective emotion which can&#8217;t quite be attained through signs and colors. This work is a way to think about painting but also the modalities of its exhibition. There is also this question of the copy. Why and how do we copy things? What do we learn through repetition ? About loss of integrity ?\n",
+  "user_tags": [
+   "obsoleteness.n.01",
+   "meaning.n.01",
+   "collection.n.01",
+   "circulation.n.06",
+   "copy.n.02",
+   "ideology.n.02"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/par_1-300x177.jpg",
+  "permalink": "https://kadist.org/work/exploitation-of-the-dead/"
+ },
+ {
+  "artist_name": "Brenna Youngblood",
+  "title": "Red Door",
+  "description": "Brenna Youngblood’s chromogenic print Red Door (2007) is representative of the artist’s interest in conceptual photography; she also works in multimedia collage and assemblage, drawing imagery from the everyday and giving new meanings to seemingly mundane objects and places. The image of a red door inspires a tension between potential meaning and purposeful ambiguity, leaving the viewer to wonder about her formal decisions. The color red on a door is often used to symbolize good luck, and in almost every culture, means &#8220;welcome.&#8221; Some say a red door was a sign of a safe house on the Underground Railroad.\n",
+  "user_tags": [
+   "ambiguous.a.02",
+   "meaning.s.01",
+   "everyday.s.03",
+   "welcome.n.01",
+   "symbolism.n.01",
+   "safety.n.02"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/IMG_Brenna-Red-Door_WEB-300x236.jpg",
+  "permalink": "https://kadist.org/work/red-door/"
+ },
+ {
+  "artist_name": "Hayoun Kwon",
+  "title": "Lack of Evidence",
+  "description": "Lack of evidence is the account of a Nigerian called Oscar exiled in France, which confronts a historical and social reality with a personal and intimate testimony. Taking as a point of departure Oscar&#8217;s request for asylum in France, this fictional document is a peregrination on the different levels of the reconstitution of memory and the subjectivity of its interpretation.\nOscar&#8217;s legal testimony reveals a dramatic reality taking place in Nigeria, where family executions still exist in the case of having twins who are considered a ‘diabolical off-spring’. Oscar&#8217;s request was rejected based on a lack of evidence. With the use of 3D, Kwon reassessed the real and fictitious qualities of Oscar’s story. The film is constructed through sequences juxtaposing different realities and then by becoming an ideal mise en abîme of the story. The image becomes an elastic characteristic memory and recalls the process of reconstitution. From another perspective, this film questions what constitutes proof and whether this artistic reconstitution of a traumatic event could be used as major evidence, whether art can have an “objective” dimension.\n",
+  "user_tags": [
+   "reconstruction.n.03",
+   "subjectivity.n.01",
+   "evidence.n.03",
+   "memory.n.02",
+   "france.n.01",
+   "fabricated.s.01"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/hayoun_kwon_2-300x169.jpg",
+  "permalink": "https://kadist.org/work/lack-of-evidence/"
+ },
+ {
+  "artist_name": "Alexis Smith",
+  "title": "8 Ball Surfboard",
+  "description": "&nbsp;\nIn 8 Ball Surfboard (1995),Alexis Smith combines her long-term interests in California culture and conceptual assemblage. The surfboard, an emblem of Southern California, emblazoned with the image of an eight-ball, references numerous tropes and clichés of American popular culture, specifically subcultures related to pool halls, surfing, and beaches. Indeed, this model-scale surfboard may be a future pop-culture relic, referencing a particular surfer or era of board design.\n&nbsp;\n",
+  "user_tags": [
+   "popular.s.04",
+   "california.n.01",
+   "platitude.n.01",
+   "pool.n.09",
+   "surfboard.n.01"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/alexis_smith_8_ball_surfboard_1995-300x200.jpg",
+  "permalink": "https://kadist.org/work/8-ball-surfboard/"
+ },
+ {
+  "artist_name": "Petra Cortright",
+  "title": "SpringValle_ber_girls",
+  "description": "In SpringValle_ber_girls, digital artist Petra Cortright collages together surreal scenes out of unnaturally idyllic desktop screensavers with equally unreal computer-generated women that pop in and out of the landscapes. Cortright’s saccharine backgrounds are made seedy by the appearance of digitally-rendered strippers, while various layers of internet escapism collide together in an infiinite loop.\n",
+  "user_tags": [
+   "eroticism.n.01",
+   "escape.n.02",
+   "reduplication.n.04",
+   "idyllic.s.01",
+   "stripper.n.03",
+   "loop.v.01"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/petra_cortright_springvalle_web-300x225.jpg",
+  "permalink": "https://kadist.org/work/springvalle_ber_girls/"
+ },
+ {
+  "artist_name": "Wernor Herzog",
+  "title": "Hearsay of the Soul",
+  "description": "Commissioned for the 2012 Whitney Biennial, Hearsay of the Soul (2012) is Werner Herzog’s ode to the landscape paintings of the 17th-century Dutch artist Hercules Segers. The work is a four-channel digital projection of Segers’s artworks accompanied by the emotive music of the Dutch cellist and composer Ernst Reijseger. Herzog sees Segers’s vast landscapes as powerful representations of our own interior worlds, resounding with feelings of anger, joy, fear, and loneliness.\n",
+  "user_tags": [
+   "pastiche.n.02",
+   "affectional.s.01",
+   "landscape.n.03",
+   "video_recording.n.01",
+   "projection.n.02",
+   "art_history.n.01"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/werner_herzog_hearsay_of_the_soul-300x186.jpg",
+  "permalink": "https://kadist.org/work/hearsay-of-the-soul/"
+ },
+ {
+  "artist_name": "Pavel Wolberg",
+  "title": "Hebron",
+  "description": "A young settler girl, dressed in a bridal outfit for Purim, stands in a street in Hebron waiting, perhaps for her parents or other children to join her. In the background three soldiers scan the buildings and the rooftops for threatening presences. Turning her back to the soldiers, the little girl pays no attention to what surrounds her. Her gaze is directed beyond the picture&#8217;s frame. The soldiers do not seem to protect the child either, their eyes and guns are pointed in different directions. Two of them seem to be looking at the camera, which brings the picture back to a certain reality. In this photograph, as in the one with the disguised boy, there is a palpable tension and the contradictory representation of two realties: the war and childhood innocence. Moreover, in both photographs, the costume implies fiction and may suggest that feelings are hidden. Wolberg&#8217;s images portray violence, but very differently than what you expect from war reportage, for example the terrible images of children during the Vietnam war like the famous photograph by Kim Phuc. Pavel Wolberg observes the incongruities of life in Israel, where trying to carry on a « normal » life can sometime create absurd situations.\n",
+  "user_tags": [
+   "israel.n.01",
+   "childhood.n.01",
+   "conflict.n.01",
+   "documentary.n.01",
+   "costume.n.01",
+   "violence.n.01"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/img-347_0-300x201.jpg",
+  "permalink": "https://kadist.org/work/hebron/"
+ },
+ {
+  "artist_name": "Fabrice Hyber",
+  "title": "Cellman",
+  "description": "The works of Fabrice Hyber provoke divergent ways of thinking. In a kindred spirit with Raymond Hains, image and writing are intertwined. Drawings and diagrams are visually direct, as shown in the series of &#8220;Peintures Homéopathiques&#8221; (&#8220;Homeopathic Paintings&#8221;), collages covered in transparent resin (1986-1988). In Cellman (2003) on the bottom right, stones and the arrows refer to skipping stones of &#8220;thinking&#8221;. A recurring human figure, commonly associated with Hyber&#8217;s theatrical world, is shown in Cellman and also L&#8217;homme de Bessines (1990). The artist uses writing as an engine of formal and semantic associations (&#8220;galet, galette, cellman, bulle, cellule &#8220;). The figure recalls that the body is a collection of cells. Like in the work Artère, le jardin des dessins ( Artery, the garden of drawings, a monument commissioned by Sidaction, Parc de la Vilette, Paris), the artist captures the inner workings of the body through schemas.\n",
+  "user_tags": [
+   "cellular.a.02",
+   "figural.s.01",
+   "composite.s.01",
+   "drawing.n.02",
+   "organic.a.02",
+   "bodily.s.02"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/F.-Hybert-Cellman-300x300.jpg",
+  "permalink": "https://kadist.org/work/cellman/"
+ },
+ {
+  "artist_name": "Hans Peter Feldmann",
+  "title": "Pair of shoes / Shoes with eggs",
+  "description": "The types of objects Feldmann is interested in collecting into serial photographic grids or artist&#8217;s books are often also found in three dimensional installations. Verging on a form of fetichism, his shoe collections are a case in point and indeed, for some exhibitions, he even asked gallery employees for their shoes. Against authorship and the commodification of art, he never gives titles or dates to his works which have infinite edition possibilities.\nThe mode of display is paired down to the simplest form of a plain square plinth that nevertheless conveys artistry. The presentation contributes to the re-orientation and re-contextualization of these assembled found objects taken from everyday life. This work, like hat with photo and teapot with shadow also in the collection, could be imagined as a form suggestive of portraiture. Secondary autobiographical components are sometimes included: a set of eight black-and-white photographs of shoes, Ursula + Hans-Peter, stands for the artist and his wife with whom he worked in a gift store when he left the art world in the 1980s. The positioning of this female pair of shoes is clearly deliberate and meaningful as is the literal and playful mimetic association of snakeskin and quail&#8217;s eggs patterning.\n",
+  "user_tags": [
+   "shoe.n.01",
+   "fetish.n.01",
+   "authorship.n.02",
+   "sacred.s.02",
+   "collection.n.01",
+   "dateless.s.03"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/img-572-300x225.jpg",
+  "permalink": "https://kadist.org/work/pair-of-shoes-shoes-with-eggs/"
+ },
+ {
+  "artist_name": "Alban Hajdinaj",
+  "title": "Wash & Go",
+  "description": "Wash and Go (2001) is divided into two stages and operates like a slide show. In the first part, the camera scans the interior of an apartment, focusing on elements of daily life to finally settle and frame a bottle of shampoo with the slogan &#8220;Wash and Go.&#8221; The camera isolates the word &#8220;Go &#8221; and slides over the word &#8220;Away&#8221;, and then takes focuses on another slogan &#8220;The People You Need are only a touch away.&#8221; Afterwards, the camera gradually widens its frame to reveal a billboard campaign in the streets of Tirana. The images reveal a devastated city, dotted with scrappy buildings, and urban noises – each of who accompany this vision of abandonment.\n",
+  "user_tags": [
+   "commercialization.n.01",
+   "parallel.s.02",
+   "abandonment.n.03",
+   "albania.n.01",
+   "slide.n.01",
+   "blight.n.01"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/img-57_1-300x227.jpg",
+  "permalink": "https://kadist.org/work/wash-go/"
+ },
+ {
+  "artist_name": "Young-Hae Chang Heavy Industries",
+  "title": "PACIFIC LIMN",
+  "description": "Pacific Limn weaves together three narratives that comment on hyper-capitalism pan-Pacific cities that San Francisco exemplifies. Each of the large works comprise of moving images overlaid with giant text, all synched to a stealthy, up-tempo jazz soundtrack. In The Secret Life of Harumi, a Japanese woman fantasizes escaping her job and living a temporary dream life in San Francisco. Young-Hae Chang Heavy Industries (YHCHI) uses locally sourced virtual products such as Adobe Flash animation and Apple’s Monaco or Menlo typeface to create a whimsical and indirect commentary on the psychology of the working class in an information society within postindustrial imperialism. For two months, YHCHI inhabited the economically polarized South of Market neighborhood, where a variety of socioeconomic realities overlap and coexist, from Facebook employees to the homeless. The Flash animation is influenced by realist cinema and depicts the tediousness in commuting by air and ground combined with the kitsch of an “Asia-town” window display. Overlaid with text-like femslash prose in a semi-coherent style of karaoke lyrics, the sensory cacophony disrupts a viewer’s thoughts and alludes to a desensitized boredom mixed with the desires of the alternative persona of a fictional Japanese woman.\n",
+  "user_tags": [
+   "fantasy_life.n.01",
+   "gentrification.n.01",
+   "desensitization.n.01",
+   "line.n.05",
+   "animation.n.05",
+   "kitsch.n.01"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/japan_1_web-300x169.jpg",
+  "permalink": "https://kadist.org/work/pacific-limn/"
  },
  {
   "artist_name": "Julius Koller",
-  "permalink": "https://kadist.org/work/anti-happening/",
-  "human_assessment_type": "description",
   "title": "Anti-Happening",
+  "description": "Anti-Happening refers to Koller’s 1965 manifesto, ‘Anti-Happening (System of Subjective Objectivity)’. In opposition to the notion of a ‘happening’ as a way of actualising group identity, in his manifesto, Koller stated that his concept of the ‘anti-happening’ aimed at a ‘cultural reshaping of the subject, at awareness, at the surroundings and the real world’ [i]. Unlike happenings, these actions do not involve the staging of psychologically expressive performances.  As the art historian Piotr Petrowski has noted, it is part of ‘an attitude that aims to erase the boundaries between different art tendencies (art and anti-art, modernist and neo-avant-garde painting), between different forms of neo-avant-garde practice (performance, conceptual art, Fluxus) and, above all, between art and life’[ii].\n[i] Kathrin Rhomberg and Roman Ondák (eds.), Julius Koller: Univerzálne Futurologické Operácie, Cologne 2003. p.126.\n\n[ii] Piotr Piotrowski, In the Shadow of Yalta: Art and the Avant-Garde in Eastern Europe, 1945–1989, London 2009.\n\n\n&nbsp;\n&nbsp;\n\n\n&nbsp;\n",
   "user_tags": [
    "practice.n.04",
-   "imagination.n.02",
-   "happening.n.01",
+   "manifesto.n.01",
    "openness.n.01",
    "humor.n.04",
-   "manifesto.n.01"
+   "happening.n.01",
+   "imagination.n.02"
   ],
-  "ivan_assignments": [
-   "Mind",
-   "Identity"
-  ],
-  "vincent_assignments": [
-   "Arts",
-   "Emotion",
-   "Language"
-  ],
-  "marie_assignments": [
-   "Arts",
-   "Emotion",
-   "Culture"
-  ],
-  "kathleen_assignments": [
-   "Arts",
-   "Values",
-   "Culture"
-  ]
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/antihappening_1965_card-300x211.jpg",
+  "permalink": "https://kadist.org/work/anti-happening/"
  },
  {
-  "artist_name": "Carey Young",
-  "permalink": "https://kadist.org/work/report-from-the-legal-subcommittee/",
-  "human_assessment_type": "description",
-  "title": "Report from the legal subcommittee",
+  "artist_name": "Pedro Reyes",
+  "title": "Los Mutantes",
+  "description": "Pedro Reyes&#8217;s Los Mutantes (Mutants, 2012) is composed of 170 plates that combine characters from ancient and modern mythologies. As in a periodic table, animals and objects are combined with humans (male or female), providing a rational framework for the irrational products of human imagination. A Cartesian matrix such as this must follow certain rules. All figures are half-human, half-something. Animal/cartoon characters that speak, such as Fritz the Cat or Donald Duck, are excluded, as well as oddities and chimeras without recognizable human features. Their arrangement results in combinations such as fish plus woman equals mermaid; bull plus man equals minotaur, and so on. The juxtapositions cross figures from pop culture with those from ancient myths, encouraging us to notice similarities between religious icons and comic-book characters. All of these “mutants” reveal something about our desire to extract qualities of animals or objects and empower ourselves with them. Mythologies are a reflection of the paradigms of their time, and this kind of periodic table presents a rational framework to categorize irrational products of the imagination.\n",
   "user_tags": [
-   "outer_space.n.01",
-   "constellation.n.02",
-   "capitalism.n.01",
-   "systematize.v.01",
-   "frustration.n.01",
-   "futility.n.01"
+   "mutant.a.01",
+   "mutate.v.01",
+   "periodic_table.n.01",
+   "mythology.n.01",
+   "juxtaposition.n.01",
+   "male.n.01",
+   "female.n.01",
+   "animal.n.01"
   ],
-  "ivan_assignments": [
-   "Politics",
-   "Space"
-  ],
-  "vincent_assignments": [
-   "Geopolitics",
-   "Power",
-   "Space"
-  ],
-  "marie_assignments": [
-   "Power",
-   "Politics",
-   "Space"
-  ],
-  "kathleen_assignments": [
-   "Power",
-   "Politics",
-   "Space"
-  ]
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/pedro_reyes_los_mutantes_copy_0-300x137.jpg",
+  "permalink": "https://kadist.org/work/los-mutantes/"
  },
  {
-  "artist_name": "Luis Garciga",
-  "permalink": "https://kadist.org/work/destinos-posibles-possible-destinations/",
-  "human_assessment_type": "description",
-  "title": "Destinos Posibles (Possible Destinations)",
+  "artist_name": "Adrien Missika",
+  "title": "Botanical Frottage (Lauren)",
+  "description": "Adrien Missika follows in the footsteps of the Brazilian landscape architect and artist Roberto Burle Marx (1909-1994), a designer of gardens, parks and promenades  who introduced modern landscape architecture to Brazil. Marx’s work is characterized by the use of native tropical vegetation as a structural element of design. He worked with Oscar Niemeyer and Lucio Costa, the architects of Brazilia, and with them, the tropical plant became a motif in urban architecture. His garden in Guaratiba or the Copacabana mosaic walk in Rio, are some of his well-known interventions.\nLike the Brazilian landscape architect and artist Roberto Burle Marx who, sensitive to the temporal and ephemeral nature of architecture and civilizations, readily recycled architectural elements for his creations, Adrien Missika recovered the windows of a 60s Geneva building to be demolished and used them in a new context. On some of them, he placed images of palm, banana and pineapple leaves were placed, which the artist had scanned with a hand scanner, as a radical hyper-technological and manual way to record the reality and to bring back images from his travels. Using the figure of the 19th century explorer and scientist, the leaf isn&#8217;t kept for a collection but recorded to become an architectural motif. Here, the window doesn&#8217;t offer a perspective on a landscape but is only serves as memorabilia of what Nature was.\n",
   "user_tags": [
-   "community.n.01",
-   "interaction.n.01",
-   "regionalism.n.01",
-   "communism.n.01",
-   "desire.n.01",
-   "interconnection.n.01"
+   "architecture.n.02",
+   "leaf.n.01",
+   "window.n.01",
+   "nature.n.03",
+   "explorer.n.01",
+   "tropical.s.01"
   ],
-  "ivan_assignments": [
-   "Politics",
-   "Economy",
-   "Emotion"
-  ],
-  "vincent_assignments": [
-   "Politics",
-   "Economy",
-   "Emotion"
-  ],
-  "marie_assignments": [
-   "Body",
-   "Mind",
-   "Fantasy"
-  ],
-  "kathleen_assignments": [
-   "Community",
-   "Identity",
-   "Fantasy"
-  ]
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/missika_botanical_frottage_lauren_web-200x300.jpg",
+  "permalink": "https://kadist.org/work/botanical-frottage-lauren/"
  },
  {
-  "artist_name": "Gimhongsok",
-  "permalink": "https://kadist.org/work/bunnys-sofa/",
-  "human_assessment_type": "description",
-  "title": "Bunny\u2019s Sofa",
+  "artist_name": "Zhang Peili",
+  "title": "A Gust of Wind",
+  "description": "In the video installation A Gust of Wind, Zhang continues to explore notions of perspective and melds them seamlessly with a veiled but incisive social critique. His ultimate goal is to reveal the ways in which social image is constructed and to cast doubt on the ephemeral vision of a middle-class utopia offered by mass media.\n",
   "user_tags": [
-   "labor.n.01",
+   "destruction.n.01",
+   "materialism.n.01",
+   "domesticity.n.02",
+   "utopia.n.04",
+   "bourgeois.s.01",
+   "installation.n.01"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/zhang_peili_a_gust_of_wind_2008_video_installation_01-300x200.jpg",
+  "permalink": "https://kadist.org/work/a-gust-of-wind/"
+ },
+ {
+  "artist_name": "Kristof Kintera",
+  "title": "Bad innovation in the name of protection (Gulf Style)",
+  "description": "Bad innovation in the name of protection is not a ready-made, but was made entirely by the artist, representing a stroller. Its interior is shielded and designed for babies in the case of conflict. Camouflaged, it resembles a small tank. Is it to protect or to attack? Is this object, full of ambiguity, for harmless babies or child soldiers? Privileged or excluded, this work alludes to survival and inequality faced by the question of life or death. The object materializes the primitive desire of protection induced by fear. How can we look at the world through this stroller? Is the pleasure of  seeing, breathing, feeling, still possible? Is it a shield to live, to survive or to go against life?\n",
+  "user_tags": [
+   "camouflage.n.02",
+   "conflict.n.01",
+   "baby_buggy.n.01",
+   "protection.n.01",
+   "defense.n.02",
+   "shelter.n.01"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/KK_BADINNOVATION_site-300x200.jpg",
+  "permalink": "https://kadist.org/work/bad-innovation-in-the-name-of-protection-gulf-style/"
+ },
+ {
+  "artist_name": "Cao Fei",
+  "title": "Diversionist",
+  "description": "Diversionist is part of the Cosplayers Series from 2004. In Cosplayers Cao Fei depicts the popularity among Asian youths of “cosplay” in which daily life is merged with images of video games and popular films. For many, this virtual reality is an outlet to “transcend” the paradox of a developing society in which the pleasures of consumption and depression of alienation go hand-in-hand. Cao Fei sensitively captures the new social consciousness and activism, beautifully translating them into photographic and video works.\n&nbsp;\n",
+  "user_tags": [
+   "experience.v.03",
+   "fictional_character.n.01",
+   "act.v.03",
+   "consumption.n.03",
+   "activism.n.01",
+   "alienation.n.01"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/cao_fei_diversionist-300x225.jpg",
+  "permalink": "https://kadist.org/work/diversionist/"
+ },
+ {
+  "artist_name": "David Berezin",
+  "title": "Are You Lonely Mr. Claus?",
+  "description": "In Are You Lonely Mr. Claus?, a bottle of whiskey, a red rose, a lit cigarette, and an assembly of kitschy Christmas memorabilia (Santa’s hat, a sugar cane) are displayed side-by-side with artifacts that denote some sort of (typically Californian?) summer leisure time (sea shells, sun block and goggles).\n&nbsp;\n",
+  "user_tags": [
+   "collection.n.01",
+   "santa_claus.n.01",
+   "stereotype.n.01",
+   "still_life.n.01",
+   "popular.s.04",
+   "mystery.n.01"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/david_berezin_are_you_lonely_mr._claus-226x300.jpg",
+  "permalink": "https://kadist.org/work/are-you-lonely-mr-claus/"
+ },
+ {
+  "artist_name": "Nora Schultz",
+  "title": "City Song of Rug",
+  "description": "Halfway between a painting and an installation City Sound of Rug gathers found images, synthetic foam, painted metal plates, and prints placed on the floor. Rugs are elements representative of commerce and related to the idea of territory, handicraft and community. In City Sound of Rug, the rugs are used as surfaces upon which prints are manually made. The traces of paint on the synthetic foam and the paint transfers from one rug to another, enable the spectator to see the materials used as tools, elements that constitute the structure of the installation. City Sound of Rug also incorporates advertising billboards of real estate projects. The work focuses on architecture and urbanism. The use of color is essential in this work: the blue, red and green marks become signs and characterize the work like an act of speech.\n",
+  "user_tags": [
+   "territory.n.03",
+   "tool.n.01",
+   "commerce.n.01",
+   "architecture.n.01",
+   "find.v.01",
+   "handicraft.n.01"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/46966992230492243169-300x225.jpg",
+  "permalink": "https://kadist.org/work/city-song-rug/"
+ },
+ {
+  "artist_name": "Bernardo Ortiz",
+  "title": "Casa de la cabeza (House of the head)",
+  "description": "Casa de la cabeza (2011) is a drawing of the words of the title, which translate literally into English as “house of the head.” Ortiz uses this humorous phrase to engage the idea of living in your head.\n",
+  "user_tags": [
+   "life.n.02",
+   "think.v.03",
+   "dwell.v.04",
+   "text.n.01",
+   "humor.n.04",
+   "head.n.01"
+  ],
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/bernardo_ortiz_casas_de_la_cabeza-300x214.jpg",
+  "permalink": "https://kadist.org/work/casa-de-la-cabeza/"
+ },
+ {
+  "artist_name": "Jennifer Allora",
+  "title": "Intermission (Halloween Iraq IV)",
+  "description": "Intermission (Halloween Iraq IV) is a large print that depicts U.S. soldiers in Iraq celebrating Halloween. They ride donkeys—apparently playing polo—while wearing masks that simultaneously familiarize the soldiers, through the recognition of a common holiday, and distance them, through the obscuring of their faces. Its means of reproduction—a woodblock print—further amplifies the distance between the event and its presentation, as well as the engagement of the artists.\n&nbsp;\n",
+  "user_tags": [
+   "distance.n.03",
+   "war.n.01",
    "costume.n.01",
-   "labor.n.02",
-   "korea.n.01",
-   "ethic.n.01",
-   "fake.n.01"
+   "iraq.n.01",
+   "celebration.n.01",
+   "play.v.01"
   ],
-  "ivan_assignments": [
-   "Inequality",
-   "Politics",
-   "Economy"
-  ],
-  "vincent_assignments": [
-   "Politics",
-   "Materiality",
-   "Fantasy"
-  ],
-  "marie_assignments": [
-   "Emotion",
-   "Economy",
-   "Fantasy"
-  ],
-  "kathleen_assignments": [
-   "Politics",
-   "Values",
-   "Emotion"
-  ]
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/allora_calzadilla_intermission-300x214.jpg",
+  "permalink": "https://kadist.org/work/intermission-halloween-iraq-iv/"
  },
  {
-  "artist_name": "Francis Al\u00ffs",
-  "permalink": "https://kadist.org/work/boat-with-legs/",
-  "human_assessment_type": "description",
-  "title": "Boat with Legs",
+  "artist_name": "Toyin Ojih Odutola",
+  "title": "Prove how much you have grown",
+  "description": "Ojih Odutola uses a distinctive visual style to capture members of her family, rendering them one pen stroke at a time, until their skin resembles ribbons woven into the contours of a face, neck, or hand. The simplicity of Ojih Odutola’s compositions enables a consideration of skin, blackness, surface, and detail, all hovering out of time and space.\n",
   "user_tags": [
-   "raw.s.04",
-   "concept.n.01",
-   "procedure.n.01",
-   "motion.n.06",
-   "sketch.n.01",
-   "strange.a.01"
+   "embodiment.n.03",
+   "black.a.02",
+   "portraiture.n.02",
+   "pen-and-ink.n.01",
+   "skin.n.02",
+   "kinship.n.02"
   ],
-  "ivan_assignments": [],
-  "vincent_assignments": [
-   "Land",
-   "Urbanization",
-   "Body"
-  ],
-  "marie_assignments": [
-   "Economy"
-  ],
-  "kathleen_assignments": []
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/toyin_odutola_prove_how_much_you_have_grown_web-300x201.jpg",
+  "permalink": "https://kadist.org/work/prove-how-much-you-have-grown/"
  },
  {
-  "artist_name": "Nicol\u00e1s Consuegra",
-  "permalink": "https://kadist.org/work/nadie-sabe-con-la-sed-que-otro-bebe/",
-  "human_assessment_type": "description",
-  "title": "Nadie sabe de la sed con que otro bebe (No one knows the thirst with which another drinks)",
+  "artist_name": "Loretta Fahrenholz",
+  "title": "Ditch Plains",
+  "description": "Loretta Fahrenholz’s video is composed of a patchwork of sequences. She constructs her film by juxtaposing stylized takes of street dance performances or images of the disasters at Far Rockaway caused by hurricane Sandy.\nA dancer goes back and forth in a corridor, a crooked silhouette contorts itself from anxiety on an unmade bed, bodies collapsed on the ground suddenly come to life, dancers, characterized by pixilated gestures, pretend to fight to the death. Their movements are robots-like: the machine man and the zombie only belong to fiction.\n“Ditch Plains” strongly raises questions related to technology and man caught up in mediatized environments. The hip-hop music accentuates the resemblance with to a trashy horror movie. Loretta Fahrenholz manages to capture the odd or intimate moments that occur in these little communities, moments where one forgets the presence of the camera.\n",
   "user_tags": [
-   "occlusion.n.01",
-   "thirst.n.01",
-   "disjunction.n.01",
-   "imperceptibility.n.01",
-   "transparency.n.02",
-   "relational.s.01"
+   "fabrication.n.01",
+   "reality.n.02",
+   "technology.n.01",
+   "hip-hop.n.01",
+   "juxtaposition.n.01",
+   "spectator.n.01"
   ],
-  "ivan_assignments": [
-   "Inequality"
-  ],
-  "vincent_assignments": [
-   "Colonization",
-   "Inequality",
-   "Emotion"
-  ],
-  "marie_assignments": [
-   "Colonization",
-   "Politics",
-   "Fantasy"
-  ],
-  "kathleen_assignments": [
-   "Inequality",
-   "Economy",
-   "Community"
-  ]
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/dp.still030-300x169.jpg",
+  "permalink": "https://kadist.org/work/ditch-plains/"
  },
  {
-  "artist_name": "Miguel Calderon",
-  "permalink": "https://kadist.org/work/tropical-vulture/",
-  "human_assessment_type": "description",
-  "title": "Tropical Vulture",
+  "artist_name": "Ian Wallace",
+  "title": "Study for my Heroes in the Street (Stan)",
+  "description": "Wallace says of his Heroes in the Street series, “The street is the site, metaphorically as well as in actuality, of all the forces of society and economics imploded upon the individual, who, moving within the dense forest of symbols of the modern city, can achieve the status of the heroic.” The hero in Study for my Heroes in the Street (Stan) is the photoconceptual artist Stan Douglas, who is depicted here (and also included in the Kadist Collection) as an archetypal figure restlessly drifting the streets of the modern world. Patches of canvas cover parts of this otherwise representational photograph and ask the viewer to consider the role that editing and play in our perception of the urban landscape and modernity.\n&nbsp;\n",
   "user_tags": [
-   "mundane.s.02",
-   "cinematic.a.01",
-   "narrative.n.01",
-   "everyday.s.01",
-   "actuality.n.01",
-   "desire.n.01"
+   "drift.v.06",
+   "edit.v.03",
+   "street.n.01",
+   "original.n.02",
+   "perception.n.04",
+   "urban.a.01"
   ],
-  "ivan_assignments": [
-   "Identity",
-   "Arts",
-   "Fantasy"
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/ian_wallace_study_for_my_heroes-221x300.jpg",
+  "permalink": "https://kadist.org/work/study-for-my-heroes-in-the-street-stan/"
+ },
+ {
+  "artist_name": "Kennedy Browne",
+  "title": "Milton Friedman on the wonder of the free market pencil",
+  "description": "Milton Friedman on the wonder of the free market pencil is an installation based on 42 blank pages. On the first page, one can read the original version in English of the liberal speech by Milton Friedman on “The Story of the pencil”. On the other pages, the same text has been translated into 41 different languages by using Google Translate, before coming back to English. It is significant that Dublin, the artists&#8217; home town, is also a centre for IT industries and the site of Google&#8217;s European offices. The final page becomes much shorter than the original text and it has been transformed into something raher incomprehensible. This work has not only an evident political and social dimension but also a poetic one: how a linguistic journey produces a loss of information but also leads to new interpretations. Kennedy Browne represented Ireland during the Venice Biennial in 2009, where this work was on view.\n",
+  "user_tags": [
+   "translation.n.01",
+   "loss.n.02",
+   "information.n.01",
+   "interpretation.n.03",
+   "pencil.v.01",
+   "poetic.a.01"
   ],
-  "vincent_assignments": [
-   "Land",
-   "Arts",
-   "Geopolitics"
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/167Texts709b-300x199.jpg",
+  "permalink": "https://kadist.org/work/milton-friedman-on-the-wonder-of-the-free-market-pencil/"
+ },
+ {
+  "artist_name": "Jason Meadows",
+  "title": "Holly Golightly",
+  "description": "Titled afterTruman Capote’s protagonist famously played by Audrey Hepburn in the film Breakfast at Tiffany’s (1961), Holly Golightly (2011) captures the essence of the character: seductive and bold, mysterious and capricious. Though tied to the ceiling by a chain, the suggested figure is literally light on her feet, with a pointed boot hovering just above the gallery floor. Non-parallel lines and inconsistent angles lend the sculpture a sense of airy haphazardness. Though seemingly a jumble, the found pipes and slices of metal never fail to align in formally pleasing arrangements, mimicking the character’s frivolous, seemingly accidental elegance.\n",
+  "user_tags": [
+   "elegance.n.01",
+   "haphazard.s.02",
+   "hover.v.03",
+   "literature.n.01",
+   "hepburn.n.01",
+   "fictional_character.n.01"
   ],
-  "marie_assignments": [
-   "Mass media",
-   "Culture",
-   "Identity"
-  ],
-  "kathleen_assignments": [
-   "Fantasy",
-   "Culture",
-   "Design"
-  ]
+  "thumbnail": "https://kadist.org/wp-content/uploads/2016/04/jason_meadows_holly_golightly-200x300.jpg",
+  "permalink": "https://kadist.org/work/holly-golightly/"
  }
 ]
