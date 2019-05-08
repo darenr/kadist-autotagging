@@ -94,7 +94,7 @@ def validated_tags(cluster_name, tags):
 
 
 def process_clusters_sheet():
-    source_file_clusters = 'data/MASTER Clusters trial v.2 - Clusters v.2.csv'
+    source_file_clusters = 'data/Cluster trials v.4 and v.5 - Clusters.csv'
     dest_file_clusters = 'data/clusters.json'
 
     clusters = {}

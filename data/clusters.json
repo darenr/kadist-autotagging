@@ -21,7 +21,10 @@
   "life.n.10",
   "age.n.01",
   "age.v.01",
-  "senesce.v.01"
+  "senesce.v.01",
+  "gaze.n.01",
+  "gaze.v.01",
+  "voyeurism.n.01"
  ],
  "Mind": [
   "mind.n.01",
@@ -54,7 +57,9 @@
   "dream.n.01",
   "dream.n.02",
   "dream.v.01",
-  "dream.n.02"
+  "dream.n.02",
+  "philosophy.n.02",
+  "philosophy.n.03"
  ],
  "Emotion": [
   "emotion.n.01",
@@ -66,7 +71,27 @@
   "humor.n.02",
   "sense of humor.n.01",
   "affect.n.01",
-  "depression.n.01"
+  "depression.n.01",
+  "nostalgia.n.01",
+  "sorrow.n.01",
+  "sorrow.n.02",
+  "grief.n.01",
+  "grief.n.02",
+  "sadness.n.01",
+  "sadness.n.02",
+  "affection.n.01",
+  "desire.n.01",
+  "desire.n.02",
+  "desire.n.03",
+  "desire.v.01",
+  "desire.v.03",
+  "closeness.n.01",
+  "empathy.n.01",
+  "apathy.n.01",
+  "anxiety.n.01",
+  "anxiety.n.02",
+  "anger.n.01",
+  "fury.n.01"
  ],
  "Identity": [
   "identity.n.01",
@@ -79,7 +104,15 @@
   "feminism.n.02",
   "homosexuality.n.01",
   "queerness.n.02",
-  "nationalism.n.01"
+  "nationalism.n.01",
+  "personality.n.01",
+  "identification.n.02",
+  "identification.n.03",
+  "identification.n.05",
+  "character.n.03",
+  "ethnicity.n.01",
+  "name.n.01",
+  "background.n.01"
  ],
  "Language": [
   "language.n.01",
@@ -91,7 +124,26 @@
   "structuralism.n.01",
   "cognitive.a.01",
   "Linguistics.n.01",
-  "dyslexia.n.01"
+  "dyslexia.n.01",
+  "text.n.01",
+  "text.n.01",
+  "text.n.04",
+  "dialect.n.01",
+  "slang.n.01",
+  "slang.n.02",
+  "natural_language.n.01",
+  "vocabulary.n.01",
+  "vocabulary.n.02",
+  "vocabulary.n.03",
+  "parlance.n.01",
+  "vernacular.n.02",
+  "vocabulary.n.02",
+  "dictionary.n.01",
+  "metaphor.n.01",
+  "paradox.n.01",
+  "contradiction.n.01",
+  "contradiction.n.02",
+  "contradiction.n.03"
  ],
  "Community": [
   "community.n.01",
@@ -104,7 +156,7 @@
   "family.n.02",
   "family.n.04",
   "family.n.05",
-  "empathy.n.01",
+  "neighborhood.n.04",
   "Solidarity.n.01",
   "Outreach.n.01",
   "kinship.n.01",
@@ -116,7 +168,16 @@
   "social.s.05",
   "social.s.06",
   "familiarity.n.03",
-  "closeness.n.01"
+  "closeness.n.01",
+  "clique.n.01",
+  "fraternity.n.01",
+  "brotherhood.n.02",
+  "alliance.n.02",
+  "bind.v.02",
+  "society.n.01",
+  "socialization.n.01",
+  "socialization.n.02",
+  "socialization.n.03"
  ],
  "Familial": [
   "familial.a.01",
@@ -137,7 +198,13 @@
   "familial.s.02",
   "domesticity.n.01",
   "domesticity.n.02",
-  "sibling.n.01"
+  "sibling.n.01",
+  "childhood.n.01",
+  "childhood.n.02",
+  "daughterly.s.01",
+  "ancestral.s.01",
+  "genealogic.a.01",
+  "family.n.02"
  ],
  "Spirituality": [
   "spirituality.n.02",
@@ -152,7 +219,17 @@
   "myth.n.01",
   "ghost.n.01",
   "ghost.n.03",
-  "soul.n.01"
+  "soul.n.01",
+  "worship.n.02",
+  "adoration.n.03",
+  "worship.n.01",
+  "worship.n.02",
+  "transcendence.n.01",
+  "idolatry.n.01",
+  "devotion.n.04",
+  "sacred.a.01",
+  "religion.n.01",
+  "religion.n.02"
  ],
  "Values": [
   "values.n.01",
@@ -174,7 +251,13 @@
   "merit.n.01",
   "freedom.n.01",
   "loyalty.n.01",
-  "honesty.n.01"
+  "honesty.n.01",
+  "impression.n.01",
+  "integrity.n.02",
+  "ideal.n.01",
+  "conscience.n.01",
+  "principle.n.02",
+  "peace.n.02"
  ],
  "Culture": [
   "culture.n.03",
@@ -201,8 +284,6 @@
   "criticism.n.02",
   "criticism.n.03",
   "culinary.a.01",
-  "slang.n.01",
-  "slang.n.02",
   "hip-hop.n.01",
   "rap.n.05"
  ],
@@ -249,7 +330,7 @@
   "fantasy.n.01",
   "fantasy.n.02",
   "fantasy.v.01",
-  "fantasy.v.02",
+  "fantastic.s.02",
   "dreamlike.s.01",
   "phantasmagoric.s.01",
   "utopia.n.02",
@@ -264,12 +345,22 @@
   "apocalyptic.s.01",
   "apocalyptic.a.02",
   "imagination.n.01",
-  "cyborg.n.01"
+  "cyborg.n.01",
+  "fabrication.n.01",
+  "fable.n.02",
+  "legend.n.01",
+  "supernatural.n.01",
+  "supernatural.a.01",
+  "falsehood.n.01",
+  "fairytale.n.01",
+  "fairytale.n.02",
+  "illusion.n.01",
+  "magic.n.01"
  ],
- "Mass media": [
-  "mass medium.n.01",
+ "Media": [
   "medium.n.01",
   "medium.n.10",
+  "mass medium.n.01",
   "representation.n.01",
   "representation.n.02",
   "magazine.n.01",
@@ -289,7 +380,10 @@
   "hollywood.n.03",
   "Entertainment.n.01",
   "computer_game.n.01",
-  "meme.vw.01"
+  "meme.vw.01",
+  "yellow_journalism.n.01",
+  "game.n.01",
+  "press.n.02"
  ],
  "Technology": [
   "technology.n.01",
@@ -309,7 +403,10 @@
   "electronic_device.n.01",
   "computer.n.01",
   "software.n.01",
-  "application.n.04"
+  "application.n.04",
+  "machinery.n.01",
+  "telecommunication.n.01",
+  "telecommunication.n.02"
  ],
  "Environmental": [
   "environmental.a.02",
@@ -326,7 +423,11 @@
   "catastrophe.n.03",
   "nature.n.03",
   "agriculture.n.02",
-  "sustainable.a.01"
+  "sustainable.a.01",
+  "global_warming.n.01",
+  "waste.n.01",
+  "contamination.n.01",
+  "contamination.n.03"
  ],
  "Politics": [
   "Politics.n.01",
@@ -365,7 +466,26 @@
   "rebellion.n.01",
   "rebellion.n.02",
   "authority.n.01",
-  "authority.n.02"
+  "authority.n.02",
+  "dominance.n.02",
+  "influence.n.05",
+  "suppression.n.03",
+  "leadership.n.01",
+  "leadership.n.02",
+  "leadership.n.03",
+  "leadership.n.04",
+  "command.n.01",
+  "command.n.02",
+  "command.n.03",
+  "subservience.n.01",
+  "subservience.n.02",
+  "subordination.n.01",
+  "subordination.n.04",
+  "resistance.n.01",
+  "opposition.n.02",
+  "opposition.n.05",
+  "conflict.n.01",
+  "domination.n.02"
  ],
  "Economy": [
   "economy.n.01",
@@ -394,7 +514,12 @@
   "supermarket.n.01",
   "socialism.n.02",
   "neoliberalism.n.01",
-  "tourism.n.01"
+  "tourism.n.01",
+  "travel.n.01",
+  "infrastructure.n.01",
+  "transportation_system.n.01",
+  "capital.n.01",
+  "capital.n.02"
  ],
  "Inequality": [
   "inequality.n.01",
@@ -411,7 +536,14 @@
   "exploitation.n.02",
   "poverty.n.01",
   "racism.n.02",
-  "subjugation.n.01"
+  "subjugation.n.01",
+  "injustice.n.01",
+  "injustice.n.02",
+  "unfairness.n.01",
+  "otherness.n.01",
+  "bias.n.01",
+  "aspiration.n.01",
+  "scarcity.n.01"
  ],
  "Violence": [
   "violence.n.01",
@@ -433,7 +565,17 @@
   "rape.n.03",
   "assail.v.01",
   "rape.v.01",
-  "posttraumatic_stress_disorder.n.01"
+  "posttraumatic_stress_disorder.n.01",
+  "murder.n.01",
+  "murder.v.01",
+  "pain.n.01",
+  "pain.n.02",
+  "pain.n.03",
+  "pain.n.04",
+  "aggression.n.01",
+  "slaughter.n.03",
+  "bloodshed.n.01",
+  "cruelty.n.01"
  ],
  "War": [
   "war.n.01",
@@ -447,7 +589,21 @@
   "torture.n.05",
   "prisoner_of_war.n.01",
   "incarceration.n.01",
-  "coup_d'etat.n.01"
+  "coup_d'etat.n.01",
+  "battle.n.01",
+  "battle.v.01",
+  "soldier.n.01",
+  "soldier.n.02",
+  "casualty.n.01",
+  "casualty.n.02",
+  "casualty.n.04",
+  "invasion.n.01",
+  "invasion.n.02",
+  "destruction.n.01",
+  "destruction.n.02",
+  "attack.n.01",
+  "mercenary.n.01",
+  "devastation.n.03"
  ],
  "History": [
   "history.n.01",
@@ -466,7 +622,22 @@
   "archive.n.01",
   "archaeology.n.01",
   "archeology.n.01",
-  "reenactment.n.01"
+  "reenactment.n.01",
+  "antiquity.n.01",
+  "prehistory.n.01",
+  "record.n.05",
+  "classical.a.01",
+  "classical.2.04",
+  "enlightenment.n.03",
+  "ancient.n.01",
+  "ancient.n.02",
+  "ancient.s.01",
+  "ancient.s.02",
+  "medieval.a.01",
+  "commemorate.v.01",
+  "commemorate.v.02",
+  "commemorate.v.03",
+  "document.v.01"
  ],
  "Urbanization": [
   "urbanization.n.01",
@@ -482,7 +653,19 @@
   "ghetto.n.03",
   "development.n.06",
   "vicinity.n.01",
-  "neighborhood.n.02"
+  "neighborhood.n.02",
+  "borough.n.01",
+  "district.n.01",
+  "zone.v.01",
+  "housing.n.01",
+  "housing_project.n.01",
+  "eviction.n.01",
+  "eviction.n.02",
+  "overpopulation.n.01",
+  "city.n.01",
+  "city.n.03",
+  "downtown.r.01",
+  "business_district.n.01"
  ],
  "Geopolitics": [
   "geopolitics.n.01",
@@ -497,7 +680,18 @@
   "cartography.n.01",
   "migration.n.01",
   "migration.n.02",
-  "refugee.n.01"
+  "refugee.n.01",
+  "universal.n.03",
+  "cosmopolitan.s.03",
+  "universal.s.02",
+  "global.s.01",
+  "local.a.01",
+  "local.a.02",
+  "displacement.n.06",
+  "supplanting.n.01",
+  "conurbation.n.01",
+  "illegal.a.01",
+  "exodus.n.01"
  ],
  "Land": [
   "land.n.01",
@@ -523,7 +717,15 @@
   "territory.n.01",
   "territory.n.03",
   "personal_property.n.01",
-  "possession.n.01"
+  "countryside.n.01",
+  "farmland.n.01",
+  "terrain.n.01",
+  "estate.n.02",
+  "fatherland.n.01",
+  "deed.n.01",
+  "acreage.n.01",
+  "shore.n.01",
+  "valley.n.01"
  ],
  "Colonization": [
   "colonization.n.01",
@@ -541,7 +743,12 @@
   "native.n.01",
   "native.a.03",
   "autochthonal.s.01",
-  "genocide.n.01"
+  "genocide.n.01",
+  "patriarchy.n.01",
+  "slavery.n.02",
+  "colony.n.01",
+  "plantation.n.02",
+  "conquest.n.01"
  ],
  "Activism": [
   "activism.n.01",
@@ -562,7 +769,15 @@
   "rioting.n.01",
   "rioting.v.01",
   "advocacy.n.01",
-  "freedom_of_speech.n.01"
+  "freedom_of_speech.n.01",
+  "revolution.n.02",
+  "boycott.n.01",
+  "revolt.v.01",
+  "combativeness.n.01",
+  "picket.v.01",
+  "power_broker.n.01",
+  "abolitionist.n.01",
+  "propaganda.n.01"
  ],
  "Design": [
   "design.n.01",
@@ -578,7 +793,15 @@
   "graphic.a.03",
   "graphic.a.04",
   "diagram.n.01",
-  "aesthetic.n.01"
+  "aesthetic.n.01",
+  "Geometry.n.01",
+  "adornment.n.01",
+  "design.n.04",
+  "furniture.n.01",
+  "ergonomic.a.01",
+  "rendering.n.06",
+  "interior_decoration.n.01",
+  "blueprint.n.01"
  ],
  "Materiality": [
   "materiality.n.02",
@@ -594,15 +817,16 @@
   "physicality.n.01",
   "presence.n.01",
   "presence.n.02",
-  "repetition.n.01",
-  "repetition.n.02",
+  "mass.n.01",
   "consecutive.s.02",
   "serial.a.02",
   "serial.a.03",
   "concretism.n.01",
   "concrete.a.01",
-  "Geometry.n.01",
-  "Abstraction.n.04"
+  "actuality.n.01",
+  "Abstraction.n.04",
+  "reality.n.02",
+  "tangibility.n.01"
  ],
  "Immaterial": [
   "incorporeal.a.01",
@@ -622,7 +846,17 @@
   "light.n.04",
   "light.n.05",
   "dark.n.01",
-  "absence.n.01"
+  "absence.n.01",
+  "aeriform.s.02",
+  "spectral.a.01",
+  "impalpable.a.02",
+  "disembody.v.01",
+  "vaporific.s.02",
+  "illusive.s.01",
+  "weightless.a.01",
+  "insubstantial.a.01",
+  "unreal.a.01",
+  "chimeric.a.01"
  ],
  "Physics": [
   "physics.n.01",
@@ -643,7 +877,9 @@
   "magnetism.n.01",
   "optics.n.01",
   "weight.n.01",
-  "particle.n.02"
+  "particle.n.02",
+  "atomic.a.01",
+  "molecular.a.01"
  ],
  "Time": [
   "time.n.05",
@@ -663,7 +899,19 @@
   "past.a.01",
   "dateless.s.04",
   "everyday.s.03",
-  "everyday.s.01"
+  "everyday.s.01",
+  "repetition.n.01",
+  "repetition.n.02",
+  "process.n.06",
+  "change.n.01",
+  "change.n.02",
+  "change.n.03",
+  "change.n.04",
+  "chronology.n.01",
+  "chronology.n.02",
+  "age.n.01",
+  "date.n.01",
+  "progress.n.03"
  ],
  "Space": [
   "space.n.02",
@@ -678,6 +926,14 @@
   "extraterrestrial_being.n.01",
   "outer_space.n.01",
   "black_hole.n.01",
-  "galaxy.n.03"
+  "galaxy.n.03",
+  "astronomy.n.01",
+  "celestial_body.n.01",
+  "solar.a.01",
+  "satellite.n.01",
+  "satellite.n.03",
+  "solar_system.n.01",
+  "supernova.n.01",
+  "meteorite.n.01"
  ]
 }
