@@ -6,30 +6,30 @@
   "title": "The Tower of Babel: Independence of the country",
   "user_tags": [
    "urban.a.01",
-   "civilization.n.01",
+   "tower_of_babel.n.01",
    "catastrophe.n.02",
+   "civilization.n.01",
    "power.n.01",
-   "future.n.01",
-   "tower_of_babel.n.01"
+   "future.n.01"
   ],
   "ivan_assignments": [
-   "Power",
-   "Time"
+   "Time",
+   "Power"
   ],
   "vincent_assignments": [
-   "Power",
    "Urbanization",
-   "History"
+   "History",
+   "Power"
   ],
   "marie_assignments": [
    "Time",
-   "Politics",
-   "Environmental"
+   "Environmental",
+   "Politics"
   ],
   "kathleen_assignments": [
+   "Urbanization",
    "Language",
-   "Geopolitics",
-   "Urbanization"
+   "Geopolitics"
   ]
  },
  {
@@ -38,29 +38,29 @@
   "human_assessment_type": "tags",
   "title": "Unregistered City series #1 #2 #7",
   "user_tags": [
-   "fake.n.01",
-   "dystopia.n.02",
-   "apocalypse.n.01",
    "imagine.v.01",
+   "fake.n.01",
+   "apocalypse.n.01",
+   "city.n.01",
    "ruin.n.02",
-   "city.n.01"
+   "dystopia.n.02"
   ],
   "ivan_assignments": [
    "Fantasy"
   ],
   "vincent_assignments": [
-   "War",
    "Urbanization",
-   "Fantasy"
+   "Fantasy",
+   "War"
   ],
   "marie_assignments": [
-   "Politics",
-   "Fantasy"
+   "Fantasy",
+   "Politics"
   ],
   "kathleen_assignments": [
+   "Fantasy",
    "Power",
-   "War",
-   "Fantasy"
+   "War"
   ]
  },
  {
@@ -69,30 +69,30 @@
   "human_assessment_type": "tags",
   "title": "100 Boots",
   "user_tags": [
+   "stand-in.n.01",
    "bypass.v.01",
    "journey.n.01",
-   "materiality.n.02",
-   "stand-in.n.01",
+   "distribution.n.03",
    "hero.n.02",
-   "distribution.n.03"
+   "materiality.n.02"
   ],
   "ivan_assignments": [
    "Inequality"
   ],
   "vincent_assignments": [
-   "Time",
    "Space",
+   "Time",
    "Materiality"
   ],
   "marie_assignments": [
    "Economy",
-   "Materiality",
-   "Fantasy"
+   "Fantasy",
+   "Materiality"
   ],
   "kathleen_assignments": [
    "Time",
-   "Identity",
-   "Materiality"
+   "Materiality",
+   "Identity"
   ]
  },
  {
@@ -101,31 +101,31 @@
   "human_assessment_type": "tags",
   "title": "Far from Honolulu",
   "user_tags": [
-   "fantastic.s.05",
-   "cinematic.a.01",
-   "repetition.n.02",
-   "water_travel.n.01",
    "nostalgia.n.01",
-   "immobility.n.02"
+   "fantastic.s.05",
+   "repetition.n.02",
+   "immobility.n.02",
+   "water_travel.n.01",
+   "cinematic.a.01"
   ],
   "ivan_assignments": [
-   "Emotion",
-   "Fantasy"
+   "Fantasy",
+   "Emotion"
   ],
   "vincent_assignments": [
-   "History",
    "Physics",
-   "Fantasy"
+   "Fantasy",
+   "History"
   ],
   "marie_assignments": [
-   "Time",
+   "Economy",
    "Emotion",
-   "Economy"
+   "Time"
   ],
   "kathleen_assignments": [
+   "Emotion",
    "Time",
-   "Mind",
-   "Emotion"
+   "Mind"
   ]
  },
  {
@@ -134,26 +134,26 @@
   "human_assessment_type": "tags",
   "title": "Red Door",
   "user_tags": [
-   "safety.n.02",
-   "ambiguous.a.02",
+   "everyday.s.03",
    "welcome.n.01",
    "symbolism.n.01",
-   "everyday.s.03",
-   "meaning.s.01"
+   "meaning.s.01",
+   "safety.n.02",
+   "ambiguous.a.02"
   ],
   "ivan_assignments": [
    "Immaterial"
   ],
   "vincent_assignments": [
    "Culture",
-   "Familial",
-   "Fantasy"
+   "Fantasy",
+   "Familial"
   ],
   "marie_assignments": [],
   "kathleen_assignments": [
    "Time",
-   "Mind",
-   "Immaterial"
+   "Immaterial",
+   "Mind"
   ]
  },
  {
@@ -162,31 +162,31 @@
   "human_assessment_type": "tags",
   "title": "Cosmos animiste",
   "user_tags": [
-   "contradiction.n.01",
    "fusion.n.01",
-   "metamorphosis.n.03",
-   "ghost.n.03",
    "sex.n.04",
-   "latent_hostility.n.01"
+   "contradiction.n.01",
+   "metamorphosis.n.03",
+   "latent_hostility.n.01",
+   "ghost.n.03"
   ],
   "ivan_assignments": [
-   "Spirituality",
-   "Body"
+   "Body",
+   "Spirituality"
   ],
   "vincent_assignments": [
-   "Violence",
    "Fantasy",
+   "Violence",
    "Body"
   ],
   "marie_assignments": [
-   "Body",
    "Physics",
-   "Fantasy"
+   "Fantasy",
+   "Body"
   ],
   "kathleen_assignments": [
-   "Spirituality",
+   "Body",
    "Identity",
-   "Body"
+   "Spirituality"
   ]
  },
  {
@@ -195,30 +195,30 @@
   "human_assessment_type": "tags",
   "title": "Teapot with shadow",
   "user_tags": [
-   "gather.v.01",
-   "dateless.s.03",
    "kitchenware.n.01",
+   "gather.v.01",
    "shadow.n.01",
+   "plain.a.02",
    "irreverent.a.01",
-   "plain.a.02"
+   "dateless.s.03"
   ],
   "ivan_assignments": [
    "Materiality"
   ],
   "vincent_assignments": [
    "Time",
-   "Familial",
-   "Community"
+   "Community",
+   "Familial"
   ],
   "marie_assignments": [
    "Time",
-   "Inequality",
-   "Community"
+   "Community",
+   "Inequality"
   ],
   "kathleen_assignments": [
    "Design",
-   "Culture",
-   "Immaterial"
+   "Immaterial",
+   "Culture"
   ]
  },
  {
@@ -227,20 +227,20 @@
   "human_assessment_type": "tags",
   "title": "Black Curl (CMY/Five Magnet: Irvine, California, March 25, 2010, Fujicolor Cyrstal Archive Super Type C, EM No 165-021, 05910)",
   "user_tags": [
-   "rhythm.n.02",
-   "abstraction.n.04",
    "color.n.08",
-   "geometric.s.01",
    "materiality.n.02",
-   "development.n.08"
+   "geometric.s.01",
+   "rhythm.n.02",
+   "development.n.08",
+   "abstraction.n.04"
   ],
   "ivan_assignments": [
    "Materiality"
   ],
   "vincent_assignments": [
-   "Design",
    "Fantasy",
-   "Materiality"
+   "Materiality",
+   "Design"
   ],
   "marie_assignments": [
    "Economy",
@@ -249,8 +249,8 @@
   ],
   "kathleen_assignments": [
    "Arts",
-   "Design",
-   "Urbanization"
+   "Urbanization",
+   "Design"
   ]
  },
  {
@@ -259,26 +259,26 @@
   "human_assessment_type": "tags",
   "title": "BRB (\"be right back\")",
   "user_tags": [
-   "subconscious.s.01",
-   "closeness.n.01",
    "virtual_reality.n.01",
    "conversation.n.01",
+   "closeness.n.01",
    "human_body.n.01",
-   "communication.n.01"
+   "communication.n.01",
+   "subconscious.s.01"
   ],
   "ivan_assignments": [
    "Technology",
    "Body"
   ],
   "vincent_assignments": [
-   "Culture",
+   "Body",
    "Community",
-   "Body"
+   "Culture"
   ],
   "marie_assignments": [
    "Technology",
-   "Community",
-   "Body"
+   "Body",
+   "Community"
   ],
   "kathleen_assignments": [
    "Language",
@@ -292,31 +292,31 @@
   "human_assessment_type": "tags",
   "title": "Perpetual Motion Two",
   "user_tags": [
-   "perception.n.03",
+   "nature.n.03",
+   "motion.n.06",
+   "flit.n.01",
    "accelerate.v.01",
    "setting.n.02",
-   "flit.n.01",
-   "motion.n.06",
-   "nature.n.03"
+   "perception.n.03"
   ],
   "ivan_assignments": [
-   "Mind",
-   "Physics"
+   "Physics",
+   "Mind"
   ],
   "vincent_assignments": [
-   "Environmental",
    "Physics",
-   "Fantasy"
+   "Fantasy",
+   "Environmental"
   ],
   "marie_assignments": [
+   "Physics",
    "Emotion",
-   "Environmental",
-   "Physics"
+   "Environmental"
   ],
   "kathleen_assignments": [
+   "Physics",
    "Time",
-   "Environmental",
-   "Physics"
+   "Environmental"
   ]
  },
  {
@@ -325,24 +325,24 @@
   "human_assessment_type": "tags",
   "title": "Untitled (Waiters dancing with Itinerants, Onomatopoeia)",
   "user_tags": [
-   "reality.n.02",
-   "credible.a.01",
-   "event.n.01",
    "island.n.01",
    "fabricated.s.01",
+   "event.n.01",
+   "reality.n.02",
+   "credible.a.01",
    "documentation.n.01"
   ],
   "ivan_assignments": [
    "Fantasy"
   ],
   "vincent_assignments": [
+   "Fantasy",
    "History",
-   "Land",
-   "Fantasy"
+   "Land"
   ],
   "marie_assignments": [
-   "Mass media",
    "Technology",
+   "Mass media",
    "Politics"
   ],
   "kathleen_assignments": [
@@ -357,12 +357,12 @@
   "human_assessment_type": "tags",
   "title": "Soft Staycation (Gaze Track Edit)",
   "user_tags": [
-   "tourism.n.01",
+   "gaze.n.01",
+   "track.v.02",
    "marketing.n.02",
    "data.n.01",
-   "track.v.02",
-   "technology.n.01",
-   "gaze.n.01"
+   "tourism.n.01",
+   "technology.n.01"
   ],
   "ivan_assignments": [
    "Economy",
@@ -379,8 +379,8 @@
    "Body"
   ],
   "kathleen_assignments": [
-   "Mass media",
    "Technology",
+   "Mass media",
    "Culture"
   ]
  },
@@ -390,12 +390,12 @@
   "human_assessment_type": "tags",
   "title": "Strangely familiar: Angelina with her father",
   "user_tags": [
-   "fatherhood.n.01",
-   "stagy.s.01",
    "pose.n.02",
    "gaze.n.01",
+   "stagy.s.01",
+   "adolescent.n.01",
    "voyeurism.n.01",
-   "adolescent.n.01"
+   "fatherhood.n.01"
   ],
   "ivan_assignments": [
    "Familial"
@@ -406,14 +406,14 @@
    "Familial"
   ],
   "marie_assignments": [
-   "Inequality",
+   "Fantasy",
    "Familial",
-   "Fantasy"
+   "Inequality"
   ],
   "kathleen_assignments": [
    "Identity",
-   "Familial",
-   "Body"
+   "Body",
+   "Familial"
   ]
  },
  {
@@ -422,31 +422,31 @@
   "human_assessment_type": "tags",
   "title": "Wild Boy",
   "user_tags": [
-   "child.n.01",
-   "family.n.04",
-   "socialization.n.03",
    "education.n.02",
+   "child.n.01",
+   "domestic.a.03",
    "adolescent.n.01",
-   "domestic.a.03"
+   "family.n.04",
+   "socialization.n.03"
   ],
   "ivan_assignments": [
-   "Familial",
-   "Community"
+   "Community",
+   "Familial"
   ],
   "vincent_assignments": [
    "Culture",
-   "Familial",
-   "Community"
+   "Community",
+   "Familial"
   ],
   "marie_assignments": [
-   "Politics",
+   "Community",
    "Familial",
-   "Community"
+   "Politics"
   ],
   "kathleen_assignments": [
    "Identity",
-   "Familial",
-   "Community"
+   "Community",
+   "Familial"
   ]
  },
  {
@@ -455,20 +455,20 @@
   "human_assessment_type": "tags",
   "title": "Diane Arbus: A printed retrospective, 1960-1971",
   "user_tags": [
-   "art_exhibition.n.01",
    "retrospective.n.01",
    "art_history.n.01",
    "magazine.n.01",
    "archive.n.01",
-   "rediscovery.n.01"
+   "rediscovery.n.01",
+   "art_exhibition.n.01"
   ],
   "ivan_assignments": [
    "Arts",
    "Mass media"
   ],
   "vincent_assignments": [
-   "History",
    "Mass media",
+   "History",
    "Culture"
   ],
   "marie_assignments": [
@@ -489,30 +489,30 @@
   "title": "Decomposing Eternally",
   "user_tags": [
    "texture.n.01",
-   "diffuse.s.01",
    "thereness.n.01",
-   "human_body.n.01",
+   "disembody.v.01",
    "decay.n.03",
-   "disembody.v.01"
+   "human_body.n.01",
+   "diffuse.s.01"
   ],
   "ivan_assignments": [
-   "Immaterial",
-   "Body"
+   "Body",
+   "Immaterial"
   ],
   "vincent_assignments": [
    "Time",
-   "Materiality",
-   "Body"
+   "Body",
+   "Materiality"
   ],
   "marie_assignments": [
    "Time",
-   "Materiality",
-   "Body"
+   "Body",
+   "Materiality"
   ],
   "kathleen_assignments": [
-   "Mind",
    "Identity",
-   "Body"
+   "Body",
+   "Mind"
   ]
  },
  {
@@ -521,21 +521,21 @@
   "human_assessment_type": "tags",
   "title": "Man with Blue Tie",
   "user_tags": [
-   "blue.n.02",
-   "shallow.a.01",
    "san_francisco.n.01",
-   "matisse.n.01",
+   "blue.n.02",
+   "deadpan.s.01",
+   "shallow.a.01",
    "figural.s.01",
-   "deadpan.s.01"
+   "matisse.n.01"
   ],
   "ivan_assignments": [
-   "Design",
-   "Materiality"
+   "Materiality",
+   "Design"
   ],
   "vincent_assignments": [
-   "Land",
    "Arts",
-   "Urbanization"
+   "Urbanization",
+   "Land"
   ],
   "marie_assignments": [
    "Arts",
@@ -554,12 +554,12 @@
   "human_assessment_type": "tags",
   "title": "Island",
   "user_tags": [
-   "spectacle.n.02",
    "mass_production.n.01",
+   "superficial.s.03",
+   "spectacle.n.02",
    "domesticity.n.02",
-   "commodity.n.01",
    "aesthetics.n.01",
-   "superficial.s.03"
+   "commodity.n.01"
   ],
   "ivan_assignments": [
    "Economy",
@@ -572,13 +572,13 @@
   ],
   "marie_assignments": [
    "Economy",
-   "Familial",
-   "Fantasy"
+   "Fantasy",
+   "Familial"
   ],
   "kathleen_assignments": [
-   "Design",
    "Familial",
-   "Materiality"
+   "Materiality",
+   "Design"
   ]
  },
  {
@@ -588,11 +588,11 @@
   "title": "If I dig a very deep hole",
   "user_tags": [
    "opposition.n.02",
-   "full_moon.n.01",
-   "moment.n.01",
    "poetic.s.04",
-   "gesture.n.03",
-   "polarity.n.02"
+   "moment.n.01",
+   "polarity.n.02",
+   "full_moon.n.01",
+   "gesture.n.03"
   ],
   "ivan_assignments": [
    "Emotion",
@@ -600,19 +600,19 @@
    "Immaterial"
   ],
   "vincent_assignments": [
+   "Physics",
    "Time",
-   "Culture",
-   "Physics"
+   "Culture"
   ],
   "marie_assignments": [
+   "Physics",
    "Time",
-   "Emotion",
-   "Physics"
+   "Emotion"
   ],
   "kathleen_assignments": [
    "Space",
-   "Inequality",
-   "War"
+   "War",
+   "Inequality"
   ]
  },
  {
@@ -621,31 +621,31 @@
   "human_assessment_type": "tags",
   "title": "Untitled (Rolled up)",
   "user_tags": [
-   "fatherhood.n.01",
-   "abstraction.n.04",
-   "sign.n.01",
    "humor.n.04",
+   "sign.n.01",
+   "portrait.n.02",
    "materiality.n.02",
-   "portrait.n.02"
+   "fatherhood.n.01",
+   "abstraction.n.04"
   ],
   "ivan_assignments": [
-   "Familial",
-   "Materiality"
+   "Materiality",
+   "Familial"
   ],
   "vincent_assignments": [
-   "Culture",
    "Fantasy",
-   "Materiality"
+   "Materiality",
+   "Culture"
   ],
   "marie_assignments": [
    "Emotion",
-   "Familial",
-   "Materiality"
+   "Materiality",
+   "Familial"
   ],
   "kathleen_assignments": [
    "Emotion",
-   "Familial",
-   "Materiality"
+   "Materiality",
+   "Familial"
   ]
  },
  {
@@ -654,30 +654,30 @@
   "human_assessment_type": "tags",
   "title": "Onde quer voce esteja (Wherever you may be)",
   "user_tags": [
-   "language.n.01",
    "text.n.01",
+   "disconnected.s.02",
    "cardboard.n.01",
-   "metaphor.n.01",
    "materiality.n.02",
-   "disconnected.s.02"
+   "language.n.01",
+   "metaphor.n.01"
   ],
   "ivan_assignments": [
    "Language",
    "Materiality"
   ],
   "vincent_assignments": [
-   "Language",
    "Fantasy",
+   "Language",
    "Materiality"
   ],
   "marie_assignments": [
    "Language",
-   "Identity",
-   "Materiality"
+   "Materiality",
+   "Identity"
   ],
   "kathleen_assignments": [
-   "Language",
    "Technology",
+   "Language",
    "Materiality"
   ]
  },
@@ -687,12 +687,12 @@
   "human_assessment_type": "tags",
   "title": "Choke",
   "user_tags": [
-   "film.v.01",
    "gaze.n.01",
-   "voyeurism.n.01",
-   "wrestling.n.02",
+   "sex.n.04",
    "violence.n.01",
-   "sex.n.04"
+   "wrestling.n.02",
+   "film.v.01",
+   "voyeurism.n.01"
   ],
   "ivan_assignments": [
    "Violence",
@@ -705,8 +705,8 @@
   ],
   "marie_assignments": [
    "Violence",
-   "Inequality",
-   "Body"
+   "Body",
+   "Inequality"
   ],
   "kathleen_assignments": [
    "Arts",
@@ -720,25 +720,25 @@
   "human_assessment_type": "tags",
   "title": "Expedition #46",
   "user_tags": [
-   "scientific_method.n.01",
    "climate_change.n.01",
+   "scientific_method.n.01",
+   "landscape.n.03",
    "glacier.n.01",
    "documentary.a.01",
-   "landscape.n.03",
    "exploration.n.01"
   ],
   "ivan_assignments": [
    "Environmental"
   ],
   "vincent_assignments": [
-   "Land",
    "Technology",
-   "Environmental"
+   "Environmental",
+   "Land"
   ],
   "marie_assignments": [
-   "Land",
    "Arts",
-   "Physics"
+   "Physics",
+   "Land"
   ],
   "kathleen_assignments": [
    "Technology",
@@ -752,32 +752,32 @@
   "human_assessment_type": "tags",
   "title": "Untitled",
   "user_tags": [
-   "self-sufficient.s.01",
+   "humanness.n.01",
+   "constructivist.n.01",
    "site.n.02",
    "vulnerability.n.01",
-   "constructivist.n.01",
-   "humanness.n.01",
+   "self-sufficient.s.01",
    "nature.n.01"
   ],
   "ivan_assignments": [
-   "Mind",
+   "Body",
    "Immaterial",
-   "Body"
+   "Mind"
   ],
   "vincent_assignments": [
+   "Environmental",
    "Power",
-   "Mind",
-   "Environmental"
+   "Mind"
   ],
   "marie_assignments": [
-   "Land",
    "Economy",
-   "Body"
+   "Body",
+   "Land"
   ],
   "kathleen_assignments": [
+   "Activism",
    "Values",
-   "Environmental",
-   "Activism"
+   "Environmental"
   ]
  },
  {
@@ -786,32 +786,32 @@
   "human_assessment_type": "description",
   "title": "Stone Deaf",
   "user_tags": [
-   "prominence.n.01",
-   "monument.n.02",
-   "politics.n.01",
-   "marxism.n.01",
    "intervention.n.01",
+   "monument.n.02",
+   "prominence.n.01",
+   "marxism.n.01",
+   "politics.n.01",
    "displacement.n.06"
   ],
   "ivan_assignments": [
    "Economy",
-   "Politics",
-   "History"
+   "History",
+   "Politics"
   ],
   "vincent_assignments": [
+   "Arts",
    "History",
-   "Politics",
-   "Arts"
+   "Politics"
   ],
   "marie_assignments": [
+   "Economy",
    "History",
-   "Politics",
-   "Economy"
+   "Politics"
   ],
   "kathleen_assignments": [
+   "Activism",
    "History",
-   "Politics",
-   "Activism"
+   "Politics"
   ]
  },
  {
@@ -820,12 +820,12 @@
   "human_assessment_type": "description",
   "title": "Collectors\u2019 Favorites",
   "user_tags": [
-   "value.n.03",
-   "merchandise.n.01",
-   "throwaway.s.02",
    "collection.n.01",
+   "television_program.n.01",
+   "merchandise.n.01",
    "everyday.s.01",
-   "television_program.n.01"
+   "throwaway.s.02",
+   "value.n.03"
   ],
   "ivan_assignments": [
    "Economy",
@@ -843,8 +843,8 @@
   ],
   "kathleen_assignments": [
    "Arts",
-   "Mass media",
-   "Technology"
+   "Technology",
+   "Mass media"
   ]
  },
  {
@@ -853,11 +853,11 @@
   "human_assessment_type": "description",
   "title": "From the series the Old and the New (XI)",
   "user_tags": [
+   "replace.v.01",
    "three-dimensional.s.01",
-   "delicate.s.03",
-   "re-formation.n.01",
    "architecture.n.01",
-   "replace.v.01"
+   "re-formation.n.01",
+   "delicate.s.03"
   ],
   "ivan_assignments": [
    "Arts",
@@ -865,19 +865,19 @@
    "Materiality"
   ],
   "vincent_assignments": [
+   "Urbanization",
    "Arts",
-   "Colonization",
-   "Urbanization"
+   "Colonization"
   ],
   "marie_assignments": [
    "Arts",
-   "Design",
-   "History"
+   "History",
+   "Design"
   ],
   "kathleen_assignments": [
    "Arts",
-   "Design",
-   "Materiality"
+   "Materiality",
+   "Design"
   ]
  },
  {
@@ -886,31 +886,31 @@
   "human_assessment_type": "description",
   "title": "3600 besos por hora",
   "user_tags": [
-   "universal.n.03",
-   "surveillance.n.01",
-   "isolation.n.01",
    "cuba.n.01",
+   "island.n.01",
+   "isolation.n.01",
    "kiss.n.01",
-   "island.n.01"
+   "universal.n.03",
+   "surveillance.n.01"
   ],
   "ivan_assignments": [
    "Mind",
    "Politics"
   ],
   "vincent_assignments": [
-   "Politics",
    "Technology",
-   "Community"
+   "Community",
+   "Politics"
   ],
   "marie_assignments": [
-   "Mass media",
    "Emotion",
+   "Mass media",
    "Politics"
   ],
   "kathleen_assignments": [
-   "Mind",
    "Technology",
-   "Body"
+   "Body",
+   "Mind"
   ]
  },
  {
@@ -920,30 +920,30 @@
   "title": "The Nature of Conflict",
   "user_tags": [
    "water.n.01",
-   "pollution.n.01",
    "natural_resource.n.01",
-   "turf_war.n.01",
    "globalization.n.01",
-   "commodity.n.01"
+   "turf_war.n.01",
+   "commodity.n.01",
+   "pollution.n.01"
   ],
   "ivan_assignments": [
    "Economy",
-   "Politics",
-   "Environmental"
+   "Environmental",
+   "Politics"
   ],
   "vincent_assignments": [
-   "Environmental",
    "Geopolitics",
+   "Environmental",
    "War"
   ],
   "marie_assignments": [
+   "Fantasy",
    "Violence",
-   "Environmental",
-   "Fantasy"
+   "Environmental"
   ],
   "kathleen_assignments": [
-   "Environmental",
    "Activism",
+   "Environmental",
    "War"
   ]
  },
@@ -953,20 +953,20 @@
   "human_assessment_type": "description",
   "title": "A Rising Tide Lifts All Boats",
   "user_tags": [
-   "contradiction.n.01",
    "farfetched.s.01",
+   "idea.n.01",
    "rigmarole.n.01",
-   "nonsense.n.01",
+   "contradiction.n.01",
    "sales_talk.n.01",
-   "idea.n.01"
+   "nonsense.n.01"
   ],
   "ivan_assignments": [
    "Language",
    "Mind"
   ],
   "vincent_assignments": [
-   "Language",
    "Emotion",
+   "Language",
    "Mass media"
   ],
   "marie_assignments": [
@@ -975,8 +975,8 @@
    "Culture"
   ],
   "kathleen_assignments": [
-   "Language",
    "Identity",
+   "Language",
    "Culture"
   ]
  },
@@ -986,12 +986,12 @@
   "human_assessment_type": "description",
   "title": "One Must",
   "user_tags": [
-   "suggestion.n.04",
    "riddle.n.01",
    "text.n.01",
+   "suggestion.n.04",
+   "violence.n.01",
    "caption.n.03",
-   "scissors.n.01",
-   "violence.n.01"
+   "scissors.n.01"
   ],
   "ivan_assignments": [
    "Language",
@@ -1004,13 +1004,13 @@
   ],
   "marie_assignments": [
    "Arts",
-   "Violence",
-   "Technology"
+   "Technology",
+   "Violence"
   ],
   "kathleen_assignments": [
-   "Mind",
+   "Identity",
    "Immaterial",
-   "Identity"
+   "Mind"
   ]
  },
  {
@@ -1019,30 +1019,30 @@
   "human_assessment_type": "description",
   "title": "Hubert Maga (perruque MAVA-mus\u00e9e d'art de la vie active)",
   "user_tags": [
-   "hair.n.01",
    "cross-cultural.a.01",
-   "west.n.01",
+   "improvisation.n.01",
    "braid.n.01",
    "architecture.n.02",
-   "improvisation.n.01"
+   "hair.n.01",
+   "west.n.01"
   ],
   "ivan_assignments": [
    "Identity",
    "Culture"
   ],
   "vincent_assignments": [
+   "Body",
    "Economy",
-   "Colonization",
-   "Body"
+   "Colonization"
   ],
   "marie_assignments": [
    "Power",
-   "Politics",
-   "Culture"
+   "Culture",
+   "Politics"
   ],
   "kathleen_assignments": [
-   "History",
    "Colonization",
+   "History",
    "Culture"
   ]
  },
@@ -1053,22 +1053,22 @@
   "title": "Pink Man Walking on Boats with Woman Following",
   "user_tags": [
    "sketch.n.01",
+   "raw.s.04",
    "concept.n.01",
    "shadow.v.01",
    "procedure.n.01",
-   "raw.s.04",
    "motion.n.06"
   ],
   "ivan_assignments": [],
   "vincent_assignments": [
-   "Land",
+   "Body",
    "Geopolitics",
-   "Body"
+   "Land"
   ],
   "marie_assignments": [
    "Economy",
-   "Politics",
-   "Land"
+   "Land",
+   "Politics"
   ],
   "kathleen_assignments": []
  },
@@ -1078,12 +1078,12 @@
   "human_assessment_type": "description",
   "title": "After the Archive Collections Room",
   "user_tags": [
-   "naturalistic.s.01",
-   "exhibition.n.01",
-   "transformation.n.05",
-   "subsequently.r.01",
    "space.n.03",
-   "documentation.n.01"
+   "documentation.n.01",
+   "transformation.n.05",
+   "exhibition.n.01",
+   "naturalistic.s.01",
+   "subsequently.r.01"
   ],
   "ivan_assignments": [
    "Time",
@@ -1091,17 +1091,17 @@
   ],
   "vincent_assignments": [
    "Arts",
-   "Culture",
-   "Materiality"
+   "Materiality",
+   "Culture"
   ],
   "marie_assignments": [
-   "Time",
    "Arts",
+   "Time",
    "Materiality"
   ],
   "kathleen_assignments": [
-   "Time",
    "Arts",
+   "Time",
    "Space"
   ]
  },
@@ -1111,31 +1111,31 @@
   "human_assessment_type": "description",
   "title": "You see with no lights",
   "user_tags": [
-   "collage.n.01",
-   "idealization.n.01",
    "collection.n.01",
-   "bauhaus.n.01",
+   "idealization.n.01",
    "art_history.n.01",
+   "bauhaus.n.01",
+   "collage.n.01",
    "playful.a.01"
   ],
   "ivan_assignments": [
    "Mind",
-   "Design",
-   "Materiality"
+   "Materiality",
+   "Design"
   ],
   "vincent_assignments": [
    "Arts",
-   "Politics",
-   "Culture"
+   "Culture",
+   "Politics"
   ],
   "marie_assignments": [
    "Arts",
-   "Design",
-   "Culture"
+   "Culture",
+   "Design"
   ],
   "kathleen_assignments": [
-   "History",
    "Arts",
+   "History",
    "Design"
   ]
  },
@@ -1145,16 +1145,16 @@
   "human_assessment_type": "description",
   "title": "Spring Line",
   "user_tags": [
-   "variation.n.07",
-   "influence.n.04",
-   "adaptation.n.02",
    "idea.n.01",
+   "adaptation.n.02",
+   "stalk.n.02",
    "flower.n.01",
-   "stalk.n.02"
+   "variation.n.07",
+   "influence.n.04"
   ],
   "ivan_assignments": [
-   "Mind",
-   "Materiality"
+   "Materiality",
+   "Mind"
   ],
   "vincent_assignments": [
    "Arts",
@@ -1163,13 +1163,13 @@
   ],
   "marie_assignments": [
    "Arts",
-   "Environmental",
-   "Time"
+   "Time",
+   "Environmental"
   ],
   "kathleen_assignments": [
    "Time",
-   "Identity",
-   "Materiality"
+   "Materiality",
+   "Identity"
   ]
  },
  {
@@ -1178,32 +1178,32 @@
   "human_assessment_type": "description",
   "title": "Domes, #1",
   "user_tags": [
+   "hue.n.01",
+   "polish.n.02",
+   "femininity.n.01",
    "closeness.n.01",
    "feminism.n.01",
-   "fabrication.n.04",
-   "femininity.n.01",
-   "polish.n.02",
-   "hue.n.01"
+   "fabrication.n.04"
   ],
   "ivan_assignments": [
    "Identity",
-   "Design",
-   "Materiality"
+   "Materiality",
+   "Design"
   ],
   "vincent_assignments": [
-   "Identity",
    "Technology",
-   "Materiality"
+   "Materiality",
+   "Identity"
   ],
   "marie_assignments": [
    "Economy",
-   "Identity",
-   "Design"
+   "Design",
+   "Identity"
   ],
   "kathleen_assignments": [
    "Economy",
-   "Design",
-   "Culture"
+   "Culture",
+   "Design"
   ]
  },
  {
@@ -1212,17 +1212,17 @@
   "human_assessment_type": "description",
   "title": "Primero Estaba el Mar",
   "user_tags": [
+   "beginning.n.01",
    "civilization.n.01",
-   "ocean.n.01",
-   "concrete.n.01",
-   "genesis.n.01",
    "everyday.s.01",
-   "beginning.n.01"
+   "ocean.n.01",
+   "genesis.n.01",
+   "concrete.n.01"
   ],
   "ivan_assignments": [
-   "Land",
    "Language",
-   "Culture"
+   "Culture",
+   "Land"
   ],
   "vincent_assignments": [
    "Land",
@@ -1230,14 +1230,14 @@
    "Colonization"
   ],
   "marie_assignments": [
-   "Land",
+   "Colonization",
    "Identity",
-   "Colonization"
+   "Land"
   ],
   "kathleen_assignments": [
-   "Land",
    "Colonization",
-   "Environmental"
+   "Environmental",
+   "Land"
   ]
  },
  {
@@ -1246,31 +1246,31 @@
   "human_assessment_type": "description",
   "title": "What remains is future",
   "user_tags": [
+   "transportation_system.n.01",
    "disaster.n.03",
-   "anaglyph.n.01",
    "zeppelin.n.02",
    "mass_culture.n.01",
-   "transportation_system.n.01",
-   "explosion.n.02"
+   "explosion.n.02",
+   "anaglyph.n.01"
   ],
   "ivan_assignments": [
-   "History",
-   "Fantasy"
+   "Fantasy",
+   "History"
   ],
   "vincent_assignments": [
-   "History",
    "Arts",
+   "History",
    "Materiality"
   ],
   "marie_assignments": [
    "Economy",
-   "Mass media",
-   "Fantasy"
+   "Fantasy",
+   "Mass media"
   ],
   "kathleen_assignments": [
-   "Mind",
    "Technology",
-   "Physics"
+   "Physics",
+   "Mind"
   ]
  },
  {
@@ -1279,31 +1279,31 @@
   "human_assessment_type": "description",
   "title": "Tourisme international",
   "user_tags": [
-   "rustle.n.01",
-   "disconnect.v.02",
+   "north_korea.n.01",
+   "propaganda.n.01",
    "tourism.n.01",
    "footfall.n.01",
-   "north_korea.n.01",
-   "propaganda.n.01"
+   "rustle.n.01",
+   "disconnect.v.02"
   ],
   "ivan_assignments": [
-   "Identity",
-   "Culture"
+   "Culture",
+   "Identity"
   ],
   "vincent_assignments": [
    "Land",
-   "Politics",
-   "Fantasy"
+   "Fantasy",
+   "Politics"
   ],
   "marie_assignments": [
    "Arts",
-   "Politics",
-   "Culture"
+   "Culture",
+   "Politics"
   ],
   "kathleen_assignments": [
    "Language",
-   "Culture",
-   "Geopolitics"
+   "Geopolitics",
+   "Culture"
   ]
  },
  {
@@ -1313,31 +1313,31 @@
   "title": "Good Hand Bad Hand",
   "user_tags": [
    "self-portrait.n.01",
-   "alter_ego.n.01",
-   "artificial.a.01",
-   "performance.n.03",
    "poker.n.02",
-   "gesture.n.03"
+   "alter_ego.n.01",
+   "gesture.n.03",
+   "artificial.a.01",
+   "performance.n.03"
   ],
   "ivan_assignments": [
    "Language",
-   "Mind",
-   "Body"
+   "Body",
+   "Mind"
   ],
   "vincent_assignments": [
-   "Power",
    "Emotion",
-   "Fantasy"
+   "Fantasy",
+   "Power"
   ],
   "marie_assignments": [
+   "Fantasy",
    "Body",
-   "Mass media",
-   "Fantasy"
+   "Mass media"
   ],
   "kathleen_assignments": [
+   "Body",
    "Language",
-   "Identity",
-   "Body"
+   "Identity"
   ]
  },
  {
@@ -1346,31 +1346,31 @@
   "human_assessment_type": "description",
   "title": "Character Witness",
   "user_tags": [
-   "fragment.n.01",
-   "perception.n.03",
-   "combine.v.04",
    "speech.n.03",
+   "combine.v.04",
+   "fragment.n.01",
    "autobiography.n.01",
-   "reenactment.n.01"
+   "reenactment.n.01",
+   "perception.n.03"
   ],
   "ivan_assignments": [
    "History",
    "Politics"
   ],
   "vincent_assignments": [
+   "Language",
    "History",
-   "Politics",
-   "Language"
+   "Politics"
   ],
   "marie_assignments": [
+   "Mass media",
    "History",
-   "Politics",
-   "Mass media"
+   "Politics"
   ],
   "kathleen_assignments": [
    "Language",
-   "Politics",
-   "History"
+   "History",
+   "Politics"
   ]
  },
  {
@@ -1379,21 +1379,21 @@
   "human_assessment_type": "description",
   "title": "Anti-Happening",
   "user_tags": [
+   "humor.n.04",
+   "openness.n.01",
    "manifesto.n.01",
    "imagination.n.02",
-   "humor.n.04",
    "happening.n.01",
-   "practice.n.04",
-   "openness.n.01"
+   "practice.n.04"
   ],
   "ivan_assignments": [
-   "Mind",
-   "Identity"
+   "Identity",
+   "Mind"
   ],
   "vincent_assignments": [
-   "Language",
+   "Arts",
    "Emotion",
-   "Arts"
+   "Language"
   ],
   "marie_assignments": [
    "Arts",
@@ -1412,31 +1412,31 @@
   "human_assessment_type": "description",
   "title": "Report from the legal subcommittee",
   "user_tags": [
-   "constellation.n.02",
    "frustration.n.01",
-   "capitalism.n.01",
    "outer_space.n.01",
    "systematize.v.01",
+   "capitalism.n.01",
+   "constellation.n.02",
    "futility.n.01"
   ],
   "ivan_assignments": [
-   "Politics",
-   "Space"
+   "Space",
+   "Politics"
   ],
   "vincent_assignments": [
-   "Power",
    "Space",
-   "Geopolitics"
+   "Geopolitics",
+   "Power"
   ],
   "marie_assignments": [
+   "Space",
    "Power",
-   "Politics",
-   "Space"
+   "Politics"
   ],
   "kathleen_assignments": [
+   "Space",
    "Power",
-   "Politics",
-   "Space"
+   "Politics"
   ]
  },
  {
@@ -1445,32 +1445,32 @@
   "human_assessment_type": "description",
   "title": "Destinos Posibles (Possible Destinations)",
   "user_tags": [
-   "regionalism.n.01",
    "desire.n.01",
-   "communism.n.01",
    "community.n.01",
    "interaction.n.01",
-   "interconnection.n.01"
+   "interconnection.n.01",
+   "communism.n.01",
+   "regionalism.n.01"
   ],
   "ivan_assignments": [
    "Economy",
-   "Politics",
-   "Emotion"
+   "Emotion",
+   "Politics"
   ],
   "vincent_assignments": [
    "Economy",
-   "Politics",
-   "Emotion"
+   "Emotion",
+   "Politics"
   ],
   "marie_assignments": [
+   "Fantasy",
    "Body",
-   "Mind",
-   "Fantasy"
+   "Mind"
   ],
   "kathleen_assignments": [
-   "Identity",
+   "Fantasy",
    "Community",
-   "Fantasy"
+   "Identity"
   ]
  },
  {
@@ -1479,32 +1479,32 @@
   "human_assessment_type": "description",
   "title": "Bunny\u2019s Sofa",
   "user_tags": [
-   "fake.n.01",
-   "ethic.n.01",
-   "labor.n.02",
-   "korea.n.01",
+   "costume.n.01",
    "labor.n.01",
-   "costume.n.01"
+   "korea.n.01",
+   "fake.n.01",
+   "labor.n.02",
+   "ethic.n.01"
   ],
   "ivan_assignments": [
    "Economy",
-   "Politics",
-   "Inequality"
+   "Inequality",
+   "Politics"
   ],
   "vincent_assignments": [
-   "Politics",
+   "Fantasy",
    "Materiality",
-   "Fantasy"
+   "Politics"
   ],
   "marie_assignments": [
    "Economy",
-   "Emotion",
-   "Fantasy"
+   "Fantasy",
+   "Emotion"
   ],
   "kathleen_assignments": [
-   "Politics",
+   "Emotion",
    "Values",
-   "Emotion"
+   "Politics"
   ]
  },
  {
@@ -1513,18 +1513,18 @@
   "human_assessment_type": "description",
   "title": "Boat with Legs",
   "user_tags": [
+   "strange.a.01",
    "sketch.n.01",
+   "raw.s.04",
    "concept.n.01",
    "procedure.n.01",
-   "raw.s.04",
-   "strange.a.01",
    "motion.n.06"
   ],
   "ivan_assignments": [],
   "vincent_assignments": [
-   "Land",
    "Urbanization",
-   "Body"
+   "Body",
+   "Land"
   ],
   "marie_assignments": [
    "Economy"
@@ -1537,12 +1537,12 @@
   "human_assessment_type": "description",
   "title": "Nadie sabe de la sed con que otro bebe (No one knows the thirst with which another drinks)",
   "user_tags": [
-   "occlusion.n.01",
-   "relational.s.01",
    "transparency.n.02",
-   "disjunction.n.01",
+   "occlusion.n.01",
    "imperceptibility.n.01",
-   "thirst.n.01"
+   "relational.s.01",
+   "thirst.n.01",
+   "disjunction.n.01"
   ],
   "ivan_assignments": [
    "Inequality"
@@ -1553,14 +1553,14 @@
    "Inequality"
   ],
   "marie_assignments": [
-   "Politics",
+   "Fantasy",
    "Colonization",
-   "Fantasy"
+   "Politics"
   ],
   "kathleen_assignments": [
    "Economy",
-   "Inequality",
-   "Community"
+   "Community",
+   "Inequality"
   ]
  },
  {
@@ -1569,32 +1569,32 @@
   "human_assessment_type": "description",
   "title": "Tropical Vulture",
   "user_tags": [
+   "mundane.s.02",
    "desire.n.01",
+   "everyday.s.01",
    "narrative.n.01",
    "cinematic.a.01",
-   "mundane.s.02",
-   "everyday.s.01",
    "actuality.n.01"
   ],
   "ivan_assignments": [
    "Arts",
-   "Identity",
-   "Fantasy"
+   "Fantasy",
+   "Identity"
   ],
   "vincent_assignments": [
-   "Land",
    "Arts",
-   "Geopolitics"
+   "Geopolitics",
+   "Land"
   ],
   "marie_assignments": [
-   "Mass media",
    "Culture",
+   "Mass media",
    "Identity"
   ],
   "kathleen_assignments": [
+   "Fantasy",
    "Design",
-   "Culture",
-   "Fantasy"
+   "Culture"
   ]
  }
 ]

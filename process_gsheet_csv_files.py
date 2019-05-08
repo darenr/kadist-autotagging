@@ -116,6 +116,12 @@ def process_clusters_sheet():
         L = [[y.strip() for y in x.split(',')[1:]] for x in terms]
         clusters[header] = validated_tags(header, [item for sublist in L for item in sublist])
 
+    #
+    # "Arts" cluster is not useful, so remove it
+    #
+    if 'Arts' in clusters:
+        del clusters['Arts']
+
     with open(dest_file_clusters,  mode="w", encoding="utf8") as f:
         print(json.dumps(clusters, indent=True), file=f)
         print('  *', "written", len(clusters), "clusters")
