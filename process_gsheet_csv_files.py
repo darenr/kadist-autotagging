@@ -92,6 +92,52 @@ def process_trials_sheets():
 def validated_tags(cluster_name, tags):
     return [x for x in tags if x]
 
+def df_next_column(df, col):
+    # returns the next column given a dataframe (df) and a column (col)
+    for i, c in enumerate(df.columns):
+        if c == col and i<len(df.columns):
+            return df.columns[i+1]
+
+def process_v4_trials(filename):
+    dest_file_trials = 'results/trial_v.4.json'
+
+    df = pd.read_csv(filename)
+
+    trials = []
+
+    for index, row in df.iterrows():
+
+        human_cluster_assignments = {}
+        for person in people:
+            human_cluster_assignments[person] = []
+            for col in ['%s Cluster 1' % (person), '%s Cluster 2' % (person), '%s Cluster 3' % (person)]:
+                if col in df.columns and not pd.isnull(row[col]):
+                    if df_next_column(df, col):
+                        confidence = float(row[df_next_column(df, col)])
+                        if confidence >= 0.5:
+                            human_cluster_assignments[person].append(row[col])
+                else:
+                    print("***  Couldn't find column: [{}]".format(col))
+
+        if human_cluster_assignments:
+            trial = {
+                "artist_name": row['artist_name'],
+                "description": row['description'],
+                "title": row['title'],
+                "user_tags": list(set([x.strip() for x in row['user_tags'].split(',')]))
+            }
+
+            for person in people:
+                human_assignment = "%s_assignments" % (person.lower())
+                trial[human_assignment] = list(set([x.strip() for x in human_cluster_assignments[person]]))
+
+            trials.append(trial)
+
+    if trials:
+        with open(dest_file_trials,  mode="w", encoding="utf8") as f:
+            print(json.dumps(trials, indent=True), file=f)
+            print('  *', "written {} trials [{}]".format(len(trials), dest_file_trials))
+
 
 def process_clusters_sheet():
     source_file_clusters = 'data/Cluster trials v.4 and v.5 - Clusters.csv'
@@ -124,12 +170,14 @@ def process_clusters_sheet():
 
     with open(dest_file_clusters,  mode="w", encoding="utf8") as f:
         print(json.dumps(clusters, indent=True), file=f)
-        print('  *', "written", len(clusters), "clusters")
+        print('  *', "written {} clusters [{}]".format(len(clusters), dest_file_clusters))
 
     return clusters
 
 
 if __name__ == '__main__':
 
-    trials = process_trials_sheets()
+    #trials = process_trials_sheets()
     clusters = process_clusters_sheet()
+    process_v4_trials('data/Cluster trials v.4 and v.5 - V.4.csv')
+    #process_v5_trials('data/Cluster trials v.4 and v.5 - V.5.csv')

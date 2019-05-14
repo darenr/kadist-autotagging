@@ -2,6 +2,7 @@ pandas
 numpy
 tqdm
 nltk
+gensim
 jupyter
 requests
 matplotlib

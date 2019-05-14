@@ -206,7 +206,7 @@ if __name__ == '__main__':
 
                 df = pd.DataFrame(data_df, columns=["region", "artist_name", "title", "permalink", "machine_clusters"])
 
-                output_filename = '%s_results_%s_%.2f.csv' % (results_prefix, similarity.__name__, T)
+                output_filename = 'results/%s_kadist_works_results_%s_%.2f.csv' % (results_prefix, similarity.__name__, T)
                 df.to_csv(output_filename, index=False)
                 print(' *', 'written file results to', output_filename)
             else:
