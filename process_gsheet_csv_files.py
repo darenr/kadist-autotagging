@@ -99,7 +99,7 @@ def df_next_column(df, col):
             return df.columns[i+1]
 
 def process_v4_trials(filename):
-    dest_file_trials = 'results/trial_v.4.json'
+    dest_file_trials = 'data/trial_v.4.json'
 
     df = pd.read_csv(filename)
 
