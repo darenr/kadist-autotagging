@@ -194,7 +194,6 @@ if __name__ == '__main__':
             with codecs.open(file_trials, 'rb', 'utf-8') as f_trials:
 
                 trials = preprocess_trials(json.loads(f_trials.read()))
-                trials = [trials[0]]
                 print('  *', 'processing', len(trials), 'for', cluster_type)
                 tag_trials(clusters, trials, t=T, similarity=similarity, debug=debug)
 
@@ -202,13 +201,25 @@ if __name__ == '__main__':
                     print(T, similarity.__name__)
                     data_df = []
                     for work in trials:
+
+                        # aggeegate human clusters
+                        work['human_clusters'] = set([])
+                        for person in people:
+                            human = "%s_assignments" % (person.lower())
+                            if human in work:
+                                work['human_clusters'] = work['human_clusters'].union(set(work[human]))
+
+                        hits = set(work[human]).intersection(set(work['machine_clusters']))
+
                         data_df.append([
                             work['artist_name'],
                             work['title'],
+                            len(hits),
+                            ','.join(work['human_clusters']),
                             ','.join(work['machine_clusters'])
                         ])
 
-                    df = pd.DataFrame(data_df, columns=["artist_name", "title", "machine_clusters"])
+                    df = pd.DataFrame(data_df, columns=["artist_name", "title", "hits", "human_clusters", "machine_clusters"])
 
                     output_filename = 'results/%s_%s_results_%s_%.2f.csv' % (results_prefix, cluster_type, similarity.__name__, T)
                     df.to_csv(output_filename, index=False)
