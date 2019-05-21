@@ -1,2 +1,10 @@
 artist_name,title,hits,human_clusters,machine_clusters
-Jeffry Mitchell,The Carpenter,0,"Economy,Body,Arts,Materiality,History,Spirituality,Culture",
+Jeffry Mitchell,The Carpenter,0,"Culture,Body,Spirituality,Materiality,Economy,Arts,History",
+Fernanda Gomes,Untitled,0,"Environmental,Materiality,Arts,Land,Culture,Body,Immaterial,Inequality","Individual_Personal,Material_Physical,Politics"
+Asier Mendizabal,"Rotation (Moiré, Rome)",0,"Culture,Community,Arts,Identity","Society,Politics,Cultural"
+George Pfau,Decomposing Eternally,0,"Body,Immaterial,Spirituality,Fantasy","Material_Physical,Individual_Personal"
+Judy Chicago,"Domes, #1",0,"Culture,Technology,Body,Design,Materiality,Economy,Identity","Individual_Personal,Cultural,Society"
+Anna Molska,Perspective,0,"Body,Immaterial,Space,Design,Land,Arts,Physics","Material_Physical,Society,Individual_Personal"
+Walead Beshty,"Black Curl (CMY/Five Magnet: Irvine, California, March 25, 2010, Fujicolor Cyrstal Archive Super Type C, EM No 165-021, 05910)",0,"Design,Materiality,Arts,Physics","Material_Physical,Cultural,Individual_Personal"
+Pia Camil,Espectacular cortina,0,"Immaterial,Urbanization,Materiality,Economy,Land","Cultural,Material_Physical,Society"
+Sheung-Chuen,New York Public Library Projects (NYPLP),0,"Mind,Design,Land,Politics,Economy,Arts","Cultural,Society,Individual_Personal"

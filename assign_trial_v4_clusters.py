@@ -58,7 +58,7 @@ def _mk_synset(w):
         try:
             return wordnet.lemma(word).synset()
         except Exception as ex:
-                return None
+            return None
 
     else:
         print(' * Error, invalid synset name', w, 'skipping...')
@@ -146,7 +146,8 @@ def preprocess_trials(trials):
 
 def find_clusters(clusters, user_tags, t, similarity, top_n=3, debug=False):
     scores = defaultdict(int)
-    if debug: print('DEBUG', 'find_clusters', 'user_tags', ','.join([_mk_wv_word(x) for x in user_tags]))
+    if debug:
+        print('DEBUG', 'find_clusters', 'user_tags', ','.join([_mk_wv_word(x) for x in user_tags]))
     for cluster in clusters:
         for cluster_tag in clusters[cluster]:
             if debug:
@@ -177,7 +178,7 @@ if __name__ == '__main__':
     T = 0.76
     results_prefix = 'trial_v4'
     file_trials = "data/trial_v.4.json"
-    compute_person_metrics = False;
+    compute_person_metrics = True
     debug = False
 
     print(' *', 'using WordNet version:', wordnet.get_version())
@@ -214,12 +215,13 @@ if __name__ == '__main__':
                         data_df.append([
                             work['artist_name'],
                             work['title'],
+                            ','.join([_mk_wv_word(x) for x in work['user_tags']]),
                             len(hits),
                             ','.join(work['human_clusters']),
                             ','.join(work['machine_clusters'])
                         ])
 
-                    df = pd.DataFrame(data_df, columns=["artist_name", "title", "hits", "human_clusters", "machine_clusters"])
+                    df = pd.DataFrame(data_df, columns=["artist_name", "title", "user_tags", "hits", "human_clusters", "machine_clusters"])
 
                     output_filename = 'results/%s_%s_results_%s_%.2f.csv' % (results_prefix, cluster_type, similarity.__name__, T)
                     df.to_csv(output_filename, index=False)
@@ -248,10 +250,10 @@ if __name__ == '__main__':
                                 clusters_when_success.extend(work[human])
 
                             data_df.append([
-                                similarity.__name__,
                                 ','.join(work[human]),
                                 ','.join(work['machine_clusters']),
                                 len(hits),
+                                ','.join([_mk_wv_word(x) for x in work['user_tags']]),
                                 work['artist_name'],
                                 work['title']
                             ])
@@ -260,8 +262,9 @@ if __name__ == '__main__':
                         # make a results dataframe for easy visualization
                         #
 
-                        df = pd.DataFrame(data_df, columns=["metric", "human_clusters",
-                                                            "machine_clusters", "hits", "artist_name", "title"])
+                        df = pd.DataFrame(data_df, columns=["human_clusters", "machine_clusters",
+                                                            "hits", "user_tags",
+                                                            "artist_name", "title"])
 
                         print(T, similarity.__name__, total_hits)
                         output_filename = '%s_%s_%s_results_%s_%.2f.csv' % (person.lower(), results_prefix, cluster_type, similarity.__name__, T)
