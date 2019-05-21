@@ -174,7 +174,7 @@ if __name__ == '__main__':
 
     similarity = wup
     T = 0.76
-    results_prefix = 'all'
+    results_prefix = 'all_kadist_works'
     file_trials = 'data/all_trials.json'
     compute_person_metrics = False;
 
@@ -182,6 +182,7 @@ if __name__ == '__main__':
     print(' *', 'using WordVector Glove Model:', glove_file)
     print(' *', 'using', 'similarity fn', similarity.__name__, 'T', T)
     print(' *', 'compute_person_metrics', compute_person_metrics)
+    print(' *', 'results_prefix', results_prefix)
 
     for cluster_type in ['clusters', 'superclusters']:
         file_clusters = f'data/{cluster_type}.json'
@@ -207,7 +208,7 @@ if __name__ == '__main__':
 
                     df = pd.DataFrame(data_df, columns=["region", "artist_name", "title", "permalink", "machine_clusters"])
 
-                    output_filename = 'results/%s_kadist_works_%s_results_%s_%.2f.csv' % (results_prefix, cluster_type, similarity.__name__, T)
+                    output_filename = 'results/%s_%s_results_%s_%.2f.csv' % (results_prefix, cluster_type, similarity.__name__, T)
                     df.to_csv(output_filename, index=False)
                     print(' *', 'written file results to', output_filename)
                 else:
@@ -252,7 +253,7 @@ if __name__ == '__main__':
                                                             "machine_clusters", "hits", "artist_name", "title", "permalink"])
 
                         print(T, similarity.__name__, total_hits)
-                        output_filename = '%s_%s_%s_esults_%s_%.2f.csv' % (person.lower(), results_prefix, cluster_type, similarity.__name__, T)
+                        output_filename = '%s_%s_%s_results_%s_%.2f.csv' % (person.lower(), results_prefix, cluster_type, similarity.__name__, T)
                         df.to_csv(output_filename, index=False)
 
                         print(' *', 'written file results to', output_filename)
