@@ -1,4 +1,8 @@
+- convert v4 and v5 trial descriptions to machine_tags
 - keep track of scores, low scored indicate tagging problem
 - cluster all kadist using:
-  - super clusters
-  - text only, no tags
+  - super clusters *DONE*
+  - super clusters using descriptions
+
+- run trials on v4 (tags) *DONE*
+- run trials on v5 (description)
