@@ -1,0 +1,4 @@
+- keep track of scores, low scored indicate tagging problem
+- cluster all kadist using:
+  - super clusters
+  - text only, no tags

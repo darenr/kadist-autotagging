@@ -10,6 +10,7 @@ import requests
 from tqdm import tqdm
 import random
 import unidecode
+from itertools import chain
 
 from people import people
 
@@ -76,7 +77,7 @@ def process_trials_sheets():
                 trials.append(trial)
 
     with open(dest_file_trials,  mode="w", encoding="utf8") as f:
-        print(json.dumps(trials, indent=True), file=f)
+        print(json.dumps(trials, indent=True, ensure_ascii=False), file=f)
         print('  *', "written", len(trials), "trials")
 
     for artist, doc in docs:
@@ -135,13 +136,14 @@ def process_v4_trials(filename):
 
     if trials:
         with open(dest_file_trials,  mode="w", encoding="utf8") as f:
-            print(json.dumps(trials, indent=True), file=f)
+            print(json.dumps(trials, indent=True, ensure_ascii=False), file=f)
             print('  *', "written {} trials [{}]".format(len(trials), dest_file_trials))
 
 
 def process_clusters_sheet():
     source_file_clusters = 'data/Cluster trials v.4 and v.5 - Clusters.csv'
     dest_file_clusters = 'data/clusters.json'
+    dest_file_superclusters = 'data/superclusters.json'
 
     clusters = {}
     df = pd.read_csv(source_file_clusters, header=None)
@@ -162,17 +164,28 @@ def process_clusters_sheet():
         L = [[y.strip() for y in x.split(',')[1:]] for x in terms]
         clusters[header] = validated_tags(header, [item for sublist in L for item in sublist])
 
-    #
-    # "Arts" cluster is not useful, so remove it
-    #
-    if 'Arts' in clusters:
-        del clusters['Arts']
-
     with open(dest_file_clusters,  mode="w", encoding="utf8") as f:
-        print(json.dumps(clusters, indent=True), file=f)
+        print(json.dumps(clusters, indent=True, ensure_ascii=False), file=f)
         print('  *', "written {} clusters [{}]".format(len(clusters), dest_file_clusters))
 
-    return clusters
+    # now aggregate and produce superclusters
+
+    super_cluster_definition = {
+        'Society': ['Colonization', 'Community', 'Economy', 'History', 'Urbanization', 'Violence', 'War'],
+        'Politics':  ['Activism', 'Geopolitics', 'Inequality',  'Politics', 'Power'],
+        'Individual_Personal': ['Body', 'Emotion', 'Familial', 'Identity', 'Mind', 'Spirituality', 'Values'],
+        'Material_Physical': ['Environmental', 'Immaterial', 'Land', 'Materiality', 'Physics', 'Space', 'Time'],
+        'Cultural': ['Arts', 'Culture', 'Design', 'Fantasy', 'Language', 'Media', 'Technology']
+    }
+
+    superclusters = {
+        k: list(chain.from_iterable([clusters[c] for c in subgroup]))
+        for k,subgroup in super_cluster_definition.items()
+    }
+
+    with open(dest_file_superclusters,  mode="w", encoding="utf8") as f:
+        print(json.dumps(superclusters, indent=True, ensure_ascii=False), file=f)
+        print('  *', "written {} clusters [{}]".format(len(superclusters), dest_file_superclusters))
 
 
 if __name__ == '__main__':
