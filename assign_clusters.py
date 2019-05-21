@@ -183,81 +183,82 @@ if __name__ == '__main__':
     print(' *', 'using', 'similarity fn', similarity.__name__, 'T', T)
     print(' *', 'compute_person_metrics', compute_person_metrics)
 
-    file_clusters = 'data/clusters.json'
-    with codecs.open(file_clusters, 'rb', 'utf-8') as f_clusters:
-        clusters = preprocess_clusters(json.loads(f_clusters.read()))
+    for cluster_type in ['clusters', 'superclusters']:
+        file_clusters = f'data/{cluster_type}.json'
+        with codecs.open(file_clusters, 'rb', 'utf-8') as f_clusters:
+            clusters = preprocess_clusters(json.loads(f_clusters.read()))
 
-        with codecs.open(file_trials, 'rb', 'utf-8') as f_trials:
+            with codecs.open(file_trials, 'rb', 'utf-8') as f_trials:
 
-            trials = preprocess_trials(json.loads(f_trials.read()))
-            tag_trials(clusters, trials, t=T, similarity=similarity)
+                trials = preprocess_trials(json.loads(f_trials.read()))
+                tag_trials(clusters, trials, t=T, similarity=similarity)
 
-            if not compute_person_metrics:
-                print(T, similarity.__name__)
-                data_df = []
-                for work in trials:
-                    data_df.append([
-                        work['region'],
-                        work['artist_name'],
-                        work['title'],
-                        work['permalink'],
-                        ','.join(work['machine_clusters'])
-                    ])
-
-                df = pd.DataFrame(data_df, columns=["region", "artist_name", "title", "permalink", "machine_clusters"])
-
-                output_filename = 'results/%s_kadist_works_results_%s_%.2f.csv' % (results_prefix, similarity.__name__, T)
-                df.to_csv(output_filename, index=False)
-                print(' *', 'written file results to', output_filename)
-            else:
-                for person in people:
-
+                if not compute_person_metrics:
+                    print(T, similarity.__name__)
                     data_df = []
-                    total_hits = 0
-                    clusters_when_success = []
-                    y_true = []
-                    y_pred = []
                     for work in trials:
-
-                        human = "%s_assignments" % (person.lower())
-
-                        if human in work:
-                            y_true.append(work[human])
-
-                        y_pred.append(work['machine_clusters'])
-
-                        hits = set(work[human]).intersection(set(work['machine_clusters']))
-                        total_hits += len(hits)
-
-                        if len(hits):
-                            clusters_when_success.extend(work[human])
-
                         data_df.append([
-                            similarity.__name__,
-                            work['human_assessment_type'],
-                            ','.join(work[human]),
-                            ','.join(work['machine_clusters']),
-                            len(hits),
+                            work['region'],
                             work['artist_name'],
                             work['title'],
-                            work['permalink']
+                            work['permalink'],
+                            ','.join(work['machine_clusters'])
                         ])
 
-                    #
-                    # make a results dataframe for easy visualization
-                    #
+                    df = pd.DataFrame(data_df, columns=["region", "artist_name", "title", "permalink", "machine_clusters"])
 
-                    df = pd.DataFrame(data_df, columns=["metric", "human_assessment_type", "human_clusters",
-                                                        "machine_clusters", "hits", "artist_name", "title", "permalink"])
-
-                    print(T, similarity.__name__, total_hits)
-                    output_filename = '%s_%s_results_%s_%.2f.csv' % (person.lower(), results_prefix, similarity.__name__, T)
+                    output_filename = 'results/%s_kadist_works_%s_results_%s_%.2f.csv' % (results_prefix, cluster_type, similarity.__name__, T)
                     df.to_csv(output_filename, index=False)
-
                     print(' *', 'written file results to', output_filename)
+                else:
+                    for person in people:
 
-                    #
-                    # standard multi-label metrics
-                    #
+                        data_df = []
+                        total_hits = 0
+                        clusters_when_success = []
+                        y_true = []
+                        y_pred = []
+                        for work in trials:
 
-                    print('[T={}], [sim={}], hamming score (label-based accuracy): {}'.format(T, similarity.__name__, hamming_score(y_true, y_pred)))
+                            human = "%s_assignments" % (person.lower())
+
+                            if human in work:
+                                y_true.append(work[human])
+
+                            y_pred.append(work['machine_clusters'])
+
+                            hits = set(work[human]).intersection(set(work['machine_clusters']))
+                            total_hits += len(hits)
+
+                            if len(hits):
+                                clusters_when_success.extend(work[human])
+
+                            data_df.append([
+                                similarity.__name__,
+                                work['human_assessment_type'],
+                                ','.join(work[human]),
+                                ','.join(work['machine_clusters']),
+                                len(hits),
+                                work['artist_name'],
+                                work['title'],
+                                work['permalink']
+                            ])
+
+                        #
+                        # make a results dataframe for easy visualization
+                        #
+
+                        df = pd.DataFrame(data_df, columns=["metric", "human_assessment_type", "human_clusters",
+                                                            "machine_clusters", "hits", "artist_name", "title", "permalink"])
+
+                        print(T, similarity.__name__, total_hits)
+                        output_filename = '%s_%s_%s_esults_%s_%.2f.csv' % (person.lower(), results_prefix, cluster_type, similarity.__name__, T)
+                        df.to_csv(output_filename, index=False)
+
+                        print(' *', 'written file results to', output_filename)
+
+                        #
+                        # standard multi-label metrics
+                        #
+
+                        print('[T={}], [sim={}], hamming score (label-based accuracy): {}'.format(T, similarity.__name__, hamming_score(y_true, y_pred)))
