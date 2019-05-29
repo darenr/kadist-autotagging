@@ -18,6 +18,8 @@ from metrics import hamming_score
 
 from people import people
 
+
+
 # begin word vectors
 import os
 import json

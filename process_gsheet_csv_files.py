@@ -10,10 +10,12 @@ import requests
 from tqdm import tqdm
 import random
 import unidecode
+import html
 from itertools import chain
 
 from people import people
 
+from document_tagger import DocumentTagger
 
 def safe_filename(accented_string):
     """ make a safe filename with no non-ascii chars """
@@ -53,7 +55,7 @@ def process_trials_sheets():
 
         for index, row in df.iterrows():
             if 'description' in row and row['description']:
-                docs.append((row['artist_name'], row['description']))
+                docs.append((row['artist_name'], html.unescape(row['description'])))
 
             human_cluster_assignments = {}
             for person in people:
@@ -123,8 +125,8 @@ def process_v4_trials(filename):
         if human_cluster_assignments:
             trial = {
                 "artist_name": row['artist_name'],
-                "description": row['description'],
-                "title": row['title'],
+                "description": html.unescape(row['description']).strip(),
+                "title": html.unescape(row['title']).strip(),
                 "user_tags": list(set([x.strip() for x in row['user_tags'].split(',')]))
             }
 

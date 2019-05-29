@@ -10,12 +10,16 @@ import json
 import string
 
 from textblob import TextBlob
+from textblob.wordnet import VERB, ADJ, NOUN
+from textblob import Word
+
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
 
+from collections import Counter
+
 if sys.version_info[0] >= 3:
     unicode = str
-
 
 class DocumentTagger():
 
@@ -31,6 +35,25 @@ class DocumentTagger():
 
         self.stopwords = frozenset(self.stopwords)
         self.docs = []
+
+    def _find_nnp_runs(self, tags, max_words_in_noun_phrase=2):
+        print('\n----->', tags, '\n')
+        # iterate over tags and return runs of NNP's (noun phrase detection)
+        candidates = []
+        accum = []
+        for word, pos in tags:
+            if pos == 'NNP':
+                accum.append(word)
+            else:
+                accum.clear()
+
+            if len(accum) == max_words_in_noun_phrase:
+                candidates.append(' '.join(accum))
+                accum.clear()
+
+
+        return candidates
+
 
     def _load_stop_words(self, language):
         """load language/domain stop words"""
@@ -53,27 +76,46 @@ class DocumentTagger():
         """returns True iff string:s contains a digit"""
         return any(i.isdigit() for i in s)
 
+    def convert_to_wordnet_form(self, word_or_phrase, min_word_length, pos=None):
+        if len(word_or_phrase) >= min_word_length:
+            if not word_or_phrase.lower() in self.stopwords and not self._contains_number(word_or_phrase):
+                preped_for_wn = '_'.join(word_or_phrase.lower().split()).strip()
+                return [w.name() for w in Word(preped_for_wn).get_synsets(pos=pos)]
+        return None
+
     def _doc_to_features(self, raw_doc, include_noun_phrases=True, min_word_length=3):
         """Simple featurizer is to use all the words"""
 
         # clean up the doc
+
         doc = re.sub(u"['’]s", 's', raw_doc)
-        doc = re.sub(u"[‘’–]", "", doc)
+        doc = re.sub(u"[‘’“”–]", "", doc)
 
         tb = TextBlob(doc)
 
         # https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html
-        candidate_features = [x[0] for x in tb.tags if x[1] in ['NNS', 'JJ', 'VBN', 'NN']]
+        #
+        # extract candidates by POS type and convert to their wordnet form
+        #
+        candidate_features = []
 
-        # if include_noun_phrases:
-        #     candidate_features.extend(tb.noun_phrases)
+        for x in tb.tags:
+            for wn_type, tb_type in [('NNS', NOUN), ('NN', NOUN), ('JJ', ADJ), ('VB', VERB)]:
+                if x[1] == wn_type:
+                    wn_opts = self.convert_to_wordnet_form(x[0], min_word_length, pos=tb_type)
+                    if wn_opts:
+                        candidate_features.append(wn_opts[0])
+                        break
 
-        tokens = [token for token in candidate_features
-                  if len(token) >= min_word_length
-                    and not self._contains_number(token)
-                  and not token.lower() in self.stopwords]
+        if include_noun_phrases:
+            for np in self._find_nnp_runs(tb.tags):
+                wn_opts = self.convert_to_wordnet_form(np, min_word_length, pos=NOUN)
+                if wn_opts:
+                    candidate_features.append(wn_opts[0])
 
-        return self._clean_tokens(tokens)
+        print(candidate_features)
+
+        return self._clean_tokens(candidate_features)
 
     @staticmethod
     def pprint_keywords(r):
@@ -81,12 +123,12 @@ class DocumentTagger():
         for doc in r.keys():
             print(u'[{}]: {}'.format(doc, ', '.join([u"{}/{}".format(t[0], t[1]) for t in r[doc]])))
             print('-'*80)
-            
+
     def process_documents(self, vocab_size=5000, topn=15):
         """The docs are tuples: (name, [features]), features is a list of 'words'"""
 
         cv = CountVectorizer(
-            ngram_range=(1, 3),
+            ngram_range=(1, 2),
             min_df=0.03,       # ignore terms that appear in less than x% of the documents
             max_df=0.80,       # ignore terms that appear in more than x% of the corpus
             stop_words=None,
@@ -143,6 +185,15 @@ class DocumentTagger():
                     with codecs.open(os.path.join(dirpath, filename), 'rb', 'utf-8') as f:
                         self.docs.append((filename, self._doc_to_features(f.read())))
             return self
+
+    def load_string_docs(self, arr):
+        """Load the documents from an array of strings"""
+
+        for i, str in enumerate(arr):
+            self.docs.append(("doc_{}".format(i), self._doc_to_features(str)))
+
+        return self
+
 
 
 if __name__ == '__main__':
