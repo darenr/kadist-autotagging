@@ -21,6 +21,7 @@ from collections import Counter
 if sys.version_info[0] >= 3:
     unicode = str
 
+
 class DocumentTagger():
 
     def __init__(self, stopword_languages='english', stopword_folder='resources'):
@@ -36,8 +37,7 @@ class DocumentTagger():
         self.stopwords = frozenset(self.stopwords)
         self.docs = []
 
-    def _find_nnp_runs(self, tags, max_words_in_noun_phrase=2):
-        print('\n----->', tags, '\n')
+    def _find_nnp_runs(self, tags):
         # iterate over tags and return runs of NNP's (noun phrase detection)
         candidates = []
         accum = []
@@ -47,13 +47,10 @@ class DocumentTagger():
             else:
                 accum.clear()
 
-            if len(accum) == max_words_in_noun_phrase:
+            if len(accum) >= 2:
                 candidates.append(' '.join(accum))
-                accum.clear()
-
 
         return candidates
-
 
     def _load_stop_words(self, language):
         """load language/domain stop words"""
@@ -113,8 +110,6 @@ class DocumentTagger():
                 if wn_opts:
                     candidate_features.append(wn_opts[0])
 
-        print(candidate_features)
-
         return self._clean_tokens(candidate_features)
 
     @staticmethod
@@ -122,7 +117,7 @@ class DocumentTagger():
         """print out the document->keywords"""
         for doc in r.keys():
             print(u'[{}]: {}'.format(doc, ', '.join([u"{}/{}".format(t[0], t[1]) for t in r[doc]])))
-            print('-'*80)
+            print('-' * 80)
 
     def process_documents(self, vocab_size=5000, topn=15):
         """The docs are tuples: (name, [features]), features is a list of 'words'"""
@@ -166,7 +161,7 @@ class DocumentTagger():
 
         for idx, score in sorted_items[:topn]:
             fname = feature_names[idx]
-            if score> 0.1:
+            if score > 0.1:
                 score_vals.append(round(score, 3))
                 feature_vals.append(feature_names[idx])
 
@@ -190,10 +185,9 @@ class DocumentTagger():
         """Load the documents from an array of strings"""
 
         for i, str in enumerate(arr):
-            self.docs.append(("doc_{}".format(i), self._doc_to_features(str)))
+            self.docs.append((i, self._doc_to_features(str)))
 
         return self
-
 
 
 if __name__ == '__main__':

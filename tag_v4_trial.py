@@ -17,7 +17,6 @@ if __name__ == '__main__':
     with codecs.open(file_trials, 'rb', 'utf-8') as f_trials:
         docs = [x['title'] + ". " + x['description'] for x in json.loads(f_trials.read())]
 
-    #.load_docs('docs') \
     result = DocumentTagger(['english', 'art']) \
         .load_string_docs(docs) \
         .process_documents(vocab_size=500)
