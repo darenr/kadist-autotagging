@@ -58,7 +58,7 @@ def _mk_synset(w):
         try:
             return wordnet.lemma(word).synset()
         except Exception as ex:
-                return None
+            return None
 
     else:
         print(' * Error, invalid synset name', w, 'skipping...')
@@ -140,6 +140,7 @@ def preprocess_trials(trials):
 
     for work in trials:
         work['user_tags'] = [_mk_synset(x) for x in work['user_tags']]
+        work['machine_tags'] = [_mk_synset(x) for x in work['machine_tags']]
 
     return trials
 
@@ -166,8 +167,12 @@ def find_clusters(clusters, user_tags, t, similarity, top_n=3, debug=False):
 def tag_trials(clusters, trials, t, similarity):
     results = trials
     for work in tqdm(results):
-        #print(' *', 'tagging', '[%s]' % (work['title']))
-        work['machine_clusters'] = find_clusters(clusters, work['user_tags'], t, similarity)
+
+        if 'user_tags' in work:
+            work['machine_clusters_from_user_tags'] = find_clusters(clusters, work['user_tags'], t, similarity)
+
+        if 'machine_tags' in work:
+            work['machine_clusters_from_machine_tags'] = find_clusters(clusters, work['machine_tags'], t, similarity)
 
 
 if __name__ == '__main__':
@@ -175,8 +180,8 @@ if __name__ == '__main__':
     similarity = wup
     T = 0.76
     results_prefix = 'all_kadist_works'
-    file_trials = 'data/all_trials.json'
-    compute_person_metrics = False;
+    file_trials = 'data/all_annotated_trials.json'  # annotated with tag_kadist_docs.py
+    compute_person_metrics = False
 
     print(' *', 'using WordNet version:', wordnet.get_version())
     print(' *', 'using WordVector Glove Model:', glove_file)
@@ -195,18 +200,22 @@ if __name__ == '__main__':
                 tag_trials(clusters, trials, t=T, similarity=similarity)
 
                 if not compute_person_metrics:
-                    print(T, similarity.__name__)
                     data_df = []
                     for work in trials:
+
+                        hits = len(set(work['machine_clusters_from_user_tags']).intersection(set(work['machine_clusters_from_machine_tags'])))
+
                         data_df.append([
                             work['region'],
                             work['artist_name'],
                             work['title'],
                             work['permalink'],
-                            ','.join(work['machine_clusters'])
+                            ','.join(work['machine_clusters_from_user_tags']),
+                            ','.join(work['machine_clusters_from_machine_tags']),
+                            hits
                         ])
 
-                    df = pd.DataFrame(data_df, columns=["region", "artist_name", "title", "permalink", "machine_clusters"])
+                    df = pd.DataFrame(data_df, columns=["region", "artist_name", "title", "permalink", "machine_clusters_from_user_tags", "machine_clusters_from_machine_tags", "hits"])
 
                     output_filename = 'results/%s_%s_results_%s_%.2f.csv' % (results_prefix, cluster_type, similarity.__name__, T)
                     df.to_csv(output_filename, index=False)
@@ -226,9 +235,9 @@ if __name__ == '__main__':
                             if human in work:
                                 y_true.append(work[human])
 
-                            y_pred.append(work['machine_clusters'])
+                            y_pred.append(work['machine_clusters_from_user_tags'])
 
-                            hits = set(work[human]).intersection(set(work['machine_clusters']))
+                            hits = set(work[human]).intersection(set(work['machine_clusters_from_user_tags']))
                             total_hits += len(hits)
 
                             if len(hits):
@@ -238,7 +247,8 @@ if __name__ == '__main__':
                                 similarity.__name__,
                                 work['human_assessment_type'],
                                 ','.join(work[human]),
-                                ','.join(work['machine_clusters']),
+                                ','.join(work['machine_clusters_from_user_tags']),
+                                ','.join(work['machine_clusters_from_machine_tags']),
                                 len(hits),
                                 work['artist_name'],
                                 work['title'],
@@ -250,7 +260,7 @@ if __name__ == '__main__':
                         #
 
                         df = pd.DataFrame(data_df, columns=["metric", "human_assessment_type", "human_clusters",
-                                                            "machine_clusters", "hits", "artist_name", "title", "permalink"])
+                                                            "machine_clusters_from_user_tags", "machine_clusters_from_machine_tags", "hits", "artist_name", "title", "permalink"])
 
                         print(T, similarity.__name__, total_hits)
                         output_filename = '%s_%s_%s_results_%s_%.2f.csv' % (person.lower(), results_prefix, cluster_type, similarity.__name__, T)
