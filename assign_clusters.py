@@ -210,12 +210,13 @@ if __name__ == '__main__':
                             work['artist_name'],
                             work['title'],
                             work['permalink'],
+                            ','.join(work['user_tags']),
                             ','.join(work['machine_clusters_from_user_tags']),
                             ','.join(work['machine_clusters_from_machine_tags']),
                             hits
                         ])
 
-                    df = pd.DataFrame(data_df, columns=["region", "artist_name", "title", "permalink", "machine_clusters_from_user_tags", "machine_clusters_from_machine_tags", "hits"])
+                    df = pd.DataFrame(data_df, columns=["region", "artist_name", "title", "permalink", "user_tags", "machine_clusters_from_user_tags", "machine_clusters_from_machine_tags", "hits"])
 
                     output_filename = 'results/%s_%s_results_%s_%.2f.csv' % (results_prefix, cluster_type, similarity.__name__, T)
                     df.to_csv(output_filename, index=False)
