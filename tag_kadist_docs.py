@@ -29,7 +29,8 @@ if __name__ == '__main__':
 
     with codecs.open(source_file_trials, "rb", "utf-8") as f:
         kadist = json.loads(f.read())
-        docs = [x['title'] + ". " + x['description'] for x in kadist]
+        docs = [x['artist_description'] for x in kadist]
+        docs = ["{}. {}.".format(x['description'], x['artist_description']) for x in kadist]
 
         results = DocumentTagger(['english', 'art']) \
             .load_string_docs(docs) \
@@ -40,4 +41,4 @@ if __name__ == '__main__':
 
         with codecs.open(dest_file_trials, "wb", "utf-8") as f:
             f.write(json.dumps(kadist, ensure_ascii=False, indent=True))
-            print("\n  *", "written", len(kadist), "kadist documents with machine_tags", "\n")
+            print("\n  *", "written", len(kadist), "kadist documents with machine_tags:", dest_file_trials, "\n")

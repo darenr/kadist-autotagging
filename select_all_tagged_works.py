@@ -31,9 +31,13 @@ def select_all_tagged_works():
                             [x["post_title"] for x in work["_artists"]]
                         )
                         permalink = work["permalink"]
-                        title = work["title"]
+                        title = work["title"].strip()
                         tags = work["user_tags"]
-                        description = strip_tags(work["description"])
+                        description = strip_tags(work["description"]).strip()
+                        if "artist_description" in work and work["artist_description"]:
+                            artist_description = strip_tags(work["artist_description"]).strip()
+                        else:
+                            artist_description = ""
                         thumbnail_url = work["_thumbnails"]["medium"]["url"]
                         region = (
                             work["_region"][0]
@@ -45,6 +49,7 @@ def select_all_tagged_works():
                                 "artist_name": artist_name,
                                 "title": title,
                                 "description": description,
+                                "artist_description": artist_description,
                                 "region": region,
                                 "user_tags": tags,
                                 "thumbnail": thumbnail_url,

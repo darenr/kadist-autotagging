@@ -13,6 +13,8 @@ from collections import defaultdict
 from tqdm import tqdm
 import operator
 from copy import deepcopy
+import random
+import functools
 
 from metrics import hamming_score
 
@@ -38,6 +40,7 @@ from textblob import TextBlob
 #
 
 
+@functools.lru_cache(maxsize=10000)
 def _mk_synset(w):
     #
     # (synset form) cat.n.01 into the Synset object form
@@ -63,10 +66,11 @@ def _mk_synset(w):
             return None
 
     else:
-        print(' * Error, invalid synset name', w, 'skipping...')
+        print(' * Error, invalid synset name: [{}] skipping'.format(w))
         return None
 
 
+@functools.lru_cache(maxsize=10000)
 def _mk_wv_word(s):
     #
     # turn wordnet Synset into regular word form
@@ -78,7 +82,7 @@ def _mk_wv_word(s):
 # two distance methods, wup and path
 #
 
-
+@functools.lru_cache(maxsize=1000000)
 def wup(w1, w2, t):
     distance = w1.wup_similarity(w2)
     if distance:
@@ -87,6 +91,7 @@ def wup(w1, w2, t):
     return 0
 
 
+@functools.lru_cache(maxsize=1000000)
 def path(w1, w2, t):
     distance = w1.path_similarity(w2)
     if distance:
@@ -95,6 +100,7 @@ def path(w1, w2, t):
     return 0
 
 
+@functools.lru_cache(maxsize=1000000)
 def wv(w1, w2, t):
     global glove_model
 
@@ -187,14 +193,23 @@ if __name__ == '__main__':
     results_prefix = 'all_kadist_works'
     file_trials = 'data/all_annotated_trials.json'  # annotated with tag_kadist_docs.py
     compute_person_metrics = False
+    abbreviated = True
+    abbreviated_size = 100
+
+    cluster_types = ['clusters', 'superclusters']
+
+    random.seed(42)
 
     print(' *', 'using WordNet version:', wordnet.get_version())
     print(' *', 'using WordVector Glove Model:', glove_file)
     print(' *', 'using', 'similarity fn', similarity.__name__, 'T', T)
     print(' *', 'compute_person_metrics', compute_person_metrics)
     print(' *', 'results_prefix', results_prefix)
+    if abbreviated:
+        cluster_types = ['clusters']
+        print(' *', 'abbreviated mode, limiting to {} (stable sample) trials'.format(abbreviated_size))
 
-    for cluster_type in ['clusters', 'superclusters']:
+    for cluster_type in cluster_types:
         file_clusters = f'data/{cluster_type}.json'
         with codecs.open(file_clusters, 'rb', 'utf-8') as f_clusters:
             clusters = preprocess_clusters(json.loads(f_clusters.read()))
@@ -202,6 +217,10 @@ if __name__ == '__main__':
             with codecs.open(file_trials, 'rb', 'utf-8') as f_trials:
 
                 trials = preprocess_trials(json.loads(f_trials.read()))
+
+                if abbreviated:
+                    trials = random.sample(trials, abbreviated_size)
+
                 tag_trials(clusters, trials, t=T, similarity=similarity)
 
                 if not compute_person_metrics:
@@ -228,6 +247,7 @@ if __name__ == '__main__':
                     output_filename = 'results/%s_%s_results_%s_%.2f.csv' % (results_prefix, cluster_type, similarity.__name__, T)
                     df.to_csv(output_filename, index=False)
                     print(' *', 'written file results to', output_filename)
+                    print(' *', cluster_type, 'hits histogram:', df[pd.notnull(df['machine_clusters_from_machine_tags'])].hits.value_counts().to_json())
                 else:
                     for person in people:
 

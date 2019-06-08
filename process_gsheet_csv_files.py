@@ -15,7 +15,6 @@ from itertools import chain
 
 from people import people
 
-from document_tagger import DocumentTagger
 
 def safe_filename(accented_string):
     """ make a safe filename with no non-ascii chars """

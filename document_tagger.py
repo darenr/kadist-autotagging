@@ -81,12 +81,14 @@ class DocumentTagger():
         return None
 
     def _doc_to_features(self, raw_doc, include_noun_phrases=True, min_word_length=3):
-        """Simple featurizer is to use all the words"""
+        """featurizer based on part of speech"""
 
         # clean up the doc
 
-        doc = re.sub(u"['’]s", 's', raw_doc)
-        doc = re.sub(u"[‘’“”–]", "", doc)
+        doc = re.sub(u"['’]s", ' ', raw_doc)
+        doc = re.sub(u"[‘’“”–]", " ", doc)
+        doc = re.sub(u"[.]{3}", " ", doc)
+        doc = re.sub(u"\s+", " ", doc)
 
         tb = TextBlob(doc)
 
@@ -96,13 +98,14 @@ class DocumentTagger():
         #
         candidate_features = []
 
+        include_types = {'NNS': NOUN, 'NNP': NOUN, 'NN': NOUN, 'JJ': ADJ, 'VB': VERB, 'VBN': VERB}
+        include_tags = include_types.keys()
         for x in tb.tags:
-            for wn_type, tb_type in [('NNS', NOUN), ('NN', NOUN), ('JJ', ADJ), ('VB', VERB)]:
-                if x[1] == wn_type:
-                    wn_opts = self.convert_to_wordnet_form(x[0], min_word_length, pos=tb_type)
-                    if wn_opts:
-                        candidate_features.append(wn_opts[0])
-                        break
+            if x[1] in include_tags:
+                tb_type = include_types[x[1]]
+                wn_opts = self.convert_to_wordnet_form(x[0], min_word_length, pos=tb_type)
+                if wn_opts:
+                    candidate_features.append(wn_opts[0])
 
         if include_noun_phrases:
             for np in self._find_nnp_runs(tb.tags):
@@ -110,7 +113,9 @@ class DocumentTagger():
                 if wn_opts:
                     candidate_features.append(wn_opts[0])
 
-        return self._clean_tokens(candidate_features)
+        tokens = self._clean_tokens(candidate_features)
+
+        return tokens
 
     @staticmethod
     def pprint_keywords(r):
@@ -123,8 +128,7 @@ class DocumentTagger():
         """The docs are tuples: (name, [features]), features is a list of 'words'"""
 
         cv = CountVectorizer(
-            ngram_range=(1, 2),
-            min_df=0.03,       # ignore terms that appear in less than x% of the documents
+            min_df=0.01,       # ignore terms that appear in less than x% of the documents
             max_df=0.80,       # ignore terms that appear in more than x% of the corpus
             stop_words=None,
             tokenizer=unicode.split,
@@ -135,7 +139,11 @@ class DocumentTagger():
 
         feature_names = cv.get_feature_names()
 
-        tfidf_transformer = TfidfTransformer(smooth_idf=True, use_idf=True, sublinear_tf=True)
+        tfidf_transformer = TfidfTransformer(
+            smooth_idf=True,
+            use_idf=True,
+            sublinear_tf=True)
+
         tfidf_transformer.fit(word_count_vector)
 
         result = {}
