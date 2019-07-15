@@ -190,7 +190,7 @@ if __name__ == '__main__':
     results_prefix = 'all_kadist_works'
     file_trials = 'data/all_annotated_trials.json'  # annotated with tag_kadist_docs.py
     compute_person_metrics = False
-    abbreviated = True
+    abbreviated = False
     abbreviated_size = 100
 
     cluster_types = ['clusters', 'superclusters']

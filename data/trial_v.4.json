@@ -4,16 +4,16 @@
   "description": "Poised with tool in hand, Jeffry Mitchell’s The Carpenter (2012) reaches forward, toward his workbench. It is difficult to tell whether the work represents just any carpenter or Christ, the most famous member of the profession and the subject of innumerable parables and artworks. His stilted pose is not too Messianic; drips of ochre glaze render his handiwork and hammer equally soft. Woodshop, table, man, and floor are lacquered together, spilling into one another and freezing the protagonist vulnerably in place.",
   "title": "The Carpenter",
   "user_tags": [
-   "carpenter.n.01",
    "glaze.n.03",
+   "carpenter.n.01",
+   "jesus.n.01",
    "earthenware.n.01",
-   "freeze.v.01",
-   "jesus.n.01"
+   "freeze.v.01"
   ],
   "ivan_assignments": [
    "Spirituality",
-   "History",
-   "Economy"
+   "Economy",
+   "History"
   ],
   "vincent_assignments": [
    "Spirituality",
@@ -21,13 +21,13 @@
   ],
   "marie_assignments": [
    "Spirituality",
-   "Body",
-   "Economy"
+   "Economy",
+   "Body"
   ],
   "kathleen_assignments": [
    "Spirituality",
-   "Arts",
-   "Culture"
+   "Culture",
+   "Arts"
   ]
  },
  {
@@ -35,17 +35,17 @@
   "description": "For this floor based work, Gomes has taken two lengths of bamboo and tied them together using linen thread. The work is self-supporting and stands in a crack or a hole in the floor. The work suggests precariousness, frailty as well as humanity through its verticality, and its gentle sinuous form, referencing perhaps the work of Giacometti. Other works in the exhibition recalled the work of Mondrian with an emphasis on horizontal and vertical lines. The fact that this work deviates from an emphasis on the rectilinear should be seen within the context of Gomes’s constructivist routes and her interest in Arte Povera. Allowing the material to express its own inner nature is fundamental to her work. The modest nature of her art suggests a poetics of the immaterial. The standing sculpture, modest though it may be, articulates the space of the room, suggesting a near and a far. Gomes generally makes her work in situ, responding to the space the exhibition will occupy, the gallery thus becoming an extension of her studio.",
   "title": "Untitled",
   "user_tags": [
-   "vulnerability.n.01",
-   "site.n.02",
-   "self-sufficient.s.01",
    "humanness.n.01",
+   "self-sufficient.s.01",
+   "site.n.02",
+   "constructivist.n.01",
    "nature.n.01",
-   "constructivist.n.01"
+   "vulnerability.n.01"
   ],
   "ivan_assignments": [
-   "Arts",
+   "Materiality",
    "Culture",
-   "Materiality"
+   "Arts"
   ],
   "vincent_assignments": [
    "Materiality",
@@ -53,14 +53,14 @@
    "Immaterial"
   ],
   "marie_assignments": [
-   "Materiality",
    "Inequality",
+   "Materiality",
    "Immaterial"
   ],
   "kathleen_assignments": [
-   "Environmental",
    "Land",
-   "Materiality"
+   "Materiality",
+   "Environmental"
   ]
  },
  {
@@ -68,31 +68,31 @@
   "description": "Rotation presents the image of a crowd, a re-appropriation of 19th or beginning of 20th century photographs published in newspapers and magazines. This artwork is composed of the same image repeated four times with different resolutions. The last image in Rotation is less focused than the original one.\nThese pictures are low-angle shots, in a way that the subject is seen as part of a group rather than as an isolated person. This work denies the individual subject but also highlights the symbolic force of the masses.\nThe representation of crowds is a good means to highlight the way ideology creates forms. The photographic montage strategy – which is a process introduced by modernity – reveals an aspect of accumulation as well as fragmentation and destruction. Going from the top right to the bottom right, the image fades into becoming almost illegible and only the outline of the impression remains; as if identity whether it is national, political or ethnic was too difficult or impossible to represent.\nThis is a reference to popular culture and a reflection on collective gestures, the survival of rituals and the creation of a social landscape.",
   "title": "Rotation (Moiré, Rome)",
   "user_tags": [
-   "social_group.n.01",
+   "repetition.n.02",
    "crowd.n.01",
    "popular.s.04",
    "ritual.n.01",
-   "disintegrate.v.01",
-   "repetition.n.02"
+   "social_group.n.01",
+   "disintegrate.v.01"
   ],
   "ivan_assignments": [
    "Community",
-   "Culture",
-   "Identity"
+   "Identity",
+   "Culture"
   ],
   "vincent_assignments": [
-   "Arts",
-   "Community"
+   "Community",
+   "Arts"
   ],
   "marie_assignments": [
    "Community",
-   "Culture",
-   "Identity"
+   "Identity",
+   "Culture"
   ],
   "kathleen_assignments": [
    "Community",
-   "Culture",
-   "Identity"
+   "Identity",
+   "Culture"
   ]
  },
  {
@@ -101,30 +101,30 @@
   "title": "Decomposing Eternally",
   "user_tags": [
    "diffuse.s.01",
-   "disembody.v.01",
-   "texture.n.01",
    "human_body.n.01",
+   "texture.n.01",
+   "decay.n.03",
    "thereness.n.01",
-   "decay.n.03"
+   "disembody.v.01"
   ],
   "ivan_assignments": [
-   "Body",
    "Fantasy",
+   "Body",
    "Immaterial"
   ],
   "vincent_assignments": [
-   "Body",
    "Fantasy",
+   "Body",
    "Immaterial"
   ],
   "marie_assignments": [
    "Spirituality",
-   "Body",
-   "Fantasy"
+   "Fantasy",
+   "Body"
   ],
   "kathleen_assignments": [
-   "Body",
    "Fantasy",
+   "Body",
    "Immaterial"
   ]
  },
@@ -133,12 +133,12 @@
   "description": "Domes #1 represents a significant moment in Chicago’s career when her art began to change from a New York-influenced Abstract Expressionist style to one that reflected the pop-inflected art being made in Los Angeles. By 1968, the year she began creating Domes, the twenty-nine-year-old artist had moved from Chicago to Los Angeles, graduated from UCLA, and was part of a generation of artists whose work was characterized by of the masculine overtones of Southern California’s flourishing car culture. Inspired by new technologies in the auto manufacturing, these “Finish Fetish” artists appropriated industrial materials such as car paint or lacquer to create artwork with pristine finishes. Chicago too was interested in using industrial technologies and enrolled in auto body and boat building school. While the geometric forms, meticulously applied finish, and luminous, gradated hues of color in Domes speak to Chicago’s interest in the prevailing artistic themes of 1960s Southern California, its intimate scale, round shape, and triangular formation belie her career-long interest in using “feminine” forms to promote feminist issues.",
   "title": "Domes, #1",
   "user_tags": [
-   "hue.n.01",
-   "polish.n.02",
-   "fabrication.n.04",
    "feminism.n.01",
+   "fabrication.n.04",
+   "hue.n.01",
+   "femininity.n.01",
    "closeness.n.01",
-   "femininity.n.01"
+   "polish.n.02"
   ],
   "ivan_assignments": [
    "Body",
@@ -146,19 +146,19 @@
    "Materiality"
   ],
   "vincent_assignments": [
-   "Body",
+   "Technology",
    "Identity",
-   "Technology"
+   "Body"
   ],
   "marie_assignments": [
+   "Technology",
    "Identity",
-   "Economy",
-   "Technology"
+   "Economy"
   ],
   "kathleen_assignments": [
-   "Culture",
+   "Identity",
    "Design",
-   "Identity"
+   "Culture"
   ]
  },
  {
@@ -166,17 +166,17 @@
   "description": "Perspective was filmed during a residence in northern Poland. The film is preceded by a series of photographs made ??in her studio. In a snowy landscape, the artist walks towards the horizon secured by ropes. The film records the appearance of a geometric construction that unfolds in space, but also the physical effort of the artist to create it. Finally, she reaches a climax when the strings form a perspective on the landscape. At the same time, freed from the studio, but still a prisoner of the ropes, the more she walks, the space extends further.  The piece features a physical struggle to reach the horizon, and the ideal point where the hypothetical perspective lines meet. The film reveals the impossibility of art to reflect both dimensions in a two-dimensional space as if the perspective tools developed in the Renaissance are no longer allowed to read the world.",
   "title": "Perspective",
   "user_tags": [
-   "confinement.n.03",
-   "poland.n.01",
+   "struggle.n.03",
    "horizon.n.01",
    "space.n.03",
-   "struggle.n.03",
-   "dimensionality.n.01"
+   "poland.n.01",
+   "dimensionality.n.01",
+   "confinement.n.03"
   ],
   "ivan_assignments": [
+   "Physics",
    "Body",
-   "Arts",
-   "Physics"
+   "Arts"
   ],
   "vincent_assignments": [
    "Physics",
@@ -184,14 +184,14 @@
    "Immaterial"
   ],
   "marie_assignments": [
-   "Arts",
    "Land",
-   "Physics"
+   "Physics",
+   "Arts"
   ],
   "kathleen_assignments": [
-   "Body",
+   "Space",
    "Design",
-   "Space"
+   "Body"
   ]
  },
  {
@@ -200,31 +200,31 @@
   "title": "Black Curl (CMY/Five Magnet: Irvine, California, March 25, 2010, Fujicolor Cyrstal Archive Super Type C, EM No 165-021, 05910)",
   "user_tags": [
    "geometric.s.01",
-   "materiality.n.02",
    "color.n.08",
+   "abstraction.n.04",
    "development.n.08",
    "rhythm.n.02",
-   "abstraction.n.04"
+   "materiality.n.02"
   ],
   "ivan_assignments": [
-   "Arts",
    "Design",
-   "Materiality"
+   "Materiality",
+   "Arts"
   ],
   "vincent_assignments": [
-   "Arts",
    "Design",
-   "Materiality"
+   "Materiality",
+   "Arts"
   ],
   "marie_assignments": [
-   "Arts",
+   "Physics",
    "Design",
-   "Physics"
+   "Arts"
   ],
   "kathleen_assignments": [
-   "Arts",
    "Design",
-   "Materiality"
+   "Materiality",
+   "Arts"
   ]
  },
  {
@@ -232,12 +232,12 @@
   "description": "Camil has made numerous paintings and photographs of halted projects along Mexico’s highways (she calls them “highway follies”), and of abandoned billboards that look like theater curtains dramatizing failed capitalist strategies. (Espectacular, the colloquial Spanish term for “billboard,” also translates more literally as “spectacle,” and of course recalls Guy Debord’s famous 1967 book The Society of the Spectacle.) In Mexico, the urban landscape has been taken over by billboards; they are totally integrated into the landscape. With overuse and reuse, they get scrapped, reshuffled, and recycled. In Espectacular (cortina) (Spectacular [Curtain], 2012), Camil abstracts such billboards into a multicolored fabric curtain to probe the multiple meanings of espectacular. The curtain is intended to work not only as a three-dimensional painting, but also as a screen that obstructs or conceals another space, causing the viewer to wonder: if nothing is on the other side of the curtain, who is the audience and who are the actors?",
   "title": "Espectacular cortina",
   "user_tags": [
-   "space.n.03",
-   "handicraft.n.01",
-   "digit.n.01",
-   "craft.n.04",
    "commercialization.n.01",
-   "abstraction.n.04"
+   "digit.n.01",
+   "handicraft.n.01",
+   "craft.n.04",
+   "abstraction.n.04",
+   "space.n.03"
   ],
   "ivan_assignments": [
    "Land",
@@ -245,18 +245,18 @@
    "Materiality"
   ],
   "vincent_assignments": [
-   "Economy",
    "Land",
+   "Economy",
    "Immaterial"
   ],
   "marie_assignments": [
-   "Urbanization",
    "Economy",
-   "Materiality"
+   "Materiality",
+   "Urbanization"
   ],
   "kathleen_assignments": [
-   "Urbanization",
    "Land",
+   "Urbanization",
    "Materiality"
   ]
  },
@@ -265,27 +265,27 @@
   "description": "Pak created New York Public Library Projects (NYPLP) (2008) during a residency in New York, using public libraries as exhibition spaces and the books they house as raw materials. One of the nine parts of this work is Page 22 (Half Folded Library), a site-specific installation for which Pak covertly folded dog-ears on page 22 of every second book (a total of approximately 15,500 books) in the 58th Street Branch Library in Manhattan. By claiming it as a “solo exhibition,” Pak intentionally turned a public institution into a private and personal museum where his works are more or less a “permanent collection.” Being open-ended as far as further interpretation (or not) by readers who encounter the folded pages, the project tests the political and social potential of personal gestures in the public realm. It is also an ironic commentary on the increasingly self-estranged yet narcissistic art world.",
   "title": "New York Public Library Projects (NYPLP)",
   "user_tags": [
+   "commodity.n.01",
+   "eisegesis.n.01",
+   "institution.n.01",
    "library.n.05",
    "appropriation.n.03",
-   "gesture.n.03",
-   "commodity.n.01",
-   "institution.n.01",
-   "eisegesis.n.01"
+   "gesture.n.03"
   ],
   "ivan_assignments": [],
   "vincent_assignments": [
-   "Arts",
-   "Design"
+   "Design",
+   "Arts"
   ],
   "marie_assignments": [
    "Land",
-   "Mind",
-   "Economy"
+   "Economy",
+   "Mind"
   ],
   "kathleen_assignments": [
-   "Arts",
+   "Politics",
    "Mind",
-   "Politics"
+   "Arts"
   ]
  }
 ]
