@@ -117,9 +117,6 @@ def wv(w1, w2, t):
         distance = glove_model.similarity(word1, word2)
         if distance > t:
             return distance
-    else:
-        print(' *', word1, word1 in glove_model, word2, word2 in glove_model)
-
     return 0
 
 
@@ -247,6 +244,7 @@ if __name__ == '__main__':
                     output_filename = 'results/%s_%s_results_%s_%.2f.csv' % (results_prefix, cluster_type, similarity.__name__, T)
                     df.to_csv(output_filename, index=False)
                     print(' *', 'written file results to', output_filename)
+                    s = df[pd.notnull(df['machine_clusters_from_machine_tags'])].hits
                     print(' *', cluster_type, 'hits histogram:', df[pd.notnull(df['machine_clusters_from_machine_tags'])].hits.value_counts().to_json())
                 else:
                     for person in people:
