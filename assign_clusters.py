@@ -82,6 +82,7 @@ def _mk_wv_word(s):
 # two distance methods, wup and path
 #
 
+
 @functools.lru_cache(maxsize=1000000)
 def wup(w1, w2, t):
     distance = w1.wup_similarity(w2)
@@ -150,16 +151,16 @@ def preprocess_trials(trials):
     return trials
 
 
-def find_clusters(clusters, user_tags, t, similarity, top_n=3, debug=False):
+def find_clusters(clusters, tags, t, similarity, top_n=3, debug=False):
     scores = defaultdict(int)
     for cluster in clusters:
         for cluster_tag in clusters[cluster]:
             if debug:
-                for works_tag in user_tags:
+                for works_tag in tags:
                     sim = similarity(cluster_tag, works_tag, t)
                     print('DEBUG', cluster, sim, cluster_tag.name(), works_tag.name())
 
-            scores[cluster] += sum([similarity(cluster_tag, works_tag, t) for works_tag in user_tags])
+            scores[cluster] += sum([similarity(cluster_tag, works_tag, t) for works_tag in tags])
 
     scores = {k: v for k, v in scores.items() if v}
 
@@ -169,7 +170,8 @@ def find_clusters(clusters, user_tags, t, similarity, top_n=3, debug=False):
     return [c for c, s in sorted_scores]
 
 
-def tag_trials(clusters, trials, t, similarity):
+def tags_to_clusters(clusters, trials, t, similarity):
+    """using the set of `clusters` find cluster from tags"""
     results = trials
     for work in tqdm(results):
 
@@ -218,84 +220,30 @@ if __name__ == '__main__':
                 if abbreviated:
                     trials = random.sample(trials, abbreviated_size)
 
-                tag_trials(clusters, trials, t=T, similarity=similarity)
+                tags_to_clusters(clusters, trials, t=T, similarity=similarity)
 
-                if not compute_person_metrics:
-                    data_df = []
-                    for work in trials:
+                data_df = []
+                for work in trials:
 
-                        hits = len(set(work['machine_clusters_from_user_tags']).intersection(set(work['machine_clusters_from_machine_tags'])))
+                    hits = len(set(work['machine_clusters_from_user_tags']).intersection(set(work['machine_clusters_from_machine_tags'])))
 
-                        data_df.append([
-                            work['region'],
-                            work['artist_name'],
-                            work['title'],
-                            work['permalink'],
-                            ','.join([_mk_wv_word(x) for x in work['user_tags']]),
-                            ','.join(work['machine_clusters_from_user_tags']),
-                            ','.join(work['machine_clusters_from_machine_tags']),
-                            hits,
-                            word_count(work['description'])
-                        ])
+                    data_df.append([
+                        work['region'],
+                        work['artist_name'],
+                        work['title'],
+                        work['permalink'],
+                        ','.join([_mk_wv_word(x) for x in work['user_tags']]),
+                        ','.join(work['machine_clusters_from_user_tags']),
+                        ','.join(work['machine_clusters_from_machine_tags']),
+                        hits,
+                        word_count(work['description'])
+                    ])
 
-                    df = pd.DataFrame(data_df, columns=["region", "artist_name", "title", "permalink", "user_tags", \
-                        "machine_clusters_from_user_tags", "machine_clusters_from_machine_tags", "hits", "word_count"])
+                df = pd.DataFrame(data_df, columns=["region", "artist_name", "title", "permalink", "user_tags",
+                                                    "machine_clusters_from_user_tags", "machine_clusters_from_machine_tags", "hits", "word_count"])
 
-                    output_filename = 'results/%s_%s_results_%s_%.2f.csv' % (results_prefix, cluster_type, similarity.__name__, T)
-                    df.to_csv(output_filename, index=False)
-                    print(' *', 'written file results to', output_filename)
-                    s = df[pd.notnull(df['machine_clusters_from_machine_tags'])].hits
-                    print(' *', cluster_type, 'hits histogram:', df[pd.notnull(df['machine_clusters_from_machine_tags'])].hits.value_counts().to_json())
-                else:
-                    for person in people:
-
-                        data_df = []
-                        total_hits = 0
-                        clusters_when_success = []
-                        y_true = []
-                        y_pred = []
-                        for work in trials:
-
-                            human = "%s_assignments" % (person.lower())
-
-                            if human in work:
-                                y_true.append(work[human])
-
-                            y_pred.append(work['machine_clusters_from_user_tags'])
-
-                            hits = set(work[human]).intersection(set(work['machine_clusters_from_user_tags']))
-                            total_hits += len(hits)
-
-                            if len(hits):
-                                clusters_when_success.extend(work[human])
-
-                            data_df.append([
-                                similarity.__name__,
-                                work['human_assessment_type'],
-                                ','.join(work[human]),
-                                ','.join(work['machine_clusters_from_user_tags']),
-                                ','.join(work['machine_clusters_from_machine_tags']),
-                                len(hits),
-                                work['artist_name'],
-                                work['title'],
-                                work['permalink']
-                            ])
-
-                        #
-                        # make a results dataframe for easy visualization
-                        #
-
-                        df = pd.DataFrame(data_df, columns=["metric", "human_assessment_type", "human_clusters",
-                                                            "machine_clusters_from_user_tags", "machine_clusters_from_machine_tags", "hits", "artist_name", "title", "permalink"])
-
-                        print(T, similarity.__name__, total_hits)
-                        output_filename = '%s_%s_%s_results_%s_%.2f.csv' % (person.lower(), results_prefix, cluster_type, similarity.__name__, T)
-                        df.to_csv(output_filename, index=False)
-
-                        print(' *', 'written file results to', output_filename)
-
-                        #
-                        # standard multi-label metrics
-                        #
-
-                        print('[T={}], [sim={}], hamming score (label-based accuracy): {}'.format(T, similarity.__name__, hamming_score(y_true, y_pred)))
+                output_filename = 'results/%s_%s_results_%s_%.2f.csv' % (results_prefix, cluster_type, similarity.__name__, T)
+                df.to_csv(output_filename, index=False)
+                print(' *', 'written file results to', output_filename)
+                s = df[pd.notnull(df['machine_clusters_from_machine_tags'])].hits
+                print(' *', cluster_type, 'hits histogram:', df[pd.notnull(df['machine_clusters_from_machine_tags'])].hits.value_counts().to_json())
