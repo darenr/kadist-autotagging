@@ -122,6 +122,7 @@ def process_v4_trials(filename):
                     print("***  Couldn't find column: [{}]".format(col))
 
         if human_cluster_assignments:
+
             trial = {
                 "artist_name": row['artist_name'],
                 "description": html.unescape(row['description']).strip(),

@@ -20,124 +20,7 @@ from metrics import hamming_score
 
 from people import people
 
-# begin word vectors
-import os
-import json
-from gensim.models import KeyedVectors
-
-glove_file = "glove.6B.300d_word2vec.txt"
-model_file = os.environ['HOME'] + "/models/" + glove_file
-
-glove_model = None
-
-from textblob import TextBlob
-
-# end word vectors
-
-
-#
-# helper functions to turn words into synsets and vice versa
-#
-
-
-@functools.lru_cache(maxsize=10000)
-def _mk_synset(w):
-    #
-    # (synset form) cat.n.01 into the Synset object form
-    # (lemma form) syndicate.n.01.crime_syndicate
-    #
-
-    word = w.strip().replace(' ', '_')
-
-    if word.count('.') == 2:
-        try:
-            return wordnet.synset(word)
-        except Exception as ex:
-            try:
-                # try the first for the stem word
-                return wordnet.synsets(word.split('.')[0])[0]
-            except Exception as ex:
-                return None
-
-    elif word.count('.') == 3:
-        try:
-            return wordnet.lemma(word).synset()
-        except Exception as ex:
-            return None
-
-    else:
-        print(' * Error, invalid synset name: [{}] skipping'.format(w))
-        return None
-
-
-@functools.lru_cache(maxsize=10000)
-def _mk_wv_word(s):
-    #
-    # turn wordnet Synset into regular word form
-    #   e.g. cat.n.01 -> 'cat'
-    #   e.g. free_trade.n.01 -> free-trade
-    return s.lemmas()[0].name()
-
-#
-# two distance methods, wup and path
-#
-
-
-@functools.lru_cache(maxsize=1000000)
-def wup(w1, w2, t):
-    distance = w1.wup_similarity(w2)
-    if distance:
-        if distance >= t:
-            return distance
-    return 0
-
-
-@functools.lru_cache(maxsize=1000000)
-def path(w1, w2, t):
-    distance = w1.path_similarity(w2)
-    if distance:
-        if distance >= t:
-            return distance
-    return 0
-
-
-@functools.lru_cache(maxsize=1000000)
-def wv(w1, w2, t):
-    global glove_model
-
-    if not glove_model:
-        #
-        # lazy load the model
-        #
-        print(' *', 'loading model, please wait...')
-        glove_model = KeyedVectors.load_word2vec_format(model_file, binary=False)
-
-    word1 = _mk_wv_word(w1).lower().replace('_', '-')
-    word2 = _mk_wv_word(w2).lower().replace('_', '-')
-    if word1 in glove_model and word2 in glove_model:
-        distance = glove_model.similarity(word1, word2)
-        if distance > t:
-            return distance
-    return 0
-
-
-def preprocess_clusters(clusters):
-    #
-    # convert cluster tags to synsets
-    #
-    d = defaultdict(list)
-
-    for k in clusters:
-        for tag in clusters[k]:
-            ss = _mk_synset(tag)
-            if ss:
-                d[k].append(ss)
-            else:
-                print('skipping tag: [%s] does not have a valid sysnset' % (tag))
-
-        clusters[k] = frozenset(clusters[k])
-    return dict(d)
-
+from common_functions import find_clusters, _mk_synset, wup, preprocess_clusters
 
 def preprocess_trials(trials):
     #
@@ -149,25 +32,6 @@ def preprocess_trials(trials):
         work['machine_tags'] = [_mk_synset(x) for x in work['machine_tags']]
 
     return trials
-
-
-def find_clusters(clusters, tags, t, similarity, top_n=3, debug=False):
-    scores = defaultdict(int)
-    for cluster in clusters:
-        for cluster_tag in clusters[cluster]:
-            if debug:
-                for works_tag in tags:
-                    sim = similarity(cluster_tag, works_tag, t)
-                    print('DEBUG', cluster, sim, cluster_tag.name(), works_tag.name())
-
-            scores[cluster] += sum([similarity(cluster_tag, works_tag, t) for works_tag in tags])
-
-    scores = {k: v for k, v in scores.items() if v}
-
-    sorted_scores = sorted(scores.items(), reverse=True, key=operator.itemgetter(1))[:top_n]
-    if debug:
-        print(["%s/%.2f" % (c, s) for c, s in sorted_scores])
-    return [c for c, s in sorted_scores]
 
 
 def tags_to_clusters(clusters, trials, t, similarity):
@@ -200,7 +64,6 @@ if __name__ == '__main__':
     random.seed(42)
 
     print(' *', 'using WordNet version:', wordnet.get_version())
-    print(' *', 'using WordVector Glove Model:', glove_file)
     print(' *', 'using', 'similarity fn', similarity.__name__, 'T', T)
     print(' *', 'compute_person_metrics', compute_person_metrics)
     print(' *', 'results_prefix', results_prefix)
