@@ -2,7 +2,17 @@
 # -*- coding: utf-8 -*-
 from __future__ import print_function
 
+import codecs
+import os
+import sys
+import re
+import json
+import string
+import html
+
 from common_functions import find_clusters, _mk_synset, wup, preprocess_clusters
+from document_tagger import DocumentTagger
+
 
 """
 
@@ -36,57 +46,55 @@ from html_processor import strip_tags
 random.seed(42)
 
 
-def prep_tagged_works():
+def prep_tagged_works(works):
 
-    source_file_trials = "data/kadist.json"
     trials = []
 
-    with codecs.open(source_file_trials, "rb", "utf-8") as f:
-        for work in json.loads(f.read()):
-            if "description" in work:
-                if "user_tags" in work and work["user_tags"]:
-                    if "_thumbnails" in work and "medium" in work["_thumbnails"]:
-                        artist_name = ", ".join(
-                            [x["post_title"] for x in work["_artists"]]
-                        )
-                        permalink = work["permalink"]
-                        title = work["title"].strip()
-                        tags = work["user_tags"]
-                        description = strip_tags(work["description"]).strip()
-                        if "artist_description" in work and work["artist_description"]:
-                            artist_description = strip_tags(work["artist_description"]).strip()
-                        else:
-                            artist_description = ""
-                        thumbnail_url = work["_thumbnails"]["medium"]["url"]
-                        region = (
-                            work["_region"][0]
-                            if "_region" in work and work["_region"]
-                            else "Unspecified"
-                        )
-                        trials.append(
-                            {
-                                "artist_name": artist_name,
-                                "title": title,
-                                "description": description,
-                                "artist_description": artist_description,
-                                "region": region,
-                                "user_tags": tags,
-                                "synsets": [_mk_synset(x) for x in tags],
-                                "thumbnail": thumbnail_url,
-                                "image_url": work['image_url'],
-                                "permalink": permalink,
-                            }
-                        )
+    for work in works:
+        if "description" in work:
+            if "user_tags" in work and work["user_tags"]:
+                if "_thumbnails" in work and "medium" in work["_thumbnails"]:
+                    artist_name = ", ".join(
+                        [x["post_title"] for x in work["_artists"]]
+                    )
+                    permalink = work["permalink"]
+                    title = work["title"].strip()
+                    tags = work["user_tags"]
+                    description = strip_tags(work["description"]).strip()
+                    if "artist_description" in work and work["artist_description"]:
+                        artist_description = strip_tags(work["artist_description"]).strip()
+                    else:
+                        artist_description = ""
+                    thumbnail_url = work["_thumbnails"]["medium"]["url"]
+                    region = (
+                        work["_region"][0]
+                        if "_region" in work and work["_region"]
+                        else "Unspecified"
+                    )
+                    trials.append(
+                        {
+                            "artist_name": artist_name,
+                            "title": title,
+                            "description": description,
+                            "artist_description": artist_description,
+                            "region": region,
+                            "user_tags": tags,
+                            "synsets": [_mk_synset(x) for x in tags],
+                            "thumbnail": thumbnail_url,
+                            "image_url": work['image_url'],
+                            "permalink": permalink,
+                        }
+                    )
 
     return trials
 
 
-def tags_to_clusters(clusters, trials, t, similarity, col_name):
+def tags_to_clusters(clusters, trials, t, similarity, col_name, use_only_n_tags):
     """using the set of `clusters` find cluster from tags"""
     results = trials
     for work in tqdm(results):
         if 'user_tags' in work:
-            sorted_scores = find_clusters(clusters, work['synsets'], t, similarity)
+            sorted_scores = find_clusters(clusters, work['synsets'][:use_only_n_tags], t, similarity)
             work["{}_{}".format(col_name, "formatted")] = ['{}/{}'.format(c, s) for c, s in sorted_scores]
             work["{}_{}".format(col_name, "no_scores")] = [c for c, s in sorted_scores]
             work["{}_{}".format(col_name, "sum_of_scores")] = sum([s for c, s in sorted_scores])
@@ -112,7 +120,7 @@ def find_clusters(clusters, tags, t, similarity, top_n=3, debug=False):
     return sorted_scores
 
 
-def assign_clusters_to_works(trials):
+def assign_clusters_to_works(trials, use_only_n_tags=6):
     dest_file = "results/kadist_assignments.csv"
     cluster_types = ['superclusters', 'clusters']
     similarity = wup
@@ -124,7 +132,7 @@ def assign_clusters_to_works(trials):
         with codecs.open(file_clusters, 'rb', 'utf-8') as f_clusters:
             clusters = preprocess_clusters(json.loads(f_clusters.read()))
 
-            tags_to_clusters(clusters, trials, t=T, similarity=similarity, col_name=cluster_type)
+            tags_to_clusters(clusters, trials, t=T, similarity=similarity, col_name=cluster_type, use_only_n_tags=use_only_n_tags)
 
     df = pd.DataFrame(trials)
     df.drop(columns=['synsets'], inplace=True)
@@ -150,8 +158,29 @@ def generate_cluster_hierachies():
         file_clusters = f'data/{cluster_type}.json'
 
 
+def tag_descriptions(works):
+    """assign machine_tags to all works with descriptions"""
+
+    docs = [x['artist_description'] for x in kadist]
+    docs = ["{}. {}.".format(x['description'], x['artist_description']) for x in kadist]
+
+    results = DocumentTagger() \
+        .load_string_docs(docs) \
+        .process_documents(vocab_size=1000)
+
+    for doc_id, machine_tags in results.items():
+        kadist[doc_id]['machine_tags'] = [x[0] for x in machine_tags if x[1] >= machine_tags[0][1] / 2.0]
+
+
 if __name__ == "__main__":
 
-    assign_clusters_to_works(prep_tagged_works())
+    with codecs.open("data/kadist.json", "rb", "utf-8") as f:
 
-    # generate_cluster_hierachies()
+        works = json.loads(f.read())
+
+        works = prep_tagged_works()
+        works = tag_descriptions(works)
+
+        assign_clusters_to_works(works, use_only_n_tags=2)
+
+        # generate_cluster_hierachies()

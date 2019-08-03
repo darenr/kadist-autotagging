@@ -8,6 +8,7 @@ import re
 import sys
 import json
 import string
+import glob
 
 from textblob import TextBlob
 from textblob.wordnet import VERB, ADJ, NOUN
@@ -24,17 +25,18 @@ if sys.version_info[0] >= 3:
 
 class DocumentTagger():
 
-    def __init__(self, stopword_languages='english', stopword_folder='resources'):
+    def __init__(self, stopword_folder='resources'):
         """Initialize the DocumentTagger, pass in an array of stop wordslanguages"""
         self.stopword_folder = stopword_folder
         self.stopwords = []
-        if not isinstance(stopword_languages, (list, tuple)):
-            stopword_languages = [stopword_languages]
 
-        for language in stopword_languages:
-            self._load_stop_words(language)
+        stopword_languages = glob.glob('{}/*_stopwords.txt'.format(stopword_folder))
+
+        for language_file in stopword_languages:
+            self._load_stop_words(language_file)
 
         self.stopwords = frozenset(self.stopwords)
+
         self.docs = []
 
     def _find_nnp_runs(self, tags):
@@ -52,10 +54,10 @@ class DocumentTagger():
 
         return candidates
 
-    def _load_stop_words(self, language):
+    def _load_stop_words(self, file_path):
         """load language/domain stop words"""
-        file_path = '{}/{}.txt'.format(self.stopword_folder, language)
         if os.path.isfile(file_path):
+            print('  **', 'loading stopwords from: [{}]'.format(file_path))
             with codecs.open(file_path, 'r', 'utf-8') as f:
                 stopwords = f.readlines()
                 self.stopwords.extend([unicode(x).strip().replace(' ', '_').lower()
@@ -128,8 +130,8 @@ class DocumentTagger():
         """The docs are tuples: (name, [features]), features is a list of 'words'"""
 
         cv = CountVectorizer(
-            min_df=0.01,       # ignore terms that appear in less than x% of the documents
-            max_df=0.80,       # ignore terms that appear in more than x% of the corpus
+            min_df=0.2,       # ignore terms that appear in less than x% of the documents
+            max_df=0.95,       # ignore terms that appear in more than x% of the corpus
             stop_words=None,
             tokenizer=unicode.split,
             strip_accents='unicode',
@@ -199,10 +201,11 @@ class DocumentTagger():
 
 
 if __name__ == '__main__':
-    dt = DocumentTagger(['english', 'art'])
+
+    dt = DocumentTagger()
 
     dt.load_docs('docs')
 
-    result = dt.process_documents(vocab_size=500)
+    result = dt.process_documents(vocab_size=1000)
 
     DocumentTagger.pprint_keywords(result)

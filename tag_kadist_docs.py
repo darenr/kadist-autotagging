@@ -16,8 +16,6 @@ import html
 Takes the corpus of Kadist (that has human tags) and using the text assigns
 machine tags.
 
-Assumes: select_all_tagged_works.py has been run to generate the all_trials.json
-
 """
 
 from document_tagger import DocumentTagger
@@ -34,7 +32,7 @@ if __name__ == '__main__':
 
         results = DocumentTagger(['english', 'art']) \
             .load_string_docs(docs) \
-            .process_documents(vocab_size=500)
+            .process_documents(vocab_size=1000)
 
         for doc_id, machine_tags in results.items():
             kadist[doc_id]['machine_tags'] = [x[0] for x in machine_tags if x[1] >= machine_tags[0][1]/2.0]
