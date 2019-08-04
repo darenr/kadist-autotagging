@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+
 from __future__ import print_function
 
 import codecs
@@ -8,11 +9,10 @@ import sys
 import re
 import json
 import string
-import html
 
 from common_functions import find_clusters, _mk_synset, wup, preprocess_clusters
 from document_tagger import DocumentTagger
-
+from cortical_document_tagger import CorticalDocumentTagger
 
 """
 
@@ -41,12 +41,14 @@ import operator
 from copy import deepcopy
 import random
 import functools
-from html_processor import strip_tags
+from html_processor import normalize_text
 
 random.seed(42)
 
 
 def prep_tagged_works(works):
+
+    print('  *', 'prep_tagged_works, number of works: {}'.format(len(works)))
 
     trials = []
 
@@ -60,9 +62,9 @@ def prep_tagged_works(works):
                     permalink = work["permalink"]
                     title = work["title"].strip()
                     tags = work["user_tags"]
-                    description = strip_tags(work["description"]).strip()
+                    description = normalize_text(work["description"]).strip()
                     if "artist_description" in work and work["artist_description"]:
-                        artist_description = strip_tags(work["artist_description"]).strip()
+                        artist_description = normalize_text(work["artist_description"]).strip()
                     else:
                         artist_description = ""
                     thumbnail_url = work["_thumbnails"]["medium"]["url"]
@@ -83,6 +85,7 @@ def prep_tagged_works(works):
                             "thumbnail": thumbnail_url,
                             "image_url": work['image_url'],
                             "permalink": permalink,
+                            "doc": "{}. {}. {}.".format(description, artist_description, title)
                         }
                     )
 
@@ -158,28 +161,35 @@ def generate_cluster_hierachies():
         file_clusters = f'data/{cluster_type}.json'
 
 
-def tag_descriptions(works):
+def tag_works_from_text(works, vocab_size=1000):
     """assign machine_tags to all works with descriptions"""
 
-    docs = [x['artist_description'] for x in kadist]
-    docs = ["{}. {}.".format(x['description'], x['artist_description']) for x in kadist]
+    print('  *',  'tag_works_from_text (vocab_size: {})'.format(vocab_size))
 
-    results = DocumentTagger() \
-        .load_string_docs(docs) \
-        .process_documents(vocab_size=1000)
+    results = CorticalDocumentTagger() \
+        .load_string_docs([x['doc'] for x in works]) \
+        .process_documents()
 
     for doc_id, machine_tags in results.items():
-        kadist[doc_id]['machine_tags'] = [x[0] for x in machine_tags if x[1] >= machine_tags[0][1] / 2.0]
+        print("doc_id: {}, machine_tags: {}".format(doc_id, machine_tags))
+        # works[doc_id]['machine_tags'] = [x[0] for x in machine_tags if x[1] >= machine_tags[0][1] / 2.0]
+        works[doc_id]['machine_tags'] = [x[0] for x in machine_tags]
 
 
 if __name__ == "__main__":
 
     with codecs.open("data/kadist.json", "rb", "utf-8") as f:
 
-        works = json.loads(f.read())
+        source = json.loads(f.read())[:10]
 
-        works = prep_tagged_works()
-        works = tag_descriptions(works)
+        works = prep_tagged_works(source)
+
+        tag_works_from_text(works)
+
+        # for i, x in enumerate(works):
+        #     print('\n\n{}: "{}"\n\n->user: {}\n->machine: {}'.format(i, x['doc'], '/'.join(x['user_tags']), '/'.join(x['machine_tags'])))
+
+        sys.exit(0)
 
         assign_clusters_to_works(works, use_only_n_tags=2)
 

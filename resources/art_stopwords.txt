@@ -8,6 +8,8 @@ exhibition
 installation
 canvas
 gallery
+collections
+collection
 painter
 post
 subjects

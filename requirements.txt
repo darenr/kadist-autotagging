@@ -5,9 +5,11 @@ nltk
 gensim
 jupyter
 requests
+requests_cache
 matplotlib
 sklearn
 lxml
 textblob
 unidecode
 jupyter
+git+https://github.com/boudinfl/pke.git

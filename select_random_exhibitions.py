@@ -13,7 +13,7 @@ import random
 from operator import itemgetter
 import csv
 
-from html_processor import strip_tags
+from html_processor import normalize_text
 
 random.seed(42)
 min_word_length=50
@@ -27,7 +27,7 @@ def select_random_kadist_exhibitions(n=10):
             if 'description' in work and work['description'] and len(work['description'].split()) >= min_word_length:
                 if work["object_type"] == "program" and "exhibition" in work["object_sub_type"]:
                     exhibition_title = work['title']
-                    description = strip_tags(work['description'])
+                    description = normalize_text(work['description'])
                     candidates.append({
                         "source": "kadist",
                         "exhibition_title": exhibition_title,
@@ -50,7 +50,7 @@ def select_random_artfacts_exhibitions(n=10):
         for work in json.loads(f.read()):
             if 'description' in work and work['description'] and len(work['description'].split()) >= min_word_length:
                 exhibition_title = work['exhibition_title']
-                description = strip_tags(work['description'])
+                description = normalize_text(work['description'])
 
                 candidates.append({
                     "source": "artfacts",

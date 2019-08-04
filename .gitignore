@@ -105,3 +105,4 @@ venv.bak/
 .DS_Store
 .pyc
 .idea
+cortical_api_key.py

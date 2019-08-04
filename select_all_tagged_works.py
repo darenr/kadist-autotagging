@@ -12,7 +12,7 @@ from tqdm import tqdm
 import random
 import csv
 
-from html_processor import strip_tags
+from html_processor import normalize_text
 
 
 def select_all_tagged_works():
@@ -33,9 +33,9 @@ def select_all_tagged_works():
                         permalink = work["permalink"]
                         title = work["title"].strip()
                         tags = work["user_tags"]
-                        description = strip_tags(work["description"]).strip()
+                        description = normalize_text(work["description"]).strip()
                         if "artist_description" in work and work["artist_description"]:
-                            artist_description = strip_tags(work["artist_description"]).strip()
+                            artist_description = normalize_text(work["artist_description"]).strip()
                         else:
                             artist_description = ""
                         thumbnail_url = work["_thumbnails"]["medium"]["url"]

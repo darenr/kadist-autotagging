@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+
 from __future__ import print_function
 
 import codecs
@@ -57,7 +58,7 @@ class DocumentTagger():
     def _load_stop_words(self, file_path):
         """load language/domain stop words"""
         if os.path.isfile(file_path):
-            print('  **', 'loading stopwords from: [{}]'.format(file_path))
+            print('  *', 'loading stopwords from: [{}]'.format(file_path))
             with codecs.open(file_path, 'r', 'utf-8') as f:
                 stopwords = f.readlines()
                 self.stopwords.extend([unicode(x).strip().replace(' ', '_').lower()
@@ -126,13 +127,14 @@ class DocumentTagger():
             print(u'[{}]: {}'.format(doc, ', '.join([u"{}/{}".format(t[0], t[1]) for t in r[doc]])))
             print('-' * 80)
 
-    def process_documents(self, vocab_size=5000, topn=15):
+    def process_documents(self, vocab_size=5000, topn=25):
         """The docs are tuples: (name, [features]), features is a list of 'words'"""
 
         cv = CountVectorizer(
-            min_df=0.2,       # ignore terms that appear in less than x% of the documents
-            max_df=0.95,       # ignore terms that appear in more than x% of the corpus
+            min_df=0.01,        # ignore terms that appear in less than x% of the documents
+            max_df=0.50,        # ignore terms that appear in more than x% of the corpus
             stop_words=None,
+            ngram_range=(1, 2),
             tokenizer=unicode.split,
             strip_accents='unicode',
             max_features=vocab_size)

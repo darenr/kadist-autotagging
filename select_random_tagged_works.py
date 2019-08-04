@@ -12,7 +12,7 @@ from tqdm import tqdm
 import random
 import csv
 
-from html_processor import strip_tags
+from html_processor import normalize_text
 
 
 def select_random_tagged_works(n=75):
@@ -32,7 +32,7 @@ def select_random_tagged_works(n=75):
                         permalink = work['permalink']
                         title = work['title']
                         tags = work['user_tags']
-                        description = strip_tags(work['description'])
+                        description = normalize_text(work['description'])
                         thumbnail_url = work['_thumbnails']['medium']['url']
                         trials.append({
                             "artist_name": artist_name,

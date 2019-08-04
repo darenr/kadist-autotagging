@@ -3,7 +3,20 @@
 
 import re
 import html
+import string
+from nltk.tokenize import word_tokenize
 
-def strip_tags(value):
+def normalize_text(value):
     """Returns the given HTML with all tags stripped."""
-    return html.unescape(re.sub(r'<[^>]*?>', '', value))
+
+    text = html.unescape(re.sub(r'<[^>]*?>', '', value)).replace('\n', '  ')
+    return text
+    # tokens = word_tokenize(text)
+
+    # table = str.maketrans('', '', string.punctuation.replace('.', ''))
+    # stripped = [w.translate(table) for w in tokens]
+
+    # remove remaining tokens that are not alphabetic
+    # words = [word for word in stripped if word.isalpha() or word is '.']
+
+    # return ' '.join(tokens)
