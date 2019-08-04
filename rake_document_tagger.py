@@ -92,8 +92,8 @@ class RAKEDocumentTagger():
 
             for (score, keyphrase) in r.get_ranked_phrases_with_scores():
                 wn_form = self.convert_to_wordnet_form(keyphrase)
-                if wn_form:
-                    print('keyphrase: [{}], wn_form: [{}]'.format(keyphrase, wn_form[0]))
+                if wn_form and not '.v.' in wn_form:
+                    # print('keyphrase: [{}], wn_form: [{}]'.format(keyphrase, wn_form[0]))
                     result[name].append((wn_form[0], score))
 
         return result

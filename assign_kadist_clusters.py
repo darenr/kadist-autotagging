@@ -82,7 +82,7 @@ def prep_tagged_works(works):
                             "artist_description": artist_description,
                             "region": region,
                             "user_tags": tags,
-                            "synsets": [_mk_synset(x) for x in tags],
+                            "user_tags_synsets": [_mk_synset(x) for x in tags],
                             "thumbnail": thumbnail_url,
                             "image_url": work['image_url'],
                             "permalink": permalink,
@@ -93,15 +93,15 @@ def prep_tagged_works(works):
     return trials
 
 
-def tags_to_clusters(clusters, trials, t, similarity, col_name, use_only_n_tags):
+def tags_to_clusters(clusters, trials, t, similarity, tag_col_name, cluster_type, use_only_n_tags=99):
     """using the set of `clusters` find cluster from tags"""
     results = trials
     for work in tqdm(results):
-        if 'user_tags' in work:
-            sorted_scores = find_clusters(clusters, work['synsets'][:use_only_n_tags], t, similarity)
-            work["{}_{}".format(col_name, "formatted")] = ['{}/{}'.format(c, s) for c, s in sorted_scores]
-            work["{}_{}".format(col_name, "no_scores")] = [c for c, s in sorted_scores]
-            work["{}_{}".format(col_name, "sum_of_scores")] = sum([s for c, s in sorted_scores])
+        if tag_col_name in work:
+            sorted_scores = find_clusters(clusters, work[tag_col_name][:use_only_n_tags], t, similarity)
+            work["{}_{}_{}".format(tag_col_name, cluster_type, "formatted")] = ['{}/{}'.format(c, s) for c, s in sorted_scores]
+            work["{}_{}_{}".format(tag_col_name, cluster_type, "no_scores")] = [c for c, s in sorted_scores]
+            work["{}_{}_{}".format(tag_col_name, cluster_type, "sum_of_scores")] = sum([s for c, s in sorted_scores])
 
 
 def find_clusters(clusters, tags, t, similarity, top_n=3, debug=False):
@@ -124,22 +124,22 @@ def find_clusters(clusters, tags, t, similarity, top_n=3, debug=False):
     return sorted_scores
 
 
-def assign_clusters_to_works(trials, use_only_n_tags=6):
+def assign_clusters_to_works(trials):
     dest_file = "results/kadist_assignments.csv"
     cluster_types = ['superclusters', 'clusters']
     similarity = wup
     T = 0.76
 
-    for cluster_type in cluster_types:
-        file_clusters = f'data/{cluster_type}.json'
+    for (tag_col_name, use_only_n_tags) in [('user_tags_synsets', 2), ('machine_tags_synsets', 20)]:
+        for cluster_type in cluster_types:
+            file_clusters = f'data/{cluster_type}.json'
 
-        with codecs.open(file_clusters, 'rb', 'utf-8') as f_clusters:
-            clusters = preprocess_clusters(json.loads(f_clusters.read()))
-
-            tags_to_clusters(clusters, trials, t=T, similarity=similarity, col_name=cluster_type, use_only_n_tags=use_only_n_tags)
+            with codecs.open(file_clusters, 'rb', 'utf-8') as f_clusters:
+                clusters = preprocess_clusters(json.loads(f_clusters.read()))
+                tags_to_clusters(clusters, trials, t=T, similarity=similarity, tag_col_name=tag_col_name, cluster_type=cluster_type, use_only_n_tags=use_only_n_tags)
 
     df = pd.DataFrame(trials)
-    df.drop(columns=['synsets'], inplace=True)
+    df.drop(columns=['user_tags_synsets', 'machine_tags_synsets'], inplace=True)
 
     # move some columns to front
     cols = df.columns.tolist()
@@ -175,7 +175,7 @@ def tag_works_from_text(works, vocab_size=1000):
         print("doc_id: {}, machine_tags: {}".format(doc_id, machine_tags))
         # works[doc_id]['machine_tags'] = [x[0] for x in machine_tags if x[1] >= machine_tags[0][1] / 2.0]
         works[doc_id]['machine_tags'] = [x[0] for x in machine_tags]
-
+        works[doc_id]['machine_tags_synsets'] = [_mk_synset(x) for x in works[doc_id]['machine_tags']]
 
 if __name__ == "__main__":
 
@@ -187,11 +187,11 @@ if __name__ == "__main__":
 
         tag_works_from_text(works)
 
-        for i, x in enumerate(works):
-            print('\n\n{}: "{}"\n\n->user: {}\n->machine: {}'.format(i, x['doc'], '/'.join(x['user_tags']), '/'.join(x['machine_tags'])))
+        # for i, x in enumerate(works):
+        #     print('\n\n{}: "{}"\n\n->user: {}\n->machine: {}'.format(i, x['doc'], '/'.join(x['user_tags']), '/'.join(x['machine_tags'])))
+        #
+        # sys.exit(0)
 
-        sys.exit(0)
-
-        assign_clusters_to_works(works, use_only_n_tags=2)
+        assign_clusters_to_works(works)
 
         # generate_cluster_hierachies()
