@@ -12,4 +12,5 @@ lxml
 textblob
 unidecode
 jupyter
+rake-nltk
 git+https://github.com/boudinfl/pke.git

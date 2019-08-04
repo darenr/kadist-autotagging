@@ -114,4 +114,4 @@ if __name__ == '__main__':
 
     result = dt.process_documents()
 
-    TextRankDocumentTagger.pprint_keywords(result)
+    dr.pprint_keywords(result)

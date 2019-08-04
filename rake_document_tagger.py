@@ -13,12 +13,7 @@ from textblob import TextBlob
 from textblob.wordnet import VERB, ADJ, NOUN
 from textblob import Word
 
-from cortical_api_key import API_KEY
-
-import requests
-import requests_cache
-
-requests_cache.install_cache('cortical_api_cache')
+from rake_nltk import Rake
 
 from tqdm import tqdm
 
@@ -26,11 +21,11 @@ if sys.version_info[0] >= 3:
     unicode = str
 
 
-class CorticalDocumentTagger():
+class RAKEDocumentTagger():
 
     def __init__(self, stopword_folder='resources'):
         """Initialize the DocumentTagger, pass in an array of stop wordslanguages"""
-        print("CorticalDocumentTagger")
+        print("RAKEDocumentTagger")
 
         self.stopword_folder = stopword_folder
         self.stopwords = []
@@ -90,21 +85,16 @@ class CorticalDocumentTagger():
 
         for name, text in tqdm(self.docs):
 
-            r = requests.post('http://api.cortical.io:80/rest/text/keywords?retina_name=en_synonymous',
-                headers={'api-key': API_KEY},
-                json={"body": text})
-            if r.status_code == requests.codes.ok:
-                result[name] = []
-                keyphrases = r.json()
-                for keyphrase in keyphrases:
-                    wn_form = self.convert_to_wordnet_form(keyphrase)
+            r = Rake(min_length=1, max_length=3, stopwords=self.stopwords)
+            r.extract_keywords_from_text(text)
 
-                    if wn_form:
-                        # print('keyphrase: [{}], wn_form: [{}]'.format(keyphrase, wn_form[0]))
-                        result[name].append((wn_form[0], 1.0))
-            else:
-                print("http error: {} (using api key: {})".format(r.status_code, API_KEY))
-                sys.exit(-1)
+            result[name] = []
+
+            for (score, keyphrase) in r.get_ranked_phrases_with_scores():
+                wn_form = self.convert_to_wordnet_form(keyphrase)
+                if wn_form:
+                    print('keyphrase: [{}], wn_form: [{}]'.format(keyphrase, wn_form[0]))
+                    result[name].append((wn_form[0], score))
 
         return result
 
@@ -118,7 +108,7 @@ class CorticalDocumentTagger():
 
 if __name__ == '__main__':
 
-    dt = CorticalDocumentTagger()
+    dt = RAKEDocumentTagger()
 
     dt.load_docs('docs')
 
