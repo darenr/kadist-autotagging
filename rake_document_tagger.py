@@ -25,7 +25,7 @@ class RAKEDocumentTagger():
 
     def __init__(self, stopword_folder='resources'):
         """Initialize the DocumentTagger, pass in an array of stop wordslanguages"""
-        print("RAKEDocumentTagger")
+        print("  *", "RAKEDocumentTagger")
 
         self.stopword_folder = stopword_folder
         self.stopwords = []
@@ -64,13 +64,12 @@ class RAKEDocumentTagger():
                 stopwords = f.readlines()
                 self.stopwords.extend([unicode(x).strip().replace(' ', '_').lower() for x in stopwords])
 
-    def _contains_number(self, s):
-        """returns True iff string:s contains a digit"""
-        return any(i.isdigit() for i in s)
 
     def convert_to_wordnet_form(self, word_or_phrase, min_word_length=3, pos=None):
         if len(word_or_phrase) >= min_word_length:
-            if not word_or_phrase.lower() in self.stopwords and not self._contains_number(word_or_phrase):
+            if not word_or_phrase.lower() in self.stopwords      \
+                and not any(i.isdigit() for i in word_or_phrase) \
+                and not '.' in word_or_phrase:
                 # try both underscore and then hyphenated
                 preped_for_wn_underscore = '_'.join(word_or_phrase.lower().split()).strip()
                 preped_for_wn_hyphen = '-'.join(word_or_phrase.lower().split()).strip()
@@ -92,8 +91,8 @@ class RAKEDocumentTagger():
 
             for (score, keyphrase) in r.get_ranked_phrases_with_scores():
                 if keyphrase not in self.stopwords:
-                    wn_form = self.convert_to_wordnet_form(keyphrase)
-                    if wn_form and not '.v.' in wn_form:
+                    wn_form = self.convert_to_wordnet_form(keyphrase, pos='n')
+                    if wn_form:
                         # print('keyphrase: [{}], wn_form: [{}]'.format(keyphrase, wn_form[0]))
                         result[name].append((wn_form[0], score))
 

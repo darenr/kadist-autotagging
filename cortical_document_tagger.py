@@ -30,7 +30,7 @@ class CorticalDocumentTagger():
 
     def __init__(self, stopword_folder='resources'):
         """Initialize the DocumentTagger, pass in an array of stop wordslanguages"""
-        print("CorticalDocumentTagger")
+        print("  *", "CorticalDocumentTagger")
 
         self.stopword_folder = stopword_folder
         self.stopwords = []

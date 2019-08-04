@@ -132,9 +132,8 @@ def assign_clusters_to_works(trials):
 
     for (tag_col_name, use_only_n_tags) in [('user_tags_synsets', 2), ('machine_tags_synsets', 20)]:
         for cluster_type in cluster_types:
-            file_clusters = f'data/{cluster_type}.json'
-
-            with codecs.open(file_clusters, 'rb', 'utf-8') as f_clusters:
+            print('  *', 'processing {} for {}'.format(tag_col_name, cluster_type))
+            with codecs.open(f'data/{cluster_type}.json', 'rb', 'utf-8') as f_clusters:
                 clusters = preprocess_clusters(json.loads(f_clusters.read()))
                 tags_to_clusters(clusters, trials, t=T, similarity=similarity, tag_col_name=tag_col_name, cluster_type=cluster_type, use_only_n_tags=use_only_n_tags)
 
@@ -161,6 +160,12 @@ def generate_cluster_hierachies():
     for cluster_type in cluster_types:
         file_clusters = f'data/{cluster_type}.json'
 
+    #
+    #
+    # TODO
+    #
+    #
+
 
 def tag_works_from_text(works, vocab_size=1000):
     """assign machine_tags to all works with descriptions"""
@@ -172,7 +177,7 @@ def tag_works_from_text(works, vocab_size=1000):
         .process_documents()
 
     for doc_id, machine_tags in results.items():
-        print("doc_id: {}, machine_tags: {}".format(doc_id, machine_tags))
+        # print("doc_id: {}, machine_tags: {}".format(doc_id, machine_tags))
         # works[doc_id]['machine_tags'] = [x[0] for x in machine_tags if x[1] >= machine_tags[0][1] / 2.0]
         works[doc_id]['machine_tags'] = [x[0] for x in machine_tags]
         works[doc_id]['machine_tags_synsets'] = [_mk_synset(x) for x in works[doc_id]['machine_tags']]

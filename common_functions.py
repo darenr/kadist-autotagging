@@ -5,6 +5,7 @@ from __future__ import print_function
 import json
 import codecs
 import sys
+import re
 import pandas as pd
 import numpy as np
 
@@ -46,7 +47,10 @@ def _mk_synset(w):
 
     word = w.strip().replace(' ', '_')
 
-    if word.count('.') == 2:
+    pat_regular_form = re.compile(r".*[.]\d{2}$")
+    pat_regular_lemma_form = re.compile(r".*[.]\d{2}[.].+$")
+
+    if pat_regular_form.match(word):
         try:
             return wordnet.synset(word)
         except Exception as ex:
@@ -56,7 +60,7 @@ def _mk_synset(w):
             except Exception as ex:
                 return None
 
-    elif word.count('.') == 3:
+    elif pat_regular_lemma_form.match(word):
         try:
             return wordnet.lemma(word).synset()
         except Exception as ex:
