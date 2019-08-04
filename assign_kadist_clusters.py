@@ -181,7 +181,7 @@ if __name__ == "__main__":
 
     with codecs.open("data/kadist.json", "rb", "utf-8") as f:
 
-        source = json.loads(f.read())[:10]
+        source = json.loads(f.read())
 
         works = prep_tagged_works(source)
 
