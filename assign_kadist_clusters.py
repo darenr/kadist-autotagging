@@ -11,8 +11,9 @@ import json
 import string
 
 from common_functions import find_clusters, _mk_synset, wup, preprocess_clusters
-from document_tagger import DocumentTagger
+from tfidf_document_tagger import TFIDFDocumentTagger
 from cortical_document_tagger import CorticalDocumentTagger
+from rake_document_tagger import RAKEDocumentTagger
 
 """
 
@@ -166,7 +167,7 @@ def tag_works_from_text(works, vocab_size=1000):
 
     print('  *',  'tag_works_from_text (vocab_size: {})'.format(vocab_size))
 
-    results = CorticalDocumentTagger() \
+    results = RAKEDocumentTagger() \
         .load_string_docs([x['doc'] for x in works]) \
         .process_documents()
 
@@ -186,8 +187,8 @@ if __name__ == "__main__":
 
         tag_works_from_text(works)
 
-        # for i, x in enumerate(works):
-        #     print('\n\n{}: "{}"\n\n->user: {}\n->machine: {}'.format(i, x['doc'], '/'.join(x['user_tags']), '/'.join(x['machine_tags'])))
+        for i, x in enumerate(works):
+            print('\n\n{}: "{}"\n\n->user: {}\n->machine: {}'.format(i, x['doc'], '/'.join(x['user_tags']), '/'.join(x['machine_tags'])))
 
         sys.exit(0)
 
