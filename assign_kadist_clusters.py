@@ -15,6 +15,8 @@ from tfidf_document_tagger import TFIDFDocumentTagger
 from cortical_document_tagger import CorticalDocumentTagger
 from rake_document_tagger import RAKEDocumentTagger
 
+from nltk.metrics.scores import f_measure
+
 """
 
 Load the Kadist json corpus:
@@ -93,15 +95,17 @@ def prep_tagged_works(works):
     return trials
 
 
-def tags_to_clusters(clusters, trials, t, similarity, tag_col_name, cluster_type, use_only_n_tags=99):
+def tags_to_clusters(clusters, trials, t, similarity, tag_col_prefix, cluster_type, use_only_n_tags=99):
     """using the set of `clusters` find cluster from tags"""
     results = trials
+    source_col_name = '{}_tags_synsets'.format(tag_col_prefix)
+    target_col_name = '{}'.format(tag_col_prefix)
     for work in tqdm(results):
-        if tag_col_name in work:
-            sorted_scores = find_clusters(clusters, work[tag_col_name][:use_only_n_tags], t, similarity)
-            work["{}_{}_{}".format(tag_col_name, cluster_type, "formatted")] = ['{}/{}'.format(c, s) for c, s in sorted_scores]
-            work["{}_{}_{}".format(tag_col_name, cluster_type, "no_scores")] = [c for c, s in sorted_scores]
-            work["{}_{}_{}".format(tag_col_name, cluster_type, "sum_of_scores")] = sum([s for c, s in sorted_scores])
+        if source_col_name in work:
+            sorted_scores = find_clusters(clusters, work[source_col_name][:use_only_n_tags], t, similarity)
+            work["{}_{}_{}".format(target_col_name, cluster_type, "formatted")] = ['{}/{}'.format(c, s) for c, s in sorted_scores]
+            work["{}_{}_{}".format(target_col_name, cluster_type, "no_scores")] = [c for c, s in sorted_scores]
+            work["{}_{}_{}".format(target_col_name, cluster_type, "sum_of_scores")] = sum([s for c, s in sorted_scores])
 
 
 def find_clusters(clusters, tags, t, similarity, top_n=3, debug=False):
@@ -130,12 +134,28 @@ def assign_clusters_to_works(trials):
     similarity = wup
     T = 0.76
 
-    for (tag_col_name, use_only_n_tags) in [('user_tags_synsets', 2), ('machine_tags_synsets', 20)]:
+    for (tag_col_prefix, use_only_n_tags) in [('user', 2), ('machine', 20)]:
         for cluster_type in cluster_types:
-            print('  *', 'processing {} for {}'.format(tag_col_name, cluster_type))
+            print('  *', 'processing type: {} for {}'.format(tag_col_prefix, cluster_type))
             with codecs.open(f'data/{cluster_type}.json', 'rb', 'utf-8') as f_clusters:
                 clusters = preprocess_clusters(json.loads(f_clusters.read()))
-                tags_to_clusters(clusters, trials, t=T, similarity=similarity, tag_col_name=tag_col_name, cluster_type=cluster_type, use_only_n_tags=use_only_n_tags)
+                tags_to_clusters(
+                    clusters,
+                    trials,
+                    t=T,
+                    similarity=similarity,
+                    tag_col_prefix=tag_col_prefix,
+                    cluster_type=cluster_type,
+                    use_only_n_tags=use_only_n_tags)
+
+    #
+    # score results
+    #
+    for work in trials:
+        for cluster_type in cluster_types:
+            machine = "{}_{}_{}".format('machine', cluster_type, "no_scores")
+            human   = "{}_{}_{}".format('user', cluster_type, "no_scores")
+            work["{}_fmeasure".format(cluster_type)] = f_measure(set(work[human]), set(work[machine]))
 
     df = pd.DataFrame(trials)
     df.drop(columns=['user_tags_synsets', 'machine_tags_synsets'], inplace=True)
@@ -143,7 +163,7 @@ def assign_clusters_to_works(trials):
     # move some columns to front
     cols = df.columns.tolist()
 
-    for col in ['permalink', 'thumbnail', 'image_url', 'user_tags',  'region', 'title', 'artist_description', 'description', 'artist_name']:
+    for col in ['permalink', 'thumbnail', 'image_url', 'user_tags',  'machine_tags', 'region', 'title', 'artist_description', 'description', 'artist_name']:
         cols.insert(0, cols.pop(cols.index(col)))
     df = df.reindex(columns=cols)
 
