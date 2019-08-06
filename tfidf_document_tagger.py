@@ -26,12 +26,13 @@ if sys.version_info[0] >= 3:
 
 class TFIDFDocumentTagger():
 
-    def __init__(self, stopword_folder='resources'):
+    def __init__(self, stopword_folder='resources', vocab_size=1000):
         """Initialize the DocumentTagger, pass in an array of stop wordslanguages"""
         print("  *", "TFIDFDocumentTagger")
 
         self.stopword_folder = stopword_folder
         self.stopwords = []
+        self.vocab_size = vocab_size
 
         stopword_languages = glob.glob('{}/*_stopwords.txt'.format(stopword_folder))
 
@@ -129,17 +130,17 @@ class TFIDFDocumentTagger():
             print(u'[{}]: {}'.format(doc, ', '.join([u"{}/{}".format(t[0], t[1]) for t in r[doc]])))
             print('-' * 80)
 
-    def process_documents(self, vocab_size=5000, topn=25):
+    def process_documents(self, topn=25):
         """The docs are tuples: (name, [features]), features is a list of 'words'"""
 
         cv = CountVectorizer(
             min_df=0.01,        # ignore terms that appear in less than x% of the documents
-            max_df=0.50,        # ignore terms that appear in more than x% of the corpus
+            max_df=0.80,        # ignore terms that appear in more than x% of the corpus
             stop_words=None,
             ngram_range=(1, 2),
             tokenizer=unicode.split,
             strip_accents='unicode',
-            max_features=vocab_size)
+            max_features=self.vocab_size)
 
         word_count_vector = cv.fit_transform([self._features_to_doc(features) for name, features in self.docs])
 
@@ -206,10 +207,10 @@ class TFIDFDocumentTagger():
 
 if __name__ == '__main__':
 
-    dt = DocumentTagger()
+    dt = TFIDFDocumentTagger(vocab_size=1000)
 
     dt.load_docs('docs')
 
-    result = dt.process_documents(vocab_size=1000)
+    result = dt.process_documents()
 
     DocumentTagger.pprint_keywords(result)

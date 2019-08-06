@@ -14,6 +14,7 @@ from common_functions import find_clusters, _mk_synset, wup, preprocess_clusters
 from tfidf_document_tagger import TFIDFDocumentTagger
 from cortical_document_tagger import CorticalDocumentTagger
 from rake_document_tagger import RAKEDocumentTagger
+from text_rank_document_tagger import TextRankDocumentTagger
 
 from nltk.metrics.scores import f_measure
 
@@ -88,7 +89,7 @@ def prep_tagged_works(works):
                             "thumbnail": thumbnail_url,
                             "image_url": work['image_url'],
                             "permalink": permalink,
-                            "doc": "{}. {}. {}.".format(description, artist_description, title)
+                            "doc": description
                         }
                     )
 
@@ -134,7 +135,7 @@ def assign_clusters_to_works(trials):
     similarity = wup
     T = 0.76
 
-    for (tag_col_prefix, use_only_n_tags) in [('user', 2), ('machine', 20)]:
+    for (tag_col_prefix, use_only_n_tags) in [('user', 6), ('machine', 25)]:
         for cluster_type in cluster_types:
             print('  *', 'processing type: {} for {}'.format(tag_col_prefix, cluster_type))
             with codecs.open(f'data/{cluster_type}.json', 'rb', 'utf-8') as f_clusters:
@@ -158,7 +159,7 @@ def assign_clusters_to_works(trials):
             work["{}_fmeasure".format(cluster_type)] = f_measure(set(work[human]), set(work[machine]))
 
     df = pd.DataFrame(trials)
-    df.drop(columns=['user_tags_synsets', 'machine_tags_synsets'], inplace=True)
+    df.drop(columns=['user_tags_synsets', 'machine_tags_synsets', 'doc'], inplace=True)
 
     # move some columns to front
     cols = df.columns.tolist()
@@ -169,6 +170,15 @@ def assign_clusters_to_works(trials):
 
     df.to_csv(dest_file, index=False)
     print(' *', 'written file: {}'.format(dest_file))
+
+    for j, cluster_type in enumerate(cluster_types):
+        s = df['{}_fmeasure'.format(cluster_type)]
+        print(cluster_type,
+              'mean f-measure:',
+              s.mean(),
+              'hit percentage:',
+              100*s.where(s>0).count()/len(s)
+        )
 
 
 def generate_cluster_hierachies():
@@ -187,12 +197,12 @@ def generate_cluster_hierachies():
     #
 
 
-def tag_works_from_text(works, vocab_size=1000):
+def tag_works_from_text(works, vocab_size=500):
     """assign machine_tags to all works with descriptions"""
 
     print('  *',  'tag_works_from_text (vocab_size: {})'.format(vocab_size))
 
-    results = RAKEDocumentTagger() \
+    results = TFIDFDocumentTagger(vocab_size=vocab_size) \
         .load_string_docs([x['doc'] for x in works]) \
         .process_documents()
 
@@ -210,12 +220,7 @@ if __name__ == "__main__":
 
         works = prep_tagged_works(source)
 
-        tag_works_from_text(works)
-
-        # for i, x in enumerate(works):
-        #     print('\n\n{}: "{}"\n\n->user: {}\n->machine: {}'.format(i, x['doc'], '/'.join(x['user_tags']), '/'.join(x['machine_tags'])))
-        #
-        # sys.exit(0)
+        tag_works_from_text(works, vocab_size=500)
 
         assign_clusters_to_works(works)
 
