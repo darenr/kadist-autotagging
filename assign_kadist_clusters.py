@@ -184,10 +184,10 @@ def assign_clusters_to_works(trials):
     df_gsheet = df.dropna(subset=['clusters_fmeasure']) # drop any we don't tag
     df_gsheet.sort_values(by=['clusters_fmeasure'])\
         .tail(25)\
-        .to_csv("results/best_perfomring_kadist_assignments.csv", index=False)
+        .to_csv("results/best_performing_kadist_assignments.csv", index=False)
     df_gsheet.sort_values(by=['clusters_fmeasure'])\
         .head(25)\
-        .to_csv("results/worst_perfomring_kadist_assignments.csv", index=False)
+        .to_csv("results/worst_performing_kadist_assignments.csv", index=False)
 
 
 def generate_cluster_hierachies():
