@@ -155,7 +155,7 @@ def assign_clusters_to_works(trials):
     for work in trials:
         for cluster_type in cluster_types:
             machine = "{}_{}_{}".format('machine', cluster_type, "no_scores")
-            human   = "{}_{}_{}".format('user', cluster_type, "no_scores")
+            human = "{}_{}_{}".format('user', cluster_type, "no_scores")
             work["{}_fmeasure".format(cluster_type)] = f_measure(set(work[human]), set(work[machine]))
 
     df = pd.DataFrame(trials)
@@ -177,8 +177,17 @@ def assign_clusters_to_works(trials):
               'mean f-measure:',
               s.mean(),
               'hit percentage:',
-              100*s.where(s>0).count()/len(s)
-        )
+              100 * s.where(s > 0).count() / len(s)
+              )
+
+    # generate best/worst top n for gsheet analysis
+    df_gsheet = df.dropna(subset=['clusters_fmeasure']) # drop any we don't tag
+    df_gsheet.sort_values(by=['clusters_fmeasure'])\
+        .tail(25)\
+        .to_csv("results/best_perfomring_kadist_assignments.csv", index=False)
+    df_gsheet.sort_values(by=['clusters_fmeasure'])\
+        .head(25)\
+        .to_csv("results/worst_perfomring_kadist_assignments.csv", index=False)
 
 
 def generate_cluster_hierachies():
@@ -211,6 +220,7 @@ def tag_works_from_text(works, vocab_size=500):
         # works[doc_id]['machine_tags'] = [x[0] for x in machine_tags if x[1] >= machine_tags[0][1] / 2.0]
         works[doc_id]['machine_tags'] = [x[0] for x in machine_tags]
         works[doc_id]['machine_tags_synsets'] = [_mk_synset(x) for x in works[doc_id]['machine_tags']]
+
 
 if __name__ == "__main__":
 
