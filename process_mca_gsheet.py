@@ -68,19 +68,23 @@ def process_mca_trials():
         trial = {
             "artist_name": row['Artist'],
             "description": row['Description'],
-            "title": row['Title'],
-            "user_tags": row['user_tags']
+            "title": row['Title']
         }
 
         if 'user_tags' in row and not pd.isnull(row['user_tags']):
+            trial["user_tags"] = row['user_tags']
+            setlist = [] # for user agreement
             for person in people:
                 human_cluster_assignments = []
                 for col in ['%s Cluster 1' % (person), '%s Cluster 2' % (person), '%s Cluster 3' % (person)]:
                     if col in df.columns and not pd.isnull(row[col]):
                         human_cluster_assignments.append(row[col])
+                setlist.append(set(human_cluster_assignments))
 
                 if human_cluster_assignments:
                     trial[person] = human_cluster_assignments
+            if setlist:
+                trial['user_aggrement'] = list(set.intersection(*setlist))
 
         trials.append(trial)
 

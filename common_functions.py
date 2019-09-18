@@ -39,6 +39,16 @@ def _synset_to_word(s):
     return s.lemmas()[0].name()
 
 @functools.lru_cache(maxsize=10000)
+def _word_to_synset(w):
+    # best guess at disambiguation
+    candidates = wordnet.synsets(w.lower())
+    if candidates:
+        return candidates[0]
+    else:
+        return None
+
+
+@functools.lru_cache(maxsize=10000)
 def _mk_synset(w):
     #
     # (synset form) cat.n.01 into the Synset object form
