@@ -25,6 +25,8 @@
    "Politics"
   ],
   "user_aggrement": [
+   "Violence",
+   "Inequality",
    "Identity"
   ]
  },
@@ -54,6 +56,8 @@
    "Culture"
   ],
   "user_aggrement": [
+   "Violence",
+   "Inequality",
    "Identity"
   ]
  },
@@ -77,7 +81,11 @@
    "Identity",
    "History"
   ],
-  "user_aggrement": []
+  "user_aggrement": [
+   "Familial",
+   "History",
+   "Identity"
+  ]
  },
  {
   "artist_name": "Tony Albert",
@@ -105,6 +113,8 @@
    "Community"
   ],
   "user_aggrement": [
+   "Community",
+   "Familial",
    "Culture"
   ]
  },
@@ -133,7 +143,12 @@
    "Identity",
    "History"
   ],
-  "user_aggrement": []
+  "user_aggrement": [
+   "Spirituality",
+   "Culture",
+   "History",
+   "Identity"
+  ]
  },
  {
   "artist_name": "Peter Alwast",
@@ -161,6 +176,7 @@
    "Environmental"
   ],
   "user_aggrement": [
+   "Fantasy",
    "Urbanization"
   ]
  },
@@ -190,8 +206,8 @@
    "Culture"
   ],
   "user_aggrement": [
-   "History",
-   "Culture"
+   "Culture",
+   "History"
   ]
  },
  {
@@ -219,7 +235,12 @@
    "Design",
    "Body"
   ],
-  "user_aggrement": []
+  "user_aggrement": [
+   "Spirituality",
+   "Body",
+   "Fantasy",
+   "Technology"
+  ]
  },
  {
   "artist_name": "Benjamin Armstrong",
@@ -247,7 +268,9 @@
    "Physics"
   ],
   "user_aggrement": [
-   "Body"
+   "Body",
+   "Fantasy",
+   "Materiality"
   ]
  },
  {
@@ -276,7 +299,9 @@
    "Arts"
   ],
   "user_aggrement": [
-   "Emotion"
+   "Emotion",
+   "Body",
+   "Time"
   ]
  },
  {
@@ -306,7 +331,8 @@
   ],
   "user_aggrement": [
    "Body",
-   "Time"
+   "Time",
+   "Materiality"
   ]
  },
  {
@@ -334,7 +360,11 @@
    "Politics",
    "Land"
   ],
-  "user_aggrement": []
+  "user_aggrement": [
+   "Culture",
+   "Politics",
+   "Colonization"
+  ]
  },
  {
   "artist_name": "Gordon Bennett",
@@ -362,7 +392,9 @@
    "History"
   ],
   "user_aggrement": [
-   "History"
+   "History",
+   "Identity",
+   "Colonization"
   ]
  },
  {
@@ -390,7 +422,11 @@
    "Body",
    "Fantasy"
   ],
-  "user_aggrement": []
+  "user_aggrement": [
+   "Body",
+   "Fantasy",
+   "Identity"
+  ]
  },
  {
   "artist_name": "Daniel Boyd",
@@ -418,7 +454,8 @@
    "Power"
   ],
   "user_aggrement": [
-   "History"
+   "History",
+   "Colonization"
   ]
  },
  {
@@ -446,7 +483,11 @@
    "Arts",
    "Design"
   ],
-  "user_aggrement": []
+  "user_aggrement": [
+   "Arts",
+   "Design",
+   "Time"
+  ]
  },
  {
   "artist_name": "Pat Brassington",
@@ -474,7 +515,9 @@
    "Space"
   ],
   "user_aggrement": [
-   "Body"
+   "Violence",
+   "Body",
+   "Fantasy"
   ]
  },
  {
@@ -503,7 +546,10 @@
    "Materiality"
   ],
   "user_aggrement": [
-   "Mass media"
+   "Power",
+   "Fantasy",
+   "Mass media",
+   "Technology"
   ]
  },
  {
@@ -531,7 +577,11 @@
    "Language",
    "Land"
   ],
-  "user_aggrement": []
+  "user_aggrement": [
+   "Mass media",
+   "Urbanization",
+   "Language"
+  ]
  },
  {
   "artist_name": "Jon Campbell",
@@ -559,7 +609,9 @@
    "Materiality"
   ],
   "user_aggrement": [
-   "Culture"
+   "Language",
+   "Culture",
+   "Identity"
   ]
  },
  {
@@ -587,7 +639,11 @@
    "Politics",
    "Time"
   ],
-  "user_aggrement": []
+  "user_aggrement": [
+   "History",
+   "Time",
+   "Economy"
+  ]
  },
  {
   "artist_name": "Daniel Crooks",
@@ -615,6 +671,7 @@
    "Technology"
   ],
   "user_aggrement": [
+   "Physics",
    "Time"
   ]
  },
@@ -643,7 +700,12 @@
    "Culture",
    "Politics"
   ],
-  "user_aggrement": []
+  "user_aggrement": [
+   "Culture",
+   "Body",
+   "Arts",
+   "Identity"
+  ]
  },
  {
   "artist_name": "Mikala Dwyer",
@@ -670,7 +732,12 @@
    "Arts",
    "History"
   ],
-  "user_aggrement": []
+  "user_aggrement": [
+   "History",
+   "Body",
+   "Fantasy",
+   "Materiality"
+  ]
  },
  {
   "artist_name": "Shaun Gladwell",
@@ -698,7 +765,10 @@
    "Time"
   ],
   "user_aggrement": [
-   "Environmental"
+   "Body",
+   "Environmental",
+   "Time",
+   "Land"
   ]
  },
  {
@@ -726,7 +796,11 @@
    "Identity",
    "Culture"
   ],
-  "user_aggrement": []
+  "user_aggrement": [
+   "Language",
+   "Culture",
+   "Identity"
+  ]
  },
  {
   "artist_name": "Gulumbu Yunupingu",
@@ -753,7 +827,11 @@
    "Space",
    "Spirituality"
   ],
-  "user_aggrement": []
+  "user_aggrement": [
+   "Spirituality",
+   "Space",
+   "Familial"
+  ]
  },
  {
   "artist_name": "Ah Xian",
@@ -780,7 +858,12 @@
    "Culture",
    "Identity"
   ],
-  "user_aggrement": []
+  "user_aggrement": [
+   "Culture",
+   "Economy",
+   "Materiality",
+   "Identity"
+  ]
  },
  {
   "artist_name": "Khaled Sabsabi",
@@ -809,7 +892,8 @@
   ],
   "user_aggrement": [
    "Community",
-   "Spirituality"
+   "Spirituality",
+   "Familial"
   ]
  },
  {
@@ -837,7 +921,11 @@
    "Technology",
    "Physics"
   ],
-  "user_aggrement": []
+  "user_aggrement": [
+   "Materiality",
+   "Culture",
+   "Fantasy"
+  ]
  },
  {
   "artist_name": "Vernon Ah Kee",

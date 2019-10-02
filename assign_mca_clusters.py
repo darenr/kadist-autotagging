@@ -10,6 +10,8 @@ import re
 import json
 import string
 
+from people import people
+
 from common_functions import find_clusters, _mk_synset, _word_to_synset, wup, preprocess_clusters
 from tfidf_document_tagger import TFIDFDocumentTagger
 from cortical_document_tagger import CorticalDocumentTagger
@@ -118,7 +120,8 @@ def assign_clusters_to_works(trials):
         for cluster_type in cluster_types:
             machine = "{}_{}_{}".format('machine', cluster_type, "no_scores")
             human = "{}_{}_{}".format('user', cluster_type, "no_scores")
-            work["{}_fmeasure".format(cluster_type)] = f_measure(set(work[human]), set(work[machine]))
+            work["{}_fmeasure".format(cluster_type)] = f_measure(set(work['user_aggrement']), set(work[machine]))
+
 
     df = pd.DataFrame(trials)
     df.drop(columns=['user_tags_synsets', 'machine_tags_synsets'], inplace=True)
@@ -141,15 +144,6 @@ def assign_clusters_to_works(trials):
               'hit percentage:',
               100 * s.where(s > 0).count() / len(s)
               )
-
-    # generate best/worst top n for gsheet analysis
-    # df_gsheet = df.dropna(subset=['clusters_fmeasure']) # drop any we don't tag
-    # df_gsheet.sort_values(by=['clusters_fmeasure'])\
-    #     .tail(25)\
-    #     .to_csv("results/best_performing_kadist_assignments.csv", index=False)
-    # df_gsheet.sort_values(by=['clusters_fmeasure'])\
-    #     .head(25)\
-    #     .to_csv("results/worst_performing_kadist_assignments.csv", index=False)
 
 
 def tag_works_from_text(works, vocab_size=500):

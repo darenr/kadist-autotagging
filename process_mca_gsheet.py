@@ -84,7 +84,8 @@ def process_mca_trials():
                 if human_cluster_assignments:
                     trial[person] = human_cluster_assignments
             if setlist:
-                trial['user_aggrement'] = list(set.intersection(*setlist))
+                flat_list = [item for sublist in setlist for item in sublist]
+                trial['user_aggrement'] = list(set([i for i in flat_list if flat_list.count(i)>1]))
 
         trials.append(trial)
 
