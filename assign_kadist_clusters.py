@@ -12,9 +12,9 @@ import string
 
 from common_functions import find_clusters, _mk_synset, wup, preprocess_clusters
 from tfidf_document_tagger import TFIDFDocumentTagger
-from cortical_document_tagger import CorticalDocumentTagger
-from rake_document_tagger import RAKEDocumentTagger
-from text_rank_document_tagger import TextRankDocumentTagger
+# from cortical_document_tagger import CorticalDocumentTagger
+# from rake_document_tagger import RAKEDocumentTagger
+# from text_rank_document_tagger import TextRankDocumentTagger
 
 from nltk.metrics.scores import f_measure
 
