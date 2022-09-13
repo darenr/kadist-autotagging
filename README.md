@@ -4,7 +4,7 @@ Assign tags to Kadist artworks
 ```
 conda create -n kadist3 python=3.6
 conda activate kadist3
-pip install -r requirements.txt
+pip install  --ignore-installed certifi -r requirements.txt
 ```
 
 Get latest `kadist.json`
